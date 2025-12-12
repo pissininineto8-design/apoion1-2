@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title></title>
+</head>
+<body id="pagina_relogio">
+<script>
+//formatação de data e hora----------------------------------
+function relogio(){	
+	horario = new Date();
+	
+	//relógio
+	var hora = horario.getHours();
+		if (hora< 10) {
+		hora  = "0" + hora;
+	}
+	var minuto = horario.getMinutes();
+		if (minuto< 10) {
+		minuto  = "0" + minuto;
+	}
+	var segundo = horario.getSeconds();
+		if (segundo< 10) {
+		segundo  = "0" + segundo;
+	}
+	
+	//data
+	var dia  = horario.getDate();
+		if (dia< 10) {
+		dia  = "0" + dia;
+	}
+	var mes  = horario.getMonth() + 1;
+		if (mes < 10) {
+		mes  = "0" + mes;
+	}
+	var ano  = horario.getFullYear();
+	
+	
+
+	var horaFormatada = hora + ":" + minuto + ":" + segundo;
+	var dataFormatada = dia + "/" + mes + "/" + ano;
+	document.getElementById("hora_data").innerHTML = dataFormatada + "  |  " + horaFormatada;
+}
+setInterval(relogio, 100);
+//-------------------------------------------------------
+</script>
+<div id="hora_data"></div>
+</body>
+</html>

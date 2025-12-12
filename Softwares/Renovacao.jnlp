@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://arsoluti2.acsoluti.com.br/" href="renovacao/jnlp" spec="1.0+">
+    <information>
+        <title>Assistente de Renovação de Certificado SOLUTI</title>
+        <vendor>Soluti Certificação Digital</vendor>
+        <homepage href="https://www.soluti.com.br" />
+        <description>Sistema para renovação de certificados digitais Soluti.</description>
+        <description kind="short">Assistente de Renovação de Certificado SOLUTI</description>
+    </information>
+    <update check="always" />
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.6+" />
+        <jar href="https://emissor.ca.inf.br/prod/baixa-de-certificados-2.4.2.jar" main="true" />
+        <property name="jnlp.linkPool" value="https://arsoluti2.acsoluti.com.br/" />
+        <property name="jnlp.segundoLinkPool" value="https://arsoluti3.acsoluti.com.br/" />
+        <property name="jnlp.homologacao" value="false" />
+        <property name="jnlp.token" value="" />
+        <property name="java.net.preferIPv4Stack" value="true" />
+        <property name="jnlp.birdTrial" value="1" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/bcpkix-jdk15on-153.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/bcprov-jdk15on-153.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/commons-net-3.4.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/pkcs11wrapper.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/Sign-soluti-1.3.1.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/commons-io-2.4.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/httpclient-4.5.2.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/httpcore-4.4.4.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/commons-logging-1.1.1.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/json-simple-1.1.1.jar" download="lazy" />
+        <jar href="https://emissor.ca.inf.br/prod/lib/commons-validator-1.4.1.jar" download="lazy" />
+        <property name="jnlp.renovacao" value="true" />
+    </resources>
+    <application-desc main-class="br.com.soluti.baixadecertificados.run.InstallCertificado">
+    </application-desc>
+</jnlp>

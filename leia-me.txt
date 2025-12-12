@@ -1,0 +1,92 @@
+#######################################################################
+# Apoio N1 e N2                                                       #
+#                                                                     #
+# Autor:  Paulo R. S. Pissinini Neto                                  #
+#                                                                     #
+# Atualização mais recente: 11 de Dezembro de 2025 - Versão 0.1.1     #                                                                     
+#                                                                     #
+#                                                                     #
+#######################################################################
+
+## Índice
+
+1. [Visão Geral](#visão-geral)
+2. [Configuração](#instalação)
+3. [Uso](#uso)
+4. [Funcionalidades](#funcionalidades)
+5. [Recomendações](#recomendações)
+6. [Créditos](#contribuições)
+7. [Contato](#contato)
+
+## Visão Geral
+
+Este conteúdo é hospedado na pasta "G:\CSTI\CSTI\Documentos_N2\ApoioN2" da rede do TRT9.
+
+O conteúdo reproduz a estrutura de um sítio HTML, complementado com CSS e JavaScript.
+
+### Tecnologias Utilizadas
+
+- [Linguagem de Programação](HTML5, CSS3, Javascript, JQuery)
+- [Outras Ferramentas](https://visualstudio.microsoft.com/pt-br/vs/)
+
+### Objetivo
+
+Projeto desenvolvido para apoiar os técnicos de suporte Nível 1 e Nível 2 da Central de Serviços de TI, fornecendo ferramentas essenciais e informações necessárias para otimizar o desempenho no trabalho e a execução eficiente de tarefas internas.
+
+## Configuração
+
+Muito do conteúdo só pode ser consultado de forma conveniente com o uso de um navegador a partir de uma estrutura de pastas e arquivos; não se recomenda a consulta pelo aplicativo do Google Drive nem tampouco pela visitação a URLs "https://drive.google.com/..."
+
+A forma recomendada de consulta é pela abertura do arquivo da página de entrada em navegador web.  Esse arquivo chama-se "index.html" e, em uma situação típica de configuração da rede
+do TRT9, estará visível via Windows Explorer no caminho.
+
+## Uso
+
+Para visualizar o conteúdo das páginas e acessar as funcionalidades, basta executar através de um navegador, o arquivo index.html presente no seguinte caminho do Google Drive: G:\Drives compartilhados\CSTI\CSTI\ApoioN1-2
+
+Recomenda-se o uso do navegador Mozilla Firefox ou Google Chrome.
+
+Para orientações específicas, recomenda-se:
+
+Fluxos_de_trabalho:Consulta à Planilha de Responsáveis dos Sistemas
+https://www.trt9.jus.br/cswiki/index.php/Special:Redirect/page/20173
+
+## Funcionalidades
+
+O Projeto contém páginas informativas e funcionais:
+
+Página de Procedimentos: Contém informações sobre procedimentos mais utilizados na Central de Serviços de T.I. e links para procedimentos da CSWIKI.
+
+Página de Redirecionamento: Uma relação que é usada principalmente pelos monitores e técnicos da CSTI-N1, e contém os sistemas e serviços, seus grupos solucionadores responsáveis e o email do grupo responsável.
+
+A planilha é utilizada pelos técnicos para o redirecionamento dos chamados, para inserir informação ao N3 com envio de emails. Pelos monitores para os procedimentos de urgência e de incidente grave. 
+
+Também contém na página, dentro de um filtro, informações referente aos Servidores N3 associados por seções (locais de lotações), bem como os responsáveis pelo setor.
+
+Glossário: Lista de termos jurídicos utilizados nos tribunais de justiça.
+
+Páginas de Templates: Templates para situações vivenciadas pelo N1 e N2, modelos para abertura e suspensão de tarefas, abertura de tarefas de acompanhamento de sessão e tarefas para solicitação de garantia de equipamentos.
+
+Página Informativas: Páginas com informações e orientações sobre tokens, programação do malote, endereços dos fóruns em todas as cidades de atuação do TRT, contatos de todas as unidades, além de dados sobre os setores por andar nos edifícios Vicente Machado 400, Vicente Machado 147 e Rio Branco 528. Inclui ainda informações sobre as pastas de digitalização dos setores, ranges de IPs, e orientações para a alteração correta do status CMDB dos equipamentos recolhidos.
+
+Página de Cálculo do F: Função para cálculo do tempo SLA restantes de chamados atendidos em até 03:00 horas e chamados VIPs atendidos em até 01:00 hora.
+
+Página de Sistemas: Informações específicas sobres os sistemas conhecidos e suportados pelo TRT9, bem como os sistemas convênios.
+
+Páginas de Apoio N1 e N2: Há duas páginas voltadas ao apoio de cada ilha da CSTI, uma para a ilha do N1 (Apoio N1), contendo informações, atalhos e um filtro contendo dicas, curiosidades e situações vivenciadas especificamente no N1. A segunda página é voltada a ilha do N2 (Apoio N2) e possui o mesmo tipo de conteúdo, porém voltado ao serviço do N2.
+
+Painel de Avisos: Na página inicial do projeto há um painel de avisos que é mantido pela supervisão do N1, o painel mostra avisos importantes sobre os acontecimentos na central de TI e é atualizado frequentemente. O painel também é exibido no telão presente na CSTI - N1.
+
+## Recomendações
+
+Ao acessar as informações do rodapé da página (como os atalhos para links de outros sistemas), caso a janela do navegador esteja em formato reduzido, recomenda-se realizar a consulta a partir da página inicial.
+
+## Créditos
+
+Projeto idealizado, desenvolvido e mantido por Paulo Roberto dos Santos Pissinini Neto - Supervisor da Central de Serviços de T.I.
+
+Consulte o seguinte link para visualizar o contexto, orientações e visão geral do projeto, documentado na CSWIKI: https://www.trt9.jus.br/cswiki/index.php?curid=32187
+
+## Contato
+
+PAULOPISSININI - Contato via Google Chat ou Ramal - 1079.

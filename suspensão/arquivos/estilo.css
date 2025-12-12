@@ -1,0 +1,283 @@
+body{
+	margin: 0;
+}
+
+#t_nome{
+	font-size: 16px;
+	font-family: arial;
+	color: white;
+}
+
+#datahora{
+	font-size: 16px;
+	font-family: arial;
+	color: white;
+}
+
+#cabecalio1{
+	background-color: #0572CE;
+	width: 100%;
+}
+
+#cabecalio2{
+	background-color: #0572CE;
+	width: 850px;
+	font-size: 24px;
+	font-family: arial;
+	color: white;
+	text-align: left;
+}
+
+#coluna_vazia{
+	
+}
+
+#banner:hover{
+	height: 98px;
+}
+
+#dica{
+	position: absolute;
+	top: 1px;
+	left: 10px;
+}
+
+
+#logo{
+	width:500px;
+}
+
+#suspensao{
+	font-size: 16px;
+	width: 440px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+#tratamento{
+	font-size: 16px;
+	width: 400px;
+	border-radius: 5px;	
+	border-style: solid;
+	border-width: 0px;
+}
+#nome{
+	width: 350px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#tabela2 {
+	background-color:#104E8B;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	height: 30px;
+}
+#tabela3 {
+	background-color:#104E8B;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	height: 30px;
+}
+#geral{
+	background-color:#104E8B;
+	width: 100%;
+}
+
+
+#suspender {
+	font-size: 16px;
+	color: black;
+	font-family: arial;
+	text-align: left;
+}
+
+#botao:hover{
+	background-color: #104E8B;
+	color: white;
+}
+
+#botao{
+	font-size: 16px;
+	color: black;
+	font-family: arial;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	background-color: white;
+}
+
+#hoje:hover{
+	background-color: #4682B4;
+}
+
+#ramal1{
+	width: 100px;
+	font-size: 20px;
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+#ramal2{
+	width: 100px;
+	font-size: 20px;
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+#ramal3{
+	width: 100px;
+	font-size: 20px;
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+
+#hora{
+	width: 25px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#min{
+	width: 25px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#dia{
+	width: 25px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#mes{
+	width: 25px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#ano{
+	width: 50px;
+	font-size: 16px;
+	font-family: arial;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#copiar{
+	font-size: 18px;
+	font-family: arial;
+	border: 0px;
+	border-radius: 20px;
+}
+
+#copiar:hover{
+	font-size: 18px;
+	font-family: arial;
+	border-radius: 20px;
+	background-color: #36648B;
+	color: white;
+}
+
+#tipo {
+	font-size: 18px;
+	color: black;
+	font-family: arial;
+}
+
+#aviso {
+	font-size: 18px;
+	color: red;
+	font-family: arial;
+	text-align: center;
+}
+
+#resultado{
+	text-align: center;
+	font-size: 30px;
+	font-family: arial;
+	color: #4F4F4F;
+	width: 500px;
+	height: 50px;
+}
+
+#template{
+	text-align: left;
+	font-size: 18px;
+	font-family: arial;
+	color: #4F4F4F;
+	width: 850px;
+	height: 500px;
+	border-width: 1px;
+	border-style: border solid;
+}
+
+#rodape1{
+	font-size:16px;
+	font-family: arial;
+	width: 100%;
+	background-color: #104E8B;
+	position: absolute;
+	bottom: 0px;
+	
+}
+#rodape2{
+	color: white;
+}
+
+a{ 
+	text-decoration:none; 
+	color: white;
+}
+
+#frame{
+	overflow-x:hidden;
+	height: 20px;
+}
+
+
+#pagina_relogio{
+	background-color: #0572CE;
+	color: white;
+	font-family: yu gothic;
+	margin: 0;
+	font-size:15px;
+}
+

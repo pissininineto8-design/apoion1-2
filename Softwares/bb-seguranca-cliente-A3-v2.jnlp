@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://www.trt9.jus.br/siscondjtrtpr" href="pages/javawebstart/bb-seguranca-cliente-A3.jnlp" spec="1.5.0+">
+        <information>
+                <title>Leitor v2 de Certificado A3 para o SisconDJ</title>
+                <vendor>Banco do Brasil</vendor>
+                <homepage href="login.jsp"/>
+                <shortcut install="true" online="true">
+                    <menu submenu="Leitor v2 A3 SisconDJ"/>
+                    <desktop/>  
+                </shortcut> 
+        </information>
+        <security>
+                <all-permissions/>
+        </security>
+	<update check="always" policy="always"/>
+        <resources>
+                <j2se version="1.7+"/>
+                <jar href="javawebstart/bb-seguranca-cliente-A3-jws.jar" main="true"/>
+        <property name="jnlp.codebase" value="https://www.trt9.jus.br/siscondjtrtpr"/>
+<property name="jnlp.linkabrir" value="true"/>
+</resources>
+        <application-desc main-class="br.com.bb.seguranca.cliente.JFrameMain">
+        </application-desc>
+</jnlp>
