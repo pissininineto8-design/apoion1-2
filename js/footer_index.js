@@ -1,8 +1,8 @@
 const head2=document.head
 const body2=document.body
 
-const estilo2="<link rel='stylesheet' href='../css/footer.css'/>"
-const filtro_links="<link rel='stylesheet' href='../css/filtro_links.css'/>"
+const estilo2="<link rel='stylesheet' href='css/footer.css'/>"
+const filtro_links="<link rel='stylesheet' href='css/filtro_links.css'/>"
 head2.innerHTML+=estilo2
 
 const foot=document.createElement("div")
@@ -38,8 +38,8 @@ const rodape=
 "<footer>"+
   "<nav id='menu-h'>"+
       "<ul class='menu-h'>"+
-          "<li class='menu_2'><a id='a_menu_2' href='ramais.html'>Contatos</a></li>"+
-          "<li class='menu_3'><a id='a_menu_3' href='redirecionamento.html'>Redirecionamento</a></li>"+
+          "<li class='menu_2'><a id='a_menu_2' href='Paginas/ramais.html'>Contatos</a></li>"+
+          "<li class='menu_3'><a id='a_menu_3' href='Paginas/redirecionamento.html'>Redirecionamento</a></li>"+
       "</ul>"+
   "</nav>"+
   "<article id='article-footer'>"+
@@ -51,11 +51,11 @@ const rodape=
          "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'>Setor Malote:</b> </td><td style='color:WHITE; border: none;'> <a href='tel:+554133107099'>7099</a> </td></tr>" +
          "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'>Setor Transporte:</b> </td><td style='color:WHITE; border: none;'> <a href='tel:+554133107081'>7081</a> </td></tr>" +  
        "</table>"+
-       "<br><p><a id='a_contatos_footer' style='font - family: Lucida Bright' href='ramais.html'>Mais contatos...</a></b> </p>" +
+       "<br><p><a id='a_contatos_footer' style='font - family: Lucida Bright' href='Paginas/ramais.html'>Mais contatos...</a></b> </p>" +
     "</div>" +
 "<div id='division_2' class='bannern1'>"+
-"<a href='paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='../imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+
-"<a href='paginan2.html'><img id='boxa2' style='border-radius: 5px; border-style: solid;' src='../imagens/apoion2.png' alt='N2' title='Acessar a P gina de Orienta  es N2' width='160' height='100'></a>"+
+"<a href='Paginas/paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+
+"<a href='Paginas/paginan2.html'><img id='boxa2' style='border-radius: 5px; border-style: solid;' src='imagens/apoion2.png' alt='N2' title='Acessar a P gina de Orienta  es N2' width='160' height='100'></a>"+
 "</div>" +
     "</div>"+
 
