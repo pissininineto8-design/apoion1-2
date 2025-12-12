@@ -299,7 +299,7 @@ const rodape=
     "<br><br>"+
 "</div>" +
 "</div>" +
-"<p id='versao'>Vers&atilde;o 0.1.3</p>"+
+"<p id='versao'>Vers&atilde;o 0.1.4</p>"+
 "</article>"+
 "</footer>"
 foot.innerHTML+=rodape
