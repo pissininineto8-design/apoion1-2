@@ -4,19 +4,19 @@ const totalSlides = slides.length;
 const carouselSlides = document.querySelector('.carousel-slides');
 const slideWidth = slides[0].offsetWidth;
 
-// Intervalo para a rotação automática
+// Intervalo para a rotaï¿½ï¿½o automï¿½tica
 let autoSlideInterval;
 
-// Função para mostrar os slides
+// Funï¿½ï¿½o para mostrar os slides
 function showSlides() {
     if (currentSlide >= totalSlides - 1) {
-        carouselSlides.style.transition = "none"; // Remove a transição
-        carouselSlides.style.transform = `translateX(0)`; // Retorna ao início
+        carouselSlides.style.transition = "none"; // Remove a transiï¿½ï¿½o
+        carouselSlides.style.transform = `translateX(0)`; // Retorna ao inï¿½cio
         currentSlide = 0;
         setTimeout(() => {
             carouselSlides.style.transition = "transform 0.5s ease";
-            nextSlide(); // Avança para o próximo slide
-        }, 50); // Pequeno atraso para garantir a transição suave
+            nextSlide(); // Avanï¿½a para o prï¿½ximo slide
+        }, 50); // Pequeno atraso para garantir a transiï¿½ï¿½o suave
     } else {
         carouselSlides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
     }
@@ -30,7 +30,7 @@ function nextSlide() {
 function prevSlide() {
     if (currentSlide <= 0) {
         carouselSlides.style.transition = "none";
-        currentSlide = totalSlides - 2; // Vai para o penúltimo slide real
+        currentSlide = totalSlides - 2; // Vai para o penï¿½ltimo slide real
         carouselSlides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
         setTimeout(() => {
             carouselSlides.style.transition = "transform 0.5s ease";
@@ -42,13 +42,13 @@ function prevSlide() {
     }
 }
 
-// Função para reiniciar o intervalo de rotação automática
+// Funï¿½ï¿½o para reiniciar o intervalo de rotaï¿½ï¿½o automï¿½tica
 function resetAutoSlide() {
     clearInterval(autoSlideInterval); // Para o intervalo atual
     autoSlideInterval = setInterval(nextSlide, 8000); // Reinicia o intervalo
 }
 
-// Configura os botões para avançar e retroceder
+// Configura os botï¿½es para avanï¿½ar e retroceder
 document.getElementById('nextBtn').addEventListener('click', () => {
     nextSlide();
     resetAutoSlide();
@@ -58,7 +58,7 @@ document.getElementById('prevBtn').addEventListener('click', () => {
     resetAutoSlide();
 });
 
-// Inicia a rotação automática
+// Inicia a rotaï¿½ï¿½o automï¿½tica
 autoSlideInterval = setInterval(nextSlide, 8000);
 
 // Chama showSlides na carga da janela

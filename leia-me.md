@@ -2,7 +2,7 @@
 
 # Autor: Paulo R. S. Pissinini Neto                                   
                                                                      
-# Atualização mais recente: 11 de Dezembro de 2025 - Versão 0.1.1
+# Atualização mais recente: 12 de Dezembro de 2025 - Versão 0.1.5
 
 ## Índice
 

@@ -54,8 +54,8 @@ const rodape=
        "<br><p><a id='a_contatos_footer' style='font - family: Lucida Bright' href='Paginas/ramais.html'>Mais contatos...</a></b> </p>" +
     "</div>" +
 "<div id='division_2' class='bannern1'>"+
-"<a href='Paginas/paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+
-"<a href='Paginas/paginan2.html'><img id='boxa2' style='border-radius: 5px; border-style: solid;' src='imagens/apoion2.png' alt='N2' title='Acessar a P gina de Orienta  es N2' width='160' height='100'></a>"+
+"<a href='Paginas/paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='Imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+
+"<a href='Paginas/paginan2.html'><img id='boxa2' style='border-radius: 5px; border-style: solid;' src='Imagens/apoion2.png' alt='N2' title='Acessar a P gina de Orienta  es N2' width='160' height='100'></a>"+
 "</div>" +
     "</div>"+
 
@@ -299,7 +299,7 @@ const rodape=
     "<br><br>"+
 "</div>" +
 "</div>" +
-"<p id='versao'>Vers&atilde;o 0.1.4</p>"+
+"<p id='versao'>Vers&atilde;o 0.1.5</p>"+
 "</article>"+
 "</footer>"
 foot.innerHTML+=rodape

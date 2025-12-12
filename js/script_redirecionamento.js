@@ -15,9 +15,9 @@
       var mostrar1 = document.getElementById("mostrar_mais1");
 
       if(mostrar1.style.display === "none"){
-        document.getElementById("imagem").innerHTML = "<img src='../imagens/cima2.png' width='18' style='position: static; top: 2px;'>";
+        document.getElementById("imagem").innerHTML = "<img src='../Imagens/cima2.png' width='18' style='position: static; top: 2px;'>";
       } else {
-        document.getElementById("imagem").innerHTML = "<img src='../imagens/baixo2.png' width='18' style='position: static; top: 2px;'>";
+        document.getElementById("imagem").innerHTML = "<img src='../Imagens/baixo2.png' width='18' style='position: static; top: 2px;'>";
      }
     }
 

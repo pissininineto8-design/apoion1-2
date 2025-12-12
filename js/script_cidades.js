@@ -15,9 +15,9 @@
       var mostrar = document.getElementById("mostrar");
 
       if(mostrar.style.display === "none"){
-        document.getElementById("imagem1").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+        document.getElementById("imagem1").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
       } else {
-        document.getElementById("imagem1").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+        document.getElementById("imagem1").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
      }
     }
 
@@ -38,9 +38,9 @@
       var mostrar = document.getElementById("mostrar2");
 
       if(mostrar.style.display === "none"){
-        document.getElementById("imagem2").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+        document.getElementById("imagem2").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
       } else {
-        document.getElementById("imagem2").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+        document.getElementById("imagem2").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
      }
     }
 
@@ -61,9 +61,9 @@
           var mostrar = document.getElementById("mostrar3");
 
           if(mostrar.style.display === "none"){
-            document.getElementById("imagem3").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+            document.getElementById("imagem3").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
           } else {
-            document.getElementById("imagem3").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+            document.getElementById("imagem3").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
          }
         }
 
@@ -84,9 +84,9 @@
            var mostrar = document.getElementById("mostrar4");
 
            if(mostrar.style.display === "none"){
-             document.getElementById("imagem4").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+             document.getElementById("imagem4").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
            } else {
-             document.getElementById("imagem4").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+             document.getElementById("imagem4").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
           }
          }
 
@@ -107,9 +107,9 @@
             var mostrar = document.getElementById("mostrar5");
 
             if(mostrar.style.display === "none"){
-              document.getElementById("imagem5").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem5").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
             } else {
-              document.getElementById("imagem5").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem5").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
            }
           }
 
@@ -130,9 +130,9 @@
             var mostrar = document.getElementById("mostrar6");
 
             if(mostrar.style.display === "none"){
-              document.getElementById("imagem6").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem6").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
             } else {
-              document.getElementById("imagem6").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem6").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
            }
           }
 
@@ -153,9 +153,9 @@
             var mostrar = document.getElementById("mostrar7");
 
             if(mostrar.style.display === "none"){
-              document.getElementById("imagem7").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem7").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
             } else {
-              document.getElementById("imagem7").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+              document.getElementById("imagem7").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
            }
           }
 
@@ -176,9 +176,9 @@
               var mostrar = document.getElementById("mostrar8");
 
               if(mostrar.style.display === "none"){
-                document.getElementById("imagem8").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                document.getElementById("imagem8").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
               } else {
-                document.getElementById("imagem8").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                document.getElementById("imagem8").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
              }
             }
 
@@ -199,9 +199,9 @@
               var mostrar = document.getElementById("mostrar9");
 
               if(mostrar.style.display === "none"){
-                document.getElementById("imagem9").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                document.getElementById("imagem9").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
               } else {
-                document.getElementById("imagem9").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                document.getElementById("imagem9").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
              }
             }
 
@@ -222,9 +222,9 @@
                   var mostrar = document.getElementById("mostrar10");
 
                   if(mostrar.style.display === "none"){
-                    document.getElementById("imagem10").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                    document.getElementById("imagem10").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                   } else {
-                    document.getElementById("imagem10").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                    document.getElementById("imagem10").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                  }
                 }
 
@@ -245,9 +245,9 @@
                   var mostrar = document.getElementById("mostrar11");
 
                   if(mostrar.style.display === "none"){
-                    document.getElementById("imagem11").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                    document.getElementById("imagem11").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                   } else {
-                    document.getElementById("imagem11").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                    document.getElementById("imagem11").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                  }
                 }
 
@@ -268,9 +268,9 @@
                       var mostrar = document.getElementById("mostrar12");
 
                       if(mostrar.style.display === "none"){
-                        document.getElementById("imagem12").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                        document.getElementById("imagem12").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                       } else {
-                        document.getElementById("imagem12").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                        document.getElementById("imagem12").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                      }
                     }
 
@@ -291,9 +291,9 @@
                        var mostrar = document.getElementById("mostrar13");
 
                        if(mostrar.style.display === "none"){
-                         document.getElementById("imagem13").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                         document.getElementById("imagem13").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                        } else {
-                         document.getElementById("imagem13").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                         document.getElementById("imagem13").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                       }
                      }
 
@@ -314,9 +314,9 @@
                         var mostrar = document.getElementById("mostrar14");
 
                         if(mostrar.style.display === "none"){
-                          document.getElementById("imagem14").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem14").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                         } else {
-                          document.getElementById("imagem14").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem14").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                        }
                       }
 
@@ -337,9 +337,9 @@
                         var mostrar = document.getElementById("mostrar15");
 
                         if(mostrar.style.display === "none"){
-                          document.getElementById("imagem15").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem15").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                         } else {
-                          document.getElementById("imagem15").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem15").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                        }
                       }
 
@@ -360,9 +360,9 @@
                         var mostrar = document.getElementById("mostrar16");
 
                         if(mostrar.style.display === "none"){
-                          document.getElementById("imagem16").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem16").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                         } else {
-                          document.getElementById("imagem16").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                          document.getElementById("imagem16").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                        }
                       }
 
@@ -383,9 +383,9 @@
                           var mostrar = document.getElementById("mostrar17");
 
                           if(mostrar.style.display === "none"){
-                            document.getElementById("imagem17").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                            document.getElementById("imagem17").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                           } else {
-                            document.getElementById("imagem17").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                            document.getElementById("imagem17").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                          }
                         }
 
@@ -406,9 +406,9 @@
                           var mostrar = document.getElementById("mostrar18");
 
                           if(mostrar.style.display === "none"){
-                            document.getElementById("imagem18").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                            document.getElementById("imagem18").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                           } else {
-                            document.getElementById("imagem18").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                            document.getElementById("imagem18").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                          }
                         }
 
@@ -429,9 +429,9 @@
                               var mostrar = document.getElementById("mostrar19");
 
                               if(mostrar.style.display === "none"){
-                                document.getElementById("imagem19").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                document.getElementById("imagem19").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                               } else {
-                                document.getElementById("imagem19").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                document.getElementById("imagem19").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                              }
                             }
 
@@ -452,9 +452,9 @@
                               var mostrar = document.getElementById("mostrar20");
 
                               if(mostrar.style.display === "none"){
-                                document.getElementById("imagem20").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                document.getElementById("imagem20").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                               } else {
-                                document.getElementById("imagem20").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                document.getElementById("imagem20").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                              }
                             }
 
@@ -475,9 +475,9 @@
                                   var mostrar = document.getElementById("mostrar21");
 
                                   if(mostrar.style.display === "none"){
-                                    document.getElementById("imagem21").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                    document.getElementById("imagem21").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                   } else {
-                                    document.getElementById("imagem21").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                    document.getElementById("imagem21").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                  }
                                 }
 
@@ -498,9 +498,9 @@
                                    var mostrar = document.getElementById("mostrar22");
 
                                    if(mostrar.style.display === "none"){
-                                     document.getElementById("imagem22").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                     document.getElementById("imagem22").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                    } else {
-                                     document.getElementById("imagem22").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                     document.getElementById("imagem22").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                   }
                                  }
 
@@ -521,9 +521,9 @@
                                     var mostrar = document.getElementById("mostrar23");
 
                                     if(mostrar.style.display === "none"){
-                                      document.getElementById("imagem23").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem23").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                     } else {
-                                      document.getElementById("imagem23").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem23").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                    }
                                   }
 
@@ -544,9 +544,9 @@
                                     var mostrar = document.getElementById("mostrar24");
 
                                     if(mostrar.style.display === "none"){
-                                      document.getElementById("imagem24").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem24").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                     } else {
-                                      document.getElementById("imagem24").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem24").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                    }
                                   }
 
@@ -567,9 +567,9 @@
                                     var mostrar = document.getElementById("mostrar25");
 
                                     if(mostrar.style.display === "none"){
-                                      document.getElementById("imagem25").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem25").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                     } else {
-                                      document.getElementById("imagem25").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                      document.getElementById("imagem25").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                    }
                                   }
 
@@ -590,9 +590,9 @@
                                       var mostrar = document.getElementById("mostrar26");
 
                                       if(mostrar.style.display === "none"){
-                                        document.getElementById("imagem26").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                        document.getElementById("imagem26").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                       } else {
-                                        document.getElementById("imagem26").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                        document.getElementById("imagem26").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                      }
                                     }
 
@@ -613,9 +613,9 @@
                                       var mostrar = document.getElementById("mostrar27");
 
                                       if(mostrar.style.display === "none"){
-                                        document.getElementById("imagem27").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                        document.getElementById("imagem27").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                       } else {
-                                        document.getElementById("imagem27").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                        document.getElementById("imagem27").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                      }
                                     }
 
@@ -636,9 +636,9 @@
                                           var mostrar = document.getElementById("mostrar28");
 
                                           if(mostrar.style.display === "none"){
-                                            document.getElementById("imagem28").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                            document.getElementById("imagem28").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                           } else {
-                                            document.getElementById("imagem28").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                            document.getElementById("imagem28").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                          }
                                         }
 
@@ -659,9 +659,9 @@
                                           var mostrar = document.getElementById("mostrar29");
 
                                           if(mostrar.style.display === "none"){
-                                            document.getElementById("imagem29").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                            document.getElementById("imagem29").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                           } else {
-                                            document.getElementById("imagem29").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                            document.getElementById("imagem29").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                          }
                                         }
 
@@ -682,9 +682,9 @@
                                               var mostrar = document.getElementById("mostrar30");
 
                                               if(mostrar.style.display === "none"){
-                                                document.getElementById("imagem30").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                document.getElementById("imagem30").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                               } else {
-                                                document.getElementById("imagem30").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                document.getElementById("imagem30").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                              }
                                             }
 
@@ -705,9 +705,9 @@
                                                var mostrar = document.getElementById("mostrar31");
 
                                                if(mostrar.style.display === "none"){
-                                                 document.getElementById("imagem31").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                 document.getElementById("imagem31").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                } else {
-                                                 document.getElementById("imagem31").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                 document.getElementById("imagem31").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                               }
                                              }
 
@@ -728,9 +728,9 @@
                                                 var mostrar = document.getElementById("mostrar32");
 
                                                 if(mostrar.style.display === "none"){
-                                                  document.getElementById("imagem32").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem32").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                 } else {
-                                                  document.getElementById("imagem32").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem32").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                }
                                               }
 
@@ -751,9 +751,9 @@
                                                 var mostrar = document.getElementById("mostrar33");
 
                                                 if(mostrar.style.display === "none"){
-                                                  document.getElementById("imagem33").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem33").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                 } else {
-                                                  document.getElementById("imagem33").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem33").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                }
                                               }
 
@@ -774,9 +774,9 @@
                                                 var mostrar = document.getElementById("mostrar34");
 
                                                 if(mostrar.style.display === "none"){
-                                                  document.getElementById("imagem34").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem34").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                 } else {
-                                                  document.getElementById("imagem34").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                  document.getElementById("imagem34").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                }
                                               }
 
@@ -797,9 +797,9 @@
                                                   var mostrar = document.getElementById("mostrar35");
 
                                                   if(mostrar.style.display === "none"){
-                                                    document.getElementById("imagem35").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                    document.getElementById("imagem35").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                   } else {
-                                                    document.getElementById("imagem35").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                    document.getElementById("imagem35").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                  }
                                                 }
 
@@ -820,9 +820,9 @@
                                                   var mostrar = document.getElementById("mostrar36");
 
                                                   if(mostrar.style.display === "none"){
-                                                    document.getElementById("imagem36").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                    document.getElementById("imagem36").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                   } else {
-                                                    document.getElementById("imagem36").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                    document.getElementById("imagem36").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                  }
                                                 }
 
@@ -843,9 +843,9 @@
                                                       var mostrar = document.getElementById("mostrar37");
 
                                                       if(mostrar.style.display === "none"){
-                                                        document.getElementById("imagem37").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                        document.getElementById("imagem37").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                       } else {
-                                                        document.getElementById("imagem37").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                        document.getElementById("imagem37").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                      }
                                                     }
 
@@ -866,9 +866,9 @@
                                                       var mostrar = document.getElementById("mostrar38");
 
                                                       if(mostrar.style.display === "none"){
-                                                        document.getElementById("imagem38").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                        document.getElementById("imagem38").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                       } else {
-                                                        document.getElementById("imagem38").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                        document.getElementById("imagem38").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                      }
                                                     }
 
@@ -889,9 +889,9 @@
                                                           var mostrar = document.getElementById("mostrar39");
 
                                                           if(mostrar.style.display === "none"){
-                                                            document.getElementById("imagem39").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                            document.getElementById("imagem39").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                           } else {
-                                                            document.getElementById("imagem39").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                            document.getElementById("imagem39").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                          }
                                                         }
 
@@ -912,9 +912,9 @@
                                                            var mostrar = document.getElementById("mostrar40");
 
                                                            if(mostrar.style.display === "none"){
-                                                             document.getElementById("imagem40").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                             document.getElementById("imagem40").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                            } else {
-                                                             document.getElementById("imagem40").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                             document.getElementById("imagem40").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                           }
                                                          }
 
@@ -935,9 +935,9 @@
                                                             var mostrar = document.getElementById("mostrar41");
 
                                                             if(mostrar.style.display === "none"){
-                                                              document.getElementById("imagem41").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem41").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                             } else {
-                                                              document.getElementById("imagem41").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem41").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                            }
                                                           }
 
@@ -958,9 +958,9 @@
                                                             var mostrar = document.getElementById("mostrar42");
 
                                                             if(mostrar.style.display === "none"){
-                                                              document.getElementById("imagem42").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem42").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                             } else {
-                                                              document.getElementById("imagem42").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem42").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                            }
                                                           }
 
@@ -981,9 +981,9 @@
                                                             var mostrar = document.getElementById("mostrar43");
 
                                                             if(mostrar.style.display === "none"){
-                                                              document.getElementById("imagem43").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem43").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                             } else {
-                                                              document.getElementById("imagem43").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                              document.getElementById("imagem43").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                            }
                                                           }
 
@@ -1004,9 +1004,9 @@
                                                                     var mostrar = document.getElementById("mostrar44");
 
                                                                     if(mostrar.style.display === "none"){
-                                                                      document.getElementById("imagem44").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                      document.getElementById("imagem44").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                     } else {
-                                                                      document.getElementById("imagem44").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                      document.getElementById("imagem44").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                    }
                                                                   }
 
@@ -1027,9 +1027,9 @@
                                                                      var mostrar = document.getElementById("mostrar45");
 
                                                                      if(mostrar.style.display === "none"){
-                                                                       document.getElementById("imagem45").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                       document.getElementById("imagem45").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                      } else {
-                                                                       document.getElementById("imagem45").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                       document.getElementById("imagem45").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                     }
                                                                    }
 
@@ -1050,9 +1050,9 @@
                                                                       var mostrar = document.getElementById("mostrar46");
 
                                                                       if(mostrar.style.display === "none"){
-                                                                        document.getElementById("imagem46").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem46").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                       } else {
-                                                                        document.getElementById("imagem46").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem46").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                      }
                                                                     }
 
@@ -1073,9 +1073,9 @@
                                                                       var mostrar = document.getElementById("mostrar47");
 
                                                                       if(mostrar.style.display === "none"){
-                                                                        document.getElementById("imagem47").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem47").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                       } else {
-                                                                        document.getElementById("imagem47").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem47").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                      }
                                                                     }
 
@@ -1096,9 +1096,9 @@
                                                                       var mostrar = document.getElementById("mostrar48");
 
                                                                       if(mostrar.style.display === "none"){
-                                                                        document.getElementById("imagem48").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem48").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                       } else {
-                                                                        document.getElementById("imagem48").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                        document.getElementById("imagem48").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                      }
                                                                     }
 
@@ -1119,9 +1119,9 @@
                                                                         var mostrar = document.getElementById("mostrar49");
 
                                                                         if(mostrar.style.display === "none"){
-                                                                          document.getElementById("imagem49").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                          document.getElementById("imagem49").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                         } else {
-                                                                          document.getElementById("imagem49").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                          document.getElementById("imagem49").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                        }
                                                                       }
 
@@ -1142,8 +1142,8 @@
                                                                           var mostrar = document.getElementById("mostrar50");
 
                                                                           if(mostrar.style.display === "none"){
-                                                                            document.getElementById("imagem50").innerHTML = "<img src='../imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                            document.getElementById("imagem50").innerHTML = "<img src='../Imagens/cima2.png' width='17' style='position: relative; top: 2px;'>";
                                                                           } else {
-                                                                            document.getElementById("imagem50").innerHTML = "<img src='../imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
+                                                                            document.getElementById("imagem50").innerHTML = "<img src='../Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
                                                                          }
                                                                         }
