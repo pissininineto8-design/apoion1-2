@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Status CMDB</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+  <body>
+
+      <script src="../js/redimensoes_footer_header.js"></script>
+      <script src="../js/header.js"></script>
+
+      <script type="text/javascript">
+
+          document.addEventListener('DOMContentLoaded', function () {
+              var button = document.getElementById('BotaoVoltar');
+              button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+          });
+
+          document.addEventListener('scroll', function () {
+              var button = document.getElementById('BotaoVoltar');
+              var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+              if (window.scrollY >= triggerHeight) {
+                  button.classList.remove('hidden');
+              } else {
+                  button.classList.add('hidden');
+              }
+          });
+
+          document.addEventListener('DOMContentLoaded', () => {
+              const style = document.createElement('style');
+              style.innerHTML =
+                  `ul.menu li.menu_1::after {
+                  content: '';
+                  position: absolute;
+                  left: 20px;
+                  bottom: 0;
+                  width: 68%;
+                  height: 2px;
+                  background-color: white; /* Cor da linha */
+                  transform: scaleX(1);
+                  transform-origin: bottom left;
+                  transition: transform 0.3s ease-out;
+                  }`;
+              document.head.appendChild(style);
+          });
+      </script>
+
+      <div align="center">
+
+          <div class="voltar">
+              <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+          </div>
+
+          <br><br><div id="titulo_status"><h3 style="text-align: left;"><font size="5" style="font-family: Courier New, monospace;"> Status CMDB dos Equipamentos de TI</font></h3></div></br>
+
+          <table id="tabela_status">
+              <tr><td bgcolor="#104E8B"><font color="WHITE"> Equipamento </font></td><td align="center" bgcolor="#104E8B"> <font color="WHITE"> Garantia </font></td><td bgcolor="#104E8B"> <font color="WHITE"> Recolhimento Sem Defeito </font></td><td bgcolor="#104E8B"> <font color="WHITE"> Recolhimento Com Defeito </font></td></tr>
+              <tr><td align="left"> <b>Desktop Lenovo M80Q</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>A Preparar</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Desktop Lenovo M920Q</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>A Preparar</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Desktop Positivo C820</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Desktop Positivo Master D480</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor AOC 24P1U</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor Dell 27" P2722H</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor HP V22B</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor Positivo LED 19.5" E2023</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor Positivo LED 20" E2011</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Monitor LCD 19" LG W1942PE</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+
+              <tr><td align="left"> <b>Notebook HP EliteBook 640 G9</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>A Preparar</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b></font> </td></tr>
+              <tr><td align="left"> <b>Notebook Dell Latitude 3420</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>A Preparar</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Notebook Positivo N8140 Blackstone</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+
+              <tr><td align="left"> <b>Notebook HP EliteBook 840 G3</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+
+              <tr><td align="left"> <b>Notebook HP EliteBook 840 G1</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Notebook Lenovo E470</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Impressora Laser Colorida Okidata C330DN</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b>  </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Impressora Okidata B431dn+</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b>  </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Impressora Samsung SL-M2835DW</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b>  </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Impressora Lexmark MS610dn</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Multifuncional Lexmark MX432adwe</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Sim</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace;"><b>Acionamento de Garantia</b> </font> </td></tr>
+              <tr><td align="left"> <b>Multifuncional Samsung SL-M3375FD</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Multifuncional Samsung SL-M4070FR</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Scanner Kodak i2600</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font></td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+
+              <tr><td align="left"> <b>Scanner Epson Workforce Pro GT-S50</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font></td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Scanner Fujitsu Fi-6240</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font></td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+              <tr><td align="left"> <b>Microfone de mesa GOOSENECK</b> </td><td align="center"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Não</b></font> </td> <td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #228b22;"><b>Reserva Técnica</b> </font> </td><td align="left"> <font size="3" style="font-family: Courier New, monospace; color: #ef314c;"><b>Desativado</b> </font> </td></tr>
+          </table>
+          <br><br><br>
+      </div>
+      <script src="../js/footer.js"></script>
+  </body>
+</html>

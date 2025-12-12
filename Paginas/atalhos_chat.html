@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style_atalhos_chat.css">
+    <script src="../js/script3.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/script_atalhos_chat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:lerMais1a(); javascript:lerMais2a(); javascript:lerMais3a(); javascript:lerMais4a();">
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_3::after {
+                        content: '';
+                        position: absolute;
+                        left: 20px;
+                        bottom: 0;
+                        width: 60%;
+                        height: 2px;
+                        background-color: white; /* Cor da linha */
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                        transition: transform 0.3s ease-out;
+                        }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="atalhos2.html"> Templates N1</a></li>
+        </ul>
+    </nav>
+    <div class="voltar">
+        <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+    </div>
+    <article id="article-a">
+        <h1> Atalhos CSTI - Templates para Atendimento via Chat</h1>
+        <div id="div1">
+            <br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais1(), lerMais1a()" id="btLeiaMais1"><span id="imagem1"></span> <b style="font-family: Courier New, monospace;"> ORIENTAÇÕES - CONTATO DE USUÁRIO VIA CHAT </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais1"></span><span id="maiss1">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction()">Copiar</button><br>
+                        <textarea rows="9" cols="70" id="txtInput" style="resize: none">
+Prezados,
+
+Para esclarecer dúvidas, receber orientações, registrar e consultar suas solicitações de suporte técnico de TI, utilize nossos canais de atendimento:
+Chat - https://www.trt9.jus.br/portal/centralServicosTI.xhtml
+Telefone - 3310-7120
+AssystNet - https://csti.trt9.jus.br/assystnet
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais2(), lerMais2a()" id="btLeiaMais2"><span id="imagem2"></span> <b style="font-family: Courier New, monospace;"> ORIENTAÇÕES - CONFIGURAÇÃO DO FIREFOX E ACESSO AO PJE </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais2"></span><span id="maiss2">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction2()">Copiar</button><br>
+                        <textarea rows="17" cols="70" id="txtInput2" style="resize: none">
+O acesso ao PJe sempre deverá ser realizado através do navegador Mozilla Firefox e do assinador Shodo. Caso não tenha algum deles em seu micro segue o link para download.
+
+https://owncloud.trt9.jus.br/index.php/s/8QAiEKpBh6SoNL7
+
+Senha: trt9
+
+Tendo estes softwares instalados basta acessar os links abaixo através do Mozilla Firefox e adicioná-los a lista de exceções de segurança caso seja solicitado.
+
+https://localhost:9000/
+
+https://127.0.0.1:9000/
+
+Após seguir os passos acima realizar um teste de acesso no PJe.
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais3(), lerMais3a()" id="btLeiaMais3"><span id="imagem3"></span> <b style="font-family: Courier New, monospace;"> ORIENTAÇÕES - ACESSO AO PJE MÍDIAS </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais3"></span><span id="maiss3">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction3()">Copiar</button><br>
+                        <textarea rows="33" cols="70" id="txtInput3" style="resize: none">
+O aceso ao portal PJe Mídias do TRT9 (https://www.trt9.jus.br/pjemidias/web/site/login) é realizado com a mesma senha de acesso do PJe (https://pje.trt9.jus.br/trt/).
+Já o PJe Mídias Desktop (https://www.trt9.jus.br/portal/arquivos/7074732) e o portal PJe Mídias do CNJ (https://midias.pje.jus.br/midias/web/site/login) são acessados com a mesma senha do Escritório Digital do CNJ (https://www.escritoriodigital.jus.br).
+Caso haja alguma dificuldade para acessar o PJe Mídias do CNJ ou se cadastrar no Escritório Digital do CNJ será necessário entrar em contato com o suporte do CNJ por um dos canais abaixo:
+
+Contatos do Suporte do Conselho Nacional de Justiça - CNJ:
+
+Telefones:
+(61)2326-5000
+(61)2326-5353
+
+E-mails:
+g-pjemidias.ti@cnj.jus.br
+sistemasnacionais@cnj.jus.br
+
+Se você alterou sua senha do PJe e não consegue efetuar o login no PJe Mídias TRT9 (https://www.trt9.jus.br/pjemidias/web/site/login) verifique se a sua senha atende os requisitos abaixo:
+
+Mínimo 8 Caracteres
+Letra Maiúscula
+Letra Minúscula
+Número
+Caractere especial
+
+Se a nova senha atende todos os requisitos acima faça o login com ela no PJe (https://pje.trt9.jus.br/trt/) utilizando os campos CPF e Senha ao menos uma vez antes acessar o PJe Mídias TRT9 (https://www.trt9.jus.br/pjemidias/web/site/login).
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais4(), lerMais4a()" id="btLeiaMais4"><span id="imagem4"></span> <b style="font-family: Courier New, monospace;"> PEDIDO DE INFORMAÇÕES, OU DÚVIDAS QUE NÃO CABE À CSTI </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais4"></span><span id="maiss4">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction4()">Copiar</button><br>
+                        <textarea rows="10" cols="70" id="txtInput4" style="resize: none;">
+Prezado(a),
+
+Esse canal de atendimento é responsável somente por prestar orientações e suporte na área de TI e sistemas relacionados ao Tribunal Regional Trabalho da 09ª Região (TRTPR).
+
+Outros contatos dessa regional pode ser obtidos no link https://www.trt9.jus.br/portal/contato.xhtml ou pelo Telefone: (41) 3310-7000.
+</textarea><br><br>
+                </div>
+            </div>
+
+        </div>
+        <div id="div2">
+
+            <br><br><br>
+
+        </div>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

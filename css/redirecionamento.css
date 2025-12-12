@@ -1,0 +1,1485 @@
+#a_tabela_redirecionamento { color: BLACK; text-decoration:underline; }
+
+#a_tabela_redirecionamento:hover {color: #ef314c;}
+
+#a_redirecionamento {
+    color: #3498db; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padr�o */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: normal; /* Negrito */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#a_redirecionamento:hover {
+    color: #324090; /* Cor do link ao passar o mouse */
+    transform: scale(1.3); /* Aumenta ligeiramente o tamanho do link */
+}
+
+#BotaoCopiar {
+    background-image: url("../Imagens/copiar.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: none;
+    border-radius: 5px;
+    padding: 14px 14px 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#BotaoClique {
+    background-image: url("../Imagens/clique.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: inherit;
+    border: none;
+    padding: 14px 14px 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#BotaoScroll {
+    border: none;
+    border-radius: 8px;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#BotaoScroll:hover {
+   color: red;
+}
+
+#BotaoScroll #tabela_filtro tr:hover  {
+    font-weight: bold;
+  }
+
+#tabela_filtro {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  #tabela_filtro tr:hover {
+
+      cursor: default;
+  }
+
+  #tabela_filtro th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #ddd;
+  }
+
+  #tabela_filtro td {
+    border: hidden;
+    padding: 2px;
+    width: 400px;
+  }
+
+  #tabela_filtro td:first-child {
+    width: 30%;
+  }
+
+  #tabela_filtro td:nth-child(2) {
+    width: 35%;
+  }
+
+  #tabela_filtro td:last-child {
+    width: 18%;
+  }
+/*
+
+#linha1, #linha2, #linha10, #linha21, #linha25, #linha44, #linha54, #linha63, #linha71, #linha77, #linha82, #linha88, #linha95, #linha104, #linha107, #linha110, #linha123,
+#linha147, #linha148, #linha149, #linha158, #linha184, #linha192, #linha220, #linha236, #linha244 {
+    font-size: 16px;
+    width: 370px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha1:hover, #linha2:hover, #linha10:hover, #linha21:hover, #linha25:hover, #linha44:hover, #linha54:hover, #linha63:hover, #linha71:hover, #linha77:hover, #linha82:hover,
+#linha88:hover, #linha95:hover, #linha104:hover, #linha107:hover, #linha110:hover, #linha123:hover, #linha147:hover, #linha148:hover, #linha149:hover, #linha158:hover,
+#linha184:hover, #linha192:hover, #linha220:hover, #linha236:hover, #linha244:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha3, #linha8, #linha22, #linha23, #linha24, #linha34, #linha37, #linha40, #linha47, #linha49, #linha57, #linha94, #linha249, #linha111, #linha112, #linha113, #linha114,
+#linha120, #linha121, #linha122, #linha128, #linha132, #linha141, #linha152, #linha153, #linha167, #linha179, #linha181, #linha222, #linha238 {
+    font-size: 16px;
+    width: 583px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha3:hover, #linha8:hover, #linha22:hover, #linha23:hover, #linha24:hover, #linha34:hover, #linha37:hover, #linha40:hover, #linha47:hover, #linha49:hover, #linha57:hover, 
+#linha94:hover, #linha249:hover, #linha111:hover, #linha112:hover, #linha113:hover, #linha114:hover, #linha120:hover, #linha121:hover, #linha122:hover, #linha128:hover, #linha132:hover, #linha141:hover,
+#linha152:hover, #linha153:hover, #linha167:hover, #linha179:hover, #linha181:hover, #linha222:hover, #linha238:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha4, #linha68, #linha96 {
+    font-size: 16px;
+    width: 386px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha4:hover, #linha68:hover, #linha96:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha5, #linha19, #linha33, #linha48, #linha73, #linha74, #linha90, #linha93, #linha99, #linha143, #linha156, #linha160, #linha248  {
+    font-size: 16px;
+    width: 560px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha5:hover, #linha19:hover, #linha33:hover, #linha48:hover, #linha73:hover, #linha74:hover, #linha90:hover, #linha93:hover, #linha99:hover, #linha143:hover, #linha156:hover,
+#linha160:hover, #linha248:hover  {
+    border: none;
+    background-color: inherit;
+}
+
+#linha6, #linha14, #linha61, #linha62, #linha182, #linha187, #linha223, #linha242 {
+    font-size: 16px;
+    width: 348px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha6:hover, #linha14:hover, #linha61:hover, #linha62:hover, #linha182:hover, #linha187:hover, #linha223:hover, #linha242:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha7, #linha18, #linha31, #linha46, #linha92, #linha106, #linha125, #linha126, #linha135, #linha168, #linha169, #linha235, #linha243 {
+    font-size: 16px;
+    width: 278px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha7:hover, #linha18:hover, #linha31:hover, #linha46:hover, #linha92:hover, #linha106:hover, #linha125:hover, #linha126:hover, #linha135:hover, #linha168:hover, #linha169:hover, #linha235:hover, #linha243:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha9, #linha27, #linha32, #linha56, #linha58, #linha59, #linha98, #linha150, #linha188, #linha225, #linha227, #linha241 {
+    font-size: 16px;
+    width: 490px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha9:hover, #linha27:hover, #linha32:hover, #linha56:hover, #linha58:hover, #linha59:hover, #linha98:hover, #linha150:hover, 
+#linha188:hover, #linha225:hover, #linha227:hover, #linha241:hover  {
+    border: none;
+    background-color: inherit;
+}
+
+#linha11, #linha194 {
+    font-size: 16px;
+    width: 350px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha11:hover, #linha194:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha12 {
+    font-size: 16px;
+    width: 386px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha12:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha13, #linha105, #linha129, #linha133, #linha137, #linha145, #linha177, #linha185, #linha189 {
+    font-size: 16px;
+    width: 410px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha13:hover, #linha105:hover, #linha129:hover, #linha133:hover, #linha137:hover, #linha145:hover, #linha177:hover, #linha185:hover, #linha189:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha15 {
+    font-size: 16px;
+    width: 500px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha15:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha16, #linha176 {
+    font-size: 16px;
+    width: 284px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha16:hover, #linha176:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha17, #linha42, #linha60, #linha75, #linha76, #linha115, #linha119, #linha131, #linha142, #linha161, #linha163, #linha170, #linha237 {
+    font-size: 16px;
+    width: 339px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha17:hover, #linha42:hover, #linha60:hover, #linha75:hover, #linha76:hover, #linha115:hover, #linha119:hover, #linha131:hover, #linha142:hover, #linha161:hover, #linha163:hover, #linha170:hover, #linha237:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha20, #linha41, #linha66, #linha72, #linha78, #linha103, #linha124 {
+    font-size: 16px;
+    width: 508px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha20:hover, #linha41:hover, #linha66:hover, #linha72:hover, #linha78:hover, #linha103:hover, #linha124:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha28 {
+    font-size: 16px;
+    width: 240px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha28:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha29, #linha65 {
+    font-size: 16px;
+    width: 236px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha29:hover, #linha65:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha30, #linha52, #linha64, #linha109, #linha136, #linha140, #linha144, #linha157, #linha164, #linha186 {
+    font-size: 16px;
+    width: 408px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha30:hover, #linha52:hover, #linha64:hover, #linha109:hover, #linha136:hover, #linha140:hover, #linha144:hover, #linha157:hover, #linha164:hover, #linha186:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha26, #linha35, #linha43, #linha70, #linha83, #linha84, #linha89, #linha101, #linha102, #linha108, #linha130, #linha154, #linha159, #linha173, #linha174, #linha175, #linha193, #linha233 {
+    font-size: 16px;
+    width: 356px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha26:hover, #linha35:hover, #linha43:hover, #linha70:hover, #linha83:hover, #linha84:hover, #linha89:hover, #linha101:hover, #linha102:hover, #linha108:hover, #linha130:hover, #linha154:hover,
+#linha159:hover, #linha173:hover, #linha174:hover, #linha175:hover, #linha193:hover, #linha233:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha36 {
+    font-size: 16px;
+    width: 208px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha36:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha38 {
+    font-size: 16px;
+    width: 188px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha38:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha39, #linha116, #linha117, #linha118, #linha224, #linha247 {
+    font-size: 16px;
+    width: 294px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha39:hover, #linha116:hover, #linha117:hover, #linha118:hover, #linha224:hover, #linha247:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha45, #linha190 {
+    font-size: 16px;
+    width: 440px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha45:hover, #linha190:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha50 {
+    font-size: 16px;
+    width: 418px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha50:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha51, #linha85, #linha86, #linha87, #linha91, #linha134, #linha162, #linha180, #linha183, #linha221, #linha239, #linha240, #linha246, #linha97 {
+    font-size: 16px;
+    width: 308px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+    #linha51:hover, #linha85:hover, #linha86:hover, #linha87:hover, #linha91:hover, #linha134:hover, #linha162:hover, #linha180:hover, #linha183:hover, #linha221:hover, #linha239:hover, #linha240:hover, #linha246:hover, #linha97:hover {
+        border: none;
+        background-color: inherit;
+    }
+
+#linha53 {
+    font-size: 16px;
+    width: 108px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha53:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha55, #linha69, #linha151, #linha165, #linha166, #linha171, #linha172, #linha178 {
+    font-size: 16px;
+    width: 320px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha55:hover, #linha69:hover, #linha151:hover, #linha165:hover, #linha166:hover, #linha171:hover, #linha172:hover, #linha178:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha67, #linha228 {
+  font-size: 16px;
+  width: 33px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha67:hover, #linha228:hover {
+  border: none;
+  background-color: inherit;
+} 
+
+#linha127 {
+  font-size: 16px;
+  width: 293px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha127:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha191, #linha232 {
+    font-size: 16px;
+    width: 307px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha191:hover, #linha232:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha79 {
+  font-size: 16px;
+  width: 594px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha79:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha80 {
+    font-size: 16px;
+    width: 416px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha80:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha81 {
+    font-size: 16px;
+    width: 215px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha81:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha138 {
+    font-size: 16px;
+    width: 397px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha138:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha139 {
+    font-size: 16px;
+    width: 308px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha139:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha146 {
+    font-size: 16px;
+    width: 368px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha146:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha155 {
+    font-size: 16px;
+    width: 260px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha155:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#linha245 {
+  font-size: 16px;
+  width: 346px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha245:hover {
+  border: none;
+  background-color: inherit;
+}
+*/
+
+/*Para ajustar os parâmetros (tamanho, borda,etc) de todas as linhas da tabela */
+input[id^="linha"]:not([id*="grupo"]) {
+  font-size: 16px;
+  width: 85%;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+
+
+
+
+
+
+#linha_grupo_1 {
+  font-size: 16px;
+  width: 210px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_1:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_2 {
+  font-size: 16px;
+  width: 553px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_2:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_3 {
+  font-size: 16px;
+  width: 390px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_3:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_4 {
+  font-size: 16px;
+  width: 386px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_4:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_5 {
+  font-size: 16px;
+  width: 430px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_5:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_6 {
+  font-size: 16px;
+  width: 335px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_6:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_7 {
+  font-size: 16px;
+  width: 484px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_7:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_8 {
+  font-size: 16px;
+  width: 406px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_8:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_9 {
+  font-size: 16px;
+  width: 337px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_9:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_10 {
+  font-size: 16px;
+  width: 454px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_10:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_11 {
+  font-size: 16px;
+  width: 406px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_11:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_12 {
+  font-size: 16px;
+  width: 434px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_12:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_13 {
+  font-size: 16px;
+  width: 564px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_13:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_14 {
+  font-size: 16px;
+  width: 452px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_14:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_15 {
+  font-size: 16px;
+  width: 538px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_15:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_16 {
+  font-size: 16px;
+  width: 266px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_16:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_17 {
+  font-size: 16px;
+  width: 616px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_17:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_18 {
+  font-size: 16px;
+  width: 440px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_18:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_19 {
+  font-size: 16px;
+  width: 346px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_19:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_20 {
+  font-size: 16px;
+  width: 272px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_20:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_21 {
+  font-size: 16px;
+  width: 658px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_21:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_22 {
+  font-size: 16px;
+  width: 380px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_22:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_23 {
+  font-size: 16px;
+  width: 380px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_23:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_24 {
+  font-size: 16px;
+  width: 306px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_24:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_25 {
+  font-size: 16px;
+  width: 314px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_25:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_26 {
+  font-size: 16px;
+  width: 370px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_26:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_27 {
+  font-size: 16px;
+  width: 643px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_27:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_28 {
+  font-size: 16px;
+  width: 554px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_28:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_29 {
+  font-size: 16px;
+  width: 324px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_29:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_30 {
+  font-size: 16px;
+  width: 342px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_30:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_31 {
+  font-size: 16px;
+  width: 318px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_31:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_32 {
+  font-size: 16px;
+  width: 374px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_32:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_33 {
+  font-size: 16px;
+  width: 366px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_33:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_34 {
+  font-size: 16px;
+  width: 238px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_34:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_35 {
+  font-size: 16px;
+  width: 250px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_35:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_36 {
+  font-size: 16px;
+  width: 208px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_36:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_37 {
+  font-size: 16px;
+  width: 120px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_37:hover {
+  border: none;
+  background-color: inherit;
+}
+
+
+
+#email1 {
+  font-size: 16px;
+  width: 172px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email1:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email2 {
+  font-size: 16px;
+  width: 246px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email2:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email3 {
+  font-size: 16px;
+  width: 238px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email3:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email4 {
+  font-size: 16px;
+  width: 238px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email4:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email5 {
+  font-size: 16px;
+  width: 151px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email5:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email6 {
+    font-size: 16px;
+    width: 160px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#email6:hover {
+    border: none;
+    background-color: inherit;
+}
+
+#email7 {
+  font-size: 16px;
+  width: 142px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email7:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email8 {
+  font-size: 16px;
+  width: 235px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+  }
+
+#email8:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email9 {
+  font-size: 16px;
+  width: 201px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email9:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email10 {
+  font-size: 16px;
+  width: 150px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email10:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email11 {
+  font-size: 16px;
+  width: 216px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email11:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email12 {
+  font-size: 16px;
+  width: 198px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email12:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email13 {
+  font-size: 16px;
+  width: 308px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email13:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email14 {
+  font-size: 16px;
+  width: 275px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email14:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email15 {
+  font-size: 16px;
+  width: 228px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email15:hover{
+  border: none;
+  background-color: inherit;
+}
+
+#email16 {
+  font-size: 16px;
+  width: 238px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email16:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email17 {
+  font-size: 16px;
+  width: 226px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email17:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email18 {
+  font-size: 16px;
+  width: 220px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email18:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email19_a {
+  font-size: 16px;
+  width: 220px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email19_a:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email19_b {
+  font-size: 16px;
+  width: 214px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email19_b:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email20 {
+  font-size: 16px;
+  width: 160px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email20:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email21 {
+  font-size: 16px;
+  width: 252px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email21:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email22 {
+  font-size: 16px;
+  width: 220px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email22:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email23 {
+  font-size: 16px;
+  width: 139px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email23:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email24, #email29  {
+  font-size: 16px;
+  width: 212px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email24:hover, #email29:hover  {
+  border: none;
+  background-color: inherit;
+}
+
+#email25 {
+  font-size: 16px;
+  width: 172px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+  }
+
+  #email25:hover {
+    border: none;
+    background-color: inherit;
+    }
+
+#email26 {
+  font-size: 16px;
+  width: 220px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email26:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email27 {
+  font-size: 16px;
+  width: 257px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email27:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email28 {
+  font-size: 16px;
+  width: 208px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email28:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email30 {
+  font-size: 16px;
+  width: 211px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email30:hover {
+  border: none;
+  background-color: inherit;
+}
+
+/* Realçar Linhas */
+
+@keyframes destaqueRapido {
+    0%   { background-color: gray; }
+    100% { background-color: transparent; }
+}
+
+.destaque {
+    animation: destaqueRapido 4s ease-in-out;
+}

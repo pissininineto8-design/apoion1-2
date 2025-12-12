@@ -1,0 +1,261 @@
+#a_contatos_footer {
+    color: WHITE;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Courier New, monospace;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 17px;
+}
+
+#a_contatos_footer:hover {color: #ef314c;}
+
+#versao {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    color: white; 
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+ul.links {
+    width: 45%;
+    list-style-type: none;
+    padding-right: 10px;
+    color: white;
+}
+
+#menu-h{
+   background-color: rgb(37, 37, 39);
+   padding-left: 100px;
+   float: center;
+}
+
+#menu-h ul {
+    max-width: 1100px;
+    list-style: none;
+    float: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 0;
+}
+
+ul.menu-h ul {
+    position: absolute;
+    display: none;
+    box-shadow: 3px 3px 2px #333;
+}
+
+#menu-h ul li {
+    display: inline;
+    line-height: 25px;
+    color: #FFF;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 5px;
+}
+
+#menu-h ul li a {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 10px;
+    line-height: 45px;
+    height: 45px;
+    transition: all 0.1s linear;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+#menu-h ul li a:hover {
+    background-color: #104E8B;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+		border-radius: 5px;
+
+}
+
+/*#menu-h ul li:first-child a:hover {
+    background-color: #f2f2f2;
+    color: black;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}*/
+
+#article-footer {
+    margin: 50px 50px 50px 50px;
+}
+
+#div-painel {
+   margin: 20px 0px 0px 0px;
+   padding: 0px 0px 0px 30px;
+   text-align: left;
+   width: 100%;
+   display: inline-table;
+}
+
+#botao_links {
+    background-color: inherit; /* Cor de fundo inicial */
+    color: white; /* Cor do texto */
+    border: none; /* Sem bordas */
+    text-align: left; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibi��o em linha */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s ease; /* Transi��o suave para cor de fundo e tamanho */
+    cursor: pointer; /* Muda o cursor para pointer */
+    height: 30px;
+    width: 80%;
+}
+
+#botao_links:hover {
+    background-color: #424242; /* Nova cor de fundo ao passar o mouse */
+    transform: translateX(2px); /* Desloca o elemento 2px para a direita */
+    width: 82%;
+    padding-left: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: auto;
+    padding: 50px 0px 70px 0px;
+    font-family: Courier New, monospace;
+}
+
+#division_1 {
+    width: clamp(50px, 40%, 250px); /*Para definir a responsividade do texto.*/
+    display: inline-table;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+#division_2 {
+    width: clamp(100px, 50%, 1200px); /*Para definir a responsividade do texto.*/
+    position: relative;
+    margin-left: 0px;
+    display: inline-table;
+}
+
+#tb_footer {
+    font-family: Courier New, monospace;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#tb_footer td {
+    font-family: Courier New, monospace;
+    padding: 5px;
+}
+
+#tb_footer a {
+    font-family: Courier New, monospace;
+    color: #03a9f4; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s, text-decoration 0.3s; /* Transi��o suave para cor e decora��o */
+}
+
+/* Estilo do link quando o mouse passa sobre ele */
+#tb_footer a:hover {
+    color: #9adcfa; /* Muda a cor do texto */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Estilo do link quando ativo (clicado) */
+#tb_footer a:active {
+    color: #006c9d; /* Muda a cor do texto */
+    text-decoration: underline; /* Mant�m o sublinhado */
+}
+
+/* Estilo do link visitado */
+#tb_footer a:visited {
+    color: #551a8b; /* Muda a cor do texto */
+}
+
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+
+}
+
+.listsubmenu{
+	display: none;
+	width: 100px;
+	list-style-type: none;
+}
+.listsubmenu li{
+	width: 180px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.caixa1 {
+    width: clamp(80px, 40%, 200px); /*Para definir a responsividade do texto.*/
+    margin-left: 40px;
+    margin-right: -20px;
+    display: inline-table;
+}
+
+#boxa1:hover {
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.caixa2 {
+    padding-left: 120px;
+    margin-left: 40px;
+    margin-right:40px;
+    display: inline-table;
+}
+
+#boxa2:hover {
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.box3 {
+    width: clamp(100px, 50%, 900px); /*Para definir a responsividade do texto.*/
+    margin-left: 60px;
+    margin-right: 80px;
+    display: inline-table;
+}
+
+#dividindo1 {
+    width: clamp(100px, 50%, 800px); /*Para definir a responsividade do texto.*/
+    padding-left: 20px;
+    margin-top: 50px;
+    margin: 1px;
+    margin-left: 0px;
+    display: inline-table;
+}

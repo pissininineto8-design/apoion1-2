@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Contatos</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <article id="article-ramais">
+
+        <h2 id="h2_filtro"> Lista de Contatos de Unidades do TRT9 </h2><br>
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <div id="divRamais">
+            <div class='container'>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>Setores Administrativos</h3><br></li>
+                    <li> <p id="p_contatos">RH do TRT9: <a id="a_contatos" href='tel:4133107388'>(41)3310-7388</a> </p></li>
+                    <li> <p id="p_contatos">Setor do Malote: <a id="a_contatos" href='tel:4133107099'>(41)3310-7099</a> </p></li>
+                    <li> <p id="p_contatos">Setor do Transporte: <a id="a_contatos" href='tel:4133107081'>(41)3310-7081</a> </p></li>
+                    <li> <p id="p_contatos">Sustentabilidade: <a id="a_contatos" href='tel:4133101425'>(41)3310-1425</a> </p></li>
+                </ul>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>Área Judiciária</h3><br></li>
+                    <li> <p id="p_contatos">Coordenadoria de Apoio às Varas: <a id="a_contatos" href='tel:+554133107477'>(41)3310-7477</a> </p></li>
+                    <li> <p id="p_contatos">Plantão Judiciário 1º Grau: <a id="a_contatos" href='https://www.trt9.jus.br/institucional/atoPortaria.xhtml?id=8838743' target="_blank">Consultar Responsável Atual</a> </p></li>
+                    <li> <p id="p_contatos">Plantão Judiciário 2º Grau: <a id="a_contatos" href='tel:4133107320'>(41)3310-7320</a> </p></li>
+                    <li> <p id="p_contatos">Seção de Perícias: <a id="a_contatos" href='tel:4133107307'>(41)3310-7307</a> </p></li>
+                </ul>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>Outras Unidades</h3><br></li>
+                    <li> <p id="p_contatos">ASCOM: <a id="a_contatos" href='tel:4133107313'>(41)3310-7313 </a> </p></li>
+                    <li> <p id="p_contatos">Ouvidoria do TRT9: <a id="a_contatos" href='tel:4133107473'>(41)3310-7473</a> </p></li>
+                    <li> <p id="p_contatos">Telefonistas do TRT9: <a id="a_contatos" href='tel:4133107100'>(41)3310-7100</a> </p></li>
+                    <li> <p id="p_contatos">Seção de Convênios (Yole): <a id="a_contatos" href='tel:4133107059'>(41)3310-7059</a> </p></li>
+                </ul>
+            </div>
+            <div class='container'>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>Fóruns da Justiça do Trabalho</h3><br></li>
+                    <li> <p id="p_contatos">Apucarana: <a id="a_contatos" href='tel:4321025310'>(43)2102-5310</a> </p></li>
+                    <li> <p id="p_contatos">Arapongas: <a id="a_contatos" href='tel:4333035050'>(43)3303-5050</a> </p></li>
+                    <li> <p id="p_contatos">Araucária: <a id="a_contatos" href='tel:4133584000'>(41)3358-4000</a> </p></li>
+                    <li> <p id="p_contatos">Assis Chateaubriand: <a id="a_contatos" href='tel:4435280600'>(44)3528-0600</a> </p></li>
+                    <li> <p id="p_contatos">Bandeirantes: <a id="a_contatos" href='tel:4321120050'>(43)2112-0050</a> </p></li>
+                    <li> <p id="p_contatos">Cambé: <a id="a_contatos" href='tel:4333024200'>(43)3302-4200</a> </p></li>
+                    <li> <p id="p_contatos">Cajuru: <a id="a_contatos" href='tel:4133107763'>(41)3310-7763</a> </p></li>
+                    <li> <p id="p_contatos">Campo Largo: <a id="a_contatos" href='tel:4133755060'>(41)3375-5060</a> </p></li>
+                    <li> <p id="p_contatos">Campo Mourão: <a id="a_contatos" href='tel:4432013150'>(44)3201-3150</a> </p></li>
+                    <li> <p id="p_contatos">Cascavel: <a id="a_contatos" href='tel:4534114300'>(45)3411-4300</a> </p></li>
+                    <li> <p id="p_contatos">Castro: <a id="a_contatos" href='tel:4221220050'>(42)2122-0050</a> </p></li>
+                    <li> <p id="p_contatos">Cianorte: <a id="a_contatos" href='tel:4433515570'>(44)3351-5570</a> </p></li>
+                    <li> <p id="p_contatos">Colombo: <a id="a_contatos" href='tel:4133756410'>(41)3375-6410</a> </p></li>
+                    <li> <p id="p_contatos">Cornélio Procópio: <a id="a_contatos" href='tel:4334012218'>(43)3401-2218</a> </p></li>
+                    <li> <p id="p_contatos">Dois Vizinhos: <a id="a_contatos" href='tel:4621220100 '>(46)2122-0100 </a> </p></li>
+                    <li> <p id="p_contatos">Foz do Iguaçu: <a id="a_contatos" href='tel:4521027800'>(45)2102-7800</a> </p></li>
+                    <li> <p id="p_contatos">Francisco Beltrão: <a id="a_contatos" href='tel:4632117050'>(46)3211-7050</a> </p></li>
+                </ul>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>&nbsp;</h3><br></li>
+                    <li> <p id="p_contatos">Guarapuava: <a id="a_contatos" href='tel:4233032404'>(42)3303-2404</a> </p></li>
+                    <li> <p id="p_contatos">Ibaiti: <a id="a_contatos" href='tel:4335466118'>(43)3546-6118</a> </p></li>
+                    <li> <p id="p_contatos">Irati: <a id="a_contatos" href='tel:4221040050'>(42)2104-0050</a> </p></li>
+                    <li> <p id="p_contatos">Ivaiporã: <a id="a_contatos" href='tel:4321025340'>(43)2102-5340</a> </p></li>
+                    <li> <p id="p_contatos">Jacarezinho: <a id="a_contatos" href='tel:4321220050'>(43)2122-0050</a> </p></li>
+                    <li> <p id="p_contatos">Jaguariaíva: <a id="a_contatos" href='tel:4335351638'>(43)3535-1638</a> </p></li>
+                    <li> <p id="p_contatos">Laranjeiras do Sul: <a id="a_contatos" href='tel:4236352553'>(42)3635-2553</a> </p></li>
+                    <li> <p id="p_contatos">Loanda: <a id="a_contatos" href='tel:4434255019'>(44)3425-5019</a> </p></li>
+                    <li> <p id="p_contatos">Londrina: <a id="a_contatos" href='tel:4333153800'>(43)3315-3800</a> </p></li>
+                    <li> <p id="p_contatos">Marechal Cândido Rondon: <a id="a_contatos" href='tel:4534216190'>(45)3421-6190</a> </p></li>
+                    <li> <p id="p_contatos">Maringá: <a id="a_contatos" href='tel:4433065200'>(44)3306-5200</a> </p></li>
+                    <li> <p id="p_contatos">Medianeira: <a id="a_contatos" href='tel:4521027800'>(45)2102-7800</a> </p></li>
+                    <li> <p id="p_contatos">Nova Esperança: <a id="a_contatos" href='tel:4433065280'>(44)3306-5280</a> </p></li>
+                    <li> <p id="p_contatos">Palmas: <a id="a_contatos" href='tel:4632631119'>(46)3263-1119</a> </p></li>
+                    <li> <p id="p_contatos">Palotina: <a id="a_contatos" href='tel:4435280620'>(44)3528-0620</a> </p></li>
+                    <li> <p id="p_contatos">Paranaguá: <a id="a_contatos" href='tel:4121527903'>(41)2152-7903</a> </p></li>
+                    <li> <p id="p_contatos">Paranavaí: <a id="a_contatos" href='tel:4434823110'>(44)3482-3110</a> </p></li>
+                </ul>
+                <ul class='lista_contatos'>
+                    <li align='left'><h3>&nbsp;</h3><br></li>
+                    <li> <p id="p_contatos">Pato Branco: <a id="a_contatos" href='tel:4633213100'>(46)3321-3100</a> </p></li>
+                    <li> <p id="p_contatos">Pinhais: <a id="a_contatos" href='tel:4134011700'>(41)3401-1700</a> </p></li>
+                    <li> <p id="p_contatos">Pitanga: <a id="a_contatos" href='tel:4321025350'>(43)2102-5350</a> </p></li>
+                    <li> <p id="p_contatos">Ponta Grossa: <a id="a_contatos" href='tel:4233115107'>(42)3311-5107</a> </p></li>
+                    <li> <p id="p_contatos">Porecatu: <a id="a_contatos" href='tel:4333024220'>(43)3302-4220</a> </p></li>
+                    <li> <p id="p_contatos">Rolândia: <a id="a_contatos" href='tel:4333113200'>(43)3311-3200</a> </p></li>
+                    <li> <p id="p_contatos">Santo Antônio da Platina: <a id="a_contatos" href='tel:4335349460'>(43)3534-9460</a> </p></li>
+                    <li> <p id="p_contatos">São José dos Pinhais: <a id="a_contatos" href='tel:4133582700'>(41)3358-2700</a> </p></li>
+                    <li> <p id="p_contatos">São Mateus do Sul: <a id="a_contatos" href='tel:4239033860'>(42)3903-3860</a> </p></li>
+                    <li> <p id="p_contatos">Telêmaco Borba: <a id="a_contatos" href='tel:4232213200'>(42)3221-3200</a> </p></li>
+                    <li> <p id="p_contatos">Toledo: <a id="a_contatos" href='tel:4534216150'>(45)3421-6150</a> </p></li>
+                    <li> <p id="p_contatos">Umuarama: <a id="a_contatos" href='tel:4433613700'>(44)3361-3700</a> </p></li>
+                    <li> <p id="p_contatos">União da Vitória: <a id="a_contatos" href='tel:4235223587'>(42)3522-3587</a> </p></li>
+                    <li> <p id="p_contatos">Wenceslau Braz: <a id="a_contatos" href='tel:4335281807'>(43)3528-1807</a> </p></li>
+                </ul>
+            </div>
+
+        </div><br><br>
+        <div class='container'>
+            <ul class='lista_contatos'>
+                <li align='left'><h3>Contatos Externos</h3><br></li>
+                <li> <p id="p_contatos">Ligga Telecom: <a id="a_contatos" href='tel:4133313001'>(41)3331-3001</a> </p></li>
+            </ul>
+        </div>
+        <div class='container'>
+            <ul class='lista_contatos'>
+                <li align='left'><h3>Links para Consulta de Contatos - Portal TRT9 e Intranet</h3><br></li>
+                <li> <p id="p_contatos"> <a id="a_contatos_ramais" href='https://www.trt9.jus.br/portal/contato.xhtml' target="_blank">Página de Contatos - Site TRT9</a> </p></li>
+                <li> <p id="p_contatos"> <a id="a_contatos_ramais" href='https://intranet.trt9.jus.br/intranet2/f?p=285:379:201032167868197::NO:::' target="_blank">Telefones/Ramais - Intranet</a> </p></li>
+                <li> <p id="p_contatos"> <a id="a_contatos_ramais" href='https://intranet.trt9.jus.br/intranet2/f?p=10285:4:132660461895922:::::' target="_blank">Ramais de Unidades - Intranet</a> </p></li>
+                <li> <p id="p_contatos"> <a id="a_contatos_ramais" href='https://intranet.trt9.jus.br/intranet2/f?p=10285:5:103945340938118:::::' target="_blank">Ramais de Servidores - Intranet</a> </p></li>
+            </ul>
+        </div>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

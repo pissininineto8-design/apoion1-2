@@ -1,0 +1,113 @@
+
+#a_sistemas {
+    color: #3498db; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padr�o */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: normal; /* Negrito */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#a_sistemas:hover {
+    color: #324090; /* Cor do link ao passar o mouse */
+    transform: scale(1.3); /* Aumenta ligeiramente o tamanho do link */
+}
+
+#BotaoCopiar {
+    background-image: url("../Imagens/copiar.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: none;
+    border-radius: 5px;
+    padding: 14px 14px 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#BotaoClique {
+    background-image: url("../Imagens/clique.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: inherit;
+    border: none;
+    padding: 14px 14px 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#BotaoScroll {
+    border: none;
+    border-radius: 8px;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#BotaoScroll:hover {
+   color: red;
+}
+
+#BotaoScroll #tabela_filtro tr:hover  {
+    font-weight: bold;
+  }
+
+#tabela_filtro {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  #tabela_filtro tr:hover {
+
+      cursor: default;
+  }
+
+  #tabela_filtro th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #ddd;
+  }
+
+  #tabela_filtro td {
+    border: hidden;
+    padding: 2px;
+    width: 400px;
+  }
+
+  #tabela_filtro td:first-child {
+    width: 30%;
+  }
+
+  #tabela_filtro td:nth-child(2) {
+    width: 35%;
+  }
+
+  #tabela_filtro td:last-child {
+    width: 18%;
+  }
+
+#linha0, #linha79 {
+    font-size: 16px;
+    width: 927px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha1, #linha2 {
+    font-size: 16px;
+    width: 370px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#linha1:hover, #linha2:hover {
+    border: none;
+    background-color: inherit;
+}
+

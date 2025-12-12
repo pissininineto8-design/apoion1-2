@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Siglas de Cidades</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <link rel="stylesheet" href="../css/style_cidade.css">
+    <script src="../js\script_cidades.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:leiaMais1a(); javascript:leiaMais2a(); javascript:leiaMais3a(); javascript:leiaMais4a(); javascript:leiaMais5a(); javascript:leiaMais6a(); javascript:leiaMais7a();
+  javascript:leiaMais8a(); javascript:leiaMais9a(); javascript:leiaMais10a(); javascript:leiaMais11a(); javascript:leiaMais12a(); javascript:leiaMais13a(); javascript:leiaMais14a(); javascript:leiaMais15a();
+  javascript:leiaMais16a(); javascript:leiaMais17a(); javascript:leiaMais18a(); javascript:leiaMais19a(); javascript:leiaMais20a(); javascript:leiaMais21a(); javascript:leiaMais22a(); javascript:leiaMais23a();
+  javascript:leiaMais24a(); javascript:leiaMais25a(); javascript:leiaMais26a(); javascript:leiaMais27a(); javascript:leiaMais28a(); javascript:leiaMais29a(); javascript:leiaMais30a(); javascript:leiaMais31a();
+  javascript:leiaMais32a(); javascript:leiaMais33a(); javascript:leiaMais34a(); javascript:leiaMais35a(); javascript:leiaMais36a(); javascript:leiaMais37a(); javascript:leiaMais38a(); javascript:leiaMais39a();
+  javascript:leiaMais40a(); javascript:leiaMais41a(); javascript:leiaMais42a(); javascript:leiaMais43a(); javascript:leiaMais44a(); javascript:leiaMais45a(); javascript:leiaMais46a(); javascript:leiaMais47a();
+  javascript:leiaMais48a(); javascript:leiaMais49a(); javascript:leiaMais50a(); ">
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_4::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0;
+                    width: 50%;
+                    height: 2px;
+                    background-color: white; /* Cor da linha */
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    transition: transform 0.3s ease-out;
+                    }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <br><br><br>
+    <h3 align="center"> Siglas das Cidades do Paraná e Lotações SMP</h3></br><br>
+
+    <style>
+        #b_style {
+            font-family: Courier New, monospace;
+            font-size: 18px;
+        }
+    </style>
+
+    <div class="voltar">
+        <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+    </div>
+
+    <table id="tabela_cidades">
+        <thead>
+            <tr>
+                <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> CIDADE </font></th>
+                <th align="center" bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> SIGLA</font></th>
+            </tr>
+        </thead>
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais1(), leiaMais1a()" id="btnLeiaMais"><span id="imagem1"></span> APUCARANA</button><span id="mostrar"></span><span id="mais">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><b id="b_style">Locais Físicos (SMP)</b><br><br>
+                            Segurança Pes. e Transp. de Apucarana #1569<br>
+                            Direção do Fórum de Apucarana #2130<br><br>
+                            01ª Vara Do Trabalho De Apucarana #2201<br>
+                            02ª Vara Do Trabalho De Apucarana #2299<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE APUCARANA</b><br><br>
+                            AV. CENTRAL DO PARANÁ, 1380<br>
+                            BAIRRO: JARDIM DIAMANTINA<br>
+                            CEP: 86804-190<br>
+                            TELEFONE: (43) 2102-5310<br>
+                    </span></p>
+                </div>
+            </td></td>
+            <td> APU </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais2(), leiaMais2a()" id="btnLeiaMais2"><span id="imagem2"></span> ARAPONGAS </button>  <span id="mostrar2"></span><span id="mais2">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><b id="b_style">Locais Físicos (SMP)</b><br><br>
+                            Vara do Trabalho de Arapongas #2202<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE ARAPONGAS</b><br><br>
+                            R. HARPIA, 405<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 86700-275<br>
+                            TELEFONE: (43) 3303-5050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> APS </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais3(), leiaMais3a()" id="btnLeiaMais3"><span id="imagem3"></span> ARAUCÁRIA</button>   <span id="mostrar3"></span><span id="mais3">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><b id="b_style">Locais Físicos (SMP)</b><br><br>
+                            DF Araucária - antiga Distribuição #2265<br>
+                            DF Araucária - PA Campo Largo #2291<br>
+                            DF Araucária - Sl Oficiais de Justiça #5072<br>
+                            Direção do Fórum de Araucária #2286<br>
+                            Segurança Pes. e Transp. de Araucária #1550<br><br>
+                            01ª Vara do Trabalho de Araucária #2203<br>
+                            02ª Vara do Trabalho de Araucária #2264<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE ARAUCÁRIA</b><br><br>
+                            AV. ALFRED CHARVET, 862<br>
+                            BAIRRO: VILA NOVA<br>
+                            CEP: 83703-278<br>
+                            TELEFONE: (41) 3358-4000<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> AUC </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais4(), leiaMais4a()" id="btnLeiaMais4"><span id="imagem4"></span> ASSIS CHATEAUBRIAND</button> <span id="mostrar4"></span><span id="mais4">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Assis Chateaubriand #2204<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE ASSIS CHATEAUBRIAND</b><br><br>
+                            AV. CÍVICA, 260<br>
+                            BAIRRO: CENTRO CÍVICO<br>
+                            CEP: 85935-000<br>
+                            TELEFONE: (44) 3528-0600<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> ASD </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais5(), leiaMais5a()" id="btnLeiaMais5"><span id="imagem5"></span> BANDEIRANTES</button> <span id="mostrar5"></span><span id="mais5">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Bandeirantes #2272<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE BANDEIRANTES</b><br><br>
+                            R. EUNÍCIO SILVA NOVAES, 7111<br>
+                            BAIRRO: VILA MACEDO<br>
+                            CEP: 86360-000<br>
+                            TELEFONE: (43) 2112-0050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> BNT </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais6(), leiaMais6a()" id="btnLeiaMais6"><span id="imagem6"></span> CAMBÉ</button> <span id="mostrar6"></span><span id="mais6">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Cambé #2280<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CAMBÉ</b><br><br>
+                            ESTRADA DA ESPERANÇA, 360<br>
+                            BAIRRO: JARDIM ALVORADA<br>
+                            CEP: 86191-010<br>
+                            TELEFONE: (43) 3302-4200<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CAB </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais7(), leiaMais7a()" id="btnLeiaMais7"><span id="imagem7"></span> CAJURU</button> <span id="mostrar7"></span><span id="mais7">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            CSTI - Depósito de TI - Cajuru #1346<br>
+                            CSTI - Sala Cajuru #2314<br>
+                            SAINF - Depósito de Backups - Cajuru #1530<br>
+                            SAINF - Depósito Geral de TI - Cajuru #1529<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CURITIBA - CAJURU</b><br><br>
+                            R. VIDAL NATIVIDADE DA SILVA, 555<br>
+                            BAIRRO: CAJURU<br>
+                            CEP: 82900-110<br>
+                            TELEFONE: (41) 3310-7763<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CAJ </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais50(), leiaMais50a()" id="btnLeiaMais50"><span id="imagem50"></span> CAMPO LARGO</button> <span id="mostrar50"></span><span id="mais50">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada administrativamente à Direção do Fórum de Araucária </font>
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            DF Araucária - PA Campo Largo #2291<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CAMPO LARGO</b><br><br>
+                            AV. PADRE NATAL PIGATTO, 1675<br>
+                            BAIRRO: VILA ELIZABETH<br>
+                            CEP: 83607-240<br>
+                            TELEFONE: (41) 3375-5060<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CLG </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais8(), leiaMais8a()" id="btnLeiaMais8"><span id="imagem8"></span> CAMPO MOURÃO</button> <span id="mostrar8"></span><span id="mais8">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Campo Mourão #2205<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CAMPO MOURÃO</b><br><br>
+                            AV. GOIOERÊ, 779<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 87302-070<br>
+                            TELEFONE: (44) 3201-3150<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CPM </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais9(), leiaMais9a()" id="btnLeiaMais9"><span id="imagem9"></span> CASCAVEL</button> <span id="mostrar9"></span><span id="mais9">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Cascavel #2255<br>
+                            Segurança Pes. e Transp. de Cascavel #1551<br>
+                            Arquivo de Cascavel #2421<br>
+                            DF Cascavel - Sl Oficiais de Justiça #2209<br>
+                            DF Cascavel - Auditório #4971<br>
+                            DF Cascavel - CEJUSC JT #5189<br>
+                            DF Cascavel - Núcleo de Apoio Judiciário #5188<br>
+                            DF Cascavel - Sala de Perícias #4970<br>
+                            DF Cascavel - Sala de Trabalho Remoto #5909<br>
+                            DF Cascavel - Setorial Depósito #2404<br>
+                            DF Cascavel - Setorial Doação #2416<br>
+                            Núcleo de apoio Adm - Setorial Cascavel #2402<br>
+                            Subseção de Apoio Adm de Cascavel #5129<br><br>
+                            01ª Vara do Trabalho de Cascavel #2206<br>
+                            02ª Vara do Trabalho de Cascavel #2207<br>
+                            03ª Vara do Trabalho de Cascavel #2283<br>
+                            04ª Vara do Trabalho de Cascavel #2208<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CASCAVEL</b><br><br>
+                            R. GALIBIS, 328<br>
+                            BAIRRO: SANTO ONOFRE<br>
+                            CEP: 85806-390<br>
+                            TELEFONE: (45) 3411-4300<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CSC </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais10(), leiaMais10a()" id="btnLeiaMais10"><span id="imagem10"></span> CASTRO</button> <span id="mostrar10"></span><span id="mais10">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Castro #2210<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CASTRO</b><br><br>
+                            R. DOM PEDRO II, 1027<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 84165-020<br>
+                            TELEFONE: (42) 2122-0050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CAT </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais11(), leiaMais11a()" id="btnLeiaMais11"><span id="imagem11"></span> CIANORTE</button> <span id="mostrar11"></span><span id="mais11">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Cianorte #2211<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CIANORTE</b><br><br>
+                            TRAVESSA ITORORÓ, 188<br>
+                            BAIRRO: ZONA 1<br>
+                            CEP: 87200-153<br>
+                            TELEFONE: (44) 3351-5570<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CNE </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais12(), leiaMais12a()" id="btnLeiaMais12"><span id="imagem12"></span> COLOMBO</button> <span id="mostrar12"></span><span id="mais12">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Colombo #2300<br>
+                            Segurança Pes. e Transp. de Colombo #1031<br><br>
+                            01ª Vara do Trabalho de Colombo #2212<br>
+                            02ª Vara do Trabalho de Colombo #2144<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE COLOMBO</b><br><br>
+                            R. JOSÉ CAVASSIN, 125<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 83414-120<br>
+                            TELEFONE: (41) 3375-6410<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CBX </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais13(), leiaMais13a()" id="btnLeiaMais13"><span id="imagem13"></span> CORNÉLIO PROCÓPIO</button> <span id="mostrar13"></span><span id="mais13">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Cornélio Procópio #2423<br><br>
+                            01ª Vara do Trabalho de Cornélio Procópi #2213<br>
+                            02ª Vara do Trabalho de Cornélio Procópi #2100<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CORNÉLIO PROCÓPIO</b><br><br>
+                            AV. XV DE NOVEMBRO, 830<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 86300-000<br>
+                            TELEFONE: (43) 3401-2218<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CPP </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais14(), leiaMais14a()" id="btnLeiaMais14"><span id="imagem14"></span> CURITIBA</button> <span id="mostrar14"></span><span id="mais14">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+
+                            Coordenadoria da Direção Fórum Curitiba #2128<br>
+                            Coordenadoria Direção Fórum de Curitiba #4722<br>
+                            Núcleo de Apoio Adm - Setorial Curitiba #4723<br><br>
+                            01ª Vara do Trabalho de Curitiba #2101<br>
+                            02ª Vara do Trabalho de Curitiba #2102<br>
+                            03ª Vara do Trabalho de Curitiba #2103<br>
+                            04ª Vara do Trabalho de Curitiba #2104<br>
+                            05ª Vara do Trabalho de Curitiba #2105<br>
+                            06ª Vara do Trabalho de Curitiba #2106<br>
+                            07ª Vara do Trabalho de Curitiba #2107<br>
+                            08ª Vara do Trabalho de Curitiba #2108<br>
+                            09ª Vara do Trabalho de Curitiba #2109<br>
+                            10ª Vara do Trabalho de Curitiba #2110<br>
+                            11ª Vara do Trabalho de Curitiba #2111<br>
+                            12ª Vara do Trabalho de Curitiba #2112<br>
+                            13ª Vara do Trabalho de Curitiba #2113<br>
+                            14ª Vara do Trabalho de Curitiba #2114<br>
+                            15ª Vara do Trabalho de Curitiba #2115<br>
+                            16ª Vara do Trabalho de Curitiba #2116<br>
+                            17ª Vara do Trabalho de Curitiba #2117<br>
+                            18ª Vara do Trabalho de Curitiba #2118<br>
+                            19ª Vara do Trabalho de Curitiba #2119<br>
+                            20ª Vara do Trabalho de Curitiba #2120<br>
+                            21ª Vara do Trabalho de Curitiba #2121<br>
+                            22ª Vara do trabalho de Curitiba #2122<br>
+                            23ª Vara do Trabalho de Curitiba #2123<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CURITIBA - VM400</b><br><br>
+                            AV. VICENTE MACHADO, 400<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 80420-010<br>
+                            TELEFONE: (41) 3310-7000<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CURITIBA - VM147</b><br><br>
+                            AV. VICENTE MACHADO, 147<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 80420-010<br>
+                            TELEFONE: (41) 3310-7000<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE CURITIBA - RB528</b><br><br>
+                            ALAMEDA DR. CARLOS DE CARVALHO, 528<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 80430-180<br>
+                            TELEFONE: (41) 3310-7000<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> CTA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais15(), leiaMais15a()" id="btnLeiaMais15"><span id="imagem15"></span> DOIS VIZINHOS</button> <span id="mostrar15"></span><span id="mais15">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Dois Vizinhos #2271<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE DOIS VIZINHOS</b><br><br>
+                            R. RIO GRANDE DO NORTE, 240<br>
+                            BAIRRO: N SRA. DE LOURDES<br>
+                            CEP: 85660-000<br>
+                            TELEFONE: (46) 2122-0100 <br>
+                    </span></p>
+                </div>
+            </td>
+            <td> DVZ </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais16(), leiaMais16a()" id="btnLeiaMais16"><span id="imagem16"></span> FOZ DO IGUAÇU</button> <span id="mostrar16"></span><span id="mais16">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Foz do Iguaçu #2256<br>
+                            Segurança Pes. e Transp. de Foz do Iguaç #1547<br><br>
+                            01ª Vara do Trabalho de Foz do Iguaçu #2214<br>
+                            02ª Vara do Trabalho de Foz do Iguaçu #2215<br>
+                            03ª Vara do Trabalho de Foz do Iguaçu #2268<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE FOZ DO IGUAÇU</b><br><br>
+                            AV. PARANÁ, 3710<br>
+                            BAIRRO: JARDIM ITAMARATY<br>
+                            CEP: 85863-469<br>
+                            TELEFONE: (45) 2102-7800<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> FOZ </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais17(), leiaMais17a()" id="btnLeiaMais17"><span id="imagem17"></span> FRANCISCO BELTRÃO</button> <span id="mostrar17"></span><span id="mais17">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção de Fórum de Francisco Belt. #4568<br><br>
+                            01ª Vara do Trabalho de Francisco Beltrã #2218<br>
+                            02ª Vara do Trabalho de Francisco Beltrã #2152<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE FRANCISCO BELTRÃO</b><br><br>
+                            R. TENENTE CAMARGO, 2322<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85601-610<br>
+                            TELEFONE: (46) 3211-7050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> FNB </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais18(), leiaMais18a()" id="btnLeiaMais18"><span id="imagem18"></span> GUARAPUAVA</button> <span id="mostrar18"></span><span id="mais18">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção de Fórum de Guarapuava #2257<br>
+                            DF Guarapuava - Sala Oficiais de Justiça #5021<br>
+                            Segurança Pes. e Transp. de Guarapuava #1553<br><br>
+                            01ª Vara do Trabalho de Guarapuava #2219<br>
+                            02ª Vara do Trabalho de Guarapuava #2220<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE GUARAPUAVA</b><br><br>
+                            R. AFONSO BOTELHO, 104<br>
+                            BAIRRO: SANTANA<br>
+                            CEP: 85070-165<br>
+                            TELEFONE: (42) 3303-2404<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> GRP </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais19(), leiaMais19a()" id="btnLeiaMais19"><span id="imagem19"></span> IBAITI</button> <span id="mostrar19"></span><span id="mais19">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à VDT de Wenceslau Braz</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            VT Wenceslau Braz - PA Ibaiti #2292<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE IBAITI</b><br><br>
+                            R. DR. EUCLIDES MONTEIRO, 739<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 84900-000<br>
+                            TELEFONE: (43) 3546-6118<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> IBT </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais20(), leiaMais20a()" id="btnLeiaMais20"><span id="imagem20"></span> IRATI</button> <span id="mostrar20"></span><span id="mais20">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Irati #2222<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE IRATI</b><br><br>
+                            R. LINO ESCULÁPIO, 1260<br>
+                            BAIRRO: RIO BONITO<br>
+                            CEP: 84503-419<br>
+                            TELEFONE: (42) 2104-0050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> IRI </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais21(), leiaMais21a()" id="btnLeiaMais21"><span id="imagem21"></span> IVAIPORÃ</button> <span id="mostrar21"></span><span id="mais21">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Ivaiporã #2223<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE IVAIPORÃ</b><br><br>
+                            AV. BRASIL, 345<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 86870-000<br>
+                            TELEFONE: (43) 2102-5340<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> IVP </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais22(), leiaMais22a()" id="btnLeiaMais22"><span id="imagem22"></span> JACAREZINHO</button> <span id="mostrar22"></span><span id="mais22">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Jacarezinho #2224<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE JACAREZINHO</b><br><br>
+                            R. DOM FERNANDO TADEI, 1636<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 86400-000<br>
+                            TELEFONE: (43) 2122-0050<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> JZO </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais23(), leiaMais23a()" id="btnLeiaMais23"><span id="imagem23"></span> JAGUARIAÍVA</button> <span id="mostrar23"></span><span id="mais23">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Jaguariaiva #2225<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE JAGUARIAÍVA</b><br><br>
+                            R. TENENTE CEL. JOAQUIM CARNEIRO, 331<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 84200-000<br>
+                            TELEFONE: (43) 3535-1638<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> JIV </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais24(), leiaMais24a()" id="btnLeiaMais24"><span id="imagem24"></span> LARANJEIRAS DO SUL</button> <span id="mostrar24"></span><span id="mais24">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Laranjeiras do Sul #2226<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE LARANJEIRAS DO SUL</b><br><br>
+                            R. MARECHAL CÂNDIDO RONDON, 1975<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85301-060<br>
+                            TELEFONE: (42) 3635-2553<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> LJS </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais25(), leiaMais25a()" id="btnLeiaMais25"><span id="imagem25"></span> LOANDA</button> <span id="mostrar25"></span><span id="mais25">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à VDT de Paranavaí</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Posto de Atendimento de Loanda #2270<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE LOANDA</b><br><br>
+                            R. FIORAVANTE MARCOS MARINI, 255<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 87900-000<br>
+                            TELEFONE: (44) 3425-5019<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> LND </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais26(), leiaMais26a()" id="btnLeiaMais26"><span id="imagem26"></span> LONDRINA</button> <span id="mostrar26"></span><span id="mais26">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Arquivo de Londrina #2288<br>
+                            Direção do Fórum de Londrina #2253<br>
+                            Núcleo de Apoio Adm - Setorial Londrina #4684<br>
+                            Segurança Pes. e Transp. de Londrina #1552<br>
+                            DF Londrina - Setorial Depósito #2406<br>
+                            DF Londrina - Sala de Teletrabalho #4463<br>
+                            STI - Londrina #2411<br><br>
+                            01ª Vara do Trabalho de Londrina #2227<br>
+                            02ª Vara do Trabalho de Londrina #2228<br>
+                            03ª Vara do Trabalho de Londrina #2229<br>
+                            04ª Vara do Trabalho de Londrina #2230<br>
+                            05ª Vara do Trabalho de Londrina #2252<br>
+                            06ª Vara do Trabalho de Londrina #2274<br>
+                            07ª Vara do Trabalho de Londrina #2296<br>
+                            08ª Vara do Trabalho de Londrina #2148<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE LONDRINA</b><br><br>
+                            AV. DO CAFÉ, 600<br>
+                            BAIRRO: CONJUNTO CAFÉ<br>
+                            CEP: 86038-000<br>
+                            TELEFONE: (43) 3315-3800<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> LDA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais27(), leiaMais27a()" id="btnLeiaMais27"><span id="imagem27"></span> MARECHAL CÂNDIDO RONDON</button> <span id="mostrar27"></span><span id="mais27">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Mal. Candido Rondon #2232<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE MAL. CÂNDIDO RONDON</b><br><br>
+                            R. PASTO MEYER, 799<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85960-000<br>
+                            TELEFONE: (45) 3421-6190<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> MRH </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais28(), leiaMais28a()" id="btnLeiaMais28"><span id="imagem28"></span> MARINGÁ</button> <span id="mostrar28"></span><span id="mais28">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Arquivo de Maringá #2295<br>
+                            Direção do Fórum de Maringá #2254<br>
+                            DF Maringá - CEJUSC JT #5943<br>
+                            DF Maringá - Sala Oficiais de Justiça #4651<br>
+                            Núcleo de Apoio Adm - Setorial Maringá #4721<br>
+                            SEA - Maringá #2425<br>
+                            Segurança Pes. e Transp. de Maringá #1555<br>
+                            STI - Maringá #2413<br><br>
+                            01ª Vara do Trabalho de Maringá #2233<br>
+                            02ª Vara do Trabalho de Maringá #2234<br>
+                            03ª Vara do Trabalho de Maringá #2235<br>
+                            04ª Vara do Trabalho de Maringá #2236<br>
+                            05ª Vara do Trabalho de Maringá #2278<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE MARINGÁ</b><br><br>
+                            AV. DR. GASTÃO VIDIGAL, 823<br>
+                            BAIRRO: AEROPORTO (ZONA 08)<br>
+                            CEP: 87050-671<br>
+                            TELEFONE: (44) 3306-5200<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> MGA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais29(), leiaMais29a()" id="btnLeiaMais29"><span id="imagem29"></span> MEDIANEIRA</button> <span id="mostrar29"></span><span id="mais29">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à 3ª VDT de Foz do Iguaçu</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            DF Foz do Iguaçu - Medianeira #2298<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE MEDIANEIRA</b><br><br>
+                            AV. PEDRO SOCCOL, 2500<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85884-000<br>
+                            TELEFONE: (45) 2102-7800<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> MDN </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais30(), leiaMais30a()" id="btnLeiaMais30"><span id="imagem30"></span> NOVA ESPERANÇA</button> <span id="mostrar30"></span><span id="mais30">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Nova Esperança #2275<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE NOVA ESPERANÇA</b><br><br>
+                            PÇ. PREFEITO PEDRO ZANUSSO, 236<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 87600-000<br>
+                            TELEFONE: (44) 3306-5280<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> NEA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais31(), leiaMais31a()" id="btnLeiaMais31"><span id="imagem31"></span> PALMAS</button> <span id="mostrar31"></span><span id="mais31">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Palmas #2284<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PALMAS</b><br><br>
+                            AV. CAPITÃO PAULO DE ARAÚJO, 563<br>
+                            BAIRRO: SÃO JOSÉ<br>
+                            CEP: 85555-000<br>
+                            TELEFONE: (46) 3263-1119<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PLM </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais32(), leiaMais32a()" id="btnLeiaMais32"><span id="imagem32"></span> PALOTINA</button> <span id="mostrar32"></span><span id="mais32">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à VDT de Assis Chateaubriand</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            VT Assis Chat. - PA Palotina #2289<br>
+                            <br><b id="b_style">ENDEREÇO DO POSTO AVANÇADO DA JUSTIÇA DO TRABALHO DE PALOTINA</b><br><br>
+                            R. IPIRANGA, 716 - BL CENTRAL, PRAÇA DA LIBERDADE<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85950-000<br>
+                            TELEFONE: (44) 3528-0620<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> POT </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais33(), leiaMais33a()" id="btnLeiaMais33"><span id="imagem33"></span> PARANAGUÁ</button> <span id="mostrar33"></span><span id="mais33">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Paranaguá #2263<br>
+                            Segurança Pes. e Transp. de Paranaguá #1556<br><br>
+                            01ª Vara do Trabalho de Paranaguá #2238<br>
+                            02ª Vara do Trabalho de Paranaguá #2243<br>
+                            03ª Vara do Trabalho de Paranaguá #2279<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PARANAGUÁ</b><br><br>
+                            R. MANOEL PEREIRA, 2230<br>
+                            BAIRRO: JARDIM ALVORADA<br>
+                            CEP: 83206-322<br>
+                            TELEFONE: (41) 2152-7903<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PNG </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais34(), leiaMais34a()" id="btnLeiaMais34"><span id="imagem34"></span> PARANAVAÍ</button> <span id="mostrar34"></span><span id="mais34">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Paranavaí #2239<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PARANAVAÍ</b><br><br>
+                            R. ANTÔNIO VENDRAMIM, 2150<br>
+                            BAIRRO: JARDIM OURO BRANCO<br>
+                            CEP: 87705-300<br>
+                            TELEFONE: (44) 3482-3110<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PVA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais35(), leiaMais35a()" id="btnLeiaMais35"><span id="imagem35"></span> PATO BRANCO</button> <span id="mostrar35"></span><span id="mais35">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Pato Branco #2153<br>
+                            DF Pato Branco - Sl Oficiais de Justiça #4706<br><br>
+                            01ª Vara do Trabalho de Pato Branco #2240<br>
+                            02ª Vara do Trabalho de Pato Branco #2149<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PATO BRANCO</b><br><br>
+                            R. PARANÁ, 1547<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85501-025<br>
+                            TELEFONE: (46) 3321-3100<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PBC </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais36(), leiaMais36a()" id="btnLeiaMais36"><span id="imagem36"></span> PINHAIS</button> <span id="mostrar36"></span><span id="mais36">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Pinhais #2282<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PINHAIS</b><br><br>
+                            R. AMÉRICA DO SUL, 629<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 83323-370<br>
+                            TELEFONE: (41) 3401-1700<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PNI </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais37(), leiaMais37a()" id="btnLeiaMais37"><span id="imagem37"></span> PITANGA</button> <span id="mostrar37"></span><span id="mais37">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à VDT de Ivaiporã.</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            VT Ivaiporã - Vara Itinerante Pitanga #2269<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PITANGA</b><br><br>
+                            R. INTERVENTOR MANOEL RIBAS, 420<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 85200-000<br>
+                            TELEFONE: (43) 2102-5350<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PIG </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais38(), leiaMais38a()" id="btnLeiaMais38"><span id="imagem38"></span> PONTA GROSSA</button> <span id="mostrar38"></span><span id="mais38">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Ponta Grossa #2258<br>
+                            DF Ponta Grossa - Arquivo #2412<br>
+                            DF Ponta Grossa - Sl Oficiais de Justiça #2147<br>
+                            Segurança Pes. e Transp. de Ponta Grossa #1548<br>
+                            Ponta Grossa - Auditório #5150<br><br>
+                            01ª Vara do Trabalho de Ponta Grossa #2241<br>
+                            02ª Vara do Trabalho de Ponta Grossa #2242<br>
+                            03ª Vara do Trabalho de Ponta Grossa #2276<br>
+                            04ª Vara do Trabalho de Ponta Grossa #2145<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PONTA GROSSA</b><br><br>
+                            R. MARIA RITA PERPÉTUO DA CRUZ, 11<br>
+                            BAIRRO: OFICINAS<br>
+                            CEP: 84035-780<br>
+                            TELEFONE: (42) 3311-5107<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PGO </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais39(), leiaMais39a()" id="btnLeiaMais39"><span id="imagem39"></span> PORECATU</button> <span id="mostrar39"></span><span id="mais39">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Porecatu #2273<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE PORECATU</b><br><br>
+                            AV. PARANAPANEMA, 252<br>
+                            BAIRRO: JARDIM BELA VISTA<br>
+                            CEP: 86160-000<br>
+                            TELEFONE: (43) 3302-4220<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> PRU </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais40(), leiaMais40a()" id="btnLeiaMais40"><span id="imagem40"></span> RIO NEGRO</button> <span id="mostrar40"></span><span id="mais40">
+                        <p style="font-family: Courier New, monospace"><br><br> <b id="b_style">Não localizado. </b><br><br>
+                    </span></p>
+                </div>
+            </td>
+            <td> RON </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais41(), leiaMais41a()" id="btnLeiaMais41"><span id="imagem41"></span> ROLÂNDIA</button>  <span id="mostrar41"></span><span id="mais41">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Rolândia #2245<br>
+                            <br><b id="b_style">ENDEREÇO JUSTIÇA DO TRABALHO DE ROLÂNDIA</b><br><br>
+                            AV. PRES. GETÚLIO VARGAS, 2270<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 86600-027<br>
+                            TELEFONE: (43) 3311-3200<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> RLA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                        <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais42(), leiaMais42a()" id="btnLeiaMais42"><span id="imagem42"></span> SANTO ANTÔNIO DA PLATINA</button> <span id="mostrar42"></span><span id="mais42">
+                            <p style="font-family: Courier New, monospace">
+                                <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                                Vara do Tabalho Stº Antonio da Platina #2281<br>
+                                <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE STO. ANTÔNIO DA PLATINA</b><br><br>
+                                R. TREZE DE MAIO, 167<br>
+                                BAIRRO: CENTRO<br>
+                                CEP: 86430-000<br>
+                                TELEFONE: (43) 3534-9460<br>
+                        </span>
+                    </p>
+                </div>
+            </td>
+            <td> SNP </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais43(), leiaMais43a()" id="btnLeiaMais43"><span id="imagem43"></span> SÃO JOSÉ DOS PINHAIS</button> <span id="mostrar43"></span><span id="mais43">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de São José dos Pinhais #2285<br>
+                            DF São José dos Pinhais - Mafra-SC #5109<br>
+                            Segurança Pes. e Transp. de São José dos #1549<br><br>
+                            01ª Vara do Trabalho de São José dos Pin #2246<br>
+                            02ª Vara do Trabalho de São José dos Pin #2266<br>
+                            03ª Vara do Trabalho de São José dos Pin #2294<br>
+                            04ª Vara do Trabalho de São José dos Pin #2124<br>
+                            05ª Vara do Trabalho de São José dos Pin #2290<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE SÃO JOSÉ DOS PINHAIS</b><br><br>
+                            R. DAS NAÇÕES UNIDAS, 1101<br>
+                            BAIRRO: CIDADE JARDIM<br>
+                            CEP: 83035-310<br>
+                            TELEFONE: (41) 3358-2700<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> SJP </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais44(), leiaMais44a()" id="btnLeiaMais44"><span id="imagem44"></span> SÃO MATEUS DO SUL</button> <span id="mostrar44"></span><span id="mais44">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br><font color="color">Unidade vinculada à VDT de União da Vitória</font><br><br>
+                            <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            VT União da Vitória - São Mateus do Sul #2293<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE SÃO MATEUS DO SUL</b><br><br>
+                            R. DOM PEDRO II, 842/844<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 83900-000<br>
+                            TELEFONE: (42) 3903-3860<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> SSL </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais45(), leiaMais45a()" id="btnLeiaMais45"><span id="imagem45"></span> TELÊMACO BORBA</button> <span id="mostrar45"></span><span id="mais45">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Telemaco Borba #2247<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE TELÊMACO BORBA</b><br><br>
+                            R. GOV. BENTO MUNHOZ DA ROCHA NETO, 344<br>
+                            BAIRRO: MACOPA<br>
+                            CEP: 84261-320<br>
+                            TELEFONE: (42) 3221-3200<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> TEB </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais46(), leiaMais46a()" id="btnLeiaMais46"><span id="imagem46"></span> TOLEDO</button> <span id="mostrar46"></span><span id="mais46">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Toledo #2155<br>
+                            DF Toledo - Sala dos Oficiais de Justiça #2157<br>
+                            DF Toledo - Peticionamento #4703<br><br>
+                            01ª Vara do Trabalho de Toledo #2248<br>
+                            02ª Vara do Trabalho de Toledo #2150<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE TOLEDO</b><br><br>
+                            AV. DRA. ZILDA ARNS NEUMANN, 850<br>
+                            BAIRRO: TOCANTINS<br>
+                            CEP: 85904-472<br>
+                            TELEFONE: (45) 3421-6150<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> TOO </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais47(), leiaMais47a()" id="btnLeiaMais47"><span id="imagem47"></span> UMUARAMA</button> <span id="mostrar47"></span><span id="mais47">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Direção do Fórum de Umuarama #2261<br>
+                            Segurança Pes. e Transp. de Umuarama #1554<br><br>
+                            01ª Vara do Trabalho de Umuarama #2249<br>
+                            02ª Vara do Trabalho de Umuarama #2259<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE UMUARAMA</b><br><br>
+                            AV. RIO BRANCO, 3700<br>
+                            BAIRRO: ZONA 1<br>
+                            CEP: 87501-130<br>
+                            TELEFONE: (44) 3361-3700<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> UMR </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais48(), leiaMais48a()" id="btnLeiaMais48"><span id="imagem48"></span> UNIÃO DA VITÓRIA</button><span id="mostrar48"></span><span id="mais48">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de União da Vitória #2250<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE UNIÃO DA VITÓRIA</b><br><br>
+                            R. CORONEL JOÃO GUALBERTO, 330<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 84600-210<br>
+                            TELEFONE: (42) 3522-3587<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> UVA </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <div id="cidade">
+                    <button style="font-family: Courier New, Courier, monospace; font-weight: bold;" onclick="leiaMais49(), leiaMais49a()" id="btnLeiaMais49"><span id="imagem49"></span> WENCESLAU BRAZ</button> <span id="mostrar49"></span><span id="mais49">
+                        <p style="font-family: Courier New, monospace">
+                            <br><br> <b id="b_style">Locais Físicos (SMP) </b><br><br>
+                            Vara do Trabalho de Wenceslau Braz #2251<br>
+                            <br><b id="b_style">ENDEREÇO DA JUSTIÇA DO TRABALHO DE WENCESLAU BRAZ</b><br><br>
+                            R. EXPEDICIONÁRIO, 20<br>
+                            BAIRRO: CENTRO<br>
+                            CEP: 84950-000<br>
+                            TELEFONE: (43) 3528-1807<br>
+                    </span></p>
+                </div>
+            </td>
+            <td> WBZ </td>
+        </tr>
+
+    </table>
+    </div>
+    <br><br><br>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

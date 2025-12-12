@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Range de IPs</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_4::after {
+                content: '';
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                width: 50%;
+                height: 2px;
+                background-color: white; /* Cor da linha */
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                transition: transform 0.3s ease-out;
+                }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <div align="center">
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <br><br><h2><font size="5"> Range de IP dos Locais</font></h2><br><br>
+
+        <table id="tabela_rangeip">
+            <thead>
+                <tr>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> LOCAL </font></th>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> START RANGE</font></th>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> END RANGE</font></th>
+                </tr>
+            </thead>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VLAN-1</b> </td><td align="left"> 10.1.11.1 </td> <td align="left"> 10.1.11.255 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147-Terreo</b> </td><td align="left"> 10.9.20.50 </td> <td align="left"> 10.9.20.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147-3andar</b> </td><td align="left"> 10.9.23.50 </td> <td align="left"> 10.9.23.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147-4andar</b> </td><td align="left"> 10.9.24.50 </td> <td align="left"> 10.9.24.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147-7andar</b> </td><td align="left"> 10.9.27.50 </td> <td align="left"> 10.9.27.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147-9andar</b> </td><td align="left"> 10.9.29.50 </td> <td align="left"> 10.9.29.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362_Terreo</b> </td><td align="left"> 10.9.30.50 </td> <td align="left"> 10.9.30.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-1andar</b> </td><td align="left"> 10.9.31.50 </td> <td align="left"> 10.9.31.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-2andar</b> </td><td align="left"> 10.9.32.50 </td> <td align="left"> 10.9.32.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-3andar</b> </td><td align="left"> 10.9.33.50 </td> <td align="left"> 10.9.33.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-5andar</b> </td><td align="left"> 10.9.35.50 </td> <td align="left"> 10.9.35.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-7andar</b> </td><td align="left"> 10.9.37.50 </td> <td align="left"> 10.9.37.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM362-9andar</b> </td><td align="left"> 10.9.39.50 </td> <td align="left"> 10.9.39.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-STI</b> </td><td align="left"> 10.9.40.50 </td> <td align="left"> 10.9.40.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-EAJ</b> </td><td align="left"> 10.9.41.50 </td> <td align="left"> 10.9.41.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-2Andar</b> </td><td align="left"> 10.9.42.50 </td> <td align="left"> 10.9.42.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-3andar</b> </td><td align="left"> 10.9.43.50 </td> <td align="left"> 10.9.43.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-4andar</b> </td><td align="left"> 10.9.44.50 </td> <td align="left"> 10.9.44.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-5andar</b> </td><td align="left"> 10.9.45.50 </td> <td align="left"> 10.9.45.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-6andar</b> </td><td align="left"> 10.9.46.50 </td> <td align="left"> 10.9.46.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-8andar</b> </td><td align="left"> 10.9.48.50 </td> <td align="left"> 10.9.48.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM400-Anexo-9andar</b> </td><td align="left"> 10.9.49.50 </td> <td align="left"> 10.9.49.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-Subsolo</b> </td><td align="left"> 10.9.50.50 </td> <td align="left"> 10.9.50.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-1andar</b> </td><td align="left"> 10.9.51.50 </td> <td align="left"> 10.9.51.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-2andar</b> </td><td align="left"> 10.9.52.50 </td> <td align="left"> 10.9.52.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-4andar</b> </td><td align="left"> 10.9.54.50 </td> <td align="left"> 10.9.54.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-6andar</b> </td><td align="left"> 10.9.56.50 </td> <td align="left"> 10.9.56.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-8andar</b> </td><td align="left"> 10.9.58.50 </td> <td align="left"> 10.9.58.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RioBranco-11andar</b> </td><td align="left"> 10.9.59.50 </td> <td align="left"> 10.9.59.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VM147 - Andar 1</b> </td><td align="left"> 10.9.62.50 </td> <td align="left"> 10.9.63.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">VMWare VDI</b> </td><td align="left"> 10.9.64.32 </td> <td align="left"> 10.9.65.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">HyperV-Clients</b> </td><td align="left"> 10.9.66.4 </td> <td align="left"> 10.9.66.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">elevadores</b> </td><td align="left"> 10.9.80.3 </td> <td align="left"> 10.9.80.62 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">AUC-EMB</b> </td><td align="left"> 10.9.100.50 </td> <td align="left"> 10.9.100.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">SJP-EMB</b> </td><td align="left"> 10.9.102.50 </td> <td align="left"> 10.9.103.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CAJ-EMB</b> </td><td align="left"> 10.9.104.50 </td> <td align="left"> 10.9.105.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PNI-EMB</b> </td><td align="left"> 10.9.106.32 </td> <td align="left"> 10.9.106.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CBX-EMB</b> </td><td align="left"> 10.9.107.50 </td> <td align="left"> 10.9.107.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RON-EMB</b> </td><td align="left"> 10.9.108.32 </td> <td align="left"> 10.9.108.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CLG-EMB</b> </td><td align="left"> 10.9.109.50 </td> <td align="left"> 10.9.109.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PNG-EMB</b> </td><td align="left"> 10.9.120.50 </td> <td align="left"> 10.9.120.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PGO-EMB</b> </td><td align="left"> 10.9.130.32 </td> <td align="left"> 10.9.130.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CAT-EMB</b> </td><td align="left"> 10.9.132.50 </td> <td align="left"> 10.9.132.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TEB-EMB</b> </td><td align="left"> 10.9.133.50 </td> <td align="left"> 10.9.133.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">JIV-EMB</b> </td><td align="left"> 10.9.134.50 </td> <td align="left"> 10.9.134.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PGO-NOVO</b> </td><td align="left"> 10.9.136.50 </td> <td align="left"> 10.9.137.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">GRP-EMB</b> </td><td align="left"> 10.9.140.50 </td> <td align="left"> 10.9.140.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">LJS-EMB</b> </td><td align="left"> 10.9.142.50 </td> <td align="left"> 10.9.142.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PIG-EMB</b> </td><td align="left"> 10.9.143.32 </td> <td align="left"> 10.9.143.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">UVA-EMB</b> </td><td align="left"> 10.9.150.50 </td> <td align="left"> 10.9.150.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">IRI-EMB</b> </td><td align="left"> 10.9.151.50 </td> <td align="left"> 10.9.151.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">SSL-EMB</b> </td><td align="left"> 10.9.152.32 </td> <td align="left"> 10.9.152.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CPP-EMB</b> </td><td align="left"> 10.9.164.32 </td> <td align="left"> 10.9.164.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">JZO-EMB</b> </td><td align="left"> 10.9.165.32 </td> <td align="left"> 10.9.165.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CAMBE-EMB</b> </td><td align="left"> 10.9.166.50 </td> <td align="left"> 10.9.166.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">RLA-EMB</b> </td><td align="left"> 10.9.167.50 </td> <td align="left"> 10.9.167.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">BNT-EMB</b> </td><td align="left"> 10.9.168.32 </td> <td align="left"> 10.9.168.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">APS-EMB</b> </td><td align="left"> 10.9.169.50 </td> <td align="left"> 10.9.169.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PRU-EMB</b> </td><td align="left"> 10.9.170.32 </td> <td align="left"> 10.9.170.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">IVP-EMB</b> </td><td align="left"> 10.9.171.32 </td> <td align="left"> 10.9.171.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">SNP-EMB</b> </td><td align="left"> 10.9.172.32 </td> <td align="left"> 10.9.172.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">IBT-EMB</b> </td><td align="left"> 10.9.173.50 </td> <td align="left"> 10.9.173.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">WBZ-EMB</b> </td><td align="left"> 10.9.174.50 </td> <td align="left"> 10.9.174.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">APU-EMB</b> </td><td align="left"> 10.9.175.32 </td> <td align="left"> 10.9.175.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">APU-VDT02</b> </td><td align="left"> 10.9.176.32 </td> <td align="left"> 10.9.176.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">MGA-EMB</b> </td><td align="left"> 10.9.180.50 </td> <td align="left"> 10.9.182.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CPM-EMB</b> </td><td align="left"> 10.9.184.50 </td> <td align="left"> 10.9.184.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PVA-EMB</b> </td><td align="left"> 10.9.185.50 </td> <td align="left"> 10.9.185.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CNE-EMB</b> </td><td align="left"> 10.9.186.50 </td> <td align="left"> 10.9.186.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">NEA-EMB</b> </td><td align="left"> 10.9.187.50 </td> <td align="left"> 10.9.187.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">LND-EMB</b> </td><td align="left"> 10.9.188.32 </td> <td align="left"> 10.9.188.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">UMR-EMB</b> </td><td align="left"> 10.9.189.50 </td> <td align="left"> 10.9.189.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">GRE-EMB</b> </td><td align="left"> 10.9.192.32 </td> <td align="left"> 10.9.192.127 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">FNB-EMB</b> </td><td align="left"> 10.9.200.50 </td> <td align="left"> 10.9.200.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PBC-EMB</b> </td><td align="left"> 10.9.201.50 </td> <td align="left"> 10.9.201.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">DVZ-EMB</b> </td><td align="left"> 10.9.202.50 </td> <td align="left"> 10.9.202.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">PLM-EMB</b> </td><td align="left"> 10.9.203.50 </td> <td align="left"> 10.9.203.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CSC-EMB</b> </td><td align="left"> 10.9.210.50 </td> <td align="left"> 10.9.211.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">FOZ-EMB</b> </td><td align="left"> 10.9.212.50 </td> <td align="left"> 10.9.212.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">ASD-EMB</b> </td><td align="left"> 10.9.214.50 </td> <td align="left"> 10.9.214.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">MRH-EMB</b> </td><td align="left"> 10.9.215.50 </td> <td align="left"> 10.9.215.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TOO-EMB</b> </td><td align="left"> 10.9.216.50 </td> <td align="left"> 10.9.216.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">POT-EMB</b> </td><td align="left"> 10.9.217.50 </td> <td align="left"> 10.9.217.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">MDN-EMB</b> </td><td align="left"> 10.9.218.50 </td> <td align="left"> 10.9.218.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">LDA2-EMB</b> </td><td align="left"> 10.9.240.50 </td> <td align="left"> 10.9.242.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Telefonia</b> </td><td align="left"> 10.50.1.1 </td> <td align="left"> 10.50.20.255 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">WIRELESS-INF1</b> </td><td align="left"> 10.80.1.10 </td> <td align="left"> 10.80.1.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-147-1</b> </td><td align="left"> 10.101.20.10 </td> <td align="left"> 10.101.23.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-VM400</b> </td><td align="left"> 10.101.40.62 </td> <td align="left"> 10.101.43.100 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CC528</b> </td><td align="left"> 10.101.52.62 </td> <td align="left"> 10.101.55.100 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-AUC</b> </td><td align="left"> 10.101.100.32 </td> <td align="left"> 10.101.100.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-SJP</b> </td><td align="left"> 10.101.102.32 </td> <td align="left"> 10.101.102.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CAJ</b> </td><td align="left"> 10.101.104.32 </td> <td align="left"> 10.101.104.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PNI</b> </td><td align="left"> 10.101.106.32 </td> <td align="left"> 10.101.106.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CBX</b> </td><td align="left"> 10.101.107.32 </td> <td align="left"> 10.101.107.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CLG</b> </td><td align="left"> 10.101.109.50 </td> <td align="left"> 10.101.109.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PNG</b> </td><td align="left"> 10.101.120.32 </td> <td align="left"> 10.101.120.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CAT</b> </td><td align="left"> 10.101.132.32 </td> <td align="left"> 10.101.132.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-TEB</b> </td><td align="left"> 10.101.133.32 </td> <td align="left"> 10.101.133.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-JIV</b> </td><td align="left"> 10.101.134.32 </td> <td align="left"> 10.101.134.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PGO</b> </td><td align="left"> 10.101.136.32 </td> <td align="left"> 10.101.136.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-GRP</b> </td><td align="left"> 10.101.140.32 </td> <td align="left"> 10.101.140.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-LJS</b> </td><td align="left"> 10.101.142.32 </td> <td align="left"> 10.101.142.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PIG</b> </td><td align="left"> 10.101.143.32 </td> <td align="left"> 10.101.143.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-UVA</b> </td><td align="left"> 10.101.150.32 </td> <td align="left"> 10.101.150.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-IAI</b> </td><td align="left"> 10.101.151.32 </td> <td align="left"> 10.101.151.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-SSL</b> </td><td align="left"> 10.101.152.32 </td> <td align="left"> 10.101.152.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CPP</b> </td><td align="left"> 10.101.164.32 </td> <td align="left"> 10.101.164.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-JZO</b> </td><td align="left"> 10.101.165.32 </td> <td align="left"> 10.101.165.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CAB</b> </td><td align="left"> 10.101.166.32 </td> <td align="left"> 10.101.166.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-RLA</b> </td><td align="left"> 10.101.167.32 </td> <td align="left"> 10.101.167.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-BNT</b> </td><td align="left"> 10.101.168.32 </td> <td align="left"> 10.101.168.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-APS</b> </td><td align="left"> 10.101.169.32 </td> <td align="left"> 10.101.169.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PRU</b> </td><td align="left"> 10.101.170.32 </td> <td align="left"> 10.101.170.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-IVP</b> </td><td align="left"> 10.101.171.32 </td> <td align="left"> 10.101.171.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-SNP</b> </td><td align="left"> 10.101.172.32 </td> <td align="left"> 10.101.172.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-IBT</b> </td><td align="left"> 10.101.173.32 </td> <td align="left"> 10.101.173.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-WBZ</b> </td><td align="left"> 10.101.174.32 </td> <td align="left"> 10.101.174.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-APU01</b> </td><td align="left"> 10.101.175.32 </td> <td align="left"> 10.101.175.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-MGA</b> </td><td align="left"> 10.101.180.32 </td> <td align="left"> 10.101.180.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CPM</b> </td><td align="left"> 10.101.184.32 </td> <td align="left"> 10.101.184.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PVA</b> </td><td align="left"> 10.101.185.32 </td> <td align="left"> 10.101.185.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CNE</b> </td><td align="left"> 10.101.186.32 </td> <td align="left"> 10.101.186.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-NEA</b> </td><td align="left"> 10.101.187.32 </td> <td align="left"> 10.101.187.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-LND</b> </td><td align="left"> 10.101.188.32 </td> <td align="left"> 10.101.188.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-UMR</b> </td><td align="left"> 10.101.189.32 </td> <td align="left"> 10.101.189.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-FNB</b> </td><td align="left"> 10.101.200.32 </td> <td align="left"> 10.101.200.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PBC</b> </td><td align="left"> 10.101.201.32 </td> <td align="left"> 10.101.201.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-DVZ</b> </td><td align="left"> 10.101.202.32 </td> <td align="left"> 10.101.202.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-PLM</b> </td><td align="left"> 10.101.203.32 </td> <td align="left"> 10.101.203.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-CSC</b> </td><td align="left"> 10.101.210.32 </td> <td align="left"> 10.101.210.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-FOZ</b> </td><td align="left"> 10.101.212.32 </td> <td align="left"> 10.101.212.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-ASD</b> </td><td align="left"> 10.101.214.32 </td> <td align="left"> 10.101.214.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-MRH</b> </td><td align="left"> 10.101.215.32 </td> <td align="left"> 10.101.215.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-TOO</b> </td><td align="left"> 10.101.216.32 </td> <td align="left"> 10.101.216.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-POT</b> </td><td align="left"> 10.101.217.32 </td> <td align="left"> 10.101.217.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-MDN</b> </td><td align="left"> 10.101.218.32 </td> <td align="left"> 10.101.218.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TESTE123</b> </td><td align="left"> 10.101.219.32 </td> <td align="left"> 10.101.219.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">TelefoniaIP-LDA</b> </td><td align="left"> 10.101.240.32 </td> <td align="left"> 10.101.240.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">teste_link_redundante</b> </td><td align="left"> 10.102.109.30 </td> <td align="left"> 10.102.109.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CFTV-TV_Audiencia</b> </td><td align="left"> 10.105.52.30 </td> <td align="left"> 10.105.55.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-AUC</b> </td><td align="left"> 10.105.100.32 </td> <td align="left"> 10.105.100.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-SJP</b> </td><td align="left"> 10.105.102.32 </td> <td align="left"> 10.105.102.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CAJ</b> </td><td align="left"> 10.105.104.32 </td> <td align="left"> 10.105.104.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PNI</b> </td><td align="left"> 10.105.106.32 </td> <td align="left"> 10.105.106.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CBX</b> </td><td align="left"> 10.105.107.32 </td> <td align="left"> 10.105.107.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CLG</b> </td><td align="left"> 10.105.109.32 </td> <td align="left"> 10.105.109.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PNG</b> </td><td align="left"> 10.105.120.32 </td> <td align="left"> 10.105.120.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CAT</b> </td><td align="left"> 10.105.132.32 </td> <td align="left"> 10.105.132.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-TEB</b> </td><td align="left"> 10.105.133.32 </td> <td align="left"> 10.105.133.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-JIV</b> </td><td align="left"> 10.105.134.32 </td> <td align="left"> 10.105.134.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PGO</b> </td><td align="left"> 10.105.136.32 </td> <td align="left"> 10.105.136.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-GRP</b> </td><td align="left"> 10.105.140.32 </td> <td align="left"> 10.105.140.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-LJS</b> </td><td align="left"> 10.105.142.32 </td> <td align="left"> 10.105.142.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PIG</b> </td><td align="left"> 10.105.143.32 </td> <td align="left"> 10.105.143.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-UVA</b> </td><td align="left"> 10.105.150.32 </td> <td align="left"> 10.105.150.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-IAI</b> </td><td align="left"> 10.105.151.32 </td> <td align="left"> 10.105.151.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-SSL</b> </td><td align="left"> 10.105.152.32 </td> <td align="left"> 10.105.152.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CPP</b> </td><td align="left"> 10.105.164.32 </td> <td align="left"> 10.105.164.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-JZO</b> </td><td align="left"> 10.105.165.32 </td> <td align="left"> 10.105.165.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CAB</b> </td><td align="left"> 10.105.166.32 </td> <td align="left"> 10.105.166.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-RLA</b> </td><td align="left"> 10.105.167.32 </td> <td align="left"> 10.105.167.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-BNT</b> </td><td align="left"> 10.105.168.32 </td> <td align="left"> 10.105.168.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-APS</b> </td><td align="left"> 10.105.169.32 </td> <td align="left"> 10.105.169.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PRU</b> </td><td align="left"> 10.105.170.32 </td> <td align="left"> 10.105.170.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-IVP</b> </td><td align="left"> 10.105.171.32 </td> <td align="left"> 10.105.171.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-SNP</b> </td><td align="left"> 10.105.172.32 </td> <td align="left"> 10.105.172.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-IBT</b> </td><td align="left"> 10.105.173.32 </td> <td align="left"> 10.105.173.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-WBZ</b> </td><td align="left"> 10.105.174.32 </td> <td align="left"> 10.105.174.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-APU</b> </td><td align="left"> 10.105.175.50 </td> <td align="left"> 10.105.175.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-APU</b> </td><td align="left"> 10.105.176.32 </td> <td align="left"> 10.105.176.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-MGA</b> </td><td align="left"> 10.105.180.32 </td> <td align="left"> 10.105.180.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CPM</b> </td><td align="left"> 10.105.184.32 </td> <td align="left"> 10.105.184.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PVA</b> </td><td align="left"> 10.105.185.32 </td> <td align="left"> 10.105.185.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CNE</b> </td><td align="left"> 10.105.186.32 </td> <td align="left"> 10.105.186.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-NEA</b> </td><td align="left"> 10.105.187.32 </td> <td align="left"> 10.105.187.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-LND</b> </td><td align="left"> 10.105.188.32 </td> <td align="left"> 10.105.188.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-UMR</b> </td><td align="left"> 10.105.189.32 </td> <td align="left"> 10.105.189.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-FNB</b> </td><td align="left"> 10.105.200.32 </td> <td align="left"> 10.105.200.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PBC</b> </td><td align="left"> 10.105.201.32 </td> <td align="left"> 10.105.201.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-DVZ</b> </td><td align="left"> 10.105.202.32 </td> <td align="left"> 10.105.202.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-PLM</b> </td><td align="left"> 10.105.203.32 </td> <td align="left"> 10.105.203.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-CSC</b> </td><td align="left"> 10.105.210.32 </td> <td align="left"> 10.105.210.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-FOZ</b> </td><td align="left"> 10.105.212.32 </td> <td align="left"> 10.105.212.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-ASD</b> </td><td align="left"> 10.105.214.32 </td> <td align="left"> 10.105.214.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-MRH</b> </td><td align="left"> 10.105.215.32 </td> <td align="left"> 10.105.215.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-TOO</b> </td><td align="left"> 10.105.216.32 </td> <td align="left"> 10.105.216.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-POT</b> </td><td align="left"> 10.105.217.32 </td> <td align="left"> 10.105.217.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-MDN</b> </td><td align="left"> 10.105.218.32 </td> <td align="left"> 10.105.218.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Terceiros-LDA</b> </td><td align="left"> 10.105.240.32 </td> <td align="left"> 10.105.240.222 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CWB-Visitante-nac</b> </td><td align="left"> 10.110.52.30 </td> <td align="left"> 10.110.55.240 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">CLG-Visitante-nac</b> </td><td align="left"> 10.110.109.30 </td> <td align="left"> 10.110.109.240 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">POC-WIRELESS</b> </td><td align="left"> 172.16.7.1 </td> <td align="left"> 172.16.7.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Gerencia</b> </td><td align="left"> 172.30.255.1 </td> <td align="left"> 172.30.255.50 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Peticionamento</b> </td><td align="left"> 192.168.10.1 </td> <td align="left"> 192.168.10.254 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Lab-Ruckus-Wireless</b> </td><td align="left"> 192.168.13.32 </td> <td align="left"> 192.168.13.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Lab802.1x-LAN4</b> </td><td align="left"> 192.168.16.32 </td> <td align="left"> 192.168.16.252 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Lab802.1x-LAN3-Guest</b> </td><td align="left"> 192.168.17.32 </td> <td align="left"> 192.168.17.252 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Lab802.1x-LAN2</b> </td><td align="left"> 192.168.18.32 </td> <td align="left"> 192.168.18.250 </td></tr>
+            <tr><td align="left"> <b style="font-family: Courier New, Courier, monospace;" size="5">Lab802.1x-LAN400-Telefonia</b> </td><td align="left"> 192.168.19.32 </td> <td align="left"> 192.168.19.250 </td></tr>
+        </table>
+        <br><br><br>
+    </div>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

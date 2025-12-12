@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Apoio N1 - TRT9</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/paginan1.css">
+    <link rel="stylesheet" href="../css/sistemas.css">
+    <script src="../js/script4.js"></script>
+    <script src="../js/script_index.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/ancoras.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/ancoras.js"></script>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lerMais_ramais_2a();
+            lerMais_ramais_3a();
+            lerMais_ramais_4a();
+            lerMais3a();
+            lerMais4a();
+            lerMais5a();
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_1::after {
+                            content: '';
+                            position: absolute;
+                            left: 20px;
+                            bottom: 0;
+                            width: 68%;
+                            height: 2px;
+                            background-color: white; /* Cor da linha */
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <article id="article-paginan1">
+        <br>
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <div id="container">
+            <h2> <font size="4" style="font-family: Courier New, monospace"> INFORMAÇÕES, ATALHOS E ORIENTAÇÕES DE APOIO VOLTADAS AO N1.</font></h2><br>
+
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                }
+
+                .box1 {
+                    width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                    margin-left: 0px;
+                    margin-right: 20px;
+                    display: inline-table;
+                }
+
+                #boxa1:hover {
+                    -webkit-transform: scale(1.025);
+                    -ms-transform: scale(1.025);
+                    transform: scale(1.025);
+                }
+
+                .box2 {
+                    width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                    margin-left: 0px;
+                    margin-right: -20px;
+                    display: inline-table;
+                }
+
+                #boxa2:hover {
+                    -webkit-transform: scale(1.025);
+                    -ms-transform: scale(1.025);
+                    transform: scale(1.025);
+                }
+
+                #divisao_1 {
+                    width: clamp(100px, 50%, 800px); /*Para definir a responsividade do texto.*/
+                    margin: 0px 30px 0px 30px;
+                    display: inline-table;
+                    padding-right: 0px;
+                }
+
+                #divisao_2 {
+                    width: clamp(100px, 50%, 800px); /*Para definir a responsividade do texto.*/
+                    margin: 0px 30px 0px 30px;
+                    display: inline-table;
+                }
+
+                #divisao_3 {
+                    width: 60%;
+                }
+            </style>
+
+            <div id="divisao_1">
+
+                <h2> <font size="4" style="font-family: Courier New, monospace"> ACESSO RÁPIDO - N1</font></h2><br>
+                <p align="left">
+                    <a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/SAINF%20-%20Estoque' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/sainf.png' alt='SAINF' title='Acessar o Controle de Estoque da SAINF' width='500' height='100'></a>
+                    <a href='https://layer8.trt9.jus.br/removermfavpn' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/layer8.png' alt='LAYER 8' title='Acesso ao LAYER 8' width='208' height='100'></a>
+                    <a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Monitoramento' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pbi.png' alt='Power BI' title='Acesso ao Power BI TRT9' width='100' height='100'></a>
+                    <a href='https://trt9-techcom.treetools.com.br/sb3/pages/inicio.zul' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/chat.png' alt='Chat' title='Acessar o Chat da CSTI' width='100' height='100'></a>
+                    <a href='https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/cswiki.png' alt='CSWIKI' title='Acesso a Página CSWIKI' width='100' height='100'></a>
+                    <a href='https://csti.trt9.jus.br/assystweb' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/assyst.png' alt='Assyst' title='Acesso ao Assyst' width='200' height='100'></a>
+                    <a href='https://chatgpt.com/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/chatgpt.jpg' alt='ChatGPT' title='Acesso ao ChatGPT' width='172' height='100'></a>
+                </p><br><br><br>
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> ACESSO RÁPIDO - LINKS DE CONSULTA DE DADOS </font></h2><br>
+                <p align="left">
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=154:18:300768478516057:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/adm.png' alt='SMP e CMDB' title='Acesso ao SMP e CMDB' width='200' height='100'></a>
+                    <a href='https://web01/gertoken/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/gertoken.png' alt='Gertoken' title='Acesso ao Gerenciamento de Token' width='200' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=225:3:207639063515661:::3::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/suspencao.png' alt='Suspensão Intranet' title='Acesso a Página de Suspensão' width='285' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=285:379:201832757970539:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/telefones.png' alt='Contatos' title='Consulta a Contatos de Unidades e Servidores' width='200' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=10285:5:112883424524121:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/ramais_servidores.png' alt='Ramais de Servidores' title='Consulta a Ramais de Servidores' width='270' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=10285:4:112883424524121:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/ramais_unidades.png' alt='Ramais de Unidades' title='Consulta a Ramais de Unidades' width='215' height='100'></a>
+                </p>
+                <br><br><br>
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> ACESSO RÁPIDO - LINKS DE CONSULTA DE INFORMAÇÕES </font></h2><br>
+                <p align="left">
+                    <a href='https://www.trt9.jus.br/pautaeletronica/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pauta_eletronica.png' alt='Pauta Eletrônica' title='Acesso a Pauta Eletrônica' width='200' height='100'></a>
+                    <a href='https://www.trt9.jus.br/pautaeletronica/pautaSessao.xhtml' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pauta_sessoes.png' alt='Pauta de Sessões' title='Acesso a Pauta de Sessões' width='200' height='100'></a>
+                    <a href='https://www.trt9.jus.br/portal/balcaoVirtual.xhtml' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/balcao.png' alt='Balcão Virtual do TRT9' title='Acesso ao Balcão Virtual' width='280' height='100'></a>
+                    <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pje.png' alt='PJe Indisponibilidade' title='Consulta Certidões de Indisponibilidade' width='160' height='100'></a>
+                    <a href='https://pje-treinamento.trt9.jus.br/trt/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pjetreinamento.png' alt='PJe Treinamento' title='Acesso ao PJe Treinamento' width='260' height='100'></a>
+                    <a href='https://pje.trt9.jus.br/consultaprocessual/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/pjeconsulta.png' alt='PJe Consulta Processual' title='Acesso a Consulta Processual PJe' width='260' height='100'></a>
+                </p>
+                <br><br>
+
+                <h2> <font size="4" style="font-family: Courier New, monospace"> DÚVIDAS - PLATAFORMA GOOGLE WORKSPACE</font></h2><br>
+                <p align="left">
+                    <a href='https://aprendizagem.rw3tecnologia.com/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/rw3.png' alt='RW3' title='Aprendizagem RW3' width='500' height='80'></a>
+                </p><br><br><br>
+            </div>
+            <div id="divisao_2">
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;">PÁGINAS INTERNAS MAIS UTILIZADAS </font></h2><br>
+                <div style="padding-left: 10px;">
+                    <div class='container_index'>
+                        <ul align="left" class="styled-list" style="padding-left: 0px;">
+                            <li>
+                                <h3><a href='redirecionamento.html'>Redirecionamento</a></h3>
+                                <p>&nbsp;"Planilha de redirecionamento".</p>
+                            </li>
+                            <li>
+                                <h3><a href='procedimentos.html'>Procedimentos</a></h3>
+                                <p>&nbsp;"Procedimentos CSWIKI mais utilizados".</p>
+                            </li>
+                            <li>
+                                <h3><a href='sistemas.html'>Sistemas</a></h3>
+                                <p>&nbsp;"Informações sobre Sistemas do TRT9 e Convênios".</p>
+                            </li>
+                            <li>
+                                <h3><a href='tokens.html'>Tokens</a></h3>
+                                <p>&nbsp;"Imagens e informações sobre tokens".</p>
+                            </li>
+                            <li>
+                                <h3><a href='atalhos2.html'>Templates N1</a></h3>
+                                <p>&nbsp;"Modelos para uso no email ou chat interno".</p>
+                            </li>
+                            <li>
+                                <h3><a href='atalhos_chat.html'>Templates Chat</a></h3>
+                                <p>&nbsp;"Modelos para uso no chat".</p>
+                            </li>
+                            <li>
+                                <h3><a href='glossario.html'>Glossário</a></h3>
+                                <p>&nbsp;"Lista de termos jurídicos".</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><br><br>
+
+                <h2><font size="4" style="font-family: Courier New, monospace"> ATALHOS EM GERAL </font></h2><br>
+                
+                <div id="div_atalhos_paginan1" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                    <h4><button onclick="lerMais_ramais_2(), lerMais_ramais_2a()" id="btLeiaMais_ramais_2"><span id="imagem_ramais_2"></span> <b style="font-family: Courier New, monospace;">PROCEDIMENTOS EM PDF</b></button></h4>
+                    <span id="mostrar_mais_ramais_2"></span><span id="maiss_ramais_2">
+                        <br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="../Documentos/CT_17_11_41_PJE Pré-Requisitos para Utilização.pdf" target="_blank">PJe - Pré-Requisitos para Utilização</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="../Documentos/2FA.pdf" target="_blank">Tutorial de Configuração do 2FA</a></font></p><br>
+                    </span>
+                </div><br><br>
+                <div id="div_atalhos_paginan1" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                    <h4><button onclick="lerMais_ramais_3(), lerMais_ramais_3a()" id="btLeiaMais_ramais_3"><span id="imagem_ramais_3"></span> <b style="font-family: Courier New, monospace;">PROCEDIMENTOS DESTACADOS</b></button></h4>
+                    <span id="mostrar_mais_ramais_3"></span><span id="maiss_ramais_3">
+                        <br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://www.trt9.jus.br/portal/pagina.xhtml?secao=81&pagina=INICIAL" target="_blank">PJe Mídias Desktop - Cadastro, Acesso e Como Usar</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://www.trt9.jus.br/portal/pagina.xhtml?secao=39&pagina=Pje" target="_blank">PJe - Orientações Gerais</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Solicitar_habilita%C3%A7%C3%A3o" target="_blank">Habilitar-se como Advogado em um Processo</a></font></p><br>
+                    </span>
+                </div><br><br>
+                <div id="div_atalhos_paginan1" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                    <h4><button onclick="lerMais_ramais_4(), lerMais_ramais_4a()" id="btLeiaMais_ramais_4"><span id="imagem_ramais_4"></span> <b style="font-family: Courier New, monospace;">MANUAIS E PROCEDIMENTOS DO MANUAL DO PJE</b></button></h4>
+                    <span id="mostrar_mais_ramais_4"></span><span id="maiss_ramais_4">
+                        <br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/AUD_4.0" target="_blank">Manual do AUD4</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Manual_Advogado" target="_blank">Manual do PJe - Advogado</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_Central_de_Mandados_-_Oficial_de_Justi%C3%A7a" target="_blank">Manual do PJe - Oficial de Justiça</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Manual_do_perito_-_Perfil:perito" target="_blank">Manual do PJe - Perito</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_1%C2%BA_Grau" target="_blank">Manual do PJe - 1º Grau</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_2%C2%BA_Grau" target="_blank">Manual do PJe - 2º Grau</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Manual_do_e-Carta" target="_blank">Manual do e-Carta</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Pareamento_PJe" target="_blank">Manual do PJe - Pareamento JTe</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://pje.csjt.jus.br/manual/index.php/Token_PJe" target="_blank">Manual do PJe - Assinatura JTe (Token PJe)</a></font></p><br>
+                    </span>
+                </div><br><br><br>
+
+                    <h2><font size="4" style="font-family: Courier New, monospace"> PLANILHAS EXCEL </font></h2><br>
+                    <div style="padding-left: 10px;">
+                        <article id="article-planilhasn1">
+                            <div id="div_planilhasn1">
+                                <table id="tabela_planilhas_paginan1">
+                                    <tr>
+                                        <td align="left" style="border: none;">
+                                            <a href="https://docs.google.com/spreadsheets/d/177A-isBNle3KCjzltfI9U5B8Zwb7KG1dPMJtyzWX640/edit#gid=1680740765" target="_blank">
+                                                <button id="button-2a">
+                                                    <img src="../imagens/excel.png" alt="Planilha Excel" /><b style="font-family: Arial, Helvetica, sans-serif">&nbsp;Planilha de Softwares Homologados</b>
+                                                </button>
+                                            </a>
+                                        </td>
+                                        <td align="left" style="border: none;">
+                                            <a href="https://docs.google.com/spreadsheets/d/1HfCu5EXuvCQSOuCFj785WCsl3jzJcFNXoetlleDq0Iw/edit?gid=0#gid=0" target="_blank">
+                                                <button id="button-2a">
+                                                    <img src="../imagens/excel.png" alt="Planilha Excel" /><b style="font-family: Arial, Helvetica, sans-serif">&nbsp;Planilha de Acompanhamentos Urgentes</b>
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div><br><br><br>
+
+            <div id="container">
+
+                <div id="divisao_3">
+                    <h2 id="informacoes_adversas" class="destacar2"> <font size="4" style="font-family: Courier New, monospace">LISTA DE INFORMAÇÕES ADVERSAS</font></h2><br>
+                    <p style="padding-left: 10px;">Dicas, informações e curiosidades sobre situações atendidas pelo N1 da Central de Serviços de TI.</p><br>
+                    <div id="div_lista_informacoes">
+                        <div align="left" style='background-color: white; border-radius: 10px; width: 96%; margin: 0px;'>
+                        <div align="left" id="divFiltro"><br>
+                            <p><b><span style="color: #f00;">Atenção!</b></span> Para pesquisa de informações específicas sobre sistemas do TRT9 e convênios, acesse a página de <a id="a_sistemas" href="sistemas.html">Sistemas</a>.</p><br>
+        
+                            <font> <input type="search" id="pesquisa" placeholder="Digite o termo para pesquisa..." oninput="limpar_filtro()" style="width: 350px;"> </font> 
+                            <button type="button" id="botao1" onclick="filtrar_informacoes(), leiaMais()">Filtrar</button><br>
+        
+                        </div><br>
+        
+        
+                        <div id="div_filtro_informacoes">
+        
+
+                            <div id="div_filtro_informacoes">
+        
+                                <ul>
+                                    <div id="lista_filtro">
+                                        <h4 align="left">Resultado:</h4><br>
+                                        <span id="mostrar"></span><span id="mais">
+        
+                           <!-- Resultado Filtro -->
+
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>ACESSO Á VPN DO TRT9 - </b> Para utilizar a VPN do TRT9, é necessário verificar previamente os acessos atribuídos ao perfil do usuário e ao tombo do equipamento. 
+                                                Os grupos de acesso são:<br><br>
+
+                                                <b>DL_FW_VPN_DEFAULT</b><br>
+                                                Grupo padrão para acesso à VPN. Permite acesso a servidores de arquivos e serviços web. Destinado a conexões realizadas por computadores particulares.
+                                                Este é o único grupo que exige intervenção da SGSI para liberação.
+
+                                                <b>DL_FW_VPN_TS</b><br>
+                                                Permite acesso remoto via Terminal Service (TS) às estações localizadas na capital e no interior do TRT9.
+                                                É necessário apresentar justificativa formal para este acesso e solicitar adicionalmente o grupo Default e/ou HomeOffice.
+
+                                                <b>DL_FW_VPN_HOMEOFFICE</b><br>
+                                                Libera acesso às estações em regime de home office, quando a conexão é feita por equipamentos do TRT9.
+
+                                                <b>DL_AD_COMPUTADORES_SLAM_CLIENT_TS_ALLOWED</b><br>
+                                                Grupo atribuído a computadores do domínio do TRT9, permitindo acesso remoto via MSTSC (Área de Trabalho Remota).<br><br>
+
+                                                <b>Observação:</b> É possível consultar informações sobre acessos da VPN atribuídos a perfil de usuário e tombo de equipamentos através do <b>Active Directory (AD)</b> ou
+                                                através do sistema <a id="a_sistemas" href="https://layer8.trt9.jus.br/login" target="_blank">Layer 8</a><br><br>
+
+                                                Após a liberação dos acessos no perfil e no equipamento, siga com a instalação do cliente <b>VPN CheckPoint</b>, baixe o instalador em: 
+                                                <a id="a_sistemas" href="https://mfa.trt9.jus.br/windows" target="_blank">https://mfa.trt9.jus.br/windows</a> e siga com a instalação.<br>
+
+                                                Em seguida siga com a configuração da VPN e do MFA: Siga as instruções do procedimento disponível em: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31680" target="_blank">
+                                                CSWiki | Software - VPN - Configuração de Autenticação MFA no Cliente VPN</a>.<br><br>
+
+                                                Referências úteis:<br>
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=17008" target="_blank">
+                                                CSWiki | Software - VPN - Solicitação e Formas de Acesso, Tipos de VPN e Suas Finalidades</a>;
+
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19413" target="_blank">
+                                                CSWiki | Software - VPN - Instalação e Configuração do Cliente VPN em Equipamentos do Domínio</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                           <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>ACESSO Á VPN VIA LINUX - </b> A nova versão do Checkpoint exige que a autenticação da VPN seja feita via browser e que este seja o Firefox. Em outros browsers não funciona.
+                                                <br>Portal de autenticação: <a id="a_sistemas" href="https://vpn.trt9.jus.br/sslvpn/">https://vpn.trt9.jus.br/sslvpn/</a><br>
+                                                <b>Observação:</b> Verificar se há o Java instalado, além disso, possivelmente será solicitado a instalação do cshell e do SNX.<br>
+                                                Tarefa Assyst de referência: 
+                                                <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D10508849%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                508849</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Estagiario, Estagiarios, Estagiária, Estagiaria, Estagiarias -->
+                                    <tr>
+                                        <td>
+                                            <p><b>ACESSOS DE ESTAGIÁRIO AOS SISTEMAS DO TRT9 - </b> Quando um novo estagiário inicia suas atividades, o responsável por supervisioná-lo geralmente 
+                                                solicita o login, ou o RH realiza o cadastro. O processo pode levar até um dia (24 horas) para que o usuário e a senha sejam disponibilizados e até 3 dias (72 horas) até que o usuário Assyst seja criado.<br>
+                                                Para cadastro no PJe, se o estagiário a ser cadastrado nunca atuou no PJe, deve ser realizado o pré-cadastro por um usuário 
+                                                com perfil de administrador. Neste caso, deve ser encaminhado chamado para a CSMSJ - Cadastro Pessoas PJe, sempre acompanhado do CPF, 
+                                                e-mail, cidade e estado de nascimento do estagiário que deve ser cadastrado.<br>
+                                                Casoo superior do estagiário necessite que o mesmo tenha acesso a todas as fases processuais no PJe, deverá ser atribuído o perfil 
+                                                "Diretor de Secretaria" em Papel/Localização, com a Visibilidade configurada como "Todos". Para mais informações consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=15870" target="_blank">
+                                                CSWiki | Sistema - PJe - Cadastro de Estagiários</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>ADICIONAR PARTE EM PROCESSO - </b> Em processos que já estão correndo em justiça, para incluir parte interessada é possívelmente somente solicitando à VDT responsável
+                                                pelo processo em questão.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>AQUISIÇÃO DE EQUIPAMENTOS DO TRT9 - </b> Não é possível que um usuário adquira bem do TRT9, mesmo que seja destinado para doação. O bem declarado inservível, seja qual 
+                                                for o motivo, pode ser doado a instituições governamentais, federal, estadual ou municipal ou a instituições beneficentes, existe ainda a possibilidade de leilão, mas 
+                                                o TRT9 não utiliza essa prática, não é possível doação ou venda direta para particulares. Para mais informações consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=4389" target="_blank">
+                                                CSWiki | Hardware - Orientações - Solicitação de Compra de Equipamento Interno de Propriedade do TRT9</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>ASSYST - </b> Informações e curiosidades sobre o sistema Axios Assyst:<br><br> 
+                                                O assyst "puxa" informações do AD, como por exemplo o ramal dos usuários. Há dois servidores dedicados para o Assyst.
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=4389" target="_blank">
+                                                CSWiki | Hardware - Orientações - Solicitação de Compra de Equipamento Interno de Propriedade do TRT9</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Audiencia Digital, PJe Mídias, PJe Midias -->
+                                    <tr>
+                                        <td>
+                                            <p><b>AUDIÊNCIA DIGITAL (SOFTWARE) - </b> Para instalação recomenda-se o download das versões de 32 bits do Audiência Digital e 32 bits do Java 8 Update 231.<br>
+                                                O PJe Mídias está preparado para receber arquivos de diversos tamanhos. Mesmo arquivos grandes serão processados sem problemas, 
+                                                entretanto, para otimizar o envio é recomendado vídeos de no máximo 500MB para evitar erros de upload por motivos externos ao sistema.<br> 
+                                                Os URLS para configuração do AUD são <u>https://midias.pje.jus.br/midias/web/</u>, para o Portal e 
+                                                <u>https://www.trt9.jus.br/audienciadigitalws/</u>, para o Serviço. Para mais informações consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11789" target="_blank">
+                                                CSWiki | Softwares - Audiência Digital - Instalação, Configuração e Orientações Gerais</a>.<br><br>
+                                                <b>Problemas Conhecidos:</b> Quando o Audiência Digital trava e não permite visualizar a gravação, não gerando o arquivo GravaçãoFinal.mp4, apenas arquivos .flv, 
+                                                se houver arquivos com apenas 1 Kb, isso significa que foram corrompidos, sendo necessário realizar um backup, excluir os arquivos de 1 Kb e reiniciar o software,
+                                                conforme o procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=26208" target="_blank">
+                                                CSWiki | PJe Mídias - Erro ao Gerar Gravação Final</a>.
+                                                Caso não haja arquivos corrompidos, é necessário realizar uma audiência fake, conforme o procedimento:
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=14389" target="_blank">
+                                                CSWiki | PJe Mídias - Audiência Digital - Audiência Realizada Não Aparece na Tela Inicial</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CADASTRAR PRAZO DE CERTIFICADO - </b> Link para acesso à pagina de Certificados Digitais, na Intranet, para consulta e cadastro de prazo de certificados:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=10182:3:213499140943259:::::" target="_blank">
+                                                Acesse aqui</a>. Para mais informações consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11327" target="_blank">
+                                                CSWiki | Certificação Digital - Cadastrar Prazo do Certificado Digital na Intranet</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Cadastro Assistente Advogado Pje, Cadastro Assessor no Pje, Cadastro de Assessor no Pje, Cadastro Assistente no PJe -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CADASTRO DE ASSISTENTE DE ADVOGADO NO PJE - </b> O Advogado é quem cadastra seu assistente no PJe, mas caso haja algum problema durante o processo de cadastro, 
+                                                orientar a entrar em contato com a <b>Coordenadoria de Apoio às Varas</b>. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=7954" target="_blank">
+                                                CSWiki | Sistema - PJe - Cadastro de Assistente de Advogado no PJe</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Cadastro Assistente Procurador Pje, Cadastro de Assistente de Procurador no Pje, Cadastro Assessor de Procurador no PJe, Cadastro de Assessor de Procurador no Pje -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CADASTRO DE ASSISTENTE/ASSESSOR DE PROCURADOR NO PJE - </b> Da mesma forma para o assistente de Advogado, o Procurador é quem cadastra seu assistente no PJe, o procedimento é o
+                                                mesmo. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=7954" target="_blank">
+                                                CSWiki | Sistema - PJe - Cadastro de Assistente de Advogado no PJe</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CADASTRO DE PROCURADOR NO PJE - </b> Para cadastrar procurador no PJe orienta-se entrar em contato com a <b>Coordenadoria de Apoio às Varas</b>. Entretanto, 
+                                                caso o procurador seja do Ministério Público do Trabalho (MPT) encaminhar um chamado para <b>CIV - SSC - Seção de Servidores Corporativos</b>. <br>Procedimentos: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=12164" target="_blank">
+                                                CSWiki | Sistema - PJe - Cadastro de Procurador de Município</a>;
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19883" target="_blank">
+                                                CSWiki | Sistema - Acompanhamento de Sessão - PJe - Login Temporário dos Membros do Ministério Público do Trabalho da 9ª Região</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Certidao Explicativa -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CERTIDÃO EXPLICATIVA - </b>Problemas na Geração de Guia de Recolhimento da União (GRU) no 
+                                                site do TRT9 (<a id="a_sistemas" href="https://www.trt9.jus.br/portal/pagina.xhtml?secao=14&pagina=CERTIDAO_EXPLICATIVA" target="_blank"></a>Link</a>)
+                                                 é orientado entrar em contato com o <b>Tesouro Nacional</b>. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=4437" target="_blank">
+                                                CSWiki | Sistema - Guias de Depósito - Erro ao Tentar Realizar Emissão de Guias de GRU</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Derruba Acesso, Derrubar Acesso, Fecha o Sistema, Fecha a VPN, Cai o Acesso da VPN -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CHECKPOINT VPN - </b> A VPN Checkpoint tem TimeOut, o tempo limite é de 8 horas, após esse período o acesso é derrubado automaticamente.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CMDB - </b> Link para acesso ao CMDB (Configuration Management Database), na Intranet, para consulta de status de equipamentos:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=154:247:323735065846065:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Juizes Substitutos -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CONSULTA DE JUÍZES SUBSTITUTOS - </b> Link para acesso à consulta de local de Juízes Substitutos, no Portal do TRT9:  
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=127" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CONSULTA DE LOTAÇÕES - </b> Link para acesso à consulta de lotações de unidades do TRT9, na Intranet:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=10290:56:120444418550801:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CONSULTA DE MAGISTRADOS E SERVIDORES - </b> Link para acesso à consulta de magistrados e servidores do TRT9, na Intranet:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=10290:364:114643068900024:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>CONTATOS - </b> Para informações específicas sobre contatos de unidades do TRT9, acesse a página de 
+                                                <a id="a_sistemas" href="ramais.html"><!-- Ramal -->
+                                                Contatos</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Distribuição, Distribuicao, Distribuiçao -->
+                                    <tr>
+                                        <td>
+                                            <p><b>COORDENADORIA DE APOIO ÀS VARAS - </b> Os canais de contato com a Coordenadoria de Apoio às Varas de Curitiba são os seguintes:<br><br>
+                                                <b>Telefone</b>: <a id="a_avisos" href='tel:+554133107477'>(41)3310-7477</a><br>
+                                                <b>Horário de atendimento do Balcão Virtual</b>: 11:00 às 17:00 (<a id="a_avisos" href="https://www.trt9.jus.br/portal/balcaoVirtual.xhtml" target="_blank">Link</a>)<br>
+                                                <b>Email</b>: <a id="a_avisos" href="mailto:distrib@trt9.jus.br">distrib@trt9.jus.br</a><br>
+                                                <b>Endereço</b>: Av. Vicente Machado, 400 - CEP 80420-010<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Distribuição, Distribuicao, Distribuiçao, Divisao Judiciaria de Segundo Grau -->
+                                    <tr>
+                                        <td>
+                                            <p><b>DIVISÃO JUDICIÁRIA DE 2º GRAU - </b> Os canais de contato com a DIVISÃO JUDICIÁRIA DE 2º GRAU são os seguintes:<br><br>
+                                                <b>Telefone</b>: <a id="a_avisos" href='tel:+554133107477'>(41)3310-7086</a><br>
+                                                <b>Horário de atendimento do Balcão Virtual</b>: 11:00 às 17:00 (<a id="a_avisos" href="https://www.trt9.jus.br/portal/contato.xhtml;jsessionid=bqBDgMQPXP_XNx1u_FnDer93DTHDYDO-irjWSbMs.jboss31?termoBusca=DIVIS%C3%83O+JUDICI%C3%81RIA+DE+2%C2%BA+GRAU+-+DJ2GRAU" target="_blank">Link</a>)<br>
+                                                <b>Email</b>: <a id="a_avisos" href="mailto:divisaojud2@trt9.jus.br ">divisaojud2@trt9.jus.br </a><br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>EQUIPAMENTOS DE USO PESSOAL - </b> Link para acesso à pagina de consulta de servidores e magistrados responsáveis por 
+                                                equipamentos, lotados em carga pessoal, na Intranet:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=256:278:218602984798729:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Ergonomia, Equipamentos Ergonomicos, Teclado Ergonômico, Mouse Ergonômico, Teclado Ergonomico, Mouse Ergonomico -->
+                                    <tr>
+                                        <td>
+                                            <p><b>EQUIPAMENTOS ERGONÔMICOS - </b> Orientar o servidor a entrar em contato com a <b>Coordenadoria de Saúde Ocupacional, Desenvolvimento e Benefícios</b>, ou a <b>Seção De 
+                                                Fisioterapia E Segurança Do Trabalho (SEFIST)</b>, para que seja registrada a necessidade do fornecimento de equipamento para necessidades especiais 
+                                                (Microcomputador, monitor, e/ou qualquer periférico específico), para posteriormente a <b>STISJ</b> 
+                                                receber o pedido (vindo da <b>Coordenadoria de Saúde Ocupacional, Desenvolvimento e Benefícios</b>) para providências, seja para priorizar o fornecimento de determinados 
+                                                equipamentos já disponíveis, recentemente remanejados ou para previsão de nova aquisição. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=16181" target="_blank">
+                                                CSWiki | Hardware - Orientações - Equipamentos Para Necessidades Especiais</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>EXEMPLOS DE CHAMADOS - </b> Lista de tarefas que servem como modelo para atender necessidades eventuais e demandas do cotidiano:<br><br>
+                                                <b>1. </b> Solicitação de Gravação na URA: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D5140651%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                R140651</a>;<br>
+                                                <b>2. </b> Problema de Rede em Local: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D10518134%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                518134</a>;<br>
+                                                <b>3. </b> Problema no Assyst: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D10539814%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                539814</a>;<br>
+                                                <b>4. </b> Exclusão de Acessos de Colaborador Desligado: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D5243762%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                R243762</a>;<br>
+                                                <b>5. </b> Solicitação de Acessos de Novo Colobarador: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D5239655%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                R239655</a>;<br>
+                                                <b>6. </b> Solicitação de Novos Ramais: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D5228708%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                R228708</a>;<br>
+                                                <b>7. </b> Servidor Solicitando Acessos para um Novo Colaborador: <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26checkJukeBoxSettings%3Dtrue%26eventId%3D5248879%26resultSet%3D" target="_blank">
+                                                R248879</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>FORÇA DE TRABALHO - </b> Link da Intranet para consulta de servidores em determinado local, bem como informações sobre cargo do servidor, responsável pelo local, nível FC/CJ, entre outras informações:
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=205:493:103155242795616:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>GLOSSÁRIO - </b> Consulte o Glossário: <a id="a_sistemas" href="glossario.html">Clique Aqui</a>. <br><br>
+                                            <!-- <b>Termos do Glossário</b>: "Ação", "Ação Civil Pública", "Ação Originária", "Ação Rescisória", "Acórdão", "Acordo/conciliação", "Aditamento à Inicial", "Adjudicação", "Advogado", 
+                                            "Agravo de Instrumento", "Agravo de Petição", "Alvará", "Apensado Ao Processo", "Arrematação", "Audiência", "Auto de Penhora", "Autos Entregues Em Carga", "Baixa a Origem", 
+                                            "Carta Precatória", "Carta Precatória Inquiritória", "CLT", "CNJ", "Conciliação", "Concluso Ao Relator", "Contestação", "Contrarrazões", "Corregedoria", "Correição", "CTPS", 
+                                            "Custas Processuais", "Depositário", "Depósito Recursal", "Desembargador do Trabalho", "Despacho", "Dissídio Coletivo", "Distribuição", "Embargos", "Embargos à Arrematação", 
+                                            "Embargos à Execução", "Embargos à Penhora", "Embargos de Declaração", "Encerrada a Instrução", "Exceção de Pre-executividade", "Execução", "Exequente", "Expedido Mandado de Citação", 
+                                            "Fase de Execução", "Fase de Liquidação", "Fazenda Pública", "Guia de Depósito", "Homologação", "Impedimento", "Impugnação à Sentença de Liquidação", "Inicial", "Instância", 
+                                            "Instrução", "Juiz", "Julgamento no Tribunal", "Leilão", "Liminar", "Liquidação", "Liquidação Homologada", "Mandado", "Mandado de Penhora", "Mandado de Segurança", "Mandato", 
+                                            "Mérito", "Ministério do Trabalho", "Ministério Público do Trabalho", "Ministro", "Notificação", "Oficial de Justiça", "Oitiva de Testemunha", "Parecer", "Penhora", 
+                                            "Perícia Contábil", "Perícia Médica", "Perícia Técnica", "Perito", "Petição Inicial", "Petição Protocolada", "PJe-JT", "Precatório", "Preliminar", "Prequestionamento", 
+                                            "Processo Concluso (conclusão)", "Processo Está Em Diligências", "Processo no Prazo", "Protesto Antipreclusivo", "Quinto Constitucional", "Razões Finais", "Reclamação Trabalhista", 
+                                            "Reclamada", "Reclamante", "Reclamatória", "Reclamatória Trabalhista", "Recurso", "Recurso Adesivo", "Recurso de Revista", "Recurso Extraordinário", "Recurso Ordinário", "Relator", 
+                                            "Remetidos os Autos Ao TRT", "Revelia", "Rito Ordinário", "Rito Sumaríssimo", "RPV", "Sentença", "Sessão de Julgamento", "Sine Die", "Suspeição", "Testemunha", "Trânsito Em Julgado", 
+                                            "TRT", "TST", "Vara do Trabalho", "Voto".<br><br> --> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>HISTÓRICO DE MOVIMENTAÇÕES DE BENS - </b> Link para acesso ao Histórico de Movimentações de Bens, na Intranet:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=154:43:315595570642839:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>JTE - </b> O aplicativo para dispositivos móveis "Justiça do Trabalho Eletrônica", foi desenvolvido no âmbito do TRT da Quinta Região (Bahia), em 2016. 
+                                                Visa disponibilizar o acesso às informações processuais e serviços, de forma subsidiária, a fim de facilitar a consulta pelos advogados, partes e público em geral, sem caráter de publicação oficial.
+                                                <br><br>É possível realizar assinatura via JTe, para isso é necessário realizar o pareamento do aplicativo no perfil do PJe do usuário conforme o manual: 
+                                                "<a id="a_sistemas" href="https://pje.csjt.jus.br/manual/index.php/Pareamento_PJe" target="_blank">Pareamento de dispositivos no PJe</a>". Para realizar assinatura é necessário acessar o módulo <b>Token</b> do JTe,
+                                                conforme o procedimento do manual: "<a id="a_sistemas" href="https://pje.csjt.jus.br/manual/index.php/Token_PJe" target="_blank">Token</a>". 
+                                                <br><br>Procedimentos: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=12878" target="_blank">
+                                                CSWiki | Sistema - Orientações - Apresentação da JTe (Justiça do Trabalho Eletrônica)</a>; <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=22764" target="_blank">
+                                                JTe - Assinatura de Documentos pelo Celular</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>JUS POSTULANDI - </b> É um tipo de perfil de pré-cadastro destinado a novos usuários no PJe. Ele permite que uma parte de um 
+                                                processo acesse o sistema exclusivamente para consultar processos. Para que uma parte consiga <b>visualizar um documento sigiloso</b> em um processo, 
+                                                é necessário que a VDT libere a visualização como <b>terceiro interessado</b>. O acesso apenas como Jus Postulandi não permite a visualização desse tipo de documento.
+                                                <br>Caso um advogado ou servidor esteja registrado com o perfil de Jus Postulandi, será necessária a atualização do cadastro para obtenção de permissões mais amplas no sistema. 
+                                                Para isso, é preciso entrar em contato com a <b>Coordenadoria de Apoio às Varas</b> e solicitar a atualização do perfil. Caso um servidor solicite um 
+                                                perfil de diretor no PJe, é possível orientar que entre em contato com a SGJ. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=7948" target="_blank">
+                                                CSWiki | Sistema - PJe - Alterar Cadastro de Jus Postulandi Para os Advogados</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>LIGAR MICRO REMOTAMENTE - </b> Fluxo para ligar um micro remotamente via SCCM. Basta pesquisar o tombo no SCCM > Clicar com o botão direito do mouse e selecionar 
+                                                <b>Notificação de Cliente</b> > Em seguida clicar em <b>Ativação</b>. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19505" target="_blank">
+                                                CSWiki | Software - Orientações - Ligar Micro Pelo SCCM</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>LISTA DE LINKS - </b> Acesso à lista de links: <a id="a_sistemas" onclick='scrollToLinks()' style='cursor: pointer;'>Clique aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Fluxo para Localizar Procuradores no Pje -->
+                                    <tr>
+                                        <td>
+                                            <p><b>LISTA DE PROCURADORIAS DO PJE - </b> Fluxo para Localizar Procuradorias e seus Procuradores no PJe:<br><br>
+                                                <b>1.</b> Acesse o PJe Homologação, <a id="a_sistemas" href="https://pje-homologacao.trt9.jus.br/primeirograu/login.seam" target="_blank">LINK</a>;<br>
+                                                 <b>2.</b> No menu lateral esquerdo, clique em Cadastro;<br>
+                                                 <b>3.</b> Selecione a opção Procuradoria;<br>
+                                                 <b>4.</b> No campo Nome da Procuradoria, digite o nome desejado e clique em Pesquisar;<br>
+                                                 <b>5.</b> Na listagem, clique no ícone de lápis correspondente à procuradoria desejada;<br>
+                                                 <b>6.</b> Na tela seguinte, selecione a aba Procuradores.<br><br>
+                                                Será exibida a lista completa dos procuradores vinculados àquela procuradoria.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>LOCALIZAR CPF DE ADVOGADO NO PJE - </b> Fluxo para Localizar o CPF de um Advogado no PJe:<br><br>
+                                                <b>1.</b> Acesse o PJe Homologação, <a id="a_sistemas" href="https://pje-homologacao.trt9.jus.br/primeirograu/login.seam" target="_blank">LINK</a>;<br>
+                                                 <b>2.</b> No menu lateral esquerdo, selecione Painel Antigo;<br>
+                                                 <b>3.</b> Clique em Configuração;<br>
+                                                 <b>4.</b> Acesse a opção Pessoa;<br>
+                                                 <b>5.</b> Selecione Advogado;<br>
+                                                 <b>6.</b> Clique em Confirmar Credenciamento;<br>
+                                                 <b>7.</b> Pesquise pelo nome do advogado desejado.<br><br>
+                                                 O CPF será exibido nas informações de credenciamento do advogado.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                           <li>
+                            <table id="tabela_filtro"><!-- Todos, All -->
+                                <tr>
+                                    <td>
+                                        <p><b>MALOTE DIGITAL</b> - Informações sobre o sistema Malote Digital:<br><br>
+                                            <b>1.</b> Os documentos devem ter no máximo <b>10 MB (Megabytes)</b>;<br>
+                                            <b>2.</b> Há uma Central de Atendimento ao Usuário para o Malote Digital em 0800-710-4357;<br>
+                                            <b>3.</b> O TRT9 não dá suporte a problemas de lentidão e indisponibilidade do sistema de Malote Digital, devendo o Service Desk informar o problema ao Gestor Regional do TRT-PR, que 
+                                            intermedia o contato com o Suporte Técnico responsável em Brasília. Tipicamente o Gestor deve enviar mensagem de correio eletrônico para sistemasnacionais@cnj.jus.br relatando 
+                                            o problema.<br>
+                                            <b>4.</b> Foi criado o grupo solucionador da <b>Seção de Convênios</b> no Assyst, e as responsáveis são Yole e Ana Maria, casos onde houver necessidade é possível encaminhar a tarefa ao 
+                                            grupo solucionador.<br><br>
+                                            Procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=8150" target="_blank">
+                                            CSWiki | Malote Digital - Informações Gerais e Orientações</a>.<br><br> 
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            </li>
+                            <li>
+                            <table id="tabela_filtro"><!-- Todos, All -->
+                                <tr>
+                                    <td>
+                                        <p><b>MICROFONE DE PARTES - </b> Um dos microfones instalados em salas de audiência, tem a única função de apregoar as partes, esse 
+                                            equipamento é de responsabilidade da SA - Setorial da unidade, de sua respectiva região (Setorial Curitiba, Cascavel, Londrina e Maringá). 
+                                            Procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11573" target="_blank">
+                                            CSWiki | Hardware - Orientações - Equipamentos de Som da Sala de Audiência</a>.<br><br> 
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            </li>
+                           <li>
+                            <table id="tabela_filtro"><!-- Todos, All -->
+                                <tr>
+                                    <td>
+                                        <p><b>MODEM 4G VIVO - </b> A senha padrão para os modens 4G da Vivo é: "vivo". Procedimento: 
+                                            <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=24313" target="_blank">
+                                            CSWiki | Software - Modem 4G - Senha do Modem da VIVO</a>.<br><br> 
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>MPT - </b> O funcionário do Ministério Público do Trabalho que possui login nessa regional, tem apenas o cadastro para acessar o 
+                                                ACOMPS, mas não consegue acessar o e-mail do TRT9. Caso não esteja recebendo o código do MFA para acesso ao sistema, é possível que 
+                                                o e-mail esteja cadastrado incorretamente. Nesse caso, recomenda-se abrir um chamado para a <b>CIV - SSC - Seção de Servidores Corporativos</b>.<br>
+                                                Caso o Procurador esqueça a senha, o chamado deve ser encaminhado para os analistas, no procedimento há uma tabela informando os logins de usuário 
+                                                individuais e senha padrão para cada procurador.<br>
+                                                Para mais informações, consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19883" target="_blank">
+                                                CSWiki | Acompanhamento de Sessão - PJe - Login Temporário dos Membros do Ministério Público do Trabalho da 9ª Região</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PASTAS DE DIGITALIZAÇÃO - </b> Relação de informações sobre pastas de digitalização para configuração de impressoras multifuncionais
+                                                em unidades da capital e no interior, contidas nos seguintes links: <a id="a_sistemas" href="digitalizacao.html">
+                                                Capital</a> e <a id="a_sistemas" href="digitalizacao2.html"> Interior</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PUTA ELETRÔNICA</b> - Link de acesso a Pauta Eletrônica no Site do TRT9: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/pautaeletronica/" target="_blank">
+                                                Clique aqui</a></b>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PDPJ - </b> Orientações sobre Atualização de Email no PDPJ: <a id="a_avisos" href='index.html#orientacao_pdpj'>Clique aqui.</a><br>
+                                                <b>Procedimento:</b> 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=33274" target="_blank">
+                                                CSWiki | Sistema - PJe - Usuário Externo com problemas de login após adoção MFA</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PERITO - </b> Para a solicitação de cadastro de perito no PJe, é necessário primeiramente coletar os dados do usuário para registro 
+                                                no Assyst e registrar uma tarefa. Em seguida, deve-se verificar se o perito já está cadastrado no sistema AJ-JT. Caso não esteja, 
+                                                é preciso realizar o cadastro e confirmar com a Seção de Perícias. Para consultar se o cadastro já existe, pode-se acessar o link: 
+                                                <a id="a_sistemas" href="https://aj.sigeo.jt.jus.br/aj2/internetaberto/profissionais.jsf" target="_blank">AJ-JT - Consulta de Profissionais</a>. 
+                                                Após a validação do cadastro pela Seção de Perícias, uma rotina automática será executada na madrugada seguinte, importando os dados 
+                                                do AJ-JT para o PJe. Por fim, uma vez que os dados sejam importados, o perito precisará acessar o PJe utilizando seu certificado 
+                                                digital. Em caso de dúvidas ou pendências, o usuário deve entrar em contato com a Seção de Perícias. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=7730" target="_blank">
+                                                CSWiki | Sistema - PJe - Cadastro de Perito</a>.
+                                                <br>Para obter acesso ao PJe Mídias, os peritos devem entrar em contato com o suporte técnico do CNJ, solicitando a viabilização 
+                                                do acesso. É importante mencionar que a concessão não está sendo realizada pelos administradores regionais devido ao fato de se 
+                                                tratar de um usuário externo, sem endereço de e-mail com o domínio "jus.br". Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=32499" target="_blank">
+                                                CSWiki | Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Externos"</a>.<br><br> 
+                                                Fluxo de Atendimento: <a id="a_sistemas" href="https://www.csjt.jus.br/web/csjt/aj/jt" target="_blank">
+                                                https://www.csjt.jus.br/web/csjt/aj/jt</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PESQUISA PROCESSUAL - </b> O advogado não tem acesso ao microsuap para consulta de processos antigos, mas através da pesquisa processual no site do TRT9 é possível inserir a 
+                                                numeração antiga (numeração do CNJ), conforme procedimento:
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=24797" target="_blank">
+                                                CSWiki | Sistema - Sítio TRT9 - Consulta de Processo pela Numeração CNJ</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Petição Avulsa, Peticao Avulsa, Petiçao Avulsa-->
+                                    <tr>
+                                        <td>
+                                            <p><b>PETICIONAMENTO AVULSO - </b> Quando ja há um advogado vinculado a uma parte em um processo é necessário realizar um 
+                                                peticionamento avulso para se habilitar no processo em questão. Observação: O peticionamento avulso serve apenas para solicitar 
+                                                a habilitação no processo, é de cargo do servidor público do órgão em questão que faça a habilitação do advogado.
+                                                Procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=10324" target="_blank">
+                                                CSWiki | Sistema - PJe - Peticionamento Avulso</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias, Cadastro no Pje Mídias, Cadastro no Pje Midias, Cadastro Pje Mídias, Cadastro Pje Midias, Cadastro de Advogado no Pje Mídias, Cadastro de Advogado no Pje Midias, Cadastro Advogado no Pje Mídias, Cadastro Advogado no Pje Midias -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PJE MÍDIAS - </b>Caso um usuário, parte de um processo e sem advogado constituído, solicite acesso às mídias, 
+                                                recomenda-se seguir o procedimento a baixo para gerar a chave ou link de vídeo no PJe Mídias, possibilitando o acesso externo: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=29491" target="_blank">
+                                                CSWiki | Sistema - PJe Mídias - Acesso Externo a Vídeos</a>.<br><br> 
+                                                Para acesso de Advogados no PJe Mídias deve-se usar a senha cadastrada no Escritório Digital do CNJ (<a id="a_sistemas" href="https://www.escritoriodigital.jus.br/" target="_blank">
+                                                Link</a>). Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=18766" target="_blank">
+                                                CSWiki | SCA Corporativo do CNJ - Cadastro de Usuários (PJe Mídias e outros sistemas)</a>.<br><br>
+                                                <b>Observação: </b> Consulte o procedimento acima para informações sobre o cadastro de usuários internos e externos no PJe Mídias, bem como Servidores, Magistrados, Estagiários, 
+                                                Advogados, Peritos, Ex-Servidores, etc. <br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias Desktop, Pje Midias Advogado, Pje Mídias Advogado -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PJE MÍDIAS DESKTOP - </b> O PJe Mídias Desktop é o software que possibilita que advogados enviem arquivos de áudio e vídeo para processos em tramitação. 
+                                                Requisitos:<br><br>
+                                                1. Sistema operacional Windows 10 ou superior (64 bits);<br>
+                                                2. Conexão com a internet;<br>
+                                                3. Versão atualizada do Java instalada. <br><br>
+                                                Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=34224" target="_blank">
+                                                CSWiki | Softwares - PJe Mídias Desktop - Instalação do PJe Mídias Desktop</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias, Cadastro no Pje Mídias, Cadastro no Pje Midias, Cadastro Pje Mídias, Cadastro Pje Midias, Cadastro de Advogado no Pje Mídias, Cadastro de Advogado no Pje Midias, Cadastro Advogado no Pje Mídias, Cadastro Advogado no Pje Midias -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PJE PUSH - </b>O Push não funciona para processos em segredo de justiça. 
+                                                Para mais informações sobre o sistema acesse a página de <a id="a_sistemas" href="sistemas.html">Sistemas</a>. <br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Requisitos, Tamanho de Arquivos, Protocolação em Lote -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PJE TIPOS E TAMANHO MÁXIMO DE ARQUIVOS SUPORTADOS - </b> Os tipos de arquivos aceitos pelo sistema PJe são basicamente <b>PDF</b>, <b>áudio MP3</b> e <b>vídeo MP4</b>. 
+                                            Formatos de imagem não são compatíveis, as imagens devem estar dentro dos documentos em PDF. Não é possível, por exemplo, fazer o upload de arquivos Word, Excel ou vídeos no formato WMA. <br><br>
+
+                                            O tamanho máximo aceito é de <b>10 MB</b> para arquivos PDF. Já para os arquivos de áudio (MP3) e vídeo (MP4), o limite máximo é de <b>200 MB</b>. 
+                                            Arquivos que excedem o limite, devem ser divididos ou compactados. <br><br>
+
+                                            Observação: Para os casos de protocolo em lote, é orientado que se faça no máximo de 30 em 30 processos. <br><br> Procedimento: 
+                                            <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31003" target="_blank">
+                                            CSWiki | Sistema - PJe - Tipos e Tamanho Máximo de Arquivos Suportados</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias, Cadastro no Pje Mídias, Cadastro no Pje Midias, Cadastro Pje Mídias, Cadastro Pje Midias, Cadastro de Advogado no Pje Mídias, Cadastro de Advogado no Pje Midias, Cadastro Advogado no Pje Mídias, Cadastro Advogado no Pje Midias -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PJE TREINAMENTO - </b>O PJe Treinamento é acessível através deste <a id="a_sistemas" href="https://pje-treinamento.trt9.jus.br/trt/" target="_blank">Link</a>.
+                                                O Sistema PJe Treinamento não é atualizado regularmente, somente ocorre atualização conforme é solicitado por um servidor.  <br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PORTAL INTRANET ANTIGO - </b> Link para acesso ao portal antigo da Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=104:1:107783397939048:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>PORTAL INTRANET NOVO - </b> Link para acesso ao novo portal da Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/r/portal/portal/home?session=113483601715184" target="_blank">
+                                                Acesse aqui</a>. Para mais informações, consulte o procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=32532" target="_blank">
+                                                CSWiki | Sistema - Intranet - Novo portal da Intranet</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Token, Tokens, eToken, eTokens, e-Token -->
+                                    <tr>
+                                        <td>
+                                            <p><b>POSSE DE DOIS TOKENS - </b> Lista de cargos de servidores públicos que possuem direito a posse de dois e-tokens:<br><br> 
+                                                <b>1.</b> Diretores de Varas do Trabalho;<br>
+                                                <b>2.</b> Magistrados;<br>
+                                                <b>3.</b> Desembargadores.<br><br> 
+                                                <b>OBservação</b>: Diretores e Magistrados substitutos não tem direito a possuir dois tokens.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Baner, Baners, Banners -->
+                                    <tr>
+                                        <td>
+                                            <p><b>QUADRO DE AVISOS DO PJE - </b> Informações importantes referente ao quadro de avisos do PJe:<br><br> 
+                                                <b>1.</b> Para solicitação de inserção de banner no quadro de avisos do PJe, convém encaminhar a tarefa para a <b>Seção de Suporte do PJe</b>. <br>
+                                                Tarefa Assyst de referência: 
+                                                <a id="a_sistemas" href="https://csti.trt9.jus.br/assystweb/application.do#event%2FDisplayEvent.do%3Fdispatch%3DgetEvent%26eventId%3D5233349%26checkJukeBoxSettings%3Dtrue%26resultSet%3D" target="_blank">
+                                                R233349</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>REQUISITOS DE SENHAS - </b> Informações referente aos requisitos de senha para acesso a sistemas:<br><br>
+                                                <b>PJe</b>: <br>
+                                                <b>1.</b> Mínimo 8 Caracteres;<br>
+                                                <b>2.</b> Letra Maiúscula;<br>
+                                                <b>3.</b> Letra Minúscula;<br>
+                                                <b>4.</b> Números;<br>
+                                                <b>5.</b> Caractere especial.<br><br>
+                                                <b>Windows (Senha Institucional)</b>: <br>
+                                                <b>1.</b> O comprimento mínimo da senha é de 11 caracteres.<br>
+                                                <b>2.</b> A senha deverá possuir obrigatoriamente 3 dos 4 grupos de caracteres especiais disponíveis:<br>
+                                                <b>3.</b> Maiúsculas, minúsculas, números e caracteres especiais, tais como @, % e *, por exemplo.<br>
+                                                <b>4.</b> A validade da senha é de 365 dias a partir da última troca. Após esse período, ela deve ser obrigatoriamente alterada.<br>
+                                                <b>5.</b> Senhas antigas não poderão ser reutilizadas.<br><br>
+                                                <b>Procedimentos:</b> 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=20863" target="_blank">
+                                                CSWiki | Sistema - PJe - Requisitos Senha de Acesso</a>.
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11186" target="_blank">
+                                                CSWiki | Alteração da Senha Institucional</a>.<br><br></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>RESPONSÁVEL SMP POR EQUIPAMENTO - </b> Link para acesso à pagina de consulta de responsáveis de locais SMP, por tombo de equipamentos,
+                                                 na Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=154:99:101962944467571:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>RESPONSÁVEL SMP POR LOCAL - </b> Link para acesso à pagina de consulta de responsáveis de locais SMP, na Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=154:36:106653922257845:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SEÇÃO DE DADOS DE MAGISTRADOS E SERVIDORES - </b> Seção da equipe de Gestão de Pessoas do Sistema SIGEP. Local não possui atribuição no Assyst, para ser contatado apenas via telefone. 
+                                                Contato: (41) 331-7162.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SECRETARIA ADMINISTRATIVA - </b> Lista de Equipamentos Fornecidos e Serviços Realizados pela SA:<br><br>
+                                                <b>1.</b> Apoio de Braço;<br>
+                                                <b>2.</b> Aparelho Celular;<br>
+                                                <b>3.</b> Baterias;<br>
+                                                <b>4.</b> Descarte de Materiais de Escritório e Insumos;<br>
+                                                <b>5.</b> Fornecimento e Remanejamento de Mobiliário;<br>
+                                                <b>6.</b> Lâmpadas;<br>
+                                                <b>7.</b> Manutenção de Equipamentos de Segurança (CFTV);<br>
+                                                <b>8.</b> Manutenção de Projetores;<br>
+                                                <b>9.</b> Materiais de Escritório;<br>
+                                                <b>10.</b> Microfone de Apregoamento;<br> <!-- Microfone de Apregoar as Partes -->
+                                                <b>11.</b> Mousepad (verificar antes se há disponível no estoque da CSTI);<br>
+                                                <b>12.</b> Pen Drive;<br>
+                                                <b>13.</b> Suporte para Monitores (Braço Articulado);<br>
+                                                <b>14.</b> Toner de Impressoras (com exceção de Lexmark MX432).<br><br>
+                                                Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=6064" target="_blank">
+                                                CSWiki | Equipamentos - Solicitar Fornecimento - Itens Fornecidos pela Secretaria Administrativa</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SERASAJUD - </b> A Seção de Convênios da SGJ trata do cadastro dos servidores nos convênios disponíveis, inclusive o SerasaJUD. 
+                                                Para outras informações, inclusive suporte técnico, é preciso recorrer a outros canais.<br><br>
+
+                                                <a id="a_sistemas" href="https://www.cnj.jus.br/sistemas/serasajud/" target="_blank">Apresentação do SerasaJud no portal do CNJ</a><br>
+                                                <a id="a_sistemas" href="https://www.serasaexperian.com.br/serasajud/" target="_blank">Apresentação do SerasaJUD no sítio da Serasa Experian</a><br>
+                                                <a id="a_sistemas" href="https://www.serasaexperian.com.br/images-cms/wp-content/uploads/2021/01/MANUAL-VERSAO-6-PDF.pdf" target="_blank">Manual SerasaJUD da Serasa Experian - versão de Outubro de 2020</a><br>
+                                                <a id="a_sistemas" href="https://www.tjsc.jus.br/web/corregedoria-geral-da-justica/serasajud" target="_blank">Conteúdo sobre o SerasaJud no sítio do TJ de Santa Catarina</a><br><br>
+
+                                                <b>Suporte SerasaJUD</b>, canais de atendimento:<br><br>
+                                                
+                                                <b>E-mail</b>: serasajud@br.experian.com;<br>
+                                                <b>Telefone</b>: (16) 3422-7001;<br>
+                                                <b>Horário de atendimento</b>: das 13h às 18h.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SERVIDOR/MAGISTRADO APOSENTADO - </b> Após a aposentadoria, o servidor tem um prazo de 30 dias para acessar sua caixa de e-mail 
+                                                antes que ela seja bloqueada. Caso o bloqueio ocorra antes desse período, é possível solicitar à SSC, por meio de um chamado, o 
+                                                envio dos e-mails para o endereço pessoal do servidor aposentado. Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=2767" target="_blank">
+                                                CSWiki | Software - Correio - E-mail para Servidores Inativos</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SGAM - </b> Link para acesso ao Painel por Localidade, na Intranet, para consulta de quantitativo de equipamentos lotados em 
+                                                cada unidade do TRT9. Intuito do sistema é demonstrar a quantitade de equipamentos em uso na unidade, bem como a quantitade autorizada
+                                                para fornecimento, conflitando os dados.   
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=256:256:117026343015566:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Sistemas CNJ, Sistema CNJ -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SISTEMAS DO CNJ - </b> Esta é a lista (atualizada em 27/03/2025) dos 28 Sistemas do CNJ, de interesse dos usuários internos do TRT9, cujo acesso depende de cadastro prévio no SCA:<br><br> 
+                                                <b>AD</b>: Audiência Digital e PJe Mídias<br>
+                                                <b>BNPR</b>: Banco Nacional de Dados de Demandas Repetitivas e Precedentes Obrigatórios<br>
+                                                <b>CNEP</b>: Cadastro Nacional de Entes Públicos<br>
+                                                <b>CNSM</b>: Cadastro Nacional de Subsídio de Magistrados<br>
+                                                <b>CONSER</b>: Controle de concursos em cartórios<br>
+                                                <b>DATAJUD</b>: Consultas Datajud<br>
+                                                <b>E-NATJUS</b>: Cadastro de Notas Técnicas<br>
+                                                <b>IA</b>: Plataforma Codex<br>
+                                                <b>INTEGRA</b>: Serviço e Monitoramento de Conformidades de Atos do CNJ<br>
+                                                <b>JUMP</b>: Sistema Mineração de Processos do Poder Judiciário<br>
+                                                <b>JUSNUM</b>: Justiça em Números<br>
+                                                <b>MNAC-NEW</b>: Metas Nacionais do Poder Judiciário<br>
+                                                <b>MODULOXML</b>: Módulo de Produtividade Mensal<br>
+                                                <b>NOTIFICACAO_PROD</b>: Serviço de Notificações<br>
+                                                <b>PBP</b>: Portal de Boas Práticas<br>
+                                                <b>PORTALGD</b>: Portal de Governança Digital (Connect-Jus)<br>
+                                                <b>PREVIDENCIARIO</b>: Prevjud (Serviço de Informação e Automação Previdenciária)<br>
+                                                <b>QDGE</b>: Pesquisa de Clima Organizacional do Poder Judiciário<br>
+                                                <b>R102</b>: SIAFI-JUD (Resolução CNJ 102/2009 - Sistema Integrado de Administração Financeira)<br>
+                                                <b>RENAJUD</b>: Restrições Judiciais sobre Condutores e Veículos Automotores<br>
+                                                <b>RENOVAJUD</b>: Plataforma da Rede de Inovação e Inteligência do Judiciário (PDPJ-Br)<br>
+                                                <b>SERP</b>: Sistema Eletrônico dos Registros Públicos<br>
+                                                <b>SGP</b>: Sistema de Gestão de Precatórios<br>
+                                                <b>SISBAJUD/BACENJUD</b>: Sistema de Busca de Ativos do Poder Judiciário<br>
+                                                <b>SNGB_PROD</b>: Sistema Nacional de Gestão de Bens<br>
+                                                <b>SNIPER</b>: Sistema Nacional de Investigação Patrimonial e Recuperação de Ativos<br>
+                                                <b>SNMC</b>: Sistema Nacional de Monitoramento de Conformidade<br>
+                                                <b>SQCNJ</b>: Sistema de Questionários do CNJ<br><br>
+                                                Procedimento:  
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31626" target="_blank">
+                                                CSWiKi | SCA Corporativo do CNJ - Lista de sistemas</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SMARTPHONE - </b> Esses equipamentos, em geral, são fornecidos para <b>Oficiais de Justiça</b> e devem ser solicitados através da Intranet.
+                                                Problemas com smartphones fornecidos pelo TRT9 devem ser verificados com a <b>Mensageria</b> na <b>SA</b>. Procedimento:  
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=16358" target="_blank">
+                                                CSWiKi | Hardware - Smartphone - Não Liga</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SMP - </b> Link para acesso ao Sistema de Material e Patrimônio, na Intranet, para consulta de equipamentos:  
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=154:39:203628724799056:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Solaria, Automação, Automaçao, Robo Solaria, Robô Solária, Robo RJ, Robô RJ, Robos RJ, Robos Solária, Robos Solaria, Robôs RJ, Robôs Solaria, Robôs Solária -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SOLÁRIA - </b> O Projeto Solária tem como objetivo o desenvolvimento de robôs que trazem agilidade na tramitação processual. O uso de cada robô é opcional e cada robô 
+                                                pode ser habilitado individualmente. O usuário delega permissões ao Solária para realizar as automações em seu nome.<br><br>
+                                                <b>RJ-1</b>: marcação de audiências com a publicação no Diário Eletrônico da Justiça do Trabalho (DEJT);<br>
+
+                                                <b>RJ-2</b>: publicações de acórdãos do 2º Grau no PJe;<br>
+
+                                                <b>RJ-3</b>: opção pelo Juízo 100% Digital;<br>
+
+                                                <b>RJ-4</b>: altera os responsáveis no PJe automaticamente, de acordo com o eRec;<br>
+
+                                                <b>RJ-5</b>: certifica a juntada de Mídias;<br>
+
+                                                <b>RJ-6</b>: automatiza o envio de expediente por e-mail;<br>
+
+                                                <b>RJ-7</b>: marcação de audiências sem a publicação no Diário Eletrônico da Justiça do Trabalho (DEJT);<br>
+
+                                                <b>RJ-8</b>: unificação de endereços repetidos no cadastro de partes do PJe;<br>
+
+                                                <b>RJ-9</b>: manipulação automática de alvarás já assinados;<br>
+
+                                                <b>RJ-10</b>: intima sobre a juntada de mídias;<br>
+
+                                                <b>RJ-11</b>: inclui o GIGS do formulário da conciliação;<br>
+
+                                                <b>RJ-12</b>: verifica, certifica e junta e-mails ao processo, procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=23094" target="_blank">
+                                                CSWiki | Solária RJ-12 Juntar documentos ao processo no PJe</a>;<br>
+
+                                                <b>RJ-13</b>: identifica casos de segredo de justiça (Lei 14.283/2022) e de assédio eleitoral (Resolução CSJT 355/2023);<br>
+
+                                                <b>RJ-14</b>: verifica e designa responsável pelo processo no PJe;<br>
+
+                                                <b>RJ-15</b>: envia informações de quórum sobre as pautas de julgamento do 2º Grau para sessão da semana seguinte;<br>
+
+                                                <b>RJ-16</b>: junta certidões nos processos do PJE;<br>
+
+                                                <b>RJ-17</b>: automação do SISBAJUD (Sistema que interliga o Banco Central ao Poder Judiciário);<br>
+
+                                                <b>RJ-20</b>: Realiza a remessa para o 1º Grau de processos julgados, após movimentar o processo no fluxo e criar a certidão de decurso de prazo;<br>
+
+                                                <b>RJ-21</b>: motor de regras para criação das próprias automações na tramitação processual;<br>
+
+                                                <b>RJ-24</b>: redistribui processos em lote no 1º Grau no sistema PJe;<br>
+
+                                                <b>RJ-25</b>: Automação de precatórios;<br>
+
+                                                <b>RJ-26</b>: Cópia de Decisões entre Autos.<br><br>
+                                                <b>Observação</b>: Orienta-se que o acesso ao Solária através de micro particular só é possível pela VPN do TRT. 
+                                                Procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=27665" target="_blank">
+                                                CSWiki | Solária - Acesso via Desktop Particular</a>.<br><br> 
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SOLICITAÇÃO DE SERVIÇOS - </b> Link para acesso ao sistema de Solicitação de Serviços à SA, Setoriais e etc, na Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=320:46:205023667485201:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SOLUTI - </b> Para a gravação do certificado digital junto à Soluti, recomenda-se realizar o procedimento por meio de videoconferência 
+                                                com o canal de suporte. Caso necessário, poderá ser solicitado à Soluti a disponibilização de um posto de atendimento presencial. 
+                                                O horário de funcionamento do posto de atendimento em Curitiba é das 9h às 18h, com intervalo para almoço das 12h às 14h. Para mais 
+                                                informações, consulte o procedimento: <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=20749" target="_blank">
+                                                CSWiki | Certificação Digital - Endereços Soluti</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                            <li>
+                                <table id="tabela_filtro"><!-- Todos, All --> <!-- Suspensao -->
+                                    <tr>
+                                        <td>
+                                            <p><b>SUSPENSÃO DE TAREFAS - </b> Link para acesso à funcionalidade de suspensão de tarefas do Assyst, na Intranet: 
+                                                <a id="a_sistemas" href="https://intranet.trt9.jus.br/intranet2/f?p=320:46:205023667485201:::::" target="_blank">
+                                                Acesse aqui</a>.<br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>
+                        </div>
+        
+                            </ul>
+                            </td>
+                            </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <br><br>
+
+                    <br><br>
+                    
+                    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
+                    <script type="text/javascript">
+                        function limpar_filtro() {
+                            $('#lista_filtro li').hide();
+                        }
+        
+                        function filtrar_informacoes() {
+                            var termo = $('#pesquisa').val().toUpperCase();
+        
+                            $('#lista_filtro li').show();
+        
+                            $('#lista_filtro li').each(function () {
+                                if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                                    $(this).hide();
+                                }
+                                if (document.getElementById("pesquisa").value == "") {
+                                    $('#lista_filtro li').hide();
+                                }
+                            });
+        
+                        }
+                    </script>
+                </div>
+                </div>
+            <br><br><br><br>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

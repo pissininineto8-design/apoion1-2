@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pastas de Digitalização</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_4::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0;
+                    width: 50%;
+                    height: 2px;
+                    background-color: white; /* Cor da linha */
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    transition: transform 0.3s ease-out;
+                    }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <div align="center">
+        <nav id="menu5">
+            <ul>
+                <br />
+                <br />
+                <li>
+                    <h2 style="color: black;">
+                        Pastas de Digitalização
+                        <a href="digitalizacao.html"><font size="4" style="font-family: Verdana, Geneva, sans-serif;"> Capital</font></a> ,
+                        <a href="digitalizacao2.html"><font size="4" style="font-family: Verdana, Geneva, sans-serif;"> Interior</font></a>
+                    </h2>
+                </li>
+            </ul>
+        </nav><br />
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <table id="tabela_digitalizacao">
+            <thead>
+                <tr>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> LOCAL </font></th>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> LOCAL FÍSICO</font></th>
+                    <th bgcolor="#104E8B"> <font style="font-family: Courier New, Courier, monospace;" color="WHITE"> PASTA DE DIGITALIZAÇÃO</font></th>
+                </tr>
+            </thead>
+            <tr><td align="left"> Curitiba-Cajuru </td><td align="left"> COORDENADORIA DE ARQUIVO E GESTÃO DOCUMENTAL </td> <td align="left"> printarquivo </td></tr>
+            <tr><td align="left"> Curitiba-Cajuru </td><td align="left"> COORDENADORIA DE MATERIAL E PATRIMÔNIO </td> <td align="left"> printsmp </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> ÁREA COMUM DAS TURMAS - 3º ANDAR </td> <td align="left"> printturma1 a printturma7 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> ASSESSORIA DE COMUNICAÇÃO (ASCOM) </td> <td align="left"> printascom </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> CSTI - RB528 </td> <td align="left"> printdgsti e printcsti </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DA VICE-PRESIDÊNCIA </td> <td align="left"> printgabvice </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DA VICE-PRESIDÊNCIA </td> <td align="left"> printgabvice e printgab27 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 01 </td> <td align="left"> printgab01 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 02 </td> <td align="left"> printgab02 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 03 </td> <td align="left"> printgab03 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 04 </td> <td align="left"> printgab04 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 05 </td> <td align="left"> printgab05 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 06 </td> <td align="left"> printgab06 e printsgj </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 07 </td> <td align="left"> printgab07 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 08 </td> <td align="left"> printgab08 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 09 </td> <td align="left"> printgab09 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 10 </td> <td align="left"> printgab10 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 11 </td> <td align="left"> printgab11 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 12 </td> <td align="left"> printgab12 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 13 </td> <td align="left"> printgab13 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 14 </td> <td align="left"> printgab14 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 15 </td> <td align="left"> printgab15 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 16 </td> <td align="left"> printgab16 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 17 </td> <td align="left"> printgab17 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 18 </td> <td align="left"> printgab18 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 19 </td> <td align="left"> printgab19 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 20 </td> <td align="left"> printgab20 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 21 </td> <td align="left"> printgab21 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 22 </td> <td align="left"> printgab22 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 23 </td> <td align="left"> printgab23 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 24 </td> <td align="left"> printgab24 e printsgp </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 25 </td> <td align="left"> printgab25 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 26 </td> <td align="left"> printgab26 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 27 </td> <td align="left"> printgab27 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 28 </td> <td align="left"> printgab28 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 29 </td> <td align="left"> printgab29 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 30 </td> <td align="left"> printgab30 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> GABINETE DE DESEMBARGADOR 31 </td> <td align="left"> printgab31 </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SEÇÃO CONSERVAÇÃO E MANUTENÇÃO - RB528 </td> <td align="left"> printsa </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SEÇÃO DE CONTROLE DE CONVÊNIOS </td> <td align="left"> printsgj </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SEÇÃO DE DESIGNAÇÃO DE MAGISTRADOS DE 1º GRAU </td> <td align="left"> printsdm1g </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA DA CORREGEDORIA REGIONAL </td> <td align="left"> printcorregedoria </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA DE SEGURANÇA INSTITUCIONAL (SSI RB528) </td> <td align="left"> printdpj </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA DO TRIBUNAL PLENO, ÓRGÃO ESPECIAL E SEÇÃO ESPECIALIZADA </td> <td align="left"> printpleno </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA GERAL DA PRESIDÊNCIA (GABINETE) </td> <td align="left"> printsgp </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA GERAL DA PRESIDÊNCIA (SALA DE REUNIÕES , 4ºANDAR) </td> <td align="left"> printgab02 e printcejusc2g </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SECRETARIA GERAL JUDICIÁRIA </td> <td align="left"> printsgj </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SEDESB - RB528 - SETOR MÉDICO </td> <td align="left"> printsmo e printcedesb </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SETOR DE APOIO À OUVIDORIA </td> <td align="left"> printouvidoria </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SETOR TÉCNICO DE ÁUDIO </td> <td align="left"> printsonorizacao </td></tr>
+            <tr><td align="left"> Curitiba-RB528 </td><td align="left"> SUBSEÇÃO DE MEMÓRIA, ESTUDOS E PESQUISA -- </td> <td align="left"> printmemorial </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> ASSESSORIA DA ESCOLA JUDICIAL (AEJ) </td> <td align="left"> printej </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> ASSESSORIA JURÍDICA DA PRESIDÊNCIA </td> <td align="left"> printassessoriajur e printserleg </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> CEJUSC 2º GRAU - VM147 </td> <td align="left"> printcejusc2g e printnupemec </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA DE ADMISSÃO, MOVIMENTAÇÃO E CARREIRA (CAMC) </td> <td align="left"> printsp e printserad </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA DE BIBLIOTECA </td> <td align="left"> printbiblioteca </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA DE CERIMONIAL DA PRESIDÊNCIA </td> <td align="left"> printcerimonial </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA DE DADOS FUNCIONAIS (CODAF) </td> <td align="left"> printserdaf </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA ECONÔMICA E ORIENTAÇÃO EM CÁLCULO JUDICIAL (CEOCALC) </td> <td align="left"> printaecalc </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> DIRETORIA-GERAL (DG) </td> <td align="left"> printdgeral </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> DIVISÃO DE ÉTICA E DISCIPLINA (DED) </td> <td align="left"> printpdp  </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> DIVISÃO DE MEMÓRIA, ESTUDOS E PESQUISA (DMEP) </td> <td align="left"> DIVISÃO DE MEMÓRIA, ESTUDOS E PESQUISA (DMEP) </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> ORDENADORIA DA DESPESA (ODESP) </td> <td align="left"> printodesp </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEÇÃO DE SUSTENTABILIDADE (SESUST) </td> <td align="left"> printrespambiental </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEÇÃO DE TRANSPORTES </td> <td align="left"> printtransp </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA ADMINISTRATIVA (SA) </td> <td align="left"> printsa </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE AUDITORIA INTERNA (AUDINT) </td> <td align="left"> printsci </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE CONCILIAÇÃO E EXECUÇÃO EM FACE DA FAZENDA PÚBLICA (SECEF) </td> <td align="left"> printsecef </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE CONTABILIDADE, ORÇAMENTO E FINANÇAS (SECOF) </td> <td align="left"> printsecof </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> COORDENADORIA DE PAGAMENTO DE PESSOAL </td> <td align="left"> printserpag </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE ENGENHARIA E ARQUITETURA (SEA) </td> <td align="left"> printsea </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE GESTÃO ESTRATÉGICA E ESTATÍSTICA (SGE) </td> <td align="left"> printsepege </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE LICITAÇÕES E CONTRATOS (SLC) </td> <td align="left"> printslc </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE SEGURANÇA INSTITUCIONAL (SSI VM147) </td> <td align="left"> printsa </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE SISTEMAS ADMINISTRATIVOS (SSADM) </td> <td align="left"> printsistemasadm </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO E SISTEMAS JUDICIÁRIOS (STISJ) </td> <td align="left"> printsti, printsar e printinfra </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEDESB - VM147 -  6º ANDAR </td> <td align="left"> printsedesb, printsefist e printbeneficios </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEDESB - VM147 - 4º ANDAR </td> <td align="left"> printsefist </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEDESB - VM147 - 4º ANDAR </td> <td align="left"> printsedep </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SEDESB - VM147 - 4º ANDAR </td> <td align="left"> printsmo </td></tr>
+            <tr><td align="left"> Curitiba-VM147 </td><td align="left"> SUBSEÇÃO DE OPERAÇÕES POSTAIS (SOP) </td> <td align="left"> printsa </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 01ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt01 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 02ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt02 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 03ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt03 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 04ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt04 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 05ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt05 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 06ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt06 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 07ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt07 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 08ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt08 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 09ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt09 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 10ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt10 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 11ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt11 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 12ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt12 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 13ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt13 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 14ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt14 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 15ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt15 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 16ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt16 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 17ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt17 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 18ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt18 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 19ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt19 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 20ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt20 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 21ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt21 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 22ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt22 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> 23ª VARA DO TRABALHO DE CURITIBA </td> <td align="left"> printctavdt23 </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> CEJUSC 1º GRAU - VM400 </td> <td align="left"> printjac </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> COORD. DE CONCILIAÇÃO E DE APOIO PERMANENTE À EXECUÇÃO DE CURITIBA (COCAPE) </td> <td align="left"> printcocape </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> COORDENADORIA DE APOIO AS VARAS DE CURITIBA </td> <td align="left"> printctadist </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> CSTI - 6º ANDAR </td> <td align="left"> printcsti </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> CSTI - VM400 - SL </td> <td align="left"> printdgsti e printcsti </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> DIREÇÃO DE FÓRUM TRABALHISTA DA CAPITAL </td> <td align="left"> printctaforum </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> NÚCLEO DA CENTRAL DE MANDADOS </td> <td align="left"> printctaceman </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> NÚCLEO DE APOIO ADMINISTRATIVO - SETORIAL CURITIBA </td> <td align="left"> printsetorialcta </td></tr>
+            <tr><td align="left"> Curitiba-VM400 </td><td align="left"> SEÇÃO DE PERÍCIAS - 5º ANDAR ANEXO </td> <td align="left"> printspigbd e printsgj </td></tr>
+        </table>
+        <br><br><br>
+    </div>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

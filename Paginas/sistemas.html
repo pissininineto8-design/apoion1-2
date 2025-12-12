@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Sistemas</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens//favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <link rel="stylesheet" href="../css/style6.css">
+    <link rel="stylesheet" href="../css/sistemas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/script4.js"></script>
+    <script src="../js/script_redirecionamento.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Filtro_Todos();
+            leiaMais();
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_1::after {
+                content: '';
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                width: 68%;
+                height: 2px;
+                background-color: white; /* Cor da linha */
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                transition: transform 0.3s ease-out;
+                }`;
+            document.head.appendChild(style);
+        });
+
+    </script>
+
+<script>
+    function Filtro_Todos() { /*Todos*/
+        document.getElementById('pesquisa').value = "";
+    }
+    function Botao_Filtro_Todos() { /*Todos*/
+        document.getElementById('pesquisa').value = "Todos";
+    }
+</script>
+
+    <article id="article-redirecionamento">
+
+        <h2 id="h2_filtro"> Informações Sobre Sistemas do TRT9 e Convênios</h2><br>
+        <div id="divRedirecionamentos">
+            <div id="div5" align="center">
+
+                <div align="left" id="divFiltro">
+                    <br>
+                    <h2>Lista de Sistemas</h2><br>
+
+                    <font> <input type="search" placeholder="Digite para buscar por nome ou palavra-chave..." id="pesquisa" oninput="limpar()" style="width: 350px;"> </font> 
+                    <button type="button" id="botao1" onclick="filtrar(), leiaMais()">Filtrar</button>
+                    <button type="button" id="botao1" onclick="Botao_Filtro_Todos(), filtrar(), leiaMais()">Listar Todos</button>
+
+                </div><br><br>
+
+
+                <div id="div_filtro" align="center">
+
+                    <div class="voltar">
+                        <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+                    </div>
+                    <div align="center" id="div_filtro">
+
+                        <ul>
+                            <div align="center" id="lista_filtro">
+                                <h4 align="left">Resultado:</h4><br>
+                                <span id="mostrar"></span><span id="mais">
+
+                   <!-- Resultado Filtro -->
+
+                   <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>ACOMPS PJE - </b> O sistema de Acompanhamento de Sessão no PJe, popularmente chamado de Acomps, é um sistema web, acessível via Firefox, somente pela rede interna, através do 
+                                    <a id="a_sistemas" href="https://acompspje.trt9.jus.br/" target="_blank">Link</a>. Foi disponibilizado acesso ao sistema ACOMPS aos Membros do Ministério Público do Trabalho da 9ª Região 
+                                    para acompanhamento das sessões de julgamento telepresenciais.<br>
+                                    <b>Orientações:</b>                                     
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19883" target="_blank">
+                                    CSWiki | Login Temporário dos Membros do Ministério Público do Trabalho da 9ª Região</a>.<br>
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=13674" target="_blank">
+                                    CSWiki | Sistema - Orientações - Apresentação do Sistema Acompanhamento de Sessão - PJe</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                   <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- DJET, DEJET -->
+                        <tr>
+                            <td>
+                                <p><b>DJEN - </b> O Diário de Justiça Eletrônica Nacional (DJEN) é uma plataforma que publica atos judiciais de todos os tribunais do Brasil. O DJEN foi criado pelo 
+                                    Conselho Nacional de Justiça (CNJ) para substituir o Diário Eletrônico da Justiça do Trabalho (DEJT).<br> <b>Procedimentos:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31932" target="_blank">
+                                    CSWiki | Sistema - DJEN - Diário de Justiça Eletrônico Nacional</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=10225" target="_blank">
+                                    CSWiki | Sistema - DEJT - Criação, Alteração e Exclusão de Cadastro</a>;<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- Falcao -->
+                        <tr>
+                            <td>
+                                <p><b>FALCÃO - </b> O Sistema Falcão é uma ferramenta inovadora de pesquisa de jurisprudência. O sistema tem como objetivo centralizar e facilitar o acesso às decisões judiciais, 
+                                    garantindo mais eficiência e transparência. No Sistema Falcão podem ser acessadas as decisões dos órgãos da Justiça do Trabalho de primeiro e segundo graus, incluindo sentenças 
+                                    e acórdãos, decisões relacionadas à admissibilidade de recurso de revista, incidentes de resolução de demandas repetitivas, incidentes de assunção de competência, 
+                                    arguição de inconstitucionalidade, súmulas, orientações jurisprudenciais e teses jurídicas prevalecentes, além das decisões do Tribunal Superior do Trabalho e sua jurisprudência. 
+                                    Desenvolvido pelo TRT da 9ª Região, o sistema Falcão foi definido pela Resolução CSJT nº 401, de 27 de novembro de 2024, como o repositório oficial de jurisprudência 
+                                    para a Justiça do Trabalho de primeiro e segundo graus.<br> 
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=25715" target="_blank">
+                                    CSWiki | Sistema - Orientações - Apresentação do Sistema Falcão Busca por Jurisprudência</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>GDT - </b> O sistema de Gestão Documental de Terceiros é utilizado pelas terceirizadas que têm funcionários contratados pelo TRT/PR 
+                                    para envio de documentos ao Tribunal, tais como contracheques, cartões ponto, atestados, entre outros.<br> <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11907" target="_blank">
+                                    CSWiki | Software - Orientações - Gestão Documental de Terceiros</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>JTE - </b> A JTe (Justiça do Trabalho Eletrônica), por vezes chamada de "TRT5 - Mobile", foi desenvolvida no âmbito do TRT da Quinta Região (Bahia).
+                                    Trata-se de um aplicativo para dispositivos móveis. Segundo o manual em PDF: "visa disponibilizar o acesso às informações processuais e serviços, 
+                                    de forma subsidiária, a fim de facilitar a consulta pelos advogados, partes e público em geral, sem caráter de publicação oficial."<br> 
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=12878" target="_blank">
+                                    CSWiki | Sistema - Orientações - Apresentação da JTe (Justiça do Trabalho Eletrônica)</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=18192" target="_blank">
+                                    CSWiki | Sistema - Orientações - Assinatura Através de QR Code no JTe</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>JUÍZO 100% DIGITAL - </b> O Juízo 100% Digital é uma ferramenta desenvolvida para que todos os atos processuais sejam realizados de forma virtual e remota – incluindo as notificações, 
+                                    as audiências e as sessões de julgamento. <br> 
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=22119" target="_blank">
+                                    CSWiki | Sistema - Juízo 100% Digital - Orientações Gerais</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- PDPJ Marketplace -->
+                        <tr>
+                            <td>
+                                <p><b>PDPJ - </b> PDPJ é a sigla para Plataforma Digital do Poder Judiciário Brasileiro. É uma iniciativa do Conselho Nacional de Justiça (CNJ) 
+                                    que reúne todos os sistemas eletrônicos do Judiciário em um único ambiente. Em 2025, a intenção do CNJ é que todos os tribunais migrem obrigatoriamente 
+                                    para o acesso exclusivo através da plataforma PDPJ, além disso adotando a medida de segurança via MFA, garantindo unificação na forma de acesso aos sistemas 
+                                    e maior segurança dos dados.<br>
+                                    <b>Orientações:</b>                                     
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=33148" target="_blank">
+                                    CSWiki | Obrigatoriedade de MFA a partir de 01/04/25</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=27266" target="_blank">
+                                    CSWiki | Sistema - PJe - PJe Marketplace</a>.<br>
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=26187" target="_blank">
+                                    CSWiki | Sistema - PJe - Acesso Através do PDPJ-BR</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>PJE - </b> O Processo Judicial Eletrônico (PJe) é um sistema digital que permite a tramitação eletrônica de processos judiciais. 
+                                    Foi desenvolvido pelo Conselho Nacional de Justiça (CNJ) em parceria com tribunais, Ordem dos Advogados do Brasil (OAB) e outros.<br>
+                                    <b>Orientações:</b>  
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=10327" target="_blank">
+                                    CSWiki | Sistema - PJe - Pré-Requisitos para Utilização</a>;                                    
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=10282" target="_blank">
+                                    CSWiki | Acessar o PJe Sem Certificado Digital</a>; 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=15455" target="_blank">
+                                    CSWiki | Cadastro De Login E Senha Para Consulta Processual</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=13931" target="_blank">
+                                    CSWiki | Criar Senha de Acesso</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=20863" target="_blank">
+                                    CSWiki | Sistema - PJe - Requisitos Senha de Acesso</a>; 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=7954" target="_blank">
+                                    CSWiki | Sistema - PJe - Cadastro de Assistente de Advogado no PJe</a>; 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=26187" target="_blank">
+                                    CSWiki | Acesso Através do PDPJ-BR</a>.<br> 
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=4487" target="_blank">
+                                    CSWiki | Sistema - PJe - Informações Sobre o Sistema</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>PJE CALC - </b> O <a id="a_sistemas" href="https://www.trt8.jus.br/pjecalc-cidadao" target="_blank">PJe-Calc</a> é o Sistema de Cálculo Trabalhista desenvolvido 
+                                    pela Secretaria de Tecnologia da Informação do Tribunal Regional do Trabalho da 8ª Região, a pedido do Conselho Superior da Justiça do Trabalho, para utilização 
+                                    em toda a Justiça do Trabalho como ferramenta padrão de elaboração de cálculos trabalhistas e liquidação de sentenças, visando a uniformidade de procedimentos e 
+                                    confiabilidade nos resultados apurados.<br>
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=12877" target="_blank">
+                                    CSWiki | Sistema - PJe - Calc - Apresentação do Sistema</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias -->
+                        <tr>
+                            <td>
+                                <p><b>PJE MÍDIAS - </b> O PJe Mídias é um software desenvolvido pelo CNJ que mantém as mídias de um processo em um local seguro. No âmbio do TRT9 para acesso ao Pje Mídias é possível através de
+                                    dois endereços, o <a id="a_sistemas" href="https://www.trt9.jus.br/pjemidias/web/site/login" target="_blank">
+                                    PJe Mídias do TRT9</a>, o qual é utilizado a senha cadastrada no PJe do TRT9 e o <a id="a_sistemas" href="https://midias.pje.jus.br/midias/web/site/login" target="_blank">
+                                    PJe Mídias do CNJ</a>,  que para acessar deve ser utilizada a senha cadastrada no <a id="a_sistemas" href="https://www.escritoriodigital.jus.br/" target="_blank">
+                                    Escritório Digital do CNJ</a>. <br>
+                                    De modo geral o Pje Mídias do TRT9 não é mais utilizado, sendo orientado o uso apenas do PJe Mídias do CNJ. <br>
+                                    <b>Procedimentos:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=11957" target="_blank">
+                                    CSWiki | Sistema - PJe Mídias - Suporte</a>, 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=32498" target="_blank">
+                                    CSWiki | Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Internos"</a>, 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=32499" target="_blank">
+                                    CSWiki | Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Externos"</a>,
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=18766" target="_blank">
+                                    CSWiki | SCA Corporativo do CNJ - Cadastro de Usuários (PJe Mídias e outros sistemas)</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias -->
+                        <tr>
+                            <td>
+                                <p><b>PJE PUSH - </b> O PJe-Push é um serviço que permite aos usuários do PJe receberem notificações por e-mail sobre as movimentações dos processos 
+                                    judiciais em que estão envolvidos. É uma forma de manter as partes interessadas informadas sobre o andamento dos processos sem a necessidade de acessar constantemente o sistema. <br>
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=33131" target="_blank">
+                                    CSWiki | Sistema - Push - Orientações PUSH PJe</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All --> <!-- PJe Midias -->
+                        <tr>
+                            <td>
+                                <p><b>PJE SIF - </b> O SIF é um módulo de integração entre o PJe e as Instituições Financeiras, acessível através do link: 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/portal/pagina.xhtml?secao=17&pagina=GUIA_DEP_JUD" target="_blank">Guia de Depósito Judicial</a>. 
+                                    Fora da rede do TRT9 o SIF só é acessível mediante acesso a VPN, é necessário estar incluído no grupo <b>DL_FW_VPN_DEFAULT</b>.<br>
+                                    <b>Procedimentos:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=10323" target="_blank">
+                                    CSWiki | Sistema - PJe - Orientações SIF</a>; 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31061" target="_blank">
+                                    CSWiki | Sistema - Orientações - Acesso ao SISCONDJ e SIF via VPN</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>PREVJUD - </b> O sistema Prevjud, que faz parte do portfólio da PDPJ-Br (Plataforma Digital do Poder Judiciário Brasileiro), é o sucessor do SAT-Central.
+                                    O Prevjud também permite acesso a informações previdenciárias (Dossiê Médico, Dossiê Previdenciário e Processo Administrativo Previdenciário) e o envio 
+                                    automatizado de ordens judiciais ao INSS. Pedidos de novos cadastrados devem ser solicitados por meio de chamado 
+                                    na intranet > solicitação de serviços > nova solicitação > Área: SGJ > SGJ - CONVÊNIOS - PrevJUD.<br>
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=27685" target="_blank">
+                                    CSWiki | Software - Orientações - Prevjud</a>; 
+                                    <br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>PROAD - </b>É um sistema utilizado para a gestão e tramitação de processos administrativos em meio eletrônico, permite a 
+                                    consulta pública de processos administrativos, exceto aqueles com sigilo. Para mais informações acesse o 
+                                    <a id="a_sistemas" href="https://ww2.trt2.jus.br/fileadmin/proad/manual_proad_usuarios_externos.pdf" target="_blank">
+                                    Manual do Proad TRT2</a></b>. <br>
+                                    <b>Procedimentos:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=15375" target="_blank">
+                                    CSWiki | Sistema - Orientações - Dúvidas Referentes ao Sistema PROAD</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=16406" target="_blank">
+                                    CSWiki | Dar Permissões no PROAD e Acesso ao Sistema</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                   <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SERPJUD - </b>É um módulo do Sistema Eletrônico dos Registros Públicos (Serp) que permite o acesso a serviços de registros públicos. 
+                                    O SerpJud é exclusivo do Poder Judiciário e dos órgãos da administração pública. Faz parte do leque de sistemas do <b>PDPJ</b>, que inclui PJe, SerpJud, PrevJud e Sniper. 
+                                    Em caso de problemas é recomendável contatar o Suporte do CNJ. Chamados devem ser encaminhados para a Seção de Convênios.<br> 
+                                    <b>Procedimento:</b> <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=26282" target="_blank">
+                                    CSWiki | Sistema - Orientações - Uso dos Sistemas PDPJ-BR</a>.<br><br></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SIGEO - </b>Sistema de Gestão Orçamentária e Financeira da Justiça do Trabalho. É um sistema que promove a uniformização e 
+                                    racionalização dos processos da Justiça do Trabalho relacionados ao planejamento e execução orçamentária e financeira. 
+                                    Ele integra atividades como solicitação de créditos adicionais, pagamentos de honorários periciais e controle de diárias e passagens, 
+                                    garantindo maior transparência, monitoramento e efetividade. O cadastro de usuários externos e internos no sistema é feito dentro do 
+                                    próprio <b>SIGEO</b> por usuários com o perfil "<b>SIGEO|GESTOR</b>". Os usuários com este perfil podem cadastrar qualquer outro usuário do sistema. 
+                                    No TRT-PR, entre os usuários com este perfil incluem-se Wagner(Ramal 7307), Gerson Ribas e Roberto Machado, ambos da <b>SECOF</b>. 
+                                    A abertura de chamado é feita dentro do próprio sistema. Após a identificação do usuário pelo atalho: 
+                                    <a id="a_sistemas" href="https://portal.sigeo.jt.jus.br/" target="_blank">https://portal.sigeo.jt.jus.br/</a>.<br> <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=6234" target="_blank">CSWiki | Sistema - SIGEO - Informações Gerais</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SIGS - </b>O Sistema Integrado de Gestão em Saúde permite toda a gestão de saúde e prontuários de servidores e magistrados. <br>
+                                    O acesso ao sistema é feito pelo link <a id="a_sistemas" href="https://www.trt9.jus.br/sigs/" target="_blank">https://www.trt9.jus.br/sigs/</a> e é utilizado o Login e senha do TRT9. 
+                                    <br><b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=25023" target="_blank">CSWiki | Apresentação e Forma de Uso do SIGS - Sistema Integrado de Gestão em Saúde</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SIJU - </b> O Sistema de Inteligência Jurídica tem como objetivo tentar prever se haverá ou não conciliação nos processos judiciais que 
+                                    tramitam em 1º Grau durante a fase de conhecimento.<br> <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=13718" target="_blank">CSWiki | Sistema - SIJU - Apresentação do Sistema</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SISBAJUD - </b> O Sisbajud/BacenJud é um sistema que interliga a Justiça ao Banco Central e às instituições financeiras, para agilizar a solicitação de informações e o envio de ordens 
+                                    judiciais ao Sistema Financeiro Nacional. O CNJ disponibiliza aos Tribunais que utilizam o PJE integração com o SISBAJUD, com automação do envio das ordens 
+                                    judiciais e análise das respostas encaminhadas pelas instituições financeiras. O suporte ao sistema SISBAJUD deve ser solicitado via e-mail ao CNJ no endereço <b>sistemasnacionais@cnj.jus.br</b>.<br> 
+                                    <b>Procedimento:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=20853" target="_blank">CSWiki | Acesso - Sistemas de Terceiros - Suporte ao SISBAJUD</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SISCONDJ-TJ - </b> O Siscondj-TJ é um sistema satélite do PJe, responsável pela emissão de guias de depósito e alvarás relacionados ao Banco do Brasil.
+                                    Para acesso, deve ser solicitado pelo Diretor da Secretaria o cadastro do usuário junto à CSTI, conforme o procedimento de cadastro. 
+                                    Para acesso externo é necessário que o usuário esteja incluído no grupo <b>DL_FW_VPN_DEFAULT</b>.<br> <b>Procedimentos:</b> 
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19137" target="_blank">CSWiki | Sistema - Orientações - Apresentação do Sistema Siscondj-TJ</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=19294" target="_blank">CSWiki | Sistema - Orientações - Siscondj-TJ - Cadastro</a>;
+                                    <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=31061" target="_blank">CSWiki | Sistema - Orientações - Acesso ao SISCONDJ e SIF via VPN</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table id="tabela_filtro"><!-- Todos, All -->
+                        <tr>
+                            <td>
+                                <p><b>SNIPER - </b> O Sistema Nacional de Investigação Patrimonial e Recuperação de Ativos (Sniper) é uma solução tecnológica desenvolvida pelo 
+                                    Programa Justiça 4.0 que agiliza e facilita a investigação patrimonial para servidores, servidoras, magistrados e magistradas de todos os 
+                                    tribunais brasileiros integrados à Plataforma Digital do Poder Judiciário (PDPJ).<br>
+                                    Link de Acesso ao sistema: <a id="a_sistemas" href="https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?client_id=jusbr&scope=openid&redirect_uri=https://www.jus.br&response_type=code&state=415d4b6fecca6f4c53bf0d3db6db65ca" target="_blank">Acesso ao Sniper</a>. 
+                                    <br><b>Procedimento:</b> <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=25881" target="_blank">CSWiki | Software - Orientações - Ferramenta Sniper</a>.<br><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                
+                <br>
+
+                </div>
+
+                    </ul>
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+                
+            </div>
+
+            <br><br>
+            
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+            <script type="text/javascript">
+                function limpar() {
+                    $('#lista_filtro li').hide();
+                }
+
+                function filtrar() {
+                    var termo = $('#pesquisa').val().toUpperCase();
+
+                    $('#lista_filtro li').show();
+
+                    $('#lista_filtro li').each(function () {
+                        if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                            $(this).hide();
+                        }
+                        if (document.getElementById("pesquisa").value == "") {
+                            $('#lista_filtro li').hide();
+                        }
+                    });
+
+                }
+            </script>
+        </div>
+    </article>
+
+    <script src="../js/footer.js"></script>
+</body>
+</html>

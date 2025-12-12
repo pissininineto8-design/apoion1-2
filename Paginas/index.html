@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Apoio N1 e N2 - TRT9</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <script src="../js/script_index.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/ancoras.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script><br>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lerMais_index_1a();
+            lerMais_index_2a();
+            lerMais_index_3a();
+            showSlides();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            function adjustElementSize() {
+                if ($(window).width() < 900) {
+                    // Defina as dimensões desejadas
+                    var customWidth = '180%'; // Largura desejada em porcentagem
+                    // Aplica a largura aos elementos footer e header
+                    $('footer, header').css({
+                        'width': customWidth,
+                    });
+                } else {
+                    // Caso contrário, remova as dimensões aplicadas
+                    $('footer, header').css({
+                        'width': '',
+                        'height': ''
+                    });
+                }
+            }
+
+            // Chame a função ao carregar a página
+            adjustElementSize();
+
+            // Chame a função ao redimensionar a janela
+            $(window).resize(function () {
+                adjustElementSize();
+            });
+        });
+    </script>
+
+    <script type="text/javascript"> //Botão Ver Imagem do Quadro de Avisos
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <style>
+        .redtext {
+            color: BLACK;
+        }
+
+        .imagem-container {
+            display: none;
+            margin-top: 10px;
+            border-left: 2px solid #ccc;
+            padding-left: 10px;
+        }
+
+        .imagem-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #botao_ver_imagem {
+            background-color: rgb(37, 37, 39);
+            border: 1px solid #e7e7e7;
+            border-radius: 8px;
+            color: white;
+            padding: 4px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #botao_ver_imagem:hover {
+            background-color: #104E8B;
+            color: white;
+        }
+
+        #expandirPainel {
+            margin-top: 10px;
+            margin-right: 30px;
+            margin-bottom: 5px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            opacity: 0.85;
+            float: right;
+        }
+        #expandirPainel:hover {
+            opacity: 1;
+        }
+
+        /* Modo tela cheia */
+        .fullscreen-panel {
+            position: fixed !important;
+            top: -40px;
+            left: 0;
+            width: 95vw !important;
+            height: 100vh !important;
+            background: white;
+            overflow-y: auto;
+        
+            padding-top: 100px;
+            padding-left: 20px;
+            z-index: 9998;
+
+            /* Centralização */
+            align-items: flex-start;  /* Começa no topo, mas centralizado */
+        }    
+        
+        .fullscreen-panel {
+    font-size: 2.1em;   /* Aumenta toda a fonte dentro do painel */
+}
+
+.fullscreen-panel * {
+    font-size: inherit; /* Garante que todos os textos acompanhem o aumento */
+}
+.fullscreen-panel > div {
+    margin-left: 70px;
+    max-width: 1700px;    /* limita o tamanho */
+}
+
+.fullscreen-panel #link-consultar-avisos {
+    display: none !important;
+}
+    </style>
+
+<script>
+
+//Código para abrir uma imagem do avisos.
+    function toggleImagem() {
+        var imagemContainer = document.getElementById("imagemContainer");
+        if (imagemContainer.style.display === "none" || imagemContainer.style.display === "") {
+            imagemContainer.style.display = "block";
+        } else {
+            imagemContainer.style.display = "none";
+        }
+    }
+
+//Código para expandir o painel de avisos
+function toggleFullscreen() {
+    const painel = document.getElementById("article-f");
+    const botao = document.getElementById("expandirPainel");
+
+    if (painel.classList.contains("fullscreen-panel")) {
+        painel.classList.remove("fullscreen-panel");
+        botao.textContent = "⤢ Expandir";
+    } else {
+        painel.classList.add("fullscreen-panel");
+        botao.textContent = "✕ Fechar";
+    }
+}
+
+//Código para manter o painel de avisos expandido aberto ao recarregar a página
+function toggleFullscreen() {
+    const painel = document.getElementById("article-f");
+
+    if (painel.classList.contains("fullscreen-panel")) {
+        painel.classList.remove("fullscreen-panel");
+        localStorage.setItem("painelExpandido", "false");  // salva estado fechado
+    } else {
+        painel.classList.add("fullscreen-panel");
+        localStorage.setItem("painelExpandido", "true");   // salva estado aberto
+    }
+}
+
+window.addEventListener("load", function () {
+    const painel = document.getElementById("article-f");
+    const expandido = localStorage.getItem("painelExpandido");
+
+    if (expandido === "true") {
+        painel.classList.add("fullscreen-panel");
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const painel = document.getElementById("article-b");
+  const botao = document.getElementById("expandirPainel");
+
+  if (!painel || !botao) return; // segurança se ids mudarem
+
+  // Texto que você prefere mostrar
+  const textoExpandir = "⤢ Expandir";
+  const textoFechar  = "✕ Fechar";
+
+  // Função que aplica/remover o estado (centraliza tudo em um lugar)
+  function setExpandido(estado) {
+    if (estado) {
+      painel.classList.add("fullscreen-panel");
+      botao.textContent = textoFechar;
+    } else {
+      painel.classList.remove("fullscreen-panel");
+      botao.textContent = textoExpandir;
+    }
+    localStorage.setItem("painelExpandido", estado ? "true" : "false");
+  }
+
+  // Restaura estado ao carregar
+  const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
+  setExpandido(expandidoSalvo);
+
+  // Evento do botão (se você já tiver uma função toggleFullscreen(), remova/ignore-a e use esta)
+  botao.addEventListener("click", function (e) {
+    const estaExpandido = painel.classList.contains("fullscreen-panel");
+    setExpandido(!estaExpandido);
+  });
+});
+</script>
+
+    <article id="article-b">
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <h2> <font size="4" style="font-family: Courier New, monospace"> PÁGINA DE APOIO AO N1 E N2 - INFORMAÇÕES E RECURSOS UTILIZADOS PELA CSTI.</font></h2>
+        <article id="article-f">
+            
+            <div style='background-color:#FFF5EE;  border-radius: 10px;'>
+                <div id="div3">
+                    <h2> <font size="4" style="font-family: Courier New, monospace; color: #ef314c;"> AVISOS!</font></h2><br>
+                    <ul style="padding: 0px 30px 30px 30px;">
+
+                        <!-- 
+                        <li><p><font size="4" style="font-family: Arial">Sem novos avisos.</font></p></li><br>
+                        -->
+
+                        <!-- -->
+                        <li>
+                            <p>
+                                <font size="4" style="font-family: Arial">
+                                    <b style="font-family: Arial">COMUNICADO: </b> "Erro ao realizar solicitação de esclarecimentos" - Será solucionado somente com a versão 2.18.3 do PJe. 
+                                    <br>Tarefa de Referência: <b style="font-family: Arial">542366</b>.
+                                    Data: <b style="font-family: Arial"> 05/12/2025</b>.
+                                </font>
+                            </p><br>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                <font size="4" style="font-family: Arial">
+                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> "Problema de Habilitação no PJe" - É um defeito da versão atual e será corrigido futuramente. Para evitar, finalize a Solicitação de 
+                                    Habilitação no mesmo momento em que iniciar. Se o erro já ocorreu, tente novamente após 1 hora; se persistir, contate a Vara ou Gabinete responsável. 
+                                    <br>Tarefa de Referência: <b style="font-family: Arial">541237</b>.
+                                    Data: <b style="font-family: Arial"> 09/12/2025</b>.
+                                </font>
+                            </p><br>
+                        </li>
+
+                        <li>
+                            <p>
+                                <font size="4" style="font-family: Arial">
+                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> "Problemas para Designação de Perícias no PJe" - É um defeito da versão atual e será corrigido futuramente. Seguir conforme procedimento:
+                                    <a id="a_avisos" href="https://www.trt9.jus.br/cswiki/index.php?curid=35149" target="_blank">Sistema - PJe - Erro na Designação da Perícia</a>.
+                                    <br>Tarefa de Referência: <b style="font-family: Arial">541276 </b>.
+                                    Data: <b style="font-family: Arial"> 09/12/2025</b>.
+                                </font>
+                            </p><br>
+                        </li>
+
+                        <p><a id="link-consultar-avisos" href="avisos.html">Consultar avisos anteriores...</a></p>
+                    </ul>
+
+                    
+                </div>
+                <button id="expandirPainel" onclick="toggleFullscreen()">⤢ Expandir</button>
+            </div>
+        </article><br><br>
+
+        <div id="container">
+
+            <article id="article-paginas">
+                <div id="divisao1">
+                    <div id="menu_paginas">
+                        <div class="caixa1">
+                        </div>
+                        <div class="caixa2">
+                            <a style="padding-right: 15px;" href='paginan1.html'><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../imagens/apoion1.png' alt='N1' title='Acessar a Página de Orientações N1' width='220' height='120'></a>
+
+                            <a href='paginan2.html'><img id="boxa2" style='border-radius: 5px; border-style: solid;' src='../imagens/apoion2.png' alt='N2' title='Acessar a Página de Orientações N2' width='220' height='120'></a>
+                        </div>
+                    </div><br><br><br><br>
+
+
+                    <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                        <h4><button onclick="lerMais_index_1(), lerMais_index_1a()" id="btLeiaMais_index_1"><span id="imagem_index_1"></span> <b style="font-family: Courier New, monospace;">ATALHOS DO WINDOWS</b></button></h4>
+                        <span id="mostrar_mais_index_1"></span><span id="maiss_index_1">
+                            <br>
+                            <ul align="left" class="lista_atalho_windows" style="padding-left: 0px;">
+                                <li>
+                                    <h3>dir</h3>
+                                    <p>&nbsp;"Mostrar os Diretórios da Pasta Atual".</p>
+                                </li>
+                                <li>
+                                    <h3>cd..</h3>
+                                    <p>&nbsp;"Voltar à Pasta Anterior".</p>
+                                </li>
+                                <li>
+                                    <h3>osk</h3>
+                                    <p>&nbsp;"Teclado Virtual".</p>
+                                </li>
+                                <li>
+                                    <h3>rstrui</h3>
+                                    <p>&nbsp;"Recuperação do Sistema".</p>
+                                </li>
+                                <li>
+                                    <h3>net use</h3>
+                                    <p>&nbsp;"Caminho Absoluto de Pastas de Rede".</p>
+                                </li>
+                                <li>
+                                    <h3>taskmgr</h3>
+                                    <p>&nbsp;"Gerenciador de tarefas".</p>
+                                </li>
+                                <li>
+                                    <h3>sysdm.cpl</h3>
+                                    <p>&nbsp;"Propriedades do Sistema".</p>
+                                </li>
+                                <li>
+                                    <h3>appwiz.cpl</h3>
+                                    <p>&nbsp;"Desinstalador de Programas".</p>
+                                </li>
+                                <li>
+                                    <h3>msiexec.exe</h3>
+                                    <p>&nbsp;"Comando para forçar instalação de um software".</p>
+                                </li>
+                                <li>
+                                    <h3>powercfg.cpl</h3>
+                                    <p>&nbsp;"Opções de energia".</p>
+                                </li>
+                                <li>
+                                    <h3>ipconfig /renew</h3>
+                                    <p>&nbsp;"Comando para restabelecer o IP".</p>
+                                </li>
+                                <li>
+                                    <h3>control printers</h3>
+                                    <p>&nbsp;"Dispositivos e Impressoras".</p>
+                                </li>
+                                <li>
+                                    <h3>control smscfgrc</h3>
+                                    <p>&nbsp;"Configuration Manager".</p>
+                                </li>
+                                <li>
+                                    <h3>ping -a (IP desejado)</h3>
+                                    <p>&nbsp;"Ping IP para Descobrir Hostname".</p>
+                                </li>
+                                <li>
+                                    <h3>printmanagement.msc</h3>
+                                    <p>&nbsp;"Gerenciamento de Impressão".</p>
+                                </li>
+                                <li>
+                                    <h3>devmgmt.msc ou hdwwiz.cpl</h3>
+                                    <p>&nbsp;"Gerenciador de dispositivos".</p>
+                                </li>
+                                <li>
+                                    <h3>compmgmtlauncher ou compmgmt</h3>
+                                    <p>&nbsp;"Gerenciamento do computador".</p>
+                                </li>
+                                <li>
+                                    <h3>setup.exe /adminfile office2013notebooks.MSP</h3>
+                                    <p>&nbsp;"Para Instalação do Office".</p>
+                                </li>
+                                <li>
+                                    <h3>Procedimento CSWIKI</h3>
+                                    <p>&nbsp;"<a id="p_atalhos_windows" href="https://www.trt9.jus.br/cswiki/index.php/Special:Redirect/page/32753" target="_blank">Software - Windows - Comandos básicos do CMD</a>".</p>
+                                </li>
+                            </ul>
+                        </span>
+                    </div><br><br>
+
+                    <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                        <h4><button onclick="lerMais_index_3(), lerMais_index_3a()" id="btLeiaMais_index_3"><span id="imagem_index_3"></span> <b style="font-family: Courier New, monospace;">SOFTWARES E PLUGINS</b></button></h4>
+                        <span id="mostrar_mais_index_3"></span><span id="maiss_index_3">
+                            <br>
+                            <p id="p_softwares"><font size="3">Autenticador SisconDJ - <a id="a_softwares" style="font-family: Lucida Bright" href="Softwares/bb-seguranca-cliente-A3-v2.jnlp" target="_blank">bb-seguranca-cliente-A3-v2.jnlp</a></font></p><br>
+                            <p id="p_softwares"><font size="3">Assinador PJe Office Pro - 
+                                <a id="a_softwares" style="font-family: Lucida Bright" href="https://pjeoffice.trf3.jus.br/pjeoffice-pro/docs/index.html?nocache=12.03.2024" target="_blank">pjeoffice-pro.exe (link 1)</a> ou 
+                                <a id="a_softwares" style="font-family: Lucida Bright" href="https://drive.google.com/drive/folders/1M5Z2Ivl2KxbnWNP1NR0ycDbzUQI7rZMt" target="_blank">pjeoffice-pro.exe (link 2)</a></font></p><br>
+                            <p id="p_softwares"><font size="3">Assinador Shodo - <a id="a_softwares" style="font-family: Lucida Bright" href="https://www.google.com/url?sa=j&url=https%3A%2F%2Fpje.trt9.jus.br%2Fshodo%2Fshodo.msi&uct=1740418591&usg=4FGWG5eX_pfFyFARaI9Q0XZkxoU.&opi=73833047&source=chat" target="_blank">shodo.msi</a></font></p><br>
+                            <p id="p_softwares"><font size="3">Emissor Soluti - <a id="a_softwares" style="font-family: Lucida Bright" href="../Softwares/Emissor.jnlp" target="_blank">Emissor.jnlp</a></font></p><br>
+                            <p id="p_softwares"><font size="3">Renovação Soluti - <a id="a_softwares" style="font-family: Lucida Bright" href="../Softwares/Renovacao.jnlp" target="_blank">Renovacao.jnlp</a></font></p><br>
+                        </span>
+                    </div><br><br>
+
+                    <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                        <h4><button onclick="lerMais_index_2(), lerMais_index_2a()" id="btLeiaMais_index_2"><span id="imagem_index_2"></span> <b style="font-family: Courier New, monospace;">ATALHOS EM GERAL</b></button></h4>
+                        <span id="mostrar_mais_index_2"></span><span id="maiss_index_2">
+                            <br>
+                            <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://docs.google.com/spreadsheets/d/177A-isBNle3KCjzltfI9U5B8Zwb7KG1dPMJtyzWX640/edit#gid=1680740765" target="_blank">Planilha de Softwares Homologados</a></font></p><br>
+                            <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="https://mfa.trt9.jus.br/home" target="_blank">Link Para Configuração do MFA</a></font></p>
+                        </span>
+                    </div><br><br><br>
+
+                <div class="menu-container">
+                <a href='procedimentos.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='../imagens/procedimentos.png' alt='Procedimentos' title='Acesso à Página de Procedimentos' width='100' height='100'>
+                    
+                </div><br><p style="padding-left: 5px;"><b>Procedimentos</b></p>
+                </a>
+                <a href='redirecionamento.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='../imagens/redirecionamento.png' alt='Redirecionamento' title='Acesso à Planilha de Redirecionamento' width='100' height='100'>
+                    
+                </div><br><p><b>Redirecionamento</b></p>
+                </a>
+                <a href='sistemas.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='../imagens/sistemas.png' alt='Sistemas' title='Acesso à Página de Sistemas' width='150' height='100'>
+                    
+                </div><br><p style="padding-left: 40px;"><b>Sistemas</b></p>
+                </a>
+                <a href='paginan1.html#informacoes_adversas'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='../imagens/informacoes.png' alt='Informações' title='Acesso à Seção de Informações Adversas do N1' width='100' height='100'>
+                    
+                </div><br><p style="padding-left: 20px;"><b>Informações</b></p>
+                </a>
+                </div>
+
+                </div>
+                <div id="divisao2">
+
+                    <script>
+                        // Formatação de data e hora ----------------------------------
+                        function relogio() {	
+                            let horario = new Date();
+                            
+                            // Relógio
+                            let hora = horario.getHours();
+                            if (hora < 10) {
+                                hora = "0" + hora;
+                            }
+                            let minuto = horario.getMinutes();
+                            if (minuto < 10) {
+                                minuto = "0" + minuto;
+                            }
+                            let segundo = horario.getSeconds();
+                            if (segundo < 10) {
+                                segundo = "0" + segundo;
+                            }
+                            
+                            // Data
+                            let dia = horario.getDate();
+                            if (dia < 10) {
+                                dia = "0" + dia;
+                            }
+                            let mes = horario.getMonth() + 1;
+                            if (mes < 10) {
+                                mes = "0" + mes;
+                            }
+                            let ano = horario.getFullYear();
+                    
+                            // Dia da semana
+                            let diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+                            let diaSemana = diasDaSemana[horario.getDay()];
+                            
+                            // Formatação
+                            let horaFormatada = hora + ":" + minuto + ":" + segundo;
+                            let dataFormatada = dia + "/" + mes + "/" + ano;
+                            
+                            // Exibição no elemento
+                            document.getElementById("hora_data").innerHTML = diaSemana + ", " + dataFormatada + "  -  " + horaFormatada;
+                        }
+                    
+                        setInterval(relogio, 100);
+                        //-------------------------------------------------------
+                    </script>
+                    
+                    <style>
+                        #hora_data {
+                            font-family: 'Courier New', Courier, monospace;
+                            font-size: 18px;
+                        }
+                    </style>
+                    <br>
+                    <h2 style="color: black;">
+                        <font size="4" style="font-family: Courier New, monospace;">DATA/HORA</font>
+                    </h2>
+                    <br>
+                    <div id="hora_data"></div>
+                    <br>
+
+                    <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> PÁGINAS INFORMATIVAS </font></h2><br>
+                    <div style="padding-left: 10px;">
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='orientacoes.html'>Orientações</a></h3>
+                                    <p>&nbsp;"Informações e orientações gerais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='glossario.html'>Glossário</a></h3>
+                                    <p>&nbsp;"Lista de termos jurídicos".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='cidades.html'>Cidades</a></h3>
+                                    <p>&nbsp;"Lotações de todas as unidades separadas por município".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='400.html'>Edifício VM400</a></h3>
+                                    <p>&nbsp;"Lotações do prédio VM400".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='147.html'>Edifício VM147</a></h3>
+                                    <p>&nbsp;"Lotações do prédio VM147".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='528.html'>Edifício RB528</a></h3>
+                                    <p>&nbsp;"Lotações do prédio RB528".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='digitalizacao.html'>Pastas de Digitalização</a></h3>
+                                    <p>&nbsp;"Pastas de documentos digitalizados dos locais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='rangeip.html'>Ranges IP</a></h3>
+                                    <p>&nbsp;"Ranges de IP dos locais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='malote.html'>Malote</a></h3>
+                                    <p>&nbsp;"Programação do malote em todo o estado".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='ramais.html'>Contatos</a></h3>
+                                    <p>&nbsp;"Números de contato das unidades do TRT9".</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><br>
+                </div>
+            </article>
+            <br><br><br>
+
+                      <div id="container">
+                          
+                          <div class="carousel">
+                              <button id="prevBtn" class="banner-nav prev">&#10094;</button>
+                              <!--<button class="prevBtn" onclick="changeSlide(-1)">&#10094;</button>-->
+                              <div class="carousel-slides">
+
+                                  <!-- Clone do último slide -->
+                                  <div id="slide_hover" class="slide">
+                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
+                                          <img src='../imagens/balcao.png' alt='Balcão Virtual do TRT9' title='Acesso ao Balcão Virtual' height='140'>
+                                      </a>
+                                  </div>
+
+                                  <!-- Slides originais -->
+                                  <div id="slide_hover" class="slide">
+                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
+                                          <img src='../imagens/pje_indisponibilidade.png' alt='PJe Indisponibilidade' title='Consulta Certidões de Indisponibilidade' height='140'>
+                                      </a>
+                                  </div>
+                                  <div id="slide_hover" class="slide">
+                                      <a href='https://www.trt9.jus.br/portal/noticias.xhtml' target="_blank">
+                                          <img src='../imagens/sitetrt9.png' alt='Notícias do TRT9' title='Últimas Notícias Site TRT9' height='140'>
+                                      </a>
+                                  </div>
+                                  <div id="slide_hover" class="slide">
+                                    <a href='https://chatgpt.com/' target="_blank">
+                                        <img style="border-radius: 5px;" src='../imagens/chatgpt_reduzido.png' alt='ChatGPT' title='Acesso ao ChatGPT' height='140'>
+                                    </a>
+                                 </div>
+                                  <div id="slide_hover" class="slide">
+                                      <a href='https://www.trt9.jus.br/portal/balcaoVirtual.xhtml' target="_blank">
+                                          <img src='../imagens/balcao.png' alt='Balcão Virtual do TRT9' title='Acesso ao Balcão Virtual' height='140'>
+                                      </a>
+                                  </div>
+
+                                  <!-- Clone do primeiro slide -->
+                                  <div id="slide_hover" class="slide">
+                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
+                                          <img src='../imagens/pje_indisponibilidade.png' alt='PJe Indisponibilidade' title='Consulta Certidões de Indisponibilidade' height='140'>
+                                      </a>
+                                  </div>
+                              </div>
+                              <!--<button class="next" onclick="changeSlide(1)">&#10095;</button>-->
+                              <button id="nextBtn" class="banner-nav next">&#10095;</button>
+                          </div>
+
+                              <script src="../js/banner.js"></script>
+                              <br>
+
+                              <div id="div2">
+
+
+                              </div>
+                              <div id="div1">
+
+
+
+                              </div>
+             </div>
+        </div>
+        <br>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

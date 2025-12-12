@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+a {color: BLACK;text-decoration:none;}
+
+#menuprincipal{
+  background-color: rgb(37, 37, 39);
+  padding-left: 10px;
+  float: center;
+}
+
+.menu {
+    background: rgb(37, 37, 39);
+    width: 80%;
+}
+
+#dropdown {
+  background-image: url("../Imagens/baixo2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 5px;
+
+}
+
+#dropdown:hover {
+  background-image: url("../Imagens/cima2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 3;
+}
+
+ul.menu li.icon {
+	display: none;
+}
+@media screen and (max-width:680px) {
+	ul.menu li:not(:first-child) {
+		display: none;
+	}
+	ul.menu li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.menu.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.menu.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.menu.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+/*Configurações de cores*/
+
+/*nivel 1*/
+.menu a {
+    color: #fff;
+}
+
+.menu li {
+    width: auto;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 45px;
+    height: 45px;
+    transition: all 0.1s linear;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*.menu li:hover>a {
+    background-color: #104E8B;
+    color: #fff;
+}*/
+
+ul.menu {
+    max-width: 1200px;
+    list-style: none;
+    float: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+ul.menu ul {
+    position: absolute;
+    display: none;
+    box-shadow: 3px 3px 2px #333;
+}
+
+ul.menu li {
+    line-height: 25px;
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 5px;
+}
+
+ul.menu #img_1 {
+float: right;
+}
+
+ul.menu #img_1:hover {
+float: right;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+}
+
+ul.menu li a.hover {
+    border-radius: 5px;
+}
+
+ul.menu li.menu_1:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_1::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 68%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_2:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_2::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 62%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_3:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_3::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_3:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_4:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_4::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_4:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_5:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_5::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 55%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_5:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_6:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.menu a#a_menu_6:hover {
+    color: black;
+}
+
+ul.menu li.menu_6::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_6:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.menu li.menu_7:hover {
+    /*background-color: #104E8B;*/
+}
+
+ul.menu li.menu_7::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul.menu li.menu_7:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1 {
+    display: block;
+    top: 45px;
+    left: 0;
+    padding: 5px;
+    width: 200px;
+    border-radius: 0 0 5px 5px;
+}
+
+.menu ul.submenu-1 a {
+    width: 180px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* Configurações nivel 2*/
+.menu li:hover>ul.submenu-2 {
+    display: block;
+    top: 0;
+    left: 195px;
+    padding: 5px;
+    width: 230px;
+    border-radius: 0 5px 5px 5px;
+}
+
+.menu ul.submenu-2 a {
+    width: 190px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+/* Configurações nivel 3*/
+.menu li:hover>ul.submenu-3 {
+    display: block;
+    top: 0;
+    left: 195px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 0 5px 5px 5px;
+}
+
+.menu ul.submenu-3 a {
+    width: 160px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+/*nivel 2*/
+.submenu-1 {
+    background-color: rgb(37, 37, 39);
+}
+
+.submenu-1 a {
+    color: #fff;
+}
+
+.submenu-1 li:hover>a {
+    background-color: #104E8B;
+}
+
+/*nivel 3*/
+.submenu-2 {
+    background-color: #104E8B;
+}
+
+.submenu-2 a {
+    color: #666;
+}
+
+.submenu-2 li:hover>a {
+    background-color: rgb(37, 37, 39);
+}
+
+/*nivel 3*/
+.submenu-3 {
+    background: #333;
+}
+
+.submenu-3 a {
+    color: #fff;
+}
+
+.submenu-3 li:hover>a {
+    background: #000;
+}

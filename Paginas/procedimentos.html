@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Procedimentos</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../js/script2.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body> <!--onload="Filtro_16(), filtrar(), leiaMais()"-->
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_1::after {
+                content: '';
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                width: 68%;
+                height: 2px;
+                background-color: white; /* Cor da linha */
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                transition: transform 0.3s ease-out;
+                }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script>
+        function Filtro_Todos() { /*Todos*/
+            document.getElementById('pesquisa').value = "Todos";
+        }
+        function Filtro_1() { /*Filtro 1, Destaques, Destacados, Todos*/
+            document.getElementById('pesquisa').value = "Destaques";
+        }
+        function Filtro_2() { /*Filtro 2, VPN, Home Office, Teletrabalho, Todos*/
+            document.getElementById('pesquisa').value = "VPN, Home Office, Teletrabalho";
+        }
+        function Filtro_3() { /*Filtro 3, Fornecimentos, Todos*/
+            document.getElementById('pesquisa').value = "Fornecimentos";
+        }
+        function Filtro_4() { /*Filtro 4, Troca, Trocas, Devolução, Devoluções, Remanejamento, Remanejamentos, Todos*/
+            document.getElementById('pesquisa').value = "Trocas, Devoluções, Remanejamentos";
+        }
+        function Filtro_5() { /*Filtro 5, Sala de Audiências, Todos*/
+            document.getElementById('pesquisa').value = "Sala de Audiências";
+        }
+        function Filtro_6() { /*Filtro 6, Impressoras, Scanners, Todos*/
+            document.getElementById('pesquisa').value = "Impressoras, Scanners";
+        }
+        function Filtro_7() { /*Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos*/
+            document.getElementById('pesquisa').value = "Procedimentos Gerais";
+        }
+        function Filtro_8() { /*Filtro 8, Procedimentos Sobre o PJe, Todos*/
+            document.getElementById('pesquisa').value = "Procedimentos Sobre o PJe";
+        }
+        function Filtro_9() { /*Filtro 9, Envio de Equipamentos, Malote, Correios, Todos*/
+            document.getElementById('pesquisa').value = "Envio de Equipamentos, Malote, Correios";
+        }
+        function Filtro_10() { /*Filtro 10, Softwares, Instalação, Instalações, Todos*/
+            document.getElementById('pesquisa').value = "Softwares, Instalação";
+        }
+        function Filtro_11() { /*Filtro 11, Monitor, Resolução de Tela, Todos*/
+            document.getElementById('pesquisa').value = "Monitor, Resolução de Tela";
+        }
+        function Filtro_12() { /*Filtro 12, Tokens, Certificado Digital, Certificação, Todos*/
+            document.getElementById('pesquisa').value = "Tokens, Certificado Digital";
+        }
+        function Filtro_13() { /*Filtro 13, Sistemas em Geral, Todos*/
+            document.getElementById('pesquisa').value = "Sistemas em Geral";
+        }
+        function Filtro_14() { /*Filtro 14, Hardware, Firmware, Todos*/
+            document.getElementById('pesquisa').value = "Hardware, Firmware";
+        }
+        function Filtro_15() { /*Filtro 15, Redes, Telefonia, Todos*/
+            document.getElementById('pesquisa').value = "Redes, Telefonia";
+        }
+        function Filtro_16() { /*Filtro 16, CSWIKI, Procedimentos Transcritos, Todos*/
+            document.getElementById('pesquisa').value = "Procedimentos Transcritos";
+        }
+        function Filtro_17() { /*Filtro 17, Problemas, Incidentes e Indisponibilidades, Todos*/
+            document.getElementById('pesquisa').value = "Problemas, Incidentes e Indisponibilidades";
+        }
+        function Filtro_18() { /*Filtro 18, Fluxos de Trabalho, Todos*/
+            document.getElementById('pesquisa').value = "Fluxos de Trabalho";
+        }
+    </script>
+
+    <article id="article-e">
+
+        <div id="div_tit_proc"><h2 id="h2_filtro"> Lista dos Procedimentos mais Utilizados pela CSTI</h2></div>
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <div id="divProcedimentos">
+            <div id="div8">
+                <br>
+                <h2>Filtro de Procedimentos</h2>
+
+                <p><b><span style="color: #f00;">Atenção!</b></span> Não copiar o texto, a fim de encerrar o chamado!</p><br>
+
+                <font> <input type="search" id="pesquisa" placeholder="Digite o termo para pesquisa..." oninput="limpar()"> </font> <button type="button" id="botao1" onclick="filtrar(), leiaMais()">Filtrar</button><br><br>
+                <button type="button" id="botao2" onclick="Filtro_Todos(), filtrar(), leiaMais()">Todos</button>
+                <button type="button" id="botao2" onclick="Filtro_1(), filtrar(), leiaMais()">Destaques</button>
+                <button type="button" id="botao2" onclick="Filtro_17(), filtrar(), leiaMais()">Problemas, Incidentes e Indisponibilidades</button>
+                <button type="button" id="botao2" onclick="Filtro_2(), filtrar(), leiaMais()">VPN e Home Office</button>
+                <button type="button" id="botao2" onclick="Filtro_3(), filtrar(), leiaMais()">Fornecimentos</button>
+                <button type="button" id="botao2" onclick="Filtro_8(), filtrar(), leiaMais()">PJe</button><br>
+                <button type="button" id="botao2" onclick="Filtro_4(), filtrar(), leiaMais()">Troca, Devolução e Remanejamento</button>
+                <button type="button" id="botao2" onclick="Filtro_5(), filtrar(), leiaMais()">Sala de Audiências</button>
+                <button type="button" id="botao2" onclick="Filtro_6(), filtrar(), leiaMais()">Impressoras e Scanners</button>
+                <button type="button" id="botao2" onclick="Filtro_7(), filtrar(), leiaMais()">Procedimentos Gerais e Informativos</button><br>
+                <button type="button" id="botao2" onclick="Filtro_9(), filtrar(), leiaMais()">Envio de Equipamentos (Malote e Correio)</button>
+                <button type="button" id="botao2" onclick="Filtro_10(), filtrar(), leiaMais()">Softwares e Instalação</button>
+                <button type="button" id="botao2" onclick="Filtro_11(), filtrar(), leiaMais()">Monitor e Resolução de Tela</button>
+                <button type="button" id="botao2" onclick="Filtro_12(), filtrar(), leiaMais()">Token e Certificado Digital</button><br>
+                <button type="button" id="botao2" onclick="Filtro_13(), filtrar(), leiaMais()">Sistemas em Geral</button>
+                <button type="button" id="botao2" onclick="Filtro_14(), filtrar(), leiaMais()">Hardware e Firmware</button>
+                <button type="button" id="botao2" onclick="Filtro_15(), filtrar(), leiaMais()">Redes e Telefonia</button>
+                <button type="button" id="botao2" onclick="Filtro_18(), filtrar(), leiaMais()">Fluxos de Trabalho</button><br><br>
+
+                <ul id="lista2">
+                    <div>
+
+                        <span id="mostrar"><br></span><span id="mais">
+                    <li><h4> Procedimentos Destacados <!-- Filtro 1, Destaques, Destacados, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Recolhimento de Desktop de usuário em Teletrabalho ou Trabalho Remoto, Ligação - Informação - Dúvidas Jurídicas Sobre Processo, Orientações - Envios de Equipamentos e Tokens,
+                         Orientações - Instalar MsOffice 2013 em Notebook do TRT, Telefonia IP - Alteração de Horário de Atendimento, Sistema - PJe - Pré-Requisitos para Utilização,
+                         Google Workspace - Google Drive, Micro - Alterar a Ordem de Boot do Micro Lenovo M80q, Google Workspace - Configuração do Segundo Fator de Autenticação,
+                         Pedidos de recuperação de áudio de câmeras de segurança, Aposentados e Servidores Removidos - Acesso ao Correio Eletrônico (email), Software - Assinatura Digital - Suporte para Sistema Operacional MAC,
+                         Software - 2FA - Autenticação de Dois Fatores via KeePassXC --> <!-- Duvidas Juridicas Sobre o Processo --> <!-- Microsoft Office--> <!-- 2FA, MFA -->
+                         <!-- Audios, Cameras, Recuperaçao de Audio, Recuperacão de Audio, Recuperacao de Audio, Recuperação de Audio --> <!-- Key, Kee Pass, Pas, Autenticador, Autenticator, Authenticator -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Recolhimento de Desktop de usuário em Teletrabalho ou Trabalho Remoto <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14161" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14161</a></p><br>
+                    </li>
+                    <li>
+                        <p>Ligação - Informação - Dúvidas Jurídicas Sobre Processo <!-- Filtro 1, Destaques, Destacados, Todos --> <!-- Duvidas Juridicas Sobre o Processo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5877" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5877</a></p><br>
+                    </li>
+                    <li>
+                        <p>Orientações - Envios de Equipamentos e Tokens <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27281" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27281</a></p><br>
+                    </li>
+                    <li>
+                        <p>Orientações - Instalar MsOffice 2013 em Notebook do TRT <!-- Filtro 1, Destaques, Destacados, Todos --> <!-- Microsoft Office--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19887" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19887</a></p><br>
+                    </li>
+                    <li>
+                        <p>Telefonia IP - Alteração de Horário de Atendimento <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28431" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28431</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Pré-Requisitos para Utilização <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10327" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10327</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Workspace - Google Drive <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27119" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27119</a></p><br>
+                    </li>
+                    <li>
+                        <p>Micro - Alterar a Ordem de Boot do Micro Lenovo M80q <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28054" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28054</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Workspace - Configuração do Segundo Fator de Autenticação <!-- Filtro 1, Destaques, Destacados, Todos --> <!-- 2FA, MFA --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27958" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27958</a></p><br>
+                    </li>
+                    <li>
+                        <p>Pedidos de recuperação de áudio de câmeras de segurança <!-- Filtro 1, Destaques, Destacados, Todos --> <!-- Audios, Cameras, Camera de Segurança, Cameras de Segurança, Recuperaçao de Audio, Recuperacão de Audio, Recuperacao de Audio, Recuperação de Audio --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=23633" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=23633</a></p><br>
+                    </li>
+                    <li>
+                        <p>Aposentados e Servidores Removidos - Acesso ao Correio Eletrônico (email) <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13808" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13808</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Assinatura Digital - Suporte para Sistema Operacional MAC <!-- Filtro 1, Destaques, Destacados, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11257" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11257</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - 2FA - Autenticação de Dois Fatores via KeePassXC <!-- Filtro 1, Destaques, Destacados, Todos --> <!-- Key, Kee Pass, Pas, Autenticador, Autenticator, Authenticator --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31647" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31647</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Indisponibilidades <!-- Filtro 17, Problemas, Incidentes e Indisponibilidades, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Rede - Indisponibilidade, Instabilidade ou Lentidão - Conectividade Nula ou Limitada, Sistema - PJe - Indisponibilidade, Instabilidade ou Lentidão - Ações em Caso de Lentidão,
+                         Sistema - Orientações - Indisponibilidade -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Rede - Indisponibilidade, Instabilidade ou Lentidão - Conectividade Nula ou Limitada <!-- Filtro 17, Problemas, Incidentes e Indisponibilidades, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6069" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6069</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Indisponibilidade, Instabilidade ou Lentidão - Ações em Caso de Lentidão <!-- Filtro 17, Problemas, Incidentes e Indisponibilidades, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10763" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10763</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Orientações - Indisponibilidade <!-- Filtro 17, Problemas, Incidentes e Indisponibilidades, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7940" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7940</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre VPN e Teletrabalho <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- VPN - Grupos dos Micros com VPN, VPN - Logon no Windows Via VPN, VPN - Acessar Estação do TRT9 via Terminal Server, VPN - Instalação e Configuração do Cliente VPN do TRT9, 
+                        VPN - Solicitação e Formas de Acesso, Tipos de VPN e Suas Finalidades, VPN - Acessar Estação do TRT9 via Terminal Server, Software - Windows - Múltiplos Monitores via Conexão Remota --> 
+                        <!-- TS, T S, Checkpoint, Check Point, Chekpoint, Chek Point --> <!-- 2 ou Mais Monitores, Vários, Varios Monitores, Usar todos os meus monitores para a sessão remota -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>VPN - Grupos dos Micros com VPN <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19718" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19718</a></p><br>
+                    </li>
+                    <li>
+                        <p> VPN - Logon no Windows Via VPN <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19731" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19731</a></p><br>
+                    </li>
+                    <li>
+                        <p> VPN - Acessar Estação do TRT9 via Terminal Server <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=18955" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=18955</a></p><br>
+                    </li>
+                    <li>
+                        <p> VPN - Instalação e Configuração do Cliente VPN do TRT9 <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=8234" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=8234</a></p><br>
+                    </li>
+                    <li>
+                        <p> VPN - Solicitação e Formas de Acesso, Tipos de VPN e Suas Finalidades <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17008" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17008</a></p><br>
+                    </li>
+                    <li>
+                        <p> VPN - Acessar Estação do TRT9 via Terminal Server <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --> <!-- TS, T S, Checkpoint, Check Point, Chekpoint, Chek Point --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=18955" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=18955</a></p><br>
+                    </li>
+                    <li>
+                        <p> Software - Windows - Múltiplos Monitores via Conexão Remota <!-- Filtro 2, VPN, Home Office, Teletrabalho, Todos --> <!-- 2 ou Mais Monitores, Vários, Varios Monitores, Usar todos os meus monitores para a sessão remota --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19035" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19035</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Fornecimento de Equipamentos <!-- Filtro 3, Fornecimentos, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- WebCam - Fornecimento, WebCam - Fornecimento de Suporte, Fornecimento - Micro e Monitor Para HomeOffice, Hardware - Monitor - Fornecimento, Hardware - Notebook - Fornecimento, 
+                        Hardware - Fone de Ouvido - Fornecimento ou Substituição, Hardware - Teclado - Fornecimento ou Troca, Hardware - Mouse - Fornecimento, Hardware - Cabos - Fornecimento ou Troca de Cabo HDMI, 
+                        Hardware - Cabos - Fornecimento de Cabos de Rede, Hardware - Caixas de Som - Fornecimento, Hardware - Scanner - Fornecimento, Hardware - Impressora - Fornecimento, 
+                        Hardware - Modem 3G ou 4G - Fornecimento ou Retirada, Equipamentos - Solicitação - Mousepad, Hardware - Modem 3G ou 4G - Fornecimento ou Retirada, 
+                        Hardware - Orientações - Fornecimento de Teclado e Mouse sem Fio, Hardware - Orientações - Equipamentos Para Necessidades Especiais --> 
+                        <!-- Headset, H7, Redset, Hedset, Hed7, Head7 --> <!-- Mouse e Teclado sem fio, Kit Wireless --> <!-- Mouse Ergonomico, Mouse Ergonômico, Teclado Ergonômico, Teclado Ergonomico, Ergonomia -->
+                    </h4><br></li>
+
+                    <li>
+                        <p> WebCam - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6061" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6061</a></p><br>
+                    </li>
+                    <li>
+                        <p> WebCam - Fornecimento de Suporte <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16652" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16652</a></p><br>
+                    </li>
+                    <li>
+                        <p> Fornecimento - Micro e Monitor Para HomeOffice <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19560" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19560</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Monitor - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10160" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10160</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Notebook - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10739" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10739</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Fone de Ouvido - Fornecimento ou Substituição <!-- Filtro 3, Fornecimentos, Todos --> <!-- Headset, H7, Redset, Hedset, Hed7, Head7 --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7793" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7793</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Teclado - Fornecimento ou Troca <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6043" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6043</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Mouse - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7821" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7821</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Cabos - Fornecimento ou Troca de Cabo HDMI <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5948" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5948</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Cabos - Fornecimento de Cabos de Rede <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5947" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5947</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Caixas de Som - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5950" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5950</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Scanner - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6038" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6038</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Impressora - Fornecimento <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5967" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5967</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Modem 3G ou 4G - Fornecimento ou Retirada <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10157" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10157</a></p><br>
+                    </li>
+                    <li>
+                        <p> Equipamentos - Solicitação - Mousepad <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5938" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5938</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Modem 3G ou 4G - Fornecimento ou Retirada <!-- Filtro 3, Fornecimentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10157" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10157</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Orientações - Fornecimento de Teclado e Mouse sem Fio <!-- Filtro 3, Fornecimentos, Todos --> <!-- Mouse e Teclado sem fio, Kit Wireless --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=24074" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=24074</a></p><br>
+                    </li>
+                    <li>
+                        <p> Hardware - Orientações - Equipamentos Para Necessidades Especiais <!-- Filtro 3, Fornecimentos, Todos --> <!-- Mouse Ergonomico, Mouse Ergonômico, Teclado Ergonômico, Teclado Ergonomico, Ergonomia --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16181" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16181</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre o PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Sistema - PJe - Pré-Requisitos para Utilização, Sistema - PJe - Cadastro e Acesso de Servidores e Magistrados, 
+                        Sistema - PJe - Cadastro de Perito, Sistema - PJe - Incluir/Excluir Perfil/Lotação do PJe, PJe - Limitar Acessos ou Atribuir Acessos a Servidores, 
+                        Sistema - PJe - Alterar Nome da Parte, Sistema - PJe - Habilitação em Processo, Sistema - PJe - Ocorreu o Seguinte Erro Durante o Processamento da Remessa. Erro ao Montar Polo, 
+                        FAQS:PJe - Redefinir Senha de Acesso, FAQS:Sistema - PJe - Alterar Cadastro de Jus Postulandi Para os Advogados, Sistema - PJe - Sincronizar Cadastro da Parte com a Receita Federal, 
+                        Sistema - PJe - Tipos e Tamanho Máximo de Arquivos Suportados, Sistema - PJe - Cadastro de Estagiários, Sistema - PJe - Erro ao Solicitar Habilitação em Processo, 
+                        Sistema - PJe - Exclusão de Ata de Audiência no PJe, Sistema - PJe - Usuário Externo com problemas de login após adoção MFA, Sistema - PJe - Requisitos Senha de Acesso, Sistema - PJe - Usuário Externo com email inválido após adoção MFA,
+                        Scripts:Sistema - PJe - Orientação de acesso via PDPJ, Sistema - PJe - Orientações para Anexar Cálculos do PJe-Calc (.PJC) à Petição, Sistema - PJe - Possibilitar o registro do trânsito em julgado no processo
+                        Sistema - PJe - Dificuldades para lançar o trânsito em julgado após a implantação da versão 2.8 do PJe, Sistema - PJe - Advogados não Conseguem Assinar Termo Compromisso com PJeOffice Após a PDPJ,
+                        Sistema - AUD 4 - Edição de ATA, Sistema - AUD 4 - Editar Ata Após o Envio ao PJe, Sistema - PJe - Exe-PJe, PJe - Novidades da versão 2.7, 
+                        Sistema - PJe Mídias - Audiência Digital - Disponibilizar Somente Gravação de Áudio, PJe - Dificuldades para arquivar processos a partir da versão 2.9.5, PJe - 'Usuário não encontrado' ao Tentar Recuperar a Senha,
+                        Sistema - PJe - Usuário Bloqueado, Sistema - PJe - Informações Sobre Cadastro de Advogado, Sistema - PJe - Erro na Assinatura (PJe-ASN-011), Sistema - PJe - Movimentos Processuais na Timeline do Processo, Sistema - PJe - e-Carta - Verificar Limite de Caracteres,
+                        Sistema - Orientações - Cursos do EAD, Sistema - PJe - Acessar o PJe Sem Certificado Digital, FAQS:Sistema - PJe - Cadastro de Assistente de Advogado no PJe, Sistema - PJe - Envio de Senha para Consulta Pública do Processo – Público Externo, 
+                        Sistema - PJe - Cadastro de Cidadão e Acesso a Processos, Sistema - PJe Mídias - Falha para Visualizar Mídias Sincronizadas, PJe Mídias - Audiência Digital - Vídeos em Segredo de Justiça, Sistema - PJe - Erro na Inserção da Parte no Processo --> 
+                        <!-- Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado--> <!-- Atribuir, Perfil de Diretor --> <!-- Alteração de Nome da Parte --> <!-- Habilitar --> <!-- Montar Polo Passivo, Erro ao Tentar Remessar ao 2º Grau, Segundo --> 
+                        <!-- Coordenadoria de Apoio as Varas --> <!-- Correção de Nome de Parte, das Partes, Alteração de nome de Parte, Retificação de Nome de Parte, 
+                        Retificação do Polo Passivo, Retificar, Alterar, Corrigir --> <!-- PJe Mídias, PJe Midias, Limite Máximo, Limite Maximo, Tamanho de Arquivos PJe, PJe Limite, PJe 10 MB, Sistema - PJe - Erro: O usuário não está ativo --> 
+                        <!-- Estagiario, Estagiaria, Estagiária, Estagio, Cadastro de Estagiarios, Acesso de Estagiarios no PJe, Acesso de Estagiários, Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado-->
+                        <!-- Excluir Ata --> <!-- SCA, MFA PJe, MFA PDPJ, Recuperar Email PJe, Recuperação de Email, Recuperacao de Email, Recuperaçao de Email, Recuperar E-mail --> <!-- Requisitos de Senha do PJe, Senha PJe, PJe Senha, PJe Requisitos -->
+                        <!-- Requisitos PJe, Requisitos do PJe, PJe Requisitos, Pre Requisitos, Pré Requisitos --> <!-- MFA, PJe --> <!-- MFA PJe, MFA PDPJ, Recuperar Email PJe, Recuperar E-mail --> <!-- Transito em Julgado, Transito Julgado, Registrar Trânsito em Julgado, Registrar Transito em Julgado -->
+                        <!-- Termo de Compromisso --> <!-- EXE-PJe, EXE PJe, EXEPJe --> <!-- PJe Mídias, PJe Midias, Arquivos de Audio, Arquivo de Audio, Arquivo de Áudio, Audio PJe Midias, Audio Pje Mídias, Áudio Pje Mídias -->
+                        <!-- Arquivamento de Processo, Checklist de Arquivamento, Checklist para Arquivar --> <!-- Login PDPJ, Usuario Bloqueado --> <!-- Login PDPJ, Usuario Nao Encontrado, Usuário Nao Encontrado, Usuario Não Encontrado -->
+                        <!-- Distribuição, Distribuicao, Coordenadoria de Apoio às Varas, Coordenadoria de Apoio as Varas, Divisão Judiciária ao Segundo Grau, Divisao Judiciaria do Segundo Grau -->
+                        <!-- Assinatura Externa, Assinatura Gov, Gov.br --> <!-- Movimentos Ocultos, visualização dos movimentos processuais no sistema PJe --><!-- ecarta, e carta, 2/3 de um página A4, 2/3 A4, pagina A4 -->
+                        <!-- Cadastro e Acesso da Parte ao Processo --> <!-- PJe Midias, Midias Sincronizadas, Sincronização, Atribuir Visibilidade, Visualização --> <!-- CNPJ Filial, CNPJ Matriz, Casas Bahia, BA -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Sistema - PJe - Pré-Requisitos para Utilização <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Requisitos PJe, Requisitos do PJe, PJe Requisitos, Pre Requisitos, Pré Requisitos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10327" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10327</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro e Acesso de Servidores e Magistrados <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6190" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6190</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro de Perito <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7730" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7730</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Incluir/Excluir Perfil/Lotação do PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Atribuir, Perfil de Diretor --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16289" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16289</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe - Limitar Acessos ou Atribuir Acessos a Servidores <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=24470" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=24470</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Alterar Nome da Parte <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Alteração de Nome da Parte --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=15106" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=15106</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Habilitação em Processo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Habilitar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7735" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7735</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Ocorreu o Seguinte Erro Durante o Processamento da Remessa. Erro ao Montar Polo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Montar Polo Passivo, Erro ao Tentar Remessar ao 2º Grau, Segundo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10304" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10304</a></p><br>
+                    </li>
+                    <li>
+                        <p>FAQS:PJe - Redefinir Senha de Acesso <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Montar Polo Passivo, Erro ao Tentar Remessar ao 2º Grau, Segundo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=30481" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=30481</a></p><br>
+                    </li>
+                    <li>
+                        <p>FAQS:Sistema - PJe - Alterar Cadastro de Jus Postulandi Para os Advogados <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Coordenadoria de Apoio as Varas --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7948" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7948</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Sincronizar Cadastro da Parte com a Receita Federal <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Correção de Nome de Parte, das Partes, Alteração de nome de Parte, Retificação de Nome de Parte, Retificação do Polo Passivo, Retificar, Alterar, Corrigir --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10333" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10333</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Tipos e Tamanho Máximo de Arquivos Suportados <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- PJe Mídias, PJe Midias, Limite Máximo, Limite Maximo, Tamanho de Arquivos PJe, PJe Limite, PJe 10 MB --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31003" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31003</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Audiência Digital - Disponibilizar Somente Gravação de Áudio <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- PJe Mídias, PJe Midias, Arquivos de Audio, Arquivo de Audio, Arquivo de Áudio, Audio PJe Midias, Audio Pje Mídias, Áudio Pje Mídias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20900" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20900</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro de Estagiários <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Estagiario, Estagiaria, Estagiária, Estagio, Cadastro de Estagiarios, Acesso de Estagiarios no PJe, Acesso de Estagiários, Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=15870" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=15870</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Erro ao Solicitar Habilitação em Processo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Habilitar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=29193" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=29193</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Exclusão de Ata de Audiência no PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Excluir Ata --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4462" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4462</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - AUD 4 - Editar Ata Após o Envio ao PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27659" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27659</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - AUD 4 - Edição de ATA <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33826" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33826</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Usuário Externo com problemas de login após adoção MFA <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- MFA PJe, MFA PDPJ, Recuperar Email PJe, Recuperar E-mail --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33274" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33274</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Requisitos Senha de Acesso<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Requisitos de Senha do PJe, Senha PJe, PJe Senha, PJe Requisitos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20863" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20863</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Usuário Interno com problemas de login após adoção MFA<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- MFA PJe, MFA PDPJ, Recuperar Email PJe, Recuperar E-mail --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33280" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33280</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Usuário Externo com email inválido após adoção MFA<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- SCA, MFA PJe, MFA PDPJ, Recuperar Email PJe, Recuperação de Email, Recuperacao de Email, Recuperaçao de Email, Recuperar E-mail --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33290" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33290</a></p><br>
+                    </li>
+                    <li>
+                        <p>Scripts:Sistema - PJe - Orientação de acesso via PDPJ<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- MFA, PJe --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33555" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33555</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Orientações para Anexar Cálculos do PJe-Calc (.PJC) à Petição<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17839" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17839</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Possibilitar o registro do trânsito em julgado no processo<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Transito em Julgado, Transito Julgado, Registrar Trânsito em Julgado, Registrar Transito em Julgado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21910" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21910</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Dificuldades para lançar o trânsito em julgado após a implantação da versão 2.8 do PJe<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Transito em Julgado, Transito Julgado, Registrar Trânsito em Julgado, Registrar Transito em Julgado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=26498" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=26498</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Advogados não Conseguem Assinar Termo Compromisso com PJeOffice Após a PDPJ<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Termo de Compromisso --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33836" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33836</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe - Novidades da versão 2.7<!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- EXE-PJe, EXE PJe, EXEPJe --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=23762" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=23762</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Exe-PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- EXE-PJe, EXE PJe, EXEPJe --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33418" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33418</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe - Dificuldades para arquivar processos a partir da versão 2.9.5 <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Arquivamento de Processo, Checklist de Arquivamento, Checklist para Arquivar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21539" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21539</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Usuário Bloqueado <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Login PDPJ, Usuario Bloqueado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33722" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33722</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe - 'Usuário não encontrado' ao Tentar Recuperar a Senha <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Login PDPJ, Usuario Nao Encontrado, Usuário Nao Encontrado, Usuario Não Encontrado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=23397" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=23397</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Informações Sobre Cadastro de Advogado <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Distribuição, Distribuicao, Coordenadoria de Apoio às Varas, Coordenadoria de Apoio as Varas, Divisão Judiciária ao Segundo Grau, Divisao Judiciaria do Segundo Grau, Cadastro Advogado, Cadastro Advogados, Cadastramento, Acessar o PJe, Cadastro PJe, Cadastro Servidor, Cadastro Magistrado--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10315" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10315</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Erro na Assinatura (PJe-ASN-011) <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Assinatura Externa, Assinatura Gov, Gov.br --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=32212" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=32212</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Movimentos Processuais na Timeline do Processo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Movimentos Ocultos, visualização dos movimentos processuais no sistema PJe --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28152" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28152</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - e-Carta - Verificar Limite de Caracteres <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- ecarta, e carta, 2/3 de um página A4, 2/3 A4, pagina A4 --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33900" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33900</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Acessar o PJe Sem Certificado Digital <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10282" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10282</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro de Assistente de Advogado no PJe <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7954" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7954</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Envio de Senha para Consulta Pública do Processo – Público Externo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Chaves de Acesso, Acesso Sem Certificado, Link Para Acesso, Link de Acesso --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33771" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33771</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro de Cidadão e Acesso a Processos <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- Cadastro e Acesso da Parte ao Processo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7729" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7729</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Falha para Visualizar Mídias Sincronizadas <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- PJe Midias, Midias Sincronizadas, Sincronização, Atribuir Visibilidade, Visualização --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=25120" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=25120</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe Mídias - Audiência Digital - Vídeos em Segredo de Justiça <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- PJe Midias, Midias Sincronizadas, Sincronização, Atribuir Visibilidade, Visualização --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16342" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16342</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Erro: O usuário não está ativo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- PJe Midias, Midias Sincronizadas, Sincronização, Atribuir Visibilidade, Visualização --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31568" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31568</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Erro na Inserção da Parte no Processo <!-- Filtro 8, Procedimentos Sobre o PJe, Todos --> <!-- CNPJ Filial, CNPJ Matriz, Casas Bahia, BA --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=34227" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=34227</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Trocas, Devoluções e Remanejamentos <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Hardware - Notebook - Devolução, Equipamentos - Devolução de equipamentos utilizados em HomeOffice, Recolhimento de Desktop de usuário em Teletrabalho ou Trabalho Remoto, 
+                        Hardware - Devolução - Micro de HomeOffice para a Secretaria ou Gabinete, Hardware - Fone de Ouvido - Recolhimento, Hardware - Mouse-Teclado - Substituição, Hardware - Mouse - Retirada, 
+                        Hardware - Micro - Troca Computador (c820 Mini), Hardware - Micro - Cuidados para remoção, fornecimento, instalação e troca de computadores, 
+                        Hardware - Cabos - Substituição - Troca de Cabo de Energia, Hardware - Monitor - Troca, Hardware - Monitor - Retirada, Equipamentos - Remanejamento - Micro, Monitor e ou Impressora --> 
+                        <!-- Headset, H7, Redset, Hedset, Hed7, Head7 --> 
+                    </h4><br></li>
+
+                    <li>
+                        <p>Hardware - Notebook - Devolução <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4370" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4370</a></p><br>
+                    </li>
+                    <li>
+                        <p>Equipamentos - Devolução de equipamentos utilizados em HomeOffice <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22145" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22145</a></p><br>
+                    </li>
+                    <li>
+                        <p>Recolhimento de Desktop de usuário em Teletrabalho ou Trabalho Remoto <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14161" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14161</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Devolução - Micro de HomeOffice para a Secretaria ou Gabinete <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=24187" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=24187</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Fone de Ouvido - Recolhimento <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --> <!-- Headset, H7, Redset, Hedset, Hed7, Head7 --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5958" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5958</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Mouse-Teclado - Substituição <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6013" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6013</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Mouse - Retirada <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6010" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6010</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Micro - Troca Computador (c820 Mini) <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=15017" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=15017</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Micro - Cuidados para remoção, fornecimento, instalação e troca de computadores <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17184" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17184</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Cabos - Substituição - Troca de Cabo de Energia <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2019" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2019</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Monitor - Troca <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10163" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10163</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Monitor - Retirada <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6008" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6008</a></p><br>
+                    </li>
+                    <li>
+                        <p>Equipamentos - Remanejamento - Micro, Monitor e ou Impressora <!-- Filtro 4, Troca, Devolução, Remanejamento, Trocas, Devoluções, Remanejamentos, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10098" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10098</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Softwares e Equipamentos de Sala de Audiência <!-- Filtro 5, Sala de Audiências, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Software - Configuração do Zoom, Instalação e Configuração do OBS, Hardware - Orientações - Equipamentos de Som da Sala de Audiência, 
+                        Vídeo tutorial para realização de videoconferências usando a plataforma Zoom, Configuração do Zoom, Instalação e Configuração do OBS, 
+                        Action Mixer - Configuração de microfones para uso em Salas de Audiências, Hardware - WebCam - Não Reconhece, Software - WebCam - Instalação da Webcam Cisco em Micros Com Windows 7 x64, 
+                        Software - Orientações - Instalação Action Mixer, Apoio - Reuniões - Preparação Para Eventos e Sessões, Zoom - Localizar Reunião Excluída, Zoom - FAQ (Perguntas e Respostas), 
+                        Pedidos de recuperação de áudio de câmeras de segurança, Hardware - Orientações - Equipamentos de Som da Sala de Audiência, Sistema - PJe Mídias - Erro ao Gerar Gravação Final, 
+                        Sistema - PJe Mídias - Audiência Digital - Audiência Realizada Não Aparece na Tela Inicial, Sistema - PJe Mídias - Audiência Digital - Erro na Geração do Arquivo Final da Audiência --> 
+                        <!-- Audios, Cameras, Recuperaçao de Audio, Recuperacão de Audio, Recuperacao de Audio, Recuperação de Audio --> <!-- Microfone para Apregoar as Partes, Cabo P10, Amplificador --> 
+                        <!-- Audiencia, Audiência Travando, Trava, .old, Old, GravacaoFinal, Gravacao Final, GravaçãoFinal --> <!-- Audiencia Fake, Falsa, Audiência Travando, Trava, .old, Old -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Software - Configuração do Zoom, Instalação e Configuração do OBS <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21944" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21944</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Orientações - Equipamentos de Som da Sala de Audiência <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11573" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11573</a></p><br>
+                    </li>
+                    <li>
+                        <p>Vídeo tutorial para realização de videoconferências usando a plataforma Zoom <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21271" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21271</a></p><br>
+                    </li>
+                    <li>
+                        <p>Configuração do Zoom, Instalação e Configuração do OBS <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21944" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21944</a></p><br>
+                    </li>
+                    <li>
+                        <p>Action Mixer - Configuração de microfones para uso em Salas de Audiências <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13962" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13962</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - WebCam - Não Reconhece <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10190" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10190</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - WebCam - Instalação da Webcam Cisco em Micros Com Windows 7 x64 <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=8236" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=8236</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Orientações - Instalação Action Mixer <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14307" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14307</a></p><br>
+                    </li>
+                    <li>
+                        <p>Apoio - Reuniões - Preparação Para Eventos e Sessões <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4344" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4344</a></p><br>
+                    </li>
+                    <li>
+                        <p>Zoom - Localizar Reunião Excluída <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22946" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22946</a></p><br>
+                    </li>
+                    <li>
+                        <p>Zoom - FAQ (Perguntas e Respostas) <!-- Filtro 5, Sala de Audiências, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21385" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21385</a></p><br>
+                    </li>
+                    <li>
+                        <p>Pedidos de recuperação de áudio de câmeras de segurança <!-- Filtro 5, Sala de Audiências, Todos --> <!-- Audios, Cameras, Recuperaçao de Audio, Recuperacão de Audio, Recuperacao de Audio, Recuperação de Audio --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=23633" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=23633</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Orientações - Equipamentos de Som da Sala de Audiência <!-- Filtro 5, Sala de Audiências, Todos --> <!-- Microfone para Apregoar as Partes, Cabo P10, Amplificador --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11573" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11573</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Erro ao Gerar Gravação Final <!-- Filtro 5, Sala de Audiências, Todos --> <!-- Audiencia, Audiência Travando, Trava, .old, Old, GravacaoFinal, Gravacao Final, GravaçãoFinal --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=26208" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=26208</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Audiência Digital - Audiência Realizada Não Aparece na Tela Inicial <!-- Filtro 5, Sala de Audiências, Todos --> <!-- Audiencia Fake, Falsa, Audiência Travando, Trava, .old, Old --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14389" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14389</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Audiência Digital - Erro na Geração do Arquivo Final da Audiência <!-- Filtro 5, Sala de Audiências, Todos --> <!-- Audiencia Fake, Falsa, Audiência Travando, Trava, .old, Old --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28634" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28634</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Impressoras e Scanners <!-- Filtro 6, Impressoras, Scanners, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Software - Impressora - Instalação Via Porta de Rede, Software - Impressora - Impressora do Servidor de Impressão Não Imprime, Hardware - Impressora - IP Fixado pelo DSIR, 
+                        Software - Impressora - Instalação Okidata B431 Via Rede, Software - Impressora - Servidor de Impressão, Software - Multifuncional - Configurar Digitalização SMB na M4070FR e M3375FD, 
+                        Software - Scanner - Instalação do Scanner Kodak i2600, Hardware - Scanner - Scanner Kodak não é Reconhecido, Software - Scanner - Instalação do Scanner Kodak i3400 e i3200, 
+                        Hardware - Multifuncional - Alterar digitalização frente e verso na M4070, Software - Impressora - Erro 'Isso não funcionou' ao tentar instalar a impressora, 
+                        Equipamentos - Remanejamento - Micro, Monitor e ou Impressora, Software - Impressora - Definir Impressão Padrão Frente e Verso, 
+                        Software - Impressora - Lexmark MS610 - Definir Impressão Padrão Frente e Verso Via Interface Web, Sistema - Intranet - Solicitação de Fornecimento de Toner, Hardware - Impressora - Instalar Impressora pela Porta USB,
+                        Equipamentos - Solicitar Insumos - Toner ou Cilindro para Impressoras --> 
+                        <!-- Insumos, SA, Kit de Imagem, Tonner, Solicitaçao de Toner, Solicitacao de Toner, Tonner, Solicitaçao de Tonner, Solicitação de Tonner --> <!-- Impressora USB, Instalar Impressora em Casa -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Software - Impressora - Instalação Via Porta de Rede <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5911" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5911</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Impressora do Servidor de Impressão Não Imprime <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6336" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6336</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Impressora - IP Fixado pelo DSIR <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17453" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17453</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Instalação Okidata B431 Via Rede <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6342" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6342</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Servidor de Impressão <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4617" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4617</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Multifuncional - Configurar Digitalização SMB na M4070FR e M3375FD <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10440" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10440</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Scanner - Instalação do Scanner Kodak i2600 <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4687" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4687</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Scanner - Scanner Kodak não é Reconhecido <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4378" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4378</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Scanner - Instalação do Scanner Kodak i3400 e i3200 <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4688" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4688</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Multifuncional - Alterar digitalização frente e verso na M4070 <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22937" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22937</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Erro 'Isso não funcionou' ao tentar instalar a impressora <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22840" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22840</a></p><br>
+                    </li>
+                    <li>
+                        <p>Equipamentos - Remanejamento - Micro, Monitor e ou Impressora <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10098" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10098</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Definir Impressão Padrão Frente e Verso <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16152" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16152</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Impressora - Lexmark MS610 - Definir Impressão Padrão Frente e Verso Via Interface Web <!-- Filtro 6, Impressoras, Scanners, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16177" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16177</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Intranet - Solicitação de Fornecimento de Toner <!-- Filtro 6, Impressoras, Scanners, Todos --> <!-- Insumos, SA, Kit de Imagem, Tonner, Solicitaçao de Toner, Solicitacao de Toner, Tonner, Solicitaçao de Tonner, Solicitação de Tonner --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31068" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31068</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Impressora - Instalar Impressora pela Porta USB <!-- Filtro 6, Impressoras, Scanners, Todos --> <!-- Impressora USB, Instalar Impressora em Casa --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5971" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5971</a></p><br>
+                    </li>
+                    <li>
+                        <p>Equipamentos - Solicitar Insumos - Toner ou Cilindro para Impressoras <!-- Filtro 6, Impressoras, Scanners, Todos --> <!-- Insumos, SA, Kit de Imagem, Tonner, Solicitaçao de Toner, Solicitacao de Toner, Tonner, Solicitaçao de Tonner, Solicitação de Tonner --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10103" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10103</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Gerais e Informativos <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Sistema - PJe - Tarefas Resolvidas Pelo N3 ou N4, Ligação - Informação - Dúvidas Jurídicas Sobre Processo, 
+                        Ligação - Informação - Cancelar Tarefa, Atendimento ao público externo, via Chat e Videoatendimento, Sistema - Assyst - Encerramento de Solicitações Abertas em Duplicidade, 
+                        Sistema - Assyst - Conferindo e Encerrando Tarefas SMP, Ligação - Informação - Encerrar Tarefa de Demanda, Central de Serviços de TI - Atendimento via Chat, Script básico de atendimento via chat, 
+                        Telefonia IP - Alteração de Horário de Atendimento, Lista de status dos ativos de microinformática, Certidão - Negativa para Fins de Desligamento - Entrega de Equipamentos, 
+                        Aposentados e Servidores Removidos - Acesso ao Correio Eletrônico (email), Acesso - Aposentados (Inativos) e Pensionistas - Verificação de Login, 
+                        Software - Assinatura Digital - Suporte para Sistema Operacional MAC, Sistema - Sítio TRT9 - Acompanhar Pauta de Sessão, Sistema - Sítio TRT9 - Acompanhamento de Sessão, 
+                        Equipe Terceirizada de Central de Serviços, Organograma das Unidades de TIC, Sistema - Intranet - Abertura de Solicitação de Serviço, Sistema - Intranet - Abrir Chamado Para Manutenção Predial, 
+                        Orientações para Pedidos de Transcrição de Trechos de Audiências, Software - Windows - Configurar Desktop para TVs de Sinalização, Instâncias MediaWiki conhecidas de potencial interesse para o TRT-PR, 
+                        Sistema - Assyst - Criar e Alterar Cadastros de Usuários, Imagem e Multimídia - Edição de arquivos de vídeo de gravação de eventos, 
+                        Liberação de Acesso - Secretaria Ainda Não Recebeu o e-mail com os Dados de Acesso de um Novo Servidor, Comunicados - Criação - Solicitação de Comunicados de TI, 
+                        Roteiro para Pedidos de Acessos, Acesso - Sistemas Corporativos - Cadastramento ou Alteração de Acessos de Usuários nos Sistemas, 
+                        Acompanhamento de Sessão - PJe - Login Temporário dos Membros do Ministério Público do Trabalho da 9ª Região, Scripts:Alteração da Senha Institucional, 
+                        Hardware - Orientações - Solicitação de Compra de Equipamento Interno de Propriedade do TRT9, Sistema - Assyst - Pesquisa de Eventos Assyst por pessoa envolvida, 
+                        Gerenciamento de Ativos de Microinformática - Atualizar status e sublocal no CMDB, PJe Mídias Desktop - Anexar Provas e Perícias, Plantões de atendimento em sobreaviso,
+                        Sistema - PJe - Cadastro de Feriados, Software - Telefonia IP - Configuração 'Siga-me' --> 
+                        <!-- Duvidas, Juridicas--> <!-- Chatbot --> <!-- MAC, IOS, Apple, Maçã --> <!-- Acompanhamento, Acompanhar, Sessao, Sessão, Seção, Sessões, Seções --> 
+                        <!-- Técnicos, Tecnicos, Funcionários da CSTI, Funcionarios da CSTI, T.I., Pessoas --> <!-- Servidores da TI do TRT9, T.I., Servidores Públicos, Publicos, Pessoas --> 
+                        <!-- Abrir CTA, Solicitação SA, Chamado Intranet --> <!-- Abrir CTA, Solicitação Setorial, Chamado Intranet --> 
+                        <!-- Transcriçao, Transcricao, Transcricão, Transcrever, Áudios Transcritos, Audios Transcritos, Audiencias --> <!-- Sinalizacao, Sinalizaçao, Sinalizacão, Sinalizar --> 
+                        <!-- WikiJT, Wiki JT, Wiki Nacional --> <!-- Cadastrar Usuário no Assyst, Cadastro de Usuario no Assyst --> <!-- Novo Acesso de Servidor, Cadastro de Servidor --> 
+                        <!-- Emails dos Procuradores, MPT, Usuário de Procurador, Usuários de Procuradores do MPT, Login de Procuradores do MPT, Reset de Senha --> <!-- Troca de Senha, Alteração de Senha --> 
+                        <!-- Lista de Status que Desabilitam e Habilitam Micros no AD, Habilitado, Desabilitado, Habilitar, Desabilitar -->
+                        <!-- Advogado Juntar Mídias, Anexar Provas, Midias, Jutada de Midias, Juntar Midias, Juntar as Mídias, Advogado Mídias, Advogado Midias --> <!-- Sobre aviso, Sobrea-aviso --> <!-- Feriado Pje -->
+                        <!-- Curso, Escola Judicial --> <!-- SIGAMI, Sigame, Siga me, Microsip, Redirecionar Ligação, Redirecionamento -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Sistema - PJe - Tarefas Resolvidas Pelo N3 ou N4 <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4511" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4511</a></p><br>
+                    </li>
+                    <li>
+                        <p>Ligação - Informação - Dúvidas Jurídicas Sobre Processo <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Duvidas, Juridicas--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5877" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5877</a></p><br>
+                    </li>
+                    <li>
+                        <p>Ligação - Informação - Cancelar Tarefa <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6066" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6066</a></p><br>
+                    </li>
+                    <li>
+                        <p>Atendimento ao público externo, via Chat e Videoatendimento <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20299" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20299</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Assyst - Encerramento de Solicitações Abertas em Duplicidade <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10278" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10278</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Assyst - Conferindo e Encerrando Tarefas SMP <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13002" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13002</a></p><br>
+                    </li>
+                    <li>
+                        <p>Ligação - Informação - Encerrar Tarefa de Demanda <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10194" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10194</a></p><br>
+                    </li>
+                    <li>
+                        <p>Central de Serviços de TI - Atendimento via Chat <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7894" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7894</a></p><br>
+                    </li>
+                    <li>
+                        <p>Script básico de atendimento via chat <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Chatbot --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22243" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22243</a></p><br>
+                    </li>
+                    <li>
+                        <p>Telefonia IP - Alteração de Horário de Atendimento <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28431" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28431</a></p><br>
+                    </li>
+                    <li>
+                        <p>Lista de status dos ativos de microinformática <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14140" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14140</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certidão - Negativa para Fins de Desligamento - Entrega de Equipamentos <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10096" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10096</a></p><br>
+                    </li>
+                    <li>
+                        <p>Aposentados e Servidores Removidos - Acesso ao Correio Eletrônico (email) <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13808" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13808</a></p><br>
+                    </li>
+                    <li>
+                        <p>Acesso - Aposentados (Inativos) e Pensionistas - Verificação de Login <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=15766" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=15766</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Assinatura Digital - Suporte para Sistema Operacional MAC <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- MAC, IOS, Apple, Maçã --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11257" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11257</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Sítio TRT9 - Acompanhar Pauta de Sessão <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Acompanhamento, Acompanhar, Sessao, Sessão, Seção, Sessões, Seções --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17159" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17159</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Sítio TRT9 - Acompanhamento de Sessão <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Acompanhamento, Acompanhar, Sessao, Sessão, Seção, Sessões, Seções --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28622" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28622</a></p><br>
+                    </li>
+                    <li>
+                        <p>Equipe Terceirizada de Central de Serviços <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Técnicos, Tecnicos, Funcionários da CSTI, Funcionarios da CSTI, T.I., Pessoas --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=18698" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=18698</a></p><br>
+                    </li>
+                    <li>
+                        <p>Organograma das Unidades de TIC <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Servidores da TI do TRT9, T.I., Servidores Públicos, Publicos, Pessoas --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=15879" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=15879</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Intranet - Abertura de Solicitação de Serviço <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Abrir CTA, Solicitação SA, Chamado Intranet --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5893" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5893</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Intranet - Abrir Chamado Para Manutenção Predial <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Abrir CTA, Solicitação Setorial, Chamado Intranet --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16734" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16734</a></p><br>
+                    </li>
+                    <li>
+                        <p>Orientações para Pedidos de Transcrição de Trechos de Audiências <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Transcriçao, Transcricao, Transcricão, Transcrever, Áudios Transcritos, Audios Transcritos, Audiencias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31924" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31924</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Windows - Configurar Desktop para TVs de Sinalização <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Sinalizacao, Sinalizaçao, Sinalizacão, Sinalizar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27435" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27435</a></p><br>
+                    </li>
+                    <li>
+                        <p>Instâncias MediaWiki conhecidas de potencial interesse para o TRT-PR <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- WikiJT, Wiki JT, Wiki Nacional --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14168" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14168</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Assyst - Criar e Alterar Cadastros de Usuários <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Cadastrar Usuário no Assyst, Cadastro de Usuario no Assyst --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31956" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31956</a></p><br>
+                    </li>
+                    <li>
+                        <p>Imagem e Multimídia - Edição de arquivos de vídeo de gravação de eventos <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20430" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20430</a></p><br>
+                    </li>
+                    <li>
+                        <p>Liberação de Acesso - Secretaria Ainda Não Recebeu o e-mail com os Dados de Acesso de um Novo Servidor <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Novo Acesso de Servidor, Cadastro de Servidor --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=23819" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=23819</a></p><br>
+                    </li>
+                    <li>
+                        <p>Comunicados - Criação - Solicitação de Comunicados de TI <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10732" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10732</a></p><br>
+                    </li>
+                    <li>
+                        <p>Roteiro para Pedidos de Acessos <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27269" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27269</a></p><br>
+                    </li>
+                    <li>
+                        <p>Acesso - Sistemas Corporativos - Cadastramento ou Alteração de Acessos de Usuários nos Sistemas <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5875" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5875</a></p><br>
+                    </li>
+                    <li>
+                        <p>Acompanhamento de Sessão - PJe - Login Temporário dos Membros do Ministério Público do Trabalho da 9ª Região <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Emails dos Procuradores, MPT, Usuário de Procurador, Usuários de Procuradores do MPT, Login de Procuradores do MPT, Reset de Senha --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19883" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19883</a></p><br>
+                    </li>
+                    <li>
+                        <p>Scripts:Alteração da Senha Institucional <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Troca de Senha, Alteração de Senha --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11186" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11186</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Orientações - Solicitação de Compra de Equipamento Interno de Propriedade do TRT9 <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=4389" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=4389</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Assyst - Pesquisa de Eventos Assyst por pessoa envolvida <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14312" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14312</a></p><br>
+                    </li>
+                    <li>
+                        <p>Gerenciamento de Ativos de Microinformática - Atualizar status e sublocal no CMDB <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Lista de Status que Desabilitam e Habilitam Micros no AD, Habilitado, Desabilitado, Habilitar, Desabilitar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=14948" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=14948</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe Mídias Desktop - Anexar Provas e Perícias <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Advogado Juntar Mídias, Anexar Provas, Midias, Jutada de Midias, Juntar Midias, Juntar as Mídias, Advogado Mídias, Advogado Midias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22257" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22257</a></p><br>
+                    </li>
+                    <li>
+                        <p>Plantões de atendimento em sobreaviso <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Sobre aviso, Sobrea-aviso --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=29431" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=29431</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - Cadastro de Feriados <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Feriado Pje --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10285" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10285</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Orientações - Cursos do EAD <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- Curso, Escola Judicial --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13690" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13690</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Telefonia IP - Configuração 'Siga-me' <!-- Filtro 7, Procedimentos Gerais, Geral, Informação, Informações, Todos --> <!-- SIGAMI, Sigame, Siga me, Microsip, Redirecionar Ligação, Redirecionamento --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=34662" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=34662</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Envios (Malote e Correios) <!-- Filtro 9, Envio de Equipamentos, Malote, Correios, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Orientações - Envios de Equipamentos e Tokens -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Orientações - Envios de Equipamentos e Tokens <!-- Filtro 9, Envio de Equipamentos, Malote, Correios, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27281" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27281</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Softwares e Instalação <!-- Filtro 10, Softwares, Instalação, Instalações, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Orientações - Instalar MsOffice 2013 em Notebook do TRT, Software - 2FA - Autenticação de Dois Fatores via KeePassXC, Software - MsOffice - Instalar MicroSoft Office, 
+                        Software - Orientações - Assistência Rápida do Windows, Software - Windows - Baixa de Imagem Via Pen Drive em Desktop Lenovo, Software - Lenovo Vantage - Instalação --> <!-- Microsoft Office--> 
+                        <!-- Key, Kee Pass, Pas, Autenticador, Autenticator, Authenticator --> 
+                        <!-- World, Excel, Instalar Office, Instalação do Office, Instalacao do Office, Instalaçao do Office, Instalação Office, Instalacao Office, Instalaçao Office --> 
+                        <!-- Assistencia Rapida, Acesso Remoto, Acessar Remotamente, Suporte Remoto, Conexão Remota --> <!-- Lenovo BIOS, Atualização BIOS, Atualizaçao BIOS Lenovo -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Orientações - Instalar MsOffice 2013 em Notebook do TRT <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- Microsoft Office--></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19887" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19887</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - 2FA - Autenticação de Dois Fatores via KeePassXC <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- Key, Kee Pass, Pas, Autenticador, Autenticator, Authenticator --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31647" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31647</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - MsOffice - Instalar MicroSoft Office <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- World, Excel, Instalar Office, Instalação do Office, Instalacao do Office, Instalaçao do Office, Instalação Office, Instalacao Office, Instalaçao Office --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=17490" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=17490</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Orientações - Assistência Rápida do Windows <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- Assistencia Rapida, Acesso Remoto, Acessar Remotamente, Suporte Remoto, Conexão Remota --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=29171" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=29171</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Windows - Baixa de Imagem Via Pen Drive em Desktop Lenovo <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- Assistencia Rapida, Acesso Remoto, Acessar Remotamente, Suporte Remoto, Conexão Remota --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28572" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28572</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Lenovo Vantage - Instalação <!-- Filtro 10, Softwares, Instalação, Instalações, Todos --> <!-- Lenovo BIOS, Atualização BIOS, Atualizaçao BIOS Lenovo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=33416" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=33416</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Monitor e Resolução de Tela <!-- Filtro 11, Monitor, Resolução de Tela, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Software - Windows - Resolução Não Suportada, Software - Monitor - Alteração da Resolução e Orientação da Tela (Monitor), Software - Windows - Resolução de Vídeo,
+                        Hardware - Splitter - Problemas em Sala de Audiência, Hardware - Monitor - Cabos de Vídeo e Energia Mal Conectados, Software - Orientações - Driver de Vídeo -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Software - Windows - Resolução Não Suportada <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2852" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2852</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Monitor - Alteração da Resolução e Orientação da Tela (Monitor) <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=8152" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=8152</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Windows - Resolução de Vídeo <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6480" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6480</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Splitter - Problemas em Sala de Audiência <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10180" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10180</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Monitor - Cabos de Vídeo e Energia Mal Conectados <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6001" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6001</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - Orientações - Driver de Vídeo <!-- Filtro 11, Monitor, Resolução de Tela, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6394" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6394</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Tokens e Certificado Digital <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- e-Token - Gestão de Certificados e e-Tokens, Certificação Digital - Token - Orientações Gerais sobre o Token Cinza, Software - e-Token - Erros do Token Cinza, 
+                        Certificação Digital - Token - Orientações Gerais sobre os Tokens SafeNet Verde, Azul e Preto 5100, Certificação Digital - Endereços Soluti, 
+                        Certificação Digital - Emissão ou Renovação Online do Certificado Digital Soluti, Assinatura Digital - Remover Certificado Digital Duplicado, e-Token - Devolução, 
+                        e-Token - Reaproveitamento de e-Tokens, Certificação Digital - Cadastrar Prazo do Certificado Digital na Intranet, Software - e-Token - Utilização do Sistema Gertoken, 
+                        Certificação Digital - Orientação - Solicitações de Certificados e Tokens, e-Token - Instalação Driver Safenet 8.1, Certificação Digital - Token - Revogação de Certificado Digital da Soluti,
+                        Certificação Digital - Token - Orientações Gerais sobre o Token Preto GD Burti, Certificação Digital - Token - Orientações Gerais ePass2003, Certificação Digital - Validação de Certificado Digital Por Videoconferência --> 
+                        <!-- Contatos Soluti, Contato Soluti --> <!-- Videoconferencia, Renovação de Certificado, Renovacao de Certificado --> <!-- Reaproveitar --> 
+                        <!-- e-Token, Extravio, Furto, Perda, Dano, Danos, Quebrado, Quebrou o Token, Renovação do Token, Renovação de Certificado, Novo Certificado, Novo Token, Gestão de Token, Gestão de Certificado, 
+                        Gerenciamento de Token, Gerenciamento de Certificado, Template de Certificado, Template Certificado, Template Renovação, Solicitação de Token, Solicitação de Certificado, Processo CTA, Abertura de CTA, 
+                        Abertura CTA, CTA Intranet, Certificado Digital CTA, Certificado CTA, Token CTA, eToken CTA, e-Token CTA --> <!-- Revogar, Devolução, Devolver Token, e-token, eToken, e Token, Certificado Digital -->
+                        <!-- Morpho, Morfo --><!-- e-pass, epass2003, epas 2003, e pass 2003 -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>e-Token - Gestão de Certificados e e-Tokens <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11199" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11199</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Token - Orientações Gerais sobre o Token Cinza <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Morpho, Morfo --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2557" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2557</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Token - Orientações Gerais sobre o Token Preto GD Burti <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- GDBurti --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7791" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7791</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Token - Orientações Gerais sobre os Tokens SafeNet Verde, Azul e Preto 5100 <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31462" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31462</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Token - Orientações Gerais ePass2003 <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- e-pass, epass2003, epas 2003, e pass 2003 --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=13509" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=13509</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - e-Token - Erros Gerais no Uso de Tokens <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11264" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11264</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Endereços Soluti <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Contatos Soluti, Contato Soluti --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20749" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20749</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Emissão ou Renovação Online do Certificado Digital Soluti <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Renovação de Certificado, Renovacao de Certificado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19341" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19341</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Validação de Certificado Digital Por Videoconferência <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Videoconferencia, Renovação de Certificado, Renovacao de Certificado --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19325" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19325</a></p><br>
+                    </li>
+                    <li>
+                        <p>Assinatura Digital - Remover Certificado Digital Duplicado <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6312" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6312</a></p><br>
+                    </li>
+                    <li>
+                        <p>e-Token - Devolução <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5952" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5952</a></p><br>
+                    </li>
+                    <li>
+                        <p>e-Token - Reaproveitamento de e-Tokens <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Reaproveitar --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19901" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19901</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Cadastrar Prazo do Certificado Digital na Intranet <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=11327" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=11327</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - e-Token - Utilização do Sistema Gertoken <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6335" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6335</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Orientação - Solicitações de Certificados e Tokens <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- e-Token, Extravio, Furto, Perda, Dano, Danos, 
+                            Quebrado, Quebrou o Token, Renovação do Token, Renovação de Certificado, Novo Certificado, Novo Token, Gestão de Token, Gestão de Certificado, Gerenciamento de Token, Gerenciamento de Certificado, 
+                            Template de Certificado, Template Certificado, Template Renovação, Solicitação de Token, Solicitação de Certificado, Processo CTA, Abertura de CTA, Abertura CTA, CTA Intranet, Certificado Digital CTA, 
+                            Certificado CTA, Token CTA, eToken CTA, e-Token CTA --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=1135" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=1135</a></p><br>
+                    </li>
+                    <li>
+                        <p>e-Token - Instalação Driver Safenet 8.1 <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=16564" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=16564</a></p><br>
+                    </li>
+                    <li>
+                        <p>Certificação Digital - Token - Revogação de Certificado Digital da Soluti <!-- Filtro 12, Tokens, Certificado Digital, Certificação, Todos --> <!-- Revogar, Devolução, Devolver Token, e-token, eToken, e Token, Certificado Digital --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=26184" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=26184</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Sistemas em Geral <!-- Filtro 13, Sistemas em Geral, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Google Workspace - Configuração do Segundo Fator de Autenticação, Google Drive - Compartilhamento de Pastas e Documentos, Google Workspace - Google Drive, 
+                        Google Workspace - 2FA - Google Authenticator Não Funciona, Apresentação do Sistema Siscondj-TJ, Sistema - Orientações - Siscondj-TJ - Cadastro, 
+                        Rede - Alteração/Troca de Login/Nome de Usuário, DEJT - Criação, Alteração e Exclusão de Cadastro, Sistema - SIGEO - Informações Gerais, 
+                        Sistema - Orientações - Uso dos Sistemas PDPJ-BR, SCA Corporativo do CNJ - Cadastro de Usuários (PJe Mídias e outros sistemas), PJe Mídias - Cadastro e Acesso, 
+                        Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Internos", Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Externos", GPrec - Orientações Gerais, 
+                        Google Authenticator - Usar sem conta associada, Rede - Backup - Recuperar um Arquivo Deletado ou uma Versão Anterior, Sistema - Sítio TRT9 - Correção de Informação na Página, 
+                        Sistema - Cadastro Corporativo CNJ / PDPJ - Login Bloqueado, Sistema - CTA - Abrir Novo Processo, Sistema - PJe Mídias - Acesso Externo a Vídeos, 
+                        Sistema - Cadastro Corporativo CNJ / PDPJ - Login Bloqueado, Sistema - Orientações - Apresentação da JTe (Justiça do Trabalho Eletrônica), JTe - Assinatura de Documentos pelo Celular,
+                        Software - SCCM - Problemas com Acesso Remoto, Google Drive - Erro 'Não há espaço suficiente em Google Drive', Sistema - PJe - SIF - Correção de falhas na emissão ou assinatura de Alvarás --> <!-- 2FA, MFA --> 
+                        <!-- Compartilhar Documento no Drive, Compartilhar Pasta no Drive, Compartilhar no Drive, Compartilhamento de Arquivo, Compartilhamento de Pasta --> <!-- PJe Midias, Cadastro de Perito, Cadastro de Peritos, Cadastro de Advogado, Cadastro de Advogados --> 
+                        <!-- BKP, Versao Anterior, Versoes Anteriores, Versões Anteriores --> <!-- Portal do TRT9 --> <!-- SCA --> <!-- Sisbajud --> <!-- Credenciais Alternativas Necessárias, As credenciais fornecidas de usuário, Problema de Acesso Remoto -->
+                        <!-- Alvará, Alvara, Alvaras --> <!-- Autenticador, Vincular Conta, Vínculo, Vínculos, Vinculo, Vinculos -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Google Workspace - Configuração do Segundo Fator de Autenticação <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- 2FA, MFA --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27958" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27958</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Drive - Compartilhamento de Pastas e Documentos <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Compartilhar Documento no Drive, Compartilhar Pasta no Drive, Compartilhar no Drive, Compartilhamento de Arquivo, Compartilhamento de Pasta --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28922" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28922</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Workspace - Google Drive <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=27119" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=27119</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Workspace - 2FA - Google Authenticator Não Funciona <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28045" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28045</a></p><br>
+                    </li>
+                    <li>
+                        <p>Apresentação do Sistema Siscondj-TJ <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19137" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19137</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Orientações - Siscondj-TJ - Cadastro <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=19294" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=19294</a></p><br>
+                    </li>
+                    <li>
+                        <p>Rede - Alteração/Troca de Login/Nome de Usuário <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2015" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2015</a></p><br>
+                    </li>
+                    <li>
+                        <p>DEJT - Criação, Alteração e Exclusão de Cadastro <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10225" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10225</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - SIGEO - Informações Gerais <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6234" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6234</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Orientações - Uso dos Sistemas PDPJ-BR <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=26282" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=26282</a></p><br>
+                    </li>
+                    <li>
+                        <p>SCA Corporativo do CNJ - Cadastro de Usuários (PJe Mídias e outros sistemas) <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- PJe Midias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=18766" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=18766</a></p><br>
+                    </li>
+                    <li>
+                        <p>PJe Mídias - Cadastro e Acesso <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- PJe Midias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22451" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22451</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Internos" <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- PJe Midias --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=32498" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=32498</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Cadastro e Acesso de Usuários "Externos" <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- PJe Midias, Cadastro de Perito, Cadastro de Peritos, Cadastro de Advogado, Cadastro de Advogados --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=32499" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=32499</a></p><br>
+                    </li>
+                    <li>
+                        <p>GPrec - Orientações Gerais <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=21526" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=21526</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Authenticator - Usar sem conta associada <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Autenticador, Vincular Conta, Vínculo, Vínculos, Vinculo, Vinculos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31918" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31918</a></p><br>
+                    </li>
+                    <li>
+                        <p>Rede - Backup - Recuperar um Arquivo Deletado ou uma Versão Anterior <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- BKP, Versao Anterior, Versoes Anteriores, Versões Anteriores --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=6068" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=6068</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Sítio TRT9 - Correção de Informação na Página <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Portal do TRT9 --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28940" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28940</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - CTA - Abrir Novo Processo <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=12948" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=12948</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe Mídias - Acesso Externo a Vídeos <!-- Filtro 13, Sistemas em Geral, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=29491" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=29491</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Cadastro Corporativo CNJ / PDPJ - Login Bloqueado <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Sisbajud --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=31080" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=31080</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - Orientações - Apresentação da JTe (Justiça do Trabalho Eletrônica) <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Sisbajud --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=12878" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=12878</a></p><br>
+                    </li>
+                    <li>
+                        <p>JTe - Assinatura de Documentos pelo Celular <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Sisbajud --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=22764" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=22764</a></p><br>
+                    </li>
+                    <li>
+                        <p>Software - SCCM - Problemas com Acesso Remoto <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Credenciais Alternativas Necessárias, As credenciais fornecidas de usuário, Problema de Acesso Remoto --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2100" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2100</a></p><br>
+                    </li>
+                    <li>
+                        <p>Google Drive - Erro 'Não há espaço suficiente em Google Drive' <!-- Filtro 13, Sistemas em Geral, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28113" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28113</a></p><br>
+                    </li>
+                    <li>
+                        <p>Sistema - PJe - SIF - Correção de falhas na emissão ou assinatura de Alvarás <!-- Filtro 13, Sistemas em Geral, Todos --> <!-- Alvará, Alvara, Alvaras --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=34246" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=34246</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Hardware e Firmware <!-- Filtro 14, Hardware, Firmware, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Micro - Alterar a Ordem de Boot do Micro Lenovo M80q, Hardware - Micro - Lentidão --> <!-- Lentidao -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Micro - Alterar a Ordem de Boot do Micro Lenovo M80q <!-- Filtro 14, Hardware, Firmware, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=28054" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=28054</a></p><br>
+                    </li>
+                    <li>
+                        <p>Hardware - Micro - Lentidão <!-- Filtro 14, Hardware, Firmware, Todos --> <!-- Lentidao --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=5992" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=5992</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Redes e Telefonia <!-- Filtro 15, Redes, Telefonia, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                         <!-- Problema - Checagem de Problemas de Rede -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Problema - Checagem de Problemas de Rede <!-- Filtro 15, Redes, Telefonia, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=7848" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=7848</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Fluxos de Trabalho <!-- Filtro 18, Fluxos de Trabalho, Todos -->
+                        <!-- Link do Procedimento: https://www.trt9.jus.br/cswiki/index.php?curid= -->
+                        <!-- Fluxos de trabalho:Acompanhamento de Solicitação de Urgência, Fluxos de trabalho:Roteiro para Homologação Simples de Software, Fluxos de trabalho:Instalação de Softwares Homologados, 
+                        Fluxos de trabalho:Consulta à Planilha de Responsáveis dos Sistemas, Fluxos de trabalho:Tabela de Redirecionamento de Grupos Solucionadores, 
+                        Fluxo de Trabalho - Instalação de Equipamentos na Sala de Audiência, Fluxo de Trabalho - Telefonistas--> <!-- Solicitacao de Urgencias --> <!-- Responsaveis, Redirecionamento -->
+                    </h4><br></li>
+
+                    <li>
+                        <p>Fluxos de trabalho:Acompanhamento de Solicitação de Urgência <!-- Filtro 18, Fluxos de Trabalho, Todos --> <!-- Solicitacao de Urgencias --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10107" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10107</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxos de trabalho:Roteiro para Homologação Simples de Software <!-- Filtro 18, Fluxos de Trabalho, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=12127" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=12127</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxos de trabalho:Instalação de Softwares Homologados <!-- Filtro 18, Fluxos de Trabalho, Todos --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=10117" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10117</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxos de trabalho:Consulta à Planilha de Responsáveis dos Sistemas <!-- Filtro 18, Fluxos de Trabalho, Todos --> <!-- Responsaveis, Redirecionamento --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=20173" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=20173</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxos de trabalho:Tabela de Redirecionamento de Grupos Solucionadores <!-- Filtro 18, Fluxos de Trabalho, Todos --> <!-- Responsaveis, Redirecionamento --> </p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=32366" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=32366</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxo de Trabalho - Instalação de Equipamentos na Sala de Audiência <!-- Filtro 18, Fluxos de Trabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2569" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2569</a></p><br>
+                    </li>
+                    <li>
+                        <p>Fluxo de Trabalho - Telefonistas <!-- Filtro 18, Fluxos de Trabalho, Todos --></p>
+                        <p>Link do Procedimento: <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php?curid=2576" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=2576</a></p><br>
+                    </li>
+
+
+                    <li><h4> Procedimentos Sobre Sistemas <!-- DJET, FALCAO, -->
+                        
+                    </h4><br></li>
+
+                    <li>
+                        <p><b>ACOMPS PJE, DJEN/DEJT, FALCÃO, GDT, JTE, JUÍZO 100% DIGITAL, PDPJ, PJE CALC, PJE MÍDIAS, PJE PUSH, PJE SIF, PREVJUD, 
+                              SERPJUD, SIGEO, SIJU, SISBAJUD/BACENJUD, SISCONDJ-TJ, SNIPER</b></p><br>
+                        <p>Para mais informações e procedimentos sobre os sistemas acima consulte a página de <b>Sistemas</b>: <a id="a_pag_sistemas" href="sistemas.html">Clique aqui</a></p><br>
+                    </li>
+                    </span></p>
+            </div>
+            </ul>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script type="text/javascript">
+            function limpar() {
+                $('#lista2 li').hide();
+            }
+
+            function filtrar() {
+                var termo = $('#pesquisa').val().toUpperCase();
+
+                $('#lista2 li').show();
+
+                $('#lista2 li').each(function () {
+                    if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                        $(this).hide();
+                    }
+                    if (document.getElementById("pesquisa").value == "") {
+                        $('#lista2 li').hide();
+                    }
+                });
+
+            }
+        </script>
+
+        </div><br />
+
+        <article id="article-b">
+            <h2 id="h2_scroll"> Lista de Procedimentos em PDF</h2>
+            <br>
+            <div id="div-doc">
+                <table id="tabela_procedimentos">
+                    <tr><td bgcolor="#104E8B"><font color="WHITE">Documentos</font></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Procedimento - Logon no Windows Via VPN.pdf" target="bank">Procedimento - Logon no Windows Via VPN </a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Tutorial de Instalação e Configuração Shodo.pdf" target="bank">Procedimento - Tutorial de Instalação e Configuração Shodo</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Hardware - Impressora - Instalar Impressora pela Porta USB -.pdf" target="bank">Procedimento - Hardware - Impressora - Instalar Impressora pela Porta USB</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Procedimento de instalação do patch para o cliente VPN em micros fornecidos pelo Tribunal.pdf" target="bank">Procedimento - Instalação do patch para o cliente VPN em micros fornecidos pelo Tribunal</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Tutorial Assinatura Digital.pdf" target="bank">Procedimento - Tutorial Assinatura Digital</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Cadastrar Prazo do Certificado Digital na Intranet.pdf" target="bank">Procedimento - Cadastrar Prazo do Certificado Digital na Intranet</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Emissão Online do Certificado Digital Soluti.pdf" target="bank">Procedimento - Emissão Online do Certificado Digital Soluti</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Sala de audiência.pptx">Procedimento - Configuração de Sala de Audiência</a></td></tr>
+                    <tr><td><a id="ap" href="../Documentos\Checklist Home Office.dotx">Checklist Home Office</a></td></tr>
+                </table>
+            </div>
+        </article>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

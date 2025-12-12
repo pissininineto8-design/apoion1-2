@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Malote</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <script src="../js/script2.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_5::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0;
+                    width: 55%;
+                    height: 2px;
+                    background-color: white; /* Cor da linha */
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    transition: transform 0.3s ease-out;
+                    }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <br><br><h2 align="center"> Programação do Malote</h2></br>
+    <h3 align="center">Programação de Envio e Recebimento do Malote em todo Estado</h3><br>
+
+    <article id="article-a" align="center">
+
+        <div id="div5" align="center">
+
+            <div class="voltar">
+                <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+            </div>
+
+            <h2>Filtro de Cidades</h2>
+            <br>
+
+
+            <select type="search" id="pesquisa" oninput="limpar()">
+                <option value="APUCARANA">APUCARANA</option>
+                <option value="ARAPONGAS">ARAPONGAS</option>
+                <option value="ARAUCÁRIA">ARAUCÁRIA</option>
+                <option value="ASSIS CHATEAUBRIAND">ASSIS CHATEAUBRIAND</option>
+                <option value="BANDEIRANTES">BANDEIRANTES</option>
+                <option value="CAJURU">CAJURU</option>
+                <option value="CAMBÉ">CAMBÉ</option>
+                <option value="CAMPO LARGO">CAMPO LARGO</option>
+                <option value="CAMPO MOURÃO">CAMPO MOURÃO</option>
+                <option value="CASCAVEL">CASCAVEL</option>
+                <option value="CASTRO">CASTRO</option>
+                <option value="CIANORTE">CIANORTE</option>
+                <option value="COLOMBO">COLOMBO</option>
+                <option value="CORNÉLIO PROCÓPIO">CORNÉLIO PROCÓPIO</option>
+                <option value="DOIS VIZINHOS">DOIS VIZINHOS</option>
+                <option value="FOZ DO IGUAÇU">FOZ DO IGUAÇU</option>
+                <option value="FRANCISCO BELTRÃO">FRANCISCO BELTRÃO</option>
+                <option value="GUARAPUAVA">GUARAPUAVA</option>
+                <option value="IRATI">IRATI</option>
+                <option value="IBAITI">IBAITI</option>
+                <option value="IVAIPORÃ">IVAIPORÃ</option>
+                <option value="JACAREZINHO">JACAREZINHO</option>
+                <option value="JAGUARIAÍVA">JAGUARIAÍVA</option>
+                <option value="LARANJEIRAS DO SUL">LARANJEIRAS DO SUL</option>
+                <option value="LONDRINA">LONDRINA</option>
+                <option value="MAL. CÂNDIDO RONDON">MAL. CÂNDIDO RONDON</option>
+                <option value="MARINGÁ">MARINGÁ</option>
+                <option value="NOVA ESPERANÇA">NOVA ESPERANÇA</option>
+                <option value="PALOTINA">PALOTINA</option>
+                <option value="PALMAS">PALMAS</option>
+                <option value="PARANAVAÍ">PARANAVAÍ</option>
+                <option value="PARANAGUÁ">PARANAGUÁ</option>
+                <option value="PATO BRANCO">PATO BRANCO</option>
+                <option value="PINHAIS ">PINHAIS</option>
+                <option value="PONTA GROSSA">PONTA GROSSA</option>
+                <option value="PORECATU">PORECATU</option>
+                <option value="ROLÂNDIA">ROLÂNDIA</option>
+                <option value="SANTO ANTÔNIO DA PLATINA">SANTO ANTÔNIO DA PLATINA</option>
+                <option value="SÃO JOSÉ DOS PINHAIS">SÃO JOSÉ DOS PINHAIS</option>
+                <option value="TELÊMACO BORBA">TELÊMACO BORBA</option>
+                <option value="TOLEDO">TOLEDO</option>
+                <option value="TST">TST</option>
+                <option value="UMUARAMA">UMUARAMA</option>
+                <option value="UNIÃO DA VITÓRIA">UNIÃO DA VITÓRIA</option>
+                <option value="WENCESLAU BRAZ">WENCESLAU BRAZ</option>
+            </select>
+            <button type="button" id="botao1" onclick="filtrar(), leiaMais()">Filtrar</button>
+
+            <ul id="lista" align="left">
+                <div align="left">
+                    <span id="mostrar"><br></span><span id="mais">
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>APUCARANA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>ARAPONGAS </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>ARAUCÁRIA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira  </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>ASSIS CHATEAUBRIAND </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>BANDEIRANTES </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CAJURU </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>  </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CAMBÉ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CAMPO LARGO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CAMPO MOURÃO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CASCAVEL </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CASTRO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CIANORTE </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>COLOMBO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>CORNÉLIO PROCÓPIO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Segunda - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>DOIS VIZINHOS </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>FOZ DO IGUAÇU </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>FRANCISCO BELTRÃO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>GUARAPUAVA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>IBAITI </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b> </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>IRATI </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>IVAIPORÃ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>JACAREZINHO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Segunda - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>JAGUARIAÍVA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>LARANJEIRAS DO SUL </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>LONDRINA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b> Todos os Dias (Segunda à Sexta)</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b> Até 3 Dias Após o Envio </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b> Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>MAL. CÂNDIDO RONDON </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>MARINGÁ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>NOVA ESPERANÇA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Segunda - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PALOTINA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Segunda - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PALMAS </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PARANAVAÍ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PARANAGUÁ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PATO BRANCO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PINHAIS </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PONTA GROSSA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>PORECATU </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Segunda - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>ROLÂNDIA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Sexta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Quarta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>SANTO ANTÔNIO DA PLATINA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>SÃO JOSÉ DOS PINHAIS </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Quinta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>TELÊMACO BORBA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>TOLEDO </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>TST </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>UMUARAMA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quinta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Terça - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>UNIÃO DA VITÓRIA </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Quarta - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Segunda - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <li>
+                    <div id="div13" align="center" style='background-color:#f2f2f2; padding: 10px; border-radius: 10px;'>
+                        <p><b>WENCESLAU BRAZ </b></p><br>
+                        <p><b><span style="color: #f00;">Envio - Saída do TRT</b></span></p>
+                        <p><b>Terça - Feira</b></p><br>
+                        <p><b><span style="color: #f00;">Recebimento - Chegada nas Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                        <p><b><span style="color: green">Envio - Saída das Unidades</b></span></p>
+                        <p><b>Sexta - Feira </b></p><br>
+                    </div>
+                    <br>
+                </li>
+                <br></span></p>
+        </div>
+        </ul>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+
+
+            function limpar() {
+                $('#lista li').hide();
+            }
+
+            function filtrar() {
+                var termo = $('#pesquisa').val().toUpperCase();
+
+                $('#lista li').show();
+
+                $('#lista li').each(function () {
+                    if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                        $(this).hide();
+                    }
+                    if (document.getElementById("pesquisa").value == "") {
+                        $('#lista li').hide();
+                    }
+                });
+
+            }
+
+        </script>
+        </div><br>
+
+        <div style="margin-left: 15px;">
+            <table style="border: none;" id="tabela_etiqueta_malote" align="left">
+                <tr><td style="background-color: #f2f2f2; border-radius: 5px; border: 1px solid #ddd; padding: 10px; "><a href="../Documentos\Modelo Etiqueta Malote.doc">Modelo de Etiqueta Malote</a></td></tr>
+            </table>
+        </div><br>
+
+    </article>
+    <article id="article-f">
+
+        <div id="div11" align="left">
+
+            <h3><b> Suspensão Malote - Com Termo</b></h3><br>
+            <button id="button-1" type="button" onclick="myFunction2()">Copiar</button><br>
+            <textarea rows="12" cols="85" id="txtInput2" style="resize: none">
+Data de envio do malote: dd/mm/2025
+Data/Hora prevista para chegada do malote ao local reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do malote daremos seguimento ao chamado.
+Se possível registrar o recebimento do malote em movimentação nesta tarefa.
+
+Por gentileza efetuar o envio do termo assinado referente ao recebimento do malote.
+Informamos que o chamado será suspenso até o recebimento do TERMO assinado, somente após a Central de Serviços de TI receber o termo assinado o chamado será encerrado.
+</textarea><br><br>
+        </div>
+
+        <div id="div12" align="left">
+
+            <h3><b> Suspensão Malote - Sem Termo</b></h3><br>
+            <button id="button-1" type="button" onclick="myFunction21()">Copiar</button><br>
+            <textarea rows="12" cols="85" id="txtInput21" style="resize: none">
+Data de envio do malote: dd/mm/2025
+Data/Hora prevista para chegada do malote ao local reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do malote daremos seguimento ao chamado.
+Se possível registrar o recebimento do malote em movimentação nesta tarefa.
+      </textarea><br><br>
+        </div>
+    </article>
+    <br><br></br>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/estilo3.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script src="../js/script2.js"></script>
+	<script src="../js/script_suspensao.js"></script>
+	<script src="../js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>Template de Sessão</title>
+</head>
+<body>
+
+	<script src="../js/redimensoes_footer_header.js"></script>
+	<script src="../js/header.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			const style = document.createElement('style');
+			style.innerHTML =
+				`ul.menu li.menu_3::after {
+					content: '';
+					position: absolute;
+					left: 20px;
+					bottom: 0;
+					width: 60%;
+					height: 2px;
+					background-color: white; /* Cor da linha */
+					transform: scaleX(1);
+					transform-origin: bottom left;
+					transition: transform 0.3s ease-out;
+					}`;
+			document.head.appendChild(style);
+		});
+	</script>
+
+	   <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+	<script>
+		//pular imput automaticamente--------------------------
+		function proximoCampo(atual, proximo) {
+			if (atual.value.length >= atual.maxLength) {
+				document.getElementById(proximo).focus();
+			}
+		}
+		//-----------------------------------------------------
+
+		//cálculo de suspensão e criação de template-----------
+		function calcular() {
+			//calcula tempo em minutos
+
+			var diaDigitado = document.getElementById('dia').value;
+			var mesDigitado = document.getElementById('mes').value;
+			var anoDigitado = document.getElementById('ano').value;
+
+			var dia = 0; var mes = 0; var ano = 0;
+
+			//verifica se foi digita data, caso NÃO: completa sozinho com a data atual
+			if ((diaDigitado.length != 0) && (mesDigitado.length != 0) && (anoDigitado.length != 0)) {
+				dia = parseInt(document.getElementById('dia').value);
+				mes = parseInt(document.getElementById('mes').value);
+				ano = parseInt(document.getElementById('ano').value);
+				hora = parseInt(document.getElementById('hora').value);
+				min = parseInt(document.getElementById('min').value);
+			} else {
+				var dataAtual2 = new Date();
+				dia = dataAtual2.getDate();
+				mes = dataAtual2.getMonth() + 1;
+				ano = dataAtual2.getFullYear();
+				hora = parseInt(document.getElementById('hora').value);
+				min = parseInt(document.getElementById('min').value);
+			}
+
+
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+			//var dataSuspensao = new Date (ano,mes-1,dia,hora,min);
+			//var dataAtual = new Date();
+			//var resultado = 0;
+			//var resultado = Math.round(((dataSuspensao.getTime())-(dataAtual.getTime()))/60000);
+			//document.getElementById("resultado").innerHTML = "  "+resultado;
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+
+
+			//template - formatação data
+			if (dia < 10) {
+				var diaTemplate = "0" + dia;
+			} else {
+				var diaTemplate = dia;
+			}
+			if (mes < 10) {
+				var mesTemplate = "0" + mes;
+			} else {
+				var mesTemplate = mes;
+			}
+
+			//template - formatação hora
+			if (hora < 10) {
+				var horaTemplate = "0" + hora;
+			} else {
+				var horaTemplate = hora;
+			}
+			if (min < 10) {
+				var minTemplate = "0" + min;
+			} else {
+				var minTemplate = min;
+			}
+
+			//template - data e hora de exibição
+			var data_e_hora = (diaTemplate + "/" + mesTemplate + "/" + ano + " às " + horaTemplate + ":" + minTemplate);
+			var hora_apenas = (horaTemplate + ":" + minTemplate);
+
+			//----------------------------------------------------------------------------------------------------------------------------------
+
+			//calcula tempo em minutos
+
+			var dia2Digitado = document.getElementById('dia2').value;
+			var mes2Digitado = document.getElementById('mes2').value;
+			var ano2Digitado = document.getElementById('ano2').value;
+
+			var dia2 = 0; var mes2 = 0; var ano2 = 0;
+
+			//verifica se foi digita data, caso NÃO: completa sozinho com a data atual
+			if ((dia2Digitado.length != 0) && (mes2Digitado.length != 0) && (ano2Digitado.length != 0)) {
+				dia2 = parseInt(document.getElementById('dia2').value);
+				mes2 = parseInt(document.getElementById('mes2').value);
+				ano2 = parseInt(document.getElementById('ano2').value);
+				hora2 = parseInt(document.getElementById('hora2').value);
+				min2 = parseInt(document.getElementById('min2').value);
+			} else {
+				var dataAtual2 = new Date();
+				dia2 = dataAtual2.getDate();
+				mes2 = dataAtual2.getMonth() + 1;
+				ano2 = dataAtual2.getFullYear();
+				hora2 = parseInt(document.getElementById('hora2').value);
+				min2 = parseInt(document.getElementById('min2').value);
+			}
+
+
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+			//var dataSuspensao = new Date (ano,mes-1,dia,hora,min);
+			//var dataAtual = new Date();
+			//var resultado = 0;
+			//var resultado = Math.round(((dataSuspensao.getTime())-(dataAtual.getTime()))/60000);
+			//document.getElementById("resultado").innerHTML = "  "+resultado;
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+
+			//template - formatação data
+			if (dia2 < 10) {
+				var dia2Template = "0" + dia2;
+			} else {
+				var dia2Template = dia2;
+			}
+			if (mes2 < 10) {
+				var mes2Template = "0" + mes2;
+			} else {
+				var mes2Template = mes2;
+			}
+
+			//template - formatação hora
+			if (hora2 < 10) {
+				var hora2Template = "0" + hora2;
+			} else {
+				var hora2Template = hora2;
+			}
+			if (min2 < 10) {
+				var min2Template = "0" + min2;
+			} else {
+				var min2Template = min2;
+			}
+
+			//template - data e hora de exibição
+			var data_e_hora2 = (dia2Template + "/" + mes2Template + "/" + ano + " às " + hora2Template + ":" + min2Template);
+			var hora_apenas2 = (hora2Template + ":" + min2Template);
+
+			//----------------------------------------------------------------------------------------------------------------------------------
+
+			//seleção do template
+			var a = document.getElementById("suspensao");
+			var itemSelecionado = a.options[a.selectedIndex].value;
+
+			//seleção do tratamento
+			var b = document.getElementById("tratamento");
+			var tratamentoSelecionado = b.options[b.selectedIndex].value;
+
+			//seleção do local
+			var c = document.getElementById("local");
+			var localSelecionado = c.options[c.selectedIndex].value;
+
+			//seleção do nome do solicitante
+			var nomeDigitado = document.getElementById('nome').value
+
+			//seleção da tarefa
+			var tarefaDigitada = document.getElementById('tarefa').value
+
+			//montagem do template para exibição
+			switch (itemSelecionado) {
+				case "acompanhamento_csti":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Acompanhamento de sessão/evento.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Tarefa de referência: " + tarefaDigitada + "\n\n" +
+						"Data/hora: " + data_e_hora + "";
+					break;
+				case "acompanhamento_audio":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Informa - se sobre a realização de sessão / evento com os seguintes dados a seguir.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Data / hora: " + data_e_hora + "";
+					break;
+				case "validacao_csti":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Validação de ambiente em conjunto com o AUDIO.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Data / hora: " + data_e_hora + "";
+					break;
+				case "validacao_audio":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Validação de ambiente em conjunto com a CSTI.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Data / hora: " + data_e_hora + "";
+					break;
+				case "gravacao_csti":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Gravação de sessão pela CSTI via Zoom.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Data / hora: " + data_e_hora + "";
+					break;
+				case "transmissao":
+
+					document.getElementById("template").innerHTML = "Chamado aberto na Central de Serviços de TI em nome de " + tratamentoSelecionado + " " + nomeDigitado + " para atendimento e acompanhamento da situação abaixo informada:\n\n" +
+						"Transmissão de evento / sessão via YouTube.\n\n" +
+						"Local: " + localSelecionado + "\n\n" +
+						"Data / hora: " + data_e_hora + "";
+					break;
+				case "suspencao_chamado":
+
+					document.getElementById("template").innerHTML = "***Suspenso até o retorno do chamado.***\n\n" +
+						"Data / Hora do retorno do chamado: " + data_e_hora + "\n\n" +
+						"Data / Hora do evento / sessão: " + data_e_hora2 + "\n\n" +
+						"Motivo: Acompanhamento presencial.\n\n" +
+						"Local: " + localSelecionado + "";
+					break;
+				case "suspencao_validacao":
+
+					document.getElementById("template").innerHTML = "***Suspenso até o retorno do chamado.***\n\n" +
+						"Data / Hora do retorno do chamado: " + data_e_hora + " (15 minutos antes da validação para deslocamento)\n\n" +
+						"Data / Hora da validação: " + data_e_hora2 + " (hora exata da validação)\n\n" +
+						"Motivo: Validação de ambiente.\n\n" +
+						"Local: " + localSelecionado + "";
+					break;
+
+				case "suspencao_gravacao":
+
+					document.getElementById("template").innerHTML = "***Suspenso até o retorno do chamado.***\n\n" +
+						"Data / Hora do retorno do chamado: " + data_e_hora + " (15 minutos antes do início)\n\n" +
+						"Data / Hora do evento / sessão: " + data_e_hora2 + " (hora exata do início)\n\n" +
+						"Motivo: Gravação do evento / sessão.\n\n" +
+						"Local: " + localSelecionado + "";
+					break;
+
+				default:
+					document.getElementById("template").innerHTML = "**nenhum template foi selecionado**";
+			}
+
+		}
+
+		function limpar() {
+			//limpa os campos
+			document.getElementById('suspensao').value = "selecione";
+			document.getElementById('tratamento').value = "selecione_tratamento";
+			document.getElementById('local').value = "selecione_local";
+
+			document.getElementById('nome').value = '';
+			document.getElementById('tarefa').value = '';
+
+			document.getElementById('dia').value = '';
+			document.getElementById('mes').value = '';
+			document.getElementById('ano').value = '';
+			document.getElementById('hora').value = '';
+			document.getElementById('min').value = '';
+
+			document.getElementById('dia2').value = '';
+			document.getElementById('mes2').value = '';
+			document.getElementById('ano2').value = '';
+			document.getElementById('hora2').value = '';
+			document.getElementById('min2').value = '';
+
+			document.getElementById("template").innerHTML = "";
+		}
+	</script>
+
+	<nav id="menu">
+		<ul>
+			<li><a href="atalhos.html"> Templates N2 </a></li>
+			<li><a href="atalhos_smp.html"> Templates SMP </a></li>
+			<li><a href="suspensao.html"> Templates de Suspensão </a></li>
+			<li><a href="garantia.html"> Template de Garantia </a></li>
+		</ul>
+	</nav>
+
+	<div class="voltar">
+		<button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+	</div>
+
+	<article id="article-a">
+
+		<div id="div_notas">
+			<textarea id="notas" readonly>
+Responsáveis por Locais de Evento/Sessão:
+
+1ª Turma
+ELAINEGERLACH(Elaine Cristina Gerlach)
+
+2ª Turma 
+ELIANEIWAMOTO(Eliane Yurie Yassuda Iwamoto)
+
+3ª Turma
+LUANAELIAS(Luana Akemi Elias)
+
+4ª Turma
+LENIRAZAVADINACK(Lenira Taquete Zavadinack)
+
+5ª Turma
+ADRIANEALMEIDA(Adriane De Almeida Mattioli)
+
+6ª Turma
+SARITAGIOVANINI(Sarita Giovanini)
+
+7ª Turma
+REINALDOALMEIDA(Reinaldo Ivo De Almeida)
+
+Especializada: 
+FLAVIAALMEIDA(Flávia Carneiro De Almeida)</textarea>
+		</div>
+
+		<div id="cabecalio1">
+
+			<table id="tabela_cabecalio2" frameborder='1' align="right">
+				<tr>
+					<td>
+						<br><img src="../suspensão/arquivos/logo.png" height="25" width="30"> Templates de Sessão (Abertura e Suspensão)
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div id="geral">
+			<table id="tabela_sessao1" frameborder='0' align="center">
+				<tr>
+					<td>
+
+						<form action="" name="form5">
+							<p style="color: white;">Template:&nbsp&nbsp</p>
+							<select id="suspensao">
+								<option value="selecione">Selecione o Template...</option>
+								<option value="acompanhamento_csti">Abertura de Chamado de Acompanhamento para a CSTI.</option>
+								<option value="acompanhamento_audio">Abertura de Chamado para Acompanhamento do Setor Técnico de Áudio.</option>
+								<option value="validacao_csti">Abertura de Chamado de Validação de Ambiente para a CSTI.</option>
+								<option value="validacao_audio">Abertura de Chamado de Validação de Ambiente para o Setor Técnico de Áudio.</option>
+								<option value="gravacao_csti">Abertura de Chamado de Gravação de Sessão para a CSTI.</option>
+								<option value="transmissao">Abertura de Chamado de Transmissão de evento/sessão para o Setor de Imagem e Transmissão.</option>
+								<option value="linha">-------------------------------------------------------------------------------</option>
+								<option value="suspencao_chamado">Suspensão de Chamado de Acompanhamento de evento/sessão.</option>
+								<option value="suspencao_validacao">Suspensão de Chamado de Validação de Ambiente.</option>
+								<option value="suspencao_gravacao">Suspensão de Chamado de Gravação de evento/sessão.</option>
+							</select>
+					</td>
+					<td>
+						<p style="color: white;">Tratamento:&nbsp&nbsp</p>
+						<select id="tratamento">
+							<option value="selecione_tratamento">Selecione o Tratamento...</option>
+							<option value="Dr.">Doutor</option>
+							<option value="Dra.">Doutora</option>
+							<option value="Sr.">Senhor</option>
+							<option value="Sra.">Senhora</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<table id="tabela_sessao2" frameborder='0' align="center">
+				<tr>
+					<td>
+						<div id="t_local">
+							<p>Local:&nbsp&nbsp</p>
+							<select id="local">
+								<option value="selecione_local">Selecione o Local...</option>
+								<option value="Plenário I">Plenário I</option>
+								<option value="Plenário II">Plenário II</option>
+								<option value="Plenário III">Plenário III</option>
+								<option value="Plenário IV">Plenário IV</option>
+								<option value="Laboratório EJ">Laboratório EJ</option>
+								<option value="Sala de capacitação I">Sala de capacitação I</option>
+								<option value="Sala de capacitação II">Sala de capacitação II</option>
+								<option value="Auditório VM147">Auditório VM147</option>
+								<option value="Sala de Reunião RB528">Sala de Reunião RB528</option>
+								<option value="Sala de Reunião VM147">Sala de Reunião VM147</option>
+								<option value="SGP">SGP</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div id="t_nome"> Solicitante:&nbsp&nbsp <input name="nome" id="nome" type="text">&nbsp&nbsp&nbsp</div>
+					</td>
+					<td>
+						<div id="t_tarefa"> Tarefa:&nbsp&nbsp <input name="tarefa" id="tarefa" type="text">&nbsp&nbsp&nbsp</div>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+			</table>
+
+			<table id="tabela_sessao2" frameborder='0' align="center">
+				<tr>
+					<td>
+						<div id="datahora" style="margin-right: 0px; margin-left: 0px;">
+							Data do Retorno do Chamado: <input name="dia" id="dia" type="text" maxlength="2" onkeyup="proximoCampo(this, 'mes')"> /
+							<input name="mes" id="mes" type="text" maxlength="2" onkeyup="proximoCampo(this, 'ano')"> /
+							<input name="ano" id="ano" type="text" maxlength="4" onkeyup="proximoCampo(this, 'hora')"> &nbsp
+
+							Horário: <input name="hora" id="hora" type="text" maxlength="2" onkeyup="proximoCampo(this, 'min')"> :
+							<input name="min" id="min" type="text" maxlength="2" onkeyup="proximoCampo(this, 'botao')">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="datahora2" style="margin-right: 0px; margin-left: 0px;">
+							Data da Validação ou Evento/Sessão: <input name="dia2" id="dia2" type="text" maxlength="2" onkeyup="proximoCampo(this, 'mes2')"> /
+							<input name="mes2" id="mes2" type="text" maxlength="2" onkeyup="proximoCampo(this, 'ano2')"> /
+							<input name="ano2" id="ano2" type="text" maxlength="4" onkeyup="proximoCampo(this, 'hora2')"> &nbsp
+
+							Horário: <input name="hora2" id="hora2" type="text" maxlength="2" onkeyup="proximoCampo(this, 'min2')"> :
+							<input name="min2" id="min2" type="text" maxlength="2" onkeyup="proximoCampo(this, 'botao2')">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="btEnviar" type="button" name="button" value="Enviar" onclick="calcular()">
+						<input id="btEnviar" type="button" name="button" value="Limpar" onclick="limpar()">
+					</td>
+				</tr>
+			</table>
+
+		</div>
+		<br>
+		<table align="center">
+			<tr>
+				<td>
+					<textarea id="template" style="resize: none" readonly></textarea>
+				</td>
+			</tr>
+			<tr><td><button id="btLeiaMais1" type="button" onclick="myFunction()">Copiar</button><br></td></tr>
+		</table>
+
+		</form><br><br>
+	</article>
+	<script src="../js/footer.js"></script>
+</body>
+</html>

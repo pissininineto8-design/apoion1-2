@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+}
+
+#cabecalio{
+	background-color: #0572CE;
+	color: white;
+	font-size: 24px;
+	font-family: arial;
+	width: 450px;
+	height: 33px;
+	text-align: left;
+}
+
+#tabela1{
+	width: 450px;
+	background-color: #B5B5B5;
+}
+
+#titulo{
+	font-family: arial;
+	font-size: 16px;
+	color: black;
+}
+
+#titulo2{
+	font-size: 18px;
+	color: black;
+	font-family: arial;
+	text-align: left;
+}
+
+#template{
+	text-align: left;
+	font-size: 16px;
+	font-family: arial;
+	color: #4F4F4F;
+	width: 450px;
+	height: 250px;
+	
+	
+}
+
+input{
+	border-radius: 5px;	
+	border-style: solid;
+	border-width: 0px;
+}
+select{
+	border-radius: 5px;	
+	border-style: solid;
+	border-width: 0px;
+}
+
+
+#modelo{ font-family: arial; font-size: 16px; width: 230px;  }
+
+#serie{ font-family: arial; font-size: 16px; width: 315px; }
+
+#tombo{ font-family: arial; font-size: 16px; width: 348px; }
+
+#defeito{ font-family: arial; font-size: 16px; width: 347px; }
+
+#solicitante{ font-family: arial; font-size: 16px; width: 325px; }
+
+#local{ font-family: arial; font-size: 16px; width: 358px;  }
+
+#contorno{ font-family: arial; font-size: 16px; width: 250px; }
+
+#endereco{ font-family: arial; font-size: 16px; width: 328px; }
+
+#enviar{
+	font-size: 16px;
+	color: black;
+	font-family: arial;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+	border-color: white;
+	background-color: white;
+}
+#enviar:hover{
+	background-color: #104E8B;
+	color: white;
+}
+
+#rodape{
+	text-align: center;
+	font-size:11px;
+	font-family: arial;
+	color: #828282;
+}

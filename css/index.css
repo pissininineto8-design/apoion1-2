@@ -1,0 +1,519 @@
+
+* {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.voltar {
+  position: fixed;
+  /* deixando o elemento na posi��o desejada */
+  right: 30px;
+  top: 850px;
+  /* apenas para apar�ncia */
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+
+}
+
+/* Media query para telas menores que 950px de altura */
+@media (max-height: 950px) {
+    .voltar {
+        top: 820px; /* Mover o bot�o para cima */
+    }
+}
+
+/* Media query para telas menores que 890px de altura */
+@media (max-height: 890px) {
+    .voltar {
+        top: 770px; /* Mover o bot�o ainda mais para cima */
+    }
+}
+
+/* Media query para telas menores que 850px de altura */
+@media (max-height: 850px) {
+    .voltar {
+        top: 720px; /* Mover o bot�o ainda mais para cima */
+    }
+}
+
+/* Media query para telas menores que 790px de altura */
+@media (max-height: 790px) {
+    .voltar {
+        top: 670px; /* Mover o bot�o ainda mais para cima */
+    }
+}
+
+/* Media query para telas menores que 650px de altura */
+@media (max-height: 650px) {
+    .voltar {
+        top: 620px; /* Mover o bot�o ainda mais para cima */
+    }
+}
+
+#BotaoVoltar {
+  background-image: url("../Imagens/voltar3.png");
+  background-color: #F2F2F2; /* Cor de fundo */
+  border: 1px solid black;
+  color: white; /* Cor do texto */
+  padding: 40px 30px 15px 30px;
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibi��o em linha */
+  font-size: 16px; /* Tamanho da fonte */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 2px; /* Margem */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 3px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Transi��es suaves */
+}
+
+#BotaoVoltar:hover {
+  background-image: url("../Imagens/voltar2.png");
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Sombra ao passar o mouse */
+}
+
+#BotaoVoltar.hidden {
+    opacity: 0; /* Torna o bot�o invis�vel */
+    pointer-events: none; /* Impede a intera��o com o bot�o */
+}
+
+footer {
+   position: absolute;
+   background-color: rgb(37, 37, 39);
+       }
+
+#lista{
+  list-style-type: none;
+  list-style: none;
+}
+
+#horas {
+  width: 3%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#minutos {
+  width: 3%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_anterior {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final2 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final3 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final4 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final5 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_final6 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial2 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial3 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial4 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial5 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#hora_inicial6 {
+  width: 5%;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+#div-a {
+   float: left;
+   vertical-align: top;
+   width: 1%;
+}
+
+#div-b {
+   float: right;
+   vertical-align: top;
+   width: 93%;
+
+}
+
+#div-c {
+   float: center;
+   display: inline-table;
+   width: 10%;
+}
+
+#div-d {
+   float: center;
+   display: inline-table;
+   width: 10%;
+   color : #104E8B !important;
+}
+
+#div-e {
+   float: center;
+   display: inline-table;
+   width: 10%;
+   color : red !important;
+}
+
+#div-calculo {
+
+}
+
+#resultado {
+border: 2px solid gray;
+
+}
+
+#normal {
+border: 2px solid #104E8B;
+color : #104E8B !important;
+}
+
+#vip {
+border: 2px solid red;
+color : red !important;
+}
+
+#button-copiar1 {
+    background-color: gray;
+    color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button-copiar1:hover {
+    color: white;
+    background-color: black;
+}
+
+#button-copiar2 {
+    background-color: #104E8B;
+    color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button-copiar2:hover {
+    color: white;
+    background-color: black;
+}
+
+#button-copiar3 {
+    background-color: red;
+    color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button-copiar3:hover {
+    color: white;
+    background-color: black;
+}
+
+#botao1 {
+    background-color: rgb(37, 37, 39);
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#botao1:hover {
+    background-color: #104E8B;
+    color: white;
+}
+
+#botao2 {
+    background-color: White;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    padding: 5px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+    #botao2:hover {
+        background-color: #104E8B;
+        color: white;
+    }
+
+html, body{
+  height: 100%;
+}
+
+
+#menu ul {
+    padding-left:30px;
+    margin:0px;
+    background-color:#104E8B;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#104E8B;
+    color: WHITE;
+    text-decoration: none;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu ul li a:hover {
+    background-color:WHITE;
+    color: #104E8B;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu2 ul {
+    padding:0px;
+    margin:0px;
+    background-color:WHITE;
+    list-style:none;
+    background-color: #FFF5EE;
+    text-align: center;
+}
+
+#menu2 ul li { display: inline; }
+
+#menu2 ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    text-decoration: none;
+    background-color:WHITE;
+    color: black;
+    border-bottom:3px solid black;
+    background-color: #FFF5EE;
+}
+
+#menu2 ul li a:hover {
+    background-color:#104E8B;
+    color: WHITE;
+    border-bottom:3px solid black;
+}
+
+#menu3 ul {
+    padding:0px;
+    margin:0px;
+    background-color:WHITE;
+    list-style:none;
+}
+
+#menu3 ul li { display: inline; }
+
+#menu3 ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#104E8B;
+    color: WHITE;
+    text-decoration: none;
+    border-bottom:3px solid #d7d7db;
+
+}
+
+#menu3 ul li a:hover {
+    background-color:WHITE;
+    color: #104E8B;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu4 ul {
+    padding:0px;
+    margin:0px;
+    background-color:#104E8B;
+    list-style:none;
+}
+
+#menu4 ul li { display: inline; }
+
+#menu4 ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:WHITE;
+    color: BLACK;
+    text-decoration: none;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu4 ul li a:hover {
+    background-color:#104E8B;
+    color: WHITE;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu5 ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#menu5 ul li { display: inline;}
+
+#menu5 ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:WHITE;
+    color: BLACK;
+    text-decoration: none;
+    border-bottom:3px solid #104E8B;
+}
+
+#menu5 ul li a:hover {
+    background-color:#104E8B;
+    color: WHITE;
+    border-bottom:3px solid #104E8B;
+}
+
+html, body{
+  height: 100%;
+}
+
+/* Para destacar um elemento */
+
+.destacar {
+    transition: background-color 0.5s ease;
+}
+
+.destacado {
+    background-color: yellow; /* A cor de realce desejada */
+    font-size: 1.025em;
+    border-radius: 6px; /* Opcional: arredonda os cantos do realce */
+}
+
+.destacar2 {
+  transition: background-color 0.2s ease;
+
+}
+
+.destacado2 {
+  background-color: yellow; /* A cor de realce desejada */
+  border-radius: 6px; /* Opcional: arredonda os cantos do realce */
+  font-size: 1.025em;
+  width: 30%; /* Reduz a largura para 80% do elemento pai */
+  margin: 0 auto; /* Centraliza o realce, se necessário */
+  display: inline-block; /* Restringe o realce ao conteúdo */
+
+}
+
+.destacar3 {
+  transition: background-color 0.2s ease;
+
+}
+
+.destacado3 {
+  background-color: yellow; /* A cor de realce desejada */
+  border-radius: 6px; /* Opcional: arredonda os cantos do realce */
+  font-size: 1.025em;
+  width: 60%; /* Reduz a largura para 80% do elemento pai */
+  margin: 0 auto; /* Centraliza o realce, se necessário */
+  display: inline-block; /* Restringe o realce ao conteúdo */
+
+}

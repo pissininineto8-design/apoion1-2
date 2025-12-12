@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pastas de Digitalização</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_4::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0;
+                    width: 50%;
+                    height: 2px;
+                    background-color: white; /* Cor da linha */
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    transition: transform 0.3s ease-out;
+                    }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <div align="center">
+        <nav id="menu5">
+            <ul>
+                <br />
+                <br />
+                <li>
+                    <h2 style="color: black;">
+                        Pastas de Digitalização
+                        <a href="digitalizacao.html"><font size="4" style="font-family: Verdana, Geneva, sans-serif;"> Capital</font></a> ,
+                        <a href="digitalizacao2.html"><font size="4" style="font-family: Verdana, Geneva, sans-serif;"> Interior</font></a>
+                    </h2>
+                </li>
+            </ul>
+        </nav><br />
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <table id="tabela_digitalizacao2">
+            <tr><td bgcolor="#104E8B"><font color="WHITE"> <b style="font-family: Courier New, Courier, monospace;">CIDADE</b> </font></td>
+            <td bgcolor="#104E8B"> <font color="WHITE"> <b style="font-family: Courier New, Courier, monospace;">LOCAL FÍSICO</b> </font></td> 
+            <td bgcolor="#104E8B"> <font color="WHITE"> <b style="font-family: Courier New, Courier, monospace;">PASTA DE DIGITALIZAÇÃO</b> </font></td>
+            </tr>
+            <tr><td align="left"> Apucarana </td><td align="left"> 01ª VARA DO TRABALHO DE APUCARANA </td> <td align="left"> printapuvdt01 </td></tr>
+            <tr><td align="left"> Apucarana </td><td align="left"> 02ª VARA DO TRABALHO DE APUCARANA </td> <td align="left"> printapuvdt02 </td></tr>
+            <tr><td align="left"> Arapongas </td><td align="left"> VARA DO TRABALHO DE ARAPONGAS </td> <td align="left"> printapsvdt01 </td></tr>
+            <tr><td align="left"> Araucária </td><td align="left"> DIREÇÃO DO FÓRUM DE ARAUCÁRIA - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printaucdist </td></tr>
+            <tr><td align="left"> Araucária </td><td align="left"> 01ª VARA DO TRABALHO DE ARAUCÁRIA </td> <td align="left"> printaucvdt01 </td></tr>
+            <tr><td align="left"> Araucária </td><td align="left"> 02ª VARA DO TRABALHO DE ARAUCÁRIA </td> <td align="left"> printaucvdt02 </td></tr>
+            <tr><td align="left"> Assis Chateaubriand </td><td align="left"> VARA DO TRABALHO DE ASSIS CHATEAUBRIAND </td> <td align="left"> printasdvdt01 </td></tr>
+            <tr><td align="left"> Bandeirantes </td><td align="left"> VARA DO TRABALHO DE BANDEIRANTES </td> <td align="left"> printbntvdt01 </td></tr>
+            <tr><td align="left"> Cambé </td><td align="left"> VARA DO TRABALHO DE CAMBÉ </td> <td align="left"> printcabvdt01 </td></tr>
+            <tr><td align="left"> Campo Largo </td><td align="left"> VARA DO TRABALHO DE CAMPO LARGO </td> <td align="left"> printclg </td></tr>
+            <tr><td align="left"> Campo Mourão </td><td align="left"> VARA DO TRABALHO DE CAMPO MOURÃO </td> <td align="left"> printcpmvdt01 </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> 01ª VARA DO TRABALHO DE CASCAVEL </td> <td align="left"> printcscvdt01 </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> 02ª VARA DO TRABALHO DE CASCAVEL </td> <td align="left"> printcscvdt02 </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> 03ª VARA DO TRABALHO DE CASCAVEL </td> <td align="left"> printcscvdt03 </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> 04ª VARA DO TRABALHO DE CASCAVEL </td> <td align="left"> printcscvdt04 </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> CEJUSC CASCAVEL </td> <td align="left"> printcsccejusc e printcscnaj </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> DIREÇÃO DE FÓRUM DE CASCAVEL - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printcscceman e printcscdist </td></tr>
+            <tr><td align="left"> Cascavel </td><td align="left"> NÚCLEO DE APOIO ADMINISTRATIVO - SETORIAL CASCAVEL </td> <td align="left"> printcscsetorial </td></tr>
+            <tr><td align="left"> Castro </td><td align="left"> VARA DO TRABALHO DE CASTRO </td> <td align="left"> printcatvdt01 </td></tr>
+            <tr><td align="left"> Cianorte </td><td align="left"> VARA DO TRABALHO DE CIANORTE </td> <td align="left"> printcnevdt01 </td></tr>
+            <tr><td align="left"> Colombo </td><td align="left"> 01ª VARA DO TRABALHO DE COLOMBO </td> <td align="left"> printcbxvdt01 </td></tr>
+            <tr><td align="left"> Colombo </td><td align="left"> 02ª VARA DO TRABALHO DE COLOMBO </td> <td align="left"> printcbxvdt02 </td></tr>
+            <tr><td align="left"> Cornélio Procópio </td><td align="left"> VARA DO TRABALHO DE CORNÉLIO PROCÓPIO </td> <td align="left"> printcppvdt01 </td></tr>
+            <tr><td align="left"> Dois Vizinhos </td><td align="left"> VARA DO TRABALHO DE DOIS VIZINHOS </td> <td align="left"> printdvzvdt01 </td></tr>
+            <tr><td align="left"> Foz do Iguaçu </td><td align="left"> 01ª VARA DO TRABALHO DE FOZ DO IGUAÇU </td> <td align="left"> printfozvdt01 </td></tr>
+            <tr><td align="left"> Foz do Iguaçu </td><td align="left"> 02ª VARA DO TRABALHO DE FOZ DO IGUAÇU </td> <td align="left"> printfozvdt02 </td></tr>
+            <tr><td align="left"> Foz do Iguaçu </td><td align="left"> 03ª VARA DO TRABALHO DE FOZ DO IGUAÇU </td> <td align="left"> printfozvdt03 </td></tr>
+            <tr><td align="left"> Foz do Iguaçu </td><td align="left"> DIREÇÃO DE FÓRUM DE FOZ DO IGUAÇU - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printfozdist </td></tr>
+            <tr><td align="left"> Foz do Iguaçu </td><td align="left"> DIREÇÃO DE FÓRUM DE FOZ DO IGUAÇU - VARA ITINERANTE DE MEDIANEIRA </td> <td align="left"> printfozvdt123 </td></tr>
+            <tr><td align="left"> Francisco Beltrão </td><td align="left"> 01ª VARA DO TRABALHO DE FRANCISCO BELTRÃO </td> <td align="left"> printfnbvdt01 </td></tr>
+            <tr><td align="left"> Francisco Beltrão </td><td align="left"> 02ª VARA DO TRABALHO DE FRANCISCO BELTRÃO </td> <td align="left"> printfnbvdt02 </td></tr>
+            <tr><td align="left"> Guarapuava </td><td align="left"> 01ª VARA DO TRABALHO DE GUARAPUAVA </td> <td align="left"> printgrpvdt01 </td></tr>
+            <tr><td align="left"> Guarapuava </td><td align="left"> 02ª VARA DO TRABALHO DE GUARAPUAVA </td> <td align="left"> printgrpvdt02 </td></tr>
+            <tr><td align="left"> Guarapuava </td><td align="left"> DIREÇÃO DE FÓRUM DE GUARAPUAVA - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printgrpdist </td></tr>
+            <tr><td align="left"> Ibaiti </td><td align="left"> POSTO AVANÇADO DA JUSTIÇA DO TRABALHO DE IBAITI </td> <td align="left"> printwbzvdt01 </td></tr>
+            <tr><td align="left"> Irati </td><td align="left"> VARA DO TRABALHO DE IRATI </td> <td align="left"> *printiaivdt01 </td></tr>
+            <tr><td align="left"> Ivaiporã </td><td align="left"> VARA DO TRABALHO DE IVAIPORÃ - VARA ITINERANTE DE PITANGA </td> <td align="left"> printivpvdt01 </td></tr>
+            <tr><td align="left"> Ivaiporã </td><td align="left"> VARA DO TRABALHO DE IVAIPORÃ </td> <td align="left"> printivpvdt01 </td></tr>
+            <tr><td align="left"> Jacarezinho </td><td align="left"> VARA DO TRABALHO DE JACAREZINHO </td> <td align="left"> printjzovdt01 </td></tr>
+            <tr><td align="left"> Jaguariaíva </td><td align="left"> VARA DO TRABALHO DE JAGUARIAÍVA </td> <td align="left"> printjivvdt01 </td></tr>
+            <tr><td align="left"> Laranjeiras do Sul </td><td align="left"> VARA DO TRABALHO DE LARANJEIRAS DO SUL </td> <td align="left"> printljsvdt01 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 01ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt01 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 02ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt02 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 03ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt03 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 04ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt04 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 05ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt05 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 06ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt06 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 07ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt07 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> 08ª VARA DO TRABALHO DE LONDRINA </td> <td align="left"> printldavdt08 </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> DIREÇÃO DE FÓRUM DE LONDRINA </td> <td align="left"> printldadist </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> DIREÇÃO DE FÓRUM DE LONDRINA - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printldaforum </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> NÚCLEO DE APOIO ADMINISTRATIVO - SETORIAL LONDRINA </td> <td align="left"> printldasetorial </td></tr>
+            <tr><td align="left"> Londrina </td><td align="left"> ARQUIVO DE LONDRINA </td> <td align="left"> printldaarquivos </td></tr>
+            <tr><td align="left"> Mal. Cândido Rondon </td><td align="left"> VARA DO TRABALHO DE MARECHAL CÂNDIDO RONDON </td> <td align="left"> printmrhvdt01 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> 01ª VARA DO TRABALHO DE MARINGÁ </td> <td align="left"> printmgavdt01 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> 02ª VARA DO TRABALHO DE MARINGÁ </td> <td align="left"> printmgavdt02 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> 03ª VARA DO TRABALHO DE MARINGÁ </td> <td align="left"> printmgavdt03 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> 04ª VARA DO TRABALHO DE MARINGÁ </td> <td align="left"> printmgavdt04 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> 05ª VARA DO TRABALHO DE MARINGÁ </td> <td align="left"> printmgavdt05 </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> DIREÇÃO DE FÓRUM TRABALHISTA DE MARINGÁ </td> <td align="left"> printmgadist </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> NÚCLEO DE APOIO ADMINISTRATIVO - SETORIAL MARINGÁ </td> <td align="left"> printmgasetorial </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> DIREÇÃO DE FÓRUM DE MARINGÁ - SALA OFICIAIS DE JUSTIÇA </td> <td align="left"> printmgadist </td></tr>
+            <tr><td align="left"> Maringá </td><td align="left"> ARQUIVO DE MARINGÁ </td> <td align="left"> printarqmga </td></tr>
+            <tr><td align="left"> Nova Esperança </td><td align="left"> VARA DO TRABALHO DE NOVA ESPERANÇA </td> <td align="left"> printneavdt01 </td></tr>
+            <tr><td align="left"> Palmas </td><td align="left"> VARA DO TRABALHO DE PALMAS </td> <td align="left"> printplmvdt01 </td></tr>
+            <tr><td align="left"> Palotina </td><td align="left"> POSTO AVANÇADO DA JUSTIÇA DO TRABALHO DE PALOTINA </td> <td align="left"> printpalotina </td></tr>
+            <tr><td align="left"> Paranaguá </td><td align="left"> 01ª VARA DO TRABALHO DE PARANAGUÁ </td> <td align="left"> printpngvdt01 </td></tr>
+            <tr><td align="left"> Paranaguá </td><td align="left"> 02ª VARA DO TRABALHO DE PARANAGUÁ </td> <td align="left"> printpngvdt02 </td></tr>
+            <tr><td align="left"> Paranaguá </td><td align="left"> 03ª VARA DO TRABALHO DE PARANAGUÁ </td> <td align="left"> printpngvdt03 </td></tr>
+            <tr><td align="left"> Paranaguá </td><td align="left"> DIREÇÃO DE FÓRUM DE PARANAGUÁ - SALA OFICIAIS DE JUSTIÇA </td> <td align="left"> printpngdist </td></tr>
+            <tr><td align="left"> Paranavaí </td><td align="left"> VARA DO TRABALHO DE PARANAVAÍ </td> <td align="left"> printpvavdt01 </td></tr>
+            <tr><td align="left"> Paranavaí </td><td align="left"> VARA DO TRABALHO DE PARANAVAÍ - POSTO AVANÇADO DE LOANDA </td> <td align="left"> printpvavdt01 </td></tr>
+            <tr><td align="left"> Pato Branco </td><td align="left"> 01ª VARA DO TRABALHO DE PATO BRANCO </td> <td align="left"> printpbcvdt01 </td></tr>
+            <tr><td align="left"> Pato Branco </td><td align="left"> 02ª VARA DO TRABALHO DE PATO BRANCO </td> <td align="left"> printpbcvdt02 </td></tr>
+            <tr><td align="left"> Pato Branco </td><td align="left"> DIREÇÃO DE FÓRUM DE PATO BRANCO - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printpbcsecaoapoio </td></tr>
+            <tr><td align="left"> Pinhais </td><td align="left"> VARA DO TRABALHO DE PINHAIS </td> <td align="left"> printpnivdt01 </td></tr>
+            <tr><td align="left"> Ponta Grossa </td><td align="left"> 01ª VARA DO TRABALHO DE PONTA GROSSA </td> <td align="left"> printpgovdt01 </td></tr>
+            <tr><td align="left"> Ponta Grossa </td><td align="left"> 02ª VARA DO TRABALHO DE PONTA GROSSA </td> <td align="left"> printpgovdt02 </td></tr>
+            <tr><td align="left"> Ponta Grossa </td><td align="left"> 03ª VARA DO TRABALHO DE PONTA GROSSA </td> <td align="left"> printpgovdt03 </td></tr>
+            <tr><td align="left"> Ponta Grossa </td><td align="left"> 04ª VARA DO TRABALHO DE PONTA GROSSA </td> <td align="left"> printpgovdt04 </td></tr>
+            <tr><td align="left"> Ponta Grossa </td><td align="left"> DIREÇÃO DE FÓRUM DE PONTA GROSSA </td> <td align="left"> printpgocejusc e printpgovdt03 </td></tr>
+            <tr><td align="left"> Porecatu </td><td align="left"> VARA DO TRABALHO DE PORECATU </td> <td align="left"> printpruvdt01 </td></tr>
+            <tr><td align="left"> Rolândia </td><td align="left"> 01ª VARA DO TRABALHO DE ROLÂNDIA </td> <td align="left"> printrlavdt01 </td></tr>
+            <tr><td align="left"> Rolândia </td><td align="left"> 02ª VARA DO TRABALHO DE ROLÂNDIA </td> <td align="left"> printrlavdt02 </td></tr>
+            <tr><td align="left"> Sto Antônio da Platina </td><td align="left"> VARA DO TRABALHO DE SANTO ANTÔNIO DA PLATINA </td> <td align="left"> printsnpvdt01 </td></tr>
+            <tr><td align="left"> São José dos Pinhais </td><td align="left"> 01ª VARA DO TRABALHO DE SÃO JOSÉ DOS PINHAIS </td> <td align="left"> printsjpvdt01 </td></tr>
+            <tr><td align="left"> São José dos Pinhais </td><td align="left"> 02ª VARA DO TRABALHO DE SÃO JOSÉ DOS PINHAIS </td> <td align="left"> printsjpvdt02 </td></tr>
+            <tr><td align="left"> São José dos Pinhais </td><td align="left"> 03ª VARA DO TRABALHO DE SÃO JOSÉ DOS PINHAIS </td> <td align="left"> printsjpvdt03 </td></tr>
+            <tr><td align="left"> São José dos Pinhais </td><td align="left"> 04ª VARA DO TRABALHO DE SÃO JOSÉ DOS PINHAIS </td> <td align="left"> printsjpvdt04 </td></tr>
+            <tr><td align="left"> São José dos Pinhais </td><td align="left"> DIREÇÃO DE FÓRUM DE SÃO JOSÉ DOS PINHAIS - SALA DOS OFICIAIS DE JUSTIÇA </td> <td align="left"> printsjpdist </td></tr>
+            <tr><td align="left"> Telêmaco Borba </td><td align="left"> VARA DO TRABALHO DE TELÊMACO BORBA </td> <td align="left"> printtebvdt01 </td></tr>
+            <tr><td align="left"> Toledo </td><td align="left"> 01ª VARA DO TRABALHO DE TOLEDO </td> <td align="left"> printtoovdt01 </td></tr>
+            <tr><td align="left"> Toledo </td><td align="left"> 02ª VARA DO TRABALHO DE TOLEDO </td> <td align="left"> printtoovdt02 </td></tr>
+            <tr><td align="left"> Umuarama </td><td align="left"> 01ª VARA DO TRABALHO DE UMUARAMA </td> <td align="left"> printumrvdt01 </td></tr>
+            <tr><td align="left"> Umuarama </td><td align="left"> 02ª VARA DO TRABALHO DE UMUARAMA </td> <td align="left"> printumrvdt02 </td></tr>
+            <tr><td align="left"> União da Vitória </td><td align="left"> VARA DO TRABALHO DE UNIÃO DA VITÓRIA - VARA ITINERANTE DE SÃO MATEUS DO SUL </td> <td align="left"> printuvavdt01 </td></tr>
+            <tr><td align="left"> União da Vitória </td><td align="left"> VARA DO TRABALHO DE UNIÃO DA VITÓRIA </td> <td align="left"> printuvavdt01 </td></tr>
+            <tr><td align="left"> Wenceslau Braz </td><td align="left"> VARA DO TRABALHO DE WENCESLAU BRAZ </td> <td align="left"> printwbzvdt01 </td></tr>
+        </table>
+        <br><br><br>
+    </div>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

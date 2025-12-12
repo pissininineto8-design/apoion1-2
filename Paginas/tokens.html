@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tokens</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style4.css">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <script src="../js/script_token.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:lerMais1a(); javascript:lerMais2a(); javascript:lerMais2(); javascript:lerMais2();">
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_2::after {
+                            content: '';
+                            position: absolute;
+                            left: 20px;
+                            bottom: 0;
+                            width: 62%;
+                            height: 2px;
+                            background-color: white; /* Cor da linha */
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+
+
+    <div align="center">
+        <br><br>
+
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+        <div align="left" id="div_tokens">
+
+            <h2> Informações Sobre Tokens</h2>
+
+        </div>
+        <div class="slideshow-container">
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/gd.png" alt="GD Burti">
+                </div>
+                <div class="text-container">
+                    <h2>GD Burti Preto</h2>
+                    <p>PUK Padrão: <b>1234567890</b></p>
+                    <p>PIN Padrão: <b>1234567890</b></p>
+                    <p>Gerenciador: <b>SafeSign Standard</b></p>
+                    <p>Driver: <b>SafeSignIC30124</b></p>
+                    <p>Observações: <b>Pode ser reaproveitado</b>. <br><br></p>
+                    <p style="text-align: left; padding-left: 50px;">A senha <b>PUK</b> padrão da CSTI, <b>1234567890</b>, é definida antes do fornecimento, porém há três modelos distintos, 
+                    e cada um possui uma senha <b>PUK</b> padrão de fábrica (utilizar em caso de senha incorreta).<br></p>
+                    <p style="text-align: left; padding-left: 50px;">Modelo <b>INFOCO</b>: <b>12345PUK</b>;<br>
+                    Modelo <b>SOLUTI</b>: <b>SOLUTICD</b>;<br>
+                    Modelo <b>DIGITALPRÓ</b>: <b>12345PUK</b>. Este modelo destaca-se pela escrita "Digital pró" na tampa.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/safenet_verde.png" alt="Safenet Verde 5100">
+                </div>
+                <div class="text-container">
+                    <h2>Safenet 5110 Verde</h2>
+                    <p>PUK Padrão: <b>SOLUTICD</b></p>
+                    <p>PIN Padrão: <b>ARSOLUTI</b></p>
+                    <p>Gerenciador: <b>Safenet</b></p>
+                    <p>Driver: <b>Safenet_Authentication_Client_8.1SP2</b></p>
+                    <p>Observação: <b>Pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/safenetpreto.png" alt="Safenet Preto 5100">
+                </div>
+                <div class="text-container">
+                    <h2>Safenet 5100 Preto</h2>
+                    <p>PUK Padrão: <b>123456</b> / <b>1234567890</b> / <b>SOLUTICD</b></p>
+                    <p>Gerenciador: <b>Safenet</b></p>
+                    <p>Driver: <b>Safenet_Authentication_Client_8.1SP2</b></p>
+                    <p>Observação: <b>Não pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/epass.png" alt="Epass2003">
+                </div>
+                <div class="text-container">
+                    <h2>Epass2003 Azul</h2>
+                    <p>PUK Padrão (SO PIN): <b>SOLUTICD</b></p>
+                    <p>Gerenciador: <b>Soluti</b></p>
+                    <p>Driver: <b>ePass2003-Setup</b></p>
+                    <p>Observação: <b>Não pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/alladin.png" alt="Alladin">
+                </div>
+                <div class="text-container">
+                    <h2>Alladin Azul</h2>
+                    <p>PUK Padrão: <b>1234</b> / <b>123456</b> / <b>1234567890</b></p>
+                    <p>Gerenciador: <b>Safenet</b></p>
+                    <p>Driver: <b>Safenet_Authentication_Client_8.1SP2</b></p>
+                    <p>Observação: <b>Não pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/morpho.png" alt="Morpho">
+                </div>
+                <div class="text-container">
+                    <h2>Morpho Cinza</h2>
+                    <p>PUK Padrão: <b>1234567890</b></p>
+                    <p>Gerenciador: <b>SafeSign Standard</b></p>
+                    <p>Driver: <b>Driver_Morpho_Win8</b></p>
+                    <p>Observação: <b>Não pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-container">
+                    <img src="../Imagens/serpro.png" alt="Sepro">
+                </div>
+                <div class="text-container">
+                    <h2>Serpro Preto</h2>
+                    <p>Gerenciador: <b>SafeSign Standard</b></p>
+                    <p>Driver: <b>iKeyPUK_serpro</b></p>
+                    <p>Observação: <b>Não pode ser reaproveitado</b></p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div><br><br>
+
+        <div id="div10" align="left">
+
+            <p align="center" style="font-size: 20px"> <a id="a_tokens" href="http://emissao-online.soluti.com.br/arsoluti" target="blank"> Emissão de Certificado Online (Soluti)</a></p><br>
+
+        </div><br><br>
+
+            <div id="div10" align="left">
+                <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                    <p style="font-size: 20px"><button onclick="lerMais1(), lerMais1a()" id="btLeiaMais"><span id="imagem"></span> <b style="font-family: Courier New, monospace;"> PROCEDIMENTOS SOBRE E-TOKEN </b> </button></p>
+                    <div>
+                        <span id="mostrar_mais"></span><span id="maiss">
+                            <br>
+                            <b>Procedimento:</b> e-Token - Gestão de Certificados e e-Tokens.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=11199" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Token - Orientações Gerais sobre o Token Cinza.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=2557" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Software - e-Token - Erros do Token Cinza.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=11264" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Token - Orientações Gerais sobre os Tokens SafeNet Verde, Azul e Preto 5100.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=31462" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Endereços Soluti.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=20749" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Emissão ou Renovação Online do Certificado Digital Soluti.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=19341" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Assinatura Digital - Remover Certificado Digital Duplicado.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=6312" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> e-Token - Devolução.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=5952" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> e-Token - Reaproveitamento de e-Tokens.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=19901" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Cadastrar Prazo do Certificado Digital na Intranet.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=11327" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Software - e-Token - Utilização do Sistema Gertoken.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=6335" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Orientação - Solicitações de Certificados e Tokens.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=1135" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> e-Token - Instalação Driver Safenet 8.1.
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=16564" target="blank">LINK</a><br><br>
+                            <b>Procedimento:</b> Certificação Digital - Token - Revogação de Certificado Digital da Soluti
+                            <a id="a_tokens" href="https://www.trt9.jus.br/cswiki/index.php?curid=26184" target="blank">LINK</a>
+                    </div>
+                </div><br><br>
+                <div id="div_mostrar2" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                    <p style="font-size: 20px"><button onclick="lerMais2(), lerMais2a()" id="btLeiaMais2"><span id="imagem2"></span> <b style="font-family: Courier New, monospace;"> DOCUMENTOS DE EMISSÃO </b> </button></p>
+                    <div>
+                        <span id="mostrar_mais2"></span><span id="maiss2">
+                        <br>
+                        <p>Download do Emissor Soluti: <a id="a_tokens" href="https://drive.google.com/file/d/1J6Q10kHRFq_OQ7jIunwTr_qgH9Fy1vNn/view" target="blank">Emissor.jnlp</a></p><br>
+                        <p>Download do Renovação Soluti: <a id="a_tokens" href="Softwares/Renovacao.jnlp" target="blank">Renovacao.jnlp</a></p><br>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            // Certifique-se de que o índice esteja dentro dos limites
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            // Esconda todos os slides
+            slides.forEach(slide => slide.style.display = 'none');
+
+            // Mostre o slide atual
+            slides[currentSlide].style.display = 'flex';
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // Inicia o slideshow mostrando o primeiro slide
+        showSlide(currentSlide);
+    </script>
+
+    <br>
+    <br><br><br>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

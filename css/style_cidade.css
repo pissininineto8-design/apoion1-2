@@ -1,0 +1,1078 @@
+
+#cidade {
+  width: 100%;
+
+  padding: 10px;
+}
+
+#button-prox {
+    background-color: rgb(37, 37, 39);
+    border: 2px solid #e7e7e7;
+    border-radius: 8px;
+    color: WHITE;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 25%;
+}
+
+#button-prox:hover {
+    background-color: #104E8B;
+    color: WHITE;
+}
+
+#mais {
+  display: none;
+}
+
+#btnLeiaMais {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades {
+    font-family: Courier New, monospace;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais {
+    color: BLACK;
+}
+
+#mais2 {
+  display: none;
+}
+
+#btnLeiaMais2 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais2 {
+  color: BLACK;
+}
+
+#mais3 {
+  display: none;
+}
+
+#btnLeiaMais3 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais3 {
+
+    color: BLACK;
+}
+
+#mais4 {
+  display: none;
+}
+
+#btnLeiaMais4 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais4 {
+
+    color: BLACK;
+}
+
+#mais5 {
+  display: none;
+}
+
+#btnLeiaMais5 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais5 {
+
+    color: BLACK;
+}
+
+#mais6 {
+  display: none;
+}
+
+#btnLeiaMais6 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais6 {
+
+    color: BLACK;
+}
+
+#mais7 {
+  display: none;
+}
+
+#btnLeiaMais7 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais7 {
+
+    color: BLACK;
+}
+
+#mais8 {
+  display: none;
+}
+
+#btnLeiaMais8 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais8 {
+
+    color: BLACK;
+}
+
+#mais9 {
+  display: none;
+}
+
+#btnLeiaMais9 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais9 {
+
+    color: BLACK;
+}
+
+#mais10 {
+  display: none;
+}
+
+#btnLeiaMais10 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais10 {
+
+    color: BLACK;
+}
+
+#mais11 {
+  display: none;
+}
+
+#btnLeiaMais11 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais11 {
+
+    color: BLACK;
+}
+
+#mais12 {
+  display: none;
+}
+
+#btnLeiaMais12 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais12 {
+
+    color: BLACK;
+}
+
+#mais13 {
+  display: none;
+}
+
+#btnLeiaMais13 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais13 {
+
+    color: BLACK;
+}
+
+#mais14 {
+  display: none;
+}
+
+#btnLeiaMais14 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais14 {
+
+    color: BLACK;
+}
+
+#mais15 {
+  display: none;
+}
+
+#btnLeiaMais15 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais15 {
+
+    color: BLACK;
+}
+
+#mais16 {
+  display: none;
+}
+
+#btnLeiaMais16 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais16 {
+
+    color: BLACK;
+}
+
+#mais17 {
+  display: none;
+}
+
+#btnLeiaMais17 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais17 {
+
+    color: BLACK;
+}
+
+#mais18 {
+  display: none;
+}
+
+#btnLeiaMais18 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais18 {
+
+    color: BLACK;
+}
+
+#mais19 {
+  display: none;
+}
+
+#btnLeiaMais19 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais19 {
+
+    color: BLACK;
+}
+
+#mais20 {
+  display: none;
+}
+
+#btnLeiaMais20 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais20 {
+
+    color: BLACK;
+}
+
+#mais21 {
+  display: none;
+}
+
+#btnLeiaMais21 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais21 {
+
+    color: BLACK;
+}
+
+#mais22 {
+  display: none;
+}
+
+#btnLeiaMais22 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais22 {
+
+    color: BLACK;
+}
+
+#mais23 {
+  display: none;
+}
+
+#btnLeiaMais23 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais23 {
+
+    color: BLACK;
+}
+
+#mais24 {
+  display: none;
+}
+
+#btnLeiaMais24 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais24 {
+
+    color: BLACK;
+}
+
+#mais25 {
+  display: none;
+}
+
+#btnLeiaMais25 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais25 {
+
+    color: BLACK;
+}
+
+#mais26 {
+  display: none;
+}
+
+#btnLeiaMais26 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais26 {
+
+    color: BLACK;
+}
+
+#mais27 {
+  display: none;
+}
+
+#btnLeiaMais27 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais27 {
+
+    color: BLACK;
+}
+
+#mais28 {
+  display: none;
+}
+
+#btnLeiaMais28 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais28 {
+
+    color: BLACK;
+}
+
+#mais29 {
+  display: none;
+}
+
+#btnLeiaMais29 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais29 {
+
+    color: BLACK;
+}
+
+#mais30 {
+  display: none;
+}
+
+#btnLeiaMais30 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais30 {
+
+    color: BLACK;
+}
+
+#mais31 {
+  display: none;
+}
+
+#btnLeiaMais31 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais31 {
+
+    color: BLACK;
+}
+
+#mais32 {
+  display: none;
+}
+
+#btnLeiaMais32 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais32 {
+
+    color: BLACK;
+}
+
+#mais33 {
+  display: none;
+}
+
+#btnLeiaMais33 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais33 {
+
+    color: BLACK;
+}
+
+#mais34 {
+  display: none;
+}
+
+#btnLeiaMais34 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais34 {
+
+    color: BLACK;
+}
+
+#mais35 {
+  display: none;
+}
+
+#btnLeiaMais35 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais35 {
+
+    color: BLACK;
+}
+
+#mais36 {
+  display: none;
+}
+
+#btnLeiaMais36 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais36 {
+
+    color: BLACK;
+}
+
+#mais37 {
+  display: none;
+}
+
+#btnLeiaMais37 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais37 {
+
+    color: BLACK;
+}
+
+#mais38 {
+  display: none;
+}
+
+#btnLeiaMais38 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais38 {
+
+    color: BLACK;
+}
+
+#mais39 {
+  display: none;
+}
+
+#btnLeiaMais39 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais39 {
+
+    color: BLACK;
+}
+
+#mais40 {
+  display: none;
+}
+
+#btnLeiaMais40 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais40 {
+
+    color: BLACK;
+}
+
+#mais41 {
+  display: none;
+}
+
+#btnLeiaMais41 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais41 {
+
+    color: BLACK;
+}
+
+#mais42 {
+  display: none;
+}
+
+#btnLeiaMais42 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais42 {
+
+    color: BLACK;
+}
+
+#mais43 {
+  display: none;
+}
+
+#btnLeiaMais43 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais43 {
+
+    color: BLACK;
+}
+
+#mais44 {
+  display: none;
+}
+
+#btnLeiaMais44 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais44 {
+
+    color: BLACK;
+}
+
+#mais45 {
+  display: none;
+}
+
+#btnLeiaMais45 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais45 {
+
+    color: BLACK;
+}
+
+#mais46 {
+  display: none;
+}
+
+#btnLeiaMais46 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais46 {
+
+    color: BLACK;
+}
+
+#mais47 {
+  display: none;
+}
+
+#btnLeiaMais47 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais47 {
+
+    color: BLACK;
+}
+
+#mais48 {
+  display: none;
+}
+
+#btnLeiaMais48 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais48 {
+
+    color: BLACK;
+}
+
+#mais49 {
+  display: none;
+}
+
+#btnLeiaMais49 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais49 {
+
+    color: BLACK;
+}
+
+#mais50 {
+  display: none;
+}
+
+#btnLeiaMais50 {
+  background-color: inherit;
+  color: BLACK;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+}
+
+#tabela_cidades tr:hover #btnLeiaMais50 {
+
+    color: BLACK;
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style_atalhos.css">
+    <script src="../js/script2.js"></script>
+    <script src="../js/script_atalhos.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:lerMais29a(); javascript:lerMais30a(); javascript:lerMais28a(); javascript:lerMais9a(); javascript:lerMais2a(); javascript:lerMais6a(); javascript:lerMais7a();
+  javascript:lerMais27a(); javascript:lerMais4a(); javascript:lerMais24a(); javascript:lerMais25a(); javascript:lerMais5a(); javascript:lerMais3a(); javascript:lerMais31a(); javascript:lerMais32a();">
+    
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="atalhos_smp.html"> Templates SMP </a></li>
+            <li><a href="suspensao.html"> Templates de Suspensão </a></li>
+            <li><a href="sessao.html"> Templates de Sessão </a></li>
+            <li><a href="garantia.html"> Template de Garantia </a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_3::after {
+                content: '';
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+                width: 60%;
+                height: 2px;
+                background-color: white; /* Cor da linha */
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                transition: transform 0.3s ease-out;
+                }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <article id="article-a">
+        <nav id="menu3">
+            <ul>
+                <li>
+                    <button onclick="lerMais29(); lerMais30(); lerMais28(); lerMais9(); lerMais2(); lerMais6(); lerMais7(); lerMais27(); lerMais4();
+                  lerMais24(); lerMais25(); lerMais5(); lerMais3(); lerMais31(); lerMais32(); lerMais29a(); lerMais30a(); lerMais28a(); lerMais9a(); lerMais2a(); lerMais6a(); lerMais7a(); lerMais27a(); lerMais4a();
+                    lerMais24a(); lerMais25a(); lerMais5a(); lerMais3a(); lerMais31a(); lerMais32a();" id="btLeiaMaisTodos">
+                        <b style="font-family: Courier New, monospace;">MOSTRAR / OCULTAR TODOS</b>
+                    </button>
+                </li>
+            </ul>
+        </nav><br>
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+        <h1> Atalhos CSTI - Templates N2</h1>
+
+        <div id="div1">
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais29(), lerMais29a()" id="btLeiaMais29"><span id="imagem29"></span> <b style="font-family: Courier New, monospace;">TEMPLATE PARA SUSPENSÃO COMUM</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais29"></span><span id="maiss29">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction()">Copiar</button><br>
+
+                        <textarea rows="8" cols="70" id="txtInput" style="resize: none">
+***Suspenso até novo contato com o solicitante.***
+Data/Hora para reinício da tarefa: dd/mm/2025 às XXhXX
+Motivo:
+Caso esteja disponível e queira o atendimento antes do horário programado para retorno do chamado, favor entrar em contato no ramal 7120 ou pelo chat, como explicado em https://www.trt9.jus.br/cswiki/index.php?curid=7894
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais30(), lerMais30a()" id="btLeiaMais30"><span id="imagem30"></span> <b style="font-family: Courier New, monospace;">TEMPLATE DE MOVIMENTAÇÃO DE CHAMADO COM TERMO</b></button></h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais30"></span><span id="maiss30">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction3()">Copiar</button> <br>
+                        <textarea rows="6" cols="70" id="txtInput3" style="resize: none">
+Formulário n.:
+Tombo retirado:
+Tombo fornecido:
+Tombo substituído:
+SMP:
+CMDB Atualizado.
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais28(), lerMais28a()" id="btLeiaMais28"><span id="imagem28"></span> <b style="font-family: Courier New, monospace;">TEMPLATE DEPÓSITOS</b></button></h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais28"></span><span id="maiss28">
+                        <br>
+                        <p><b style='font-family: Courier New, monospace; font-size: 19px;'>Para Situações de Recolhimento</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction29()">Copiar</button><br>
+<textarea rows="8" cols="70" id="txtInput29" style="resize: none">
+Equipamento(s) Deixados(s) no Depósito.
+Depósito: (VM400, VM147 ou RB528)
+Destino: (Local de Destino do Equipamento, Pessoal ou Setor)
+Tombo(s): XXXXXX, XXXXXX, XXXXXX
+Tarefa: XXXXXX, XXXXXX, XXXXXX
+Observação: (Se Houver)
+</textarea><br><br>
+
+                        <p><b style='font-family: Courier New, monospace; font-size: 19px;'>Para Situações de Fornecimento</b></p> <br>
+                        <button id="button-1" type="button" onclick="myFunction30()">Copiar</button><br>
+<textarea rows="6" cols="70" id="txtInput30" style="resize: none">
+Equipamento(s) Retirado(s) do Depósito.
+Depósito: (VM400, VM147 ou RB528)
+Tombo(s): XXXXXX, XXXXXX, XXXXXX
+Tarefa: XXXXXX, XXXXXX, XXXXXX
+Observação: (Se Houver)
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais9(), lerMais9a()" id="btLeiaMais9"><span id="imagem9"></span> <b style="font-family: Courier New, monospace;">TEMPLATE DE ABERTURA DE TAREFA</b></button></h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais9"></span><span id="maiss9">
+                        <br>
+                        <p><b style='font-family: Courier New, monospace; font-size: 19px;'>Comum</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction4()">Copiar</button><br>
+                        <textarea rows="4" cols="70" id="txtInput4" style="resize: none">
+Chamado aberto na Central de Serviços de TI em nome do(a) Sr(a) _________ para atendimento e acompanhamento da situação abaixo informada:
+</textarea><br><br>
+
+                        <p><b style='font-family: Courier New, monospace; font-size: 19px;'>Home Office:</b></p> <br>
+                        <button id="button-1" type="button" onclick="myFunction5()">Copiar</button><br>
+                        <textarea rows="7" cols="70" id="txtInput5" style="resize: none">
+Visando o fornecimento do micro Lenovo (capital), C820 e D480 (Interior) com VPN, devem ser feitas as seguintes inclusões:
+
+LOGIN: incluir no grupo DL_FW_VPN_HOMEOFFICE
+HOSTNAME: incluir no grupo DL_COMPUTADORES_VPN
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais2(), lerMais2a()" id="btLeiaMais2"><span id="imagem2"></span> <b style="font-family: Courier New, monospace;">TEMPLATES CMDB</b></button></h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais2"></span><span id="maiss2">
+                        <br>
+                        <p><b style='font-family: Courier New, monospace; font-size: 19px;'>Fornecimento</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction6()">Copiar</button><br>
+                        <textarea rows="2" cols="70" id="txtInput6" style="resize: none">
+Fornecido Tarefa: XXXXXXX e SMP: XXXXXXX
+</textarea><br>
+
+                        <p><br><b style='font-family: Courier New, monospace; font-size: 19px;'> Recolhimento</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction7()">Copiar</button><br>
+                        <textarea rows="2" cols="70" id="txtInput7" style="resize: none">
+Recolhido Tarefa: XXXXXXX e SMP: XXXXXXX
+</textarea><br>
+
+                        <p><br><b style='font-family: Courier New, monospace; font-size: 19px;'>Remanejamento</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction8()">Copiar</button><br>
+                        <textarea rows="2" cols="70" id="txtInput8" style="resize: none">
+Remanejado Tarefa: XXXXXXX e SMP: XXXXXXX
+</textarea><br>
+
+                        <p><br><b style='font-family: Courier New, monospace; font-size: 19px;'>Reservado</b></p><br>
+                        <button id="button-1" type="button" onclick="myFunction23()">Copiar</button><br>
+                        <textarea rows="2" cols="70" id="txtInput23" style="resize: none">
+Reservado Tarefa: XXXXXXX
+</textarea><br><br>
+
+                        <!--<p><br><b>Corona</b></p><br>
+                              <button id="button-1" type="button" onclick="myFunction9()">Copiar</button><br>
+                              <textarea rows="5" cols="70" id="txtInput9"   style="resize: none">
+                        RXXXXXX - Equipamento fornecido em atendimento a Portaria 4/2020, Ato que dispõe sobre medidas temporárias de prevenção ao contágio pelo Novo Corona vírus no âmbito do Tribunal Regional do Trabalho da 9ª Região.
+                        </textarea><br><br>-->
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais6(), lerMais6a()" id="btLeiaMais6"><span id="imagem6"></span> <b style="font-family: Courier New, monospace;">TEMPLATES PARA TRANSPORTE</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais6"></span><span id="maiss6">
+                        <br>
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'>Transporte Intranet</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction12()">Copiar</button><br>
+                        <textarea rows="18" cols="70" id="txtInput12" style="resize: none">
+Transporte de Técnicos
+
+Solicito transporte para Técnico da Techcom.
+
+* Origem - VM400
+* Destino -
+* Data - dd/mm/2025
+* Horário - XXhXX
+* Finalidade da viagem - Troca de Computador
+* Nome(s) do(s) passageiro(s) que deve(m) ser transportado(s) -
+* Tarefa(s) -
+
+Observação: O técnico estará levando equipamento.
+
+* Tombo(s) à ser(em) Fornecido(s) -
+* Tombo(s) à ser(em) Retirado(s) -
+</textarea><br><br><br>
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'>Suspensão para Transporte</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction11()">Copiar</button><br>
+                        <textarea rows="7" cols="70" id="txtInput11" style="resize: none">
+*Suspenso até a chegada do motorista.*
+Data/Hora da chegada do motorista: dd/mm/2025 as XXhXX
+Data/Hora prevista para reinício da tarefa: dd/mm/2025 as XXhXX
+Equipamento transportado / Tombo :
+Tarefa aberta com o setor de transporte:
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais7(), lerMais7a()" id="btLeiaMais7"><span id="imagem7"></span> <b style="font-family: Courier New, monospace;">SUSPENSÃO PARA EVENTOS</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais7"></span><span id="maiss7">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction10()">Copiar</button><br>
+                        <textarea rows="7" cols="70" id="txtInput10" style="resize: none">
+***Suspenso até o início.***
+Data/Hora do retorno do chamado: dd/mm/2025 às XXhXX
+Data/Hora do evento: dd/mm/2025 às XXhXX
+Motivo: Acompanhamento Telepresencial
+Local: SECRETARIA DA ??ª TURMA
+</textarea><br><br>
+
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais32(), lerMais32a()" id="btLeiaMais32"><span id="imagem32"></span> <b style="font-family: Courier New, monospace;">ENVIO DE EQUIPAMENTO VIA CORREIOS</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais32"></span><span id="maiss32">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction32()">Copiar</button><br>
+                        <textarea rows="12" cols="70" id="txtInput32" style="resize: none">
+Favor providenciar o transporte do (Equipamento XXXXXXX), tombo (XXXXXX), para (Local XXXXXXXX).
+
+Peso:  0,000 Kg
+Medidas: 00,0 x 00 x 00 cm
+
+Servidor(a): (XXXXXX XXXXX XXXXXXX)
+Contato: (XXXXXXXXXX)
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais27(), lerMais27a()" id="btLeiaMais27"><span id="imagem27"></span> <b style="font-family: Courier New, monospace;">SUSPENSÃO GARANTIA</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais27"></span><span id="maiss27">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction28()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput28" style="resize: none">
+***Suspenso para manutenção na garantia ***
+Data/Hora prevista para reinício da tarefa: dd/mm/2025 às XXhXX
+Motivo: Foi aberta a garantia para o(a) "Modelo de Equipamento", sendo necessário aguardar o técnico comparecer no local. Após finalizado o reparo será dado prosseguimento ao atendimento.
+Equipamento / Tombo: ******
+Tarefa aberta com o fornecedor: ************
+</textarea><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="div2">
+
+            <div id="div_mostrar" style='background-color: #f2f2f2; border-radius: 10px; font-family: Courier New, monospace;'>
+                <h3>Lotação - Depósitos das unidades VM147, VM400 e RB528</h3><br>
+
+                <p style='font-family: Courier New, monospace; font-size: 19px;'>
+                    VM400  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   CSTI - Depósito de TI - VM400 #1341    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    6 <br>
+                    VM147  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  CSTI - Depósito de TI - VM147 #1340    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    3 <br>
+                    RB528  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  CSTI - Depósito de TI - RB528 #1345    &nbsp;&nbsp;&nbsp;&nbsp;   -1
+                </p>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais4(), lerMais4a()" id="btLeiaMais4"><span id="imagem4"></span> <b style="font-family: Courier New, monospace;">TEMPLATES DE DEMANDA</b></button> </h3>
+                <div style='font-family: Courier New, monospace;'>
+                    </span>
+                    <span id="mostrar_mais4"></span><span id="maiss4">
+                        <br>
+                        <p> <b style='font-family: Courier New, monospace; font-size: 19px;'>Orientações: </b></p><br>
+                        <p style='font-family: Courier New, monospace;'>Item: Service Desk | Produto: Service Desk</p>
+                        <p style='font-family: Courier New, monospace;'> Categoria: Demanda Filha</p>
+                        <p style='font-family: Courier New, monospace;'> Adicionar itens</p>
+                        <p style='font-family: Courier New, monospace;'> Vincular na Demanda Pai</p><br>
+                        <p> <b style='font-family: Courier New, monospace; font-size: 19px;'>Fechar e usar conhecimento na Demanda Filha:</b> </p><br>
+                        <p style='font-family: Courier New, monospace;'>Ligação - Informação - Encerrar Tarefa de Demanda.</p>
+                        <p style='font-family: Courier New, monospace;'>Link do Procedimento: <a style='font-family: Courier New, monospace; font-size: 15px; text-decoration: underline;' href="https://www.trt9.jus.br/cswiki/index.php?curid=10194" target="blank">https://www.trt9.jus.br/cswiki/index.php?curid=10194</a></p><br>
+
+                        <h3 style='font-family: Courier New, monospace; font-size: 19px;'>Abertura de Demanda Filha</h3><br>
+                        <button id="button-1" type="button" onclick="myFunction18()">Copiar</button><br>
+                        <textarea rows="4" cols="70" id="txtInput18" style="resize: none">
+Chamado aberto na Central de Serviços de TI em nome da Sra. xxxxxx para atendimento e acompanhamento da situação abaixo informada:
+
+</textarea><br><br>
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'>Template - Inserir movimentação na Demanda PAI e SMP</h4><br>
+
+                        <button id="button-1" type="button" onclick="myFunction19()">Copiar</button><font color="BLACK"> &nbsp;&nbsp;<b style='font-family: Courier New, monospace; font-size: 19px;'>PAI</b> </font><br>
+                        <textarea rows="4" cols="70" id="txtInput19" style="resize: none">
+Formulário Nº xxxxx referente à Demanda Filha xxxxx
+SMP: xxxxx
+CMDB atualizado
+</textarea><br><br>
+
+                        <button id="button-1" type="button" onclick="myFunction20()">Copiar</button><font color="BLACK"> &nbsp;&nbsp;<b style='font-family: Courier New, monospace; font-size: 19px;'>SMP</b> </font><br>
+                        <textarea rows="3" cols="70" id="txtInput20" style="resize: none">
+Demanda Pai: xxxxx Demanda Filha: xxxxx
+Formulário: xxxxx
+</textarea><br><br>
+
+                        <h3 style='font-family: Courier New, monospace; font-size: 19px;'>Síntese de encerramento de Demanda</h3><br>
+                        <button id="button-1" type="button" onclick="myFunction22()">Copiar</button><br>
+                        <textarea rows="6" cols="70" id="txtInput22" style="resize: none">
+Síntese de encerramento de Demanda
+
+Demanda(s) Filho(s) criada(s), relacionada(s) e concluída(s):
+
+Técnico(s) envolvido(s) na execução da Demanda:
+</textarea><br><br>
+
+                        <h3 style='font-family: Courier New, monospace; font-size: 19px;'>Suspensão para Reaprazar Demanda</h3><br>
+                        <button id="button-1" type="button" onclick="myFunction13()">Copiar</button><br>
+                        <textarea rows="3" cols="70" id="txtInput13" style="resize: none">
+Solicito reaprazar demanda para dia dd/mm/aaaa;
+Motivo:
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais24(), lerMais24a()" id="btLeiaMais24"><span id="imagem24"></span> <b style="font-family: Courier New, monospace;">TEMPLATE - SOLICITAÇÃO RESERVAR IP</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais24"></span><span id="maiss24">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction24()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput24" style="resize: none">
+Favor reservar o ip conforme tarefa XXXXXX
+IP: 10.9.54.59
+Local: 1230 - Gab31 Dr. Adilson
+MAC: 0:21:B7:C7:E8:D0
+Tombo: 166884
+Modelo: LEXMARK MS610
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais25(), lerMais25a()" id="btLeiaMais25"><span id="imagem25"></span> <b style="font-family: Courier New, monospace;">PADRÃO DE MENSAGEM NO ZOOM (PEDIDOS SEM CHAMADOS)</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais25"></span><span id="maiss25">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction25()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput25" style="resize: none">
+Prezados,
+
+Para esclarecer dúvidas, receber orientações, registrar e consultar suas solicitações de suporte técnico de TI, utilize nossos canais de atendimento:
+Chat - https://www.trt9.jus.br/portal/centralServicosTI.xhtml
+Telefone - 3310-7120
+AssystNet - https://csti.trt9.jus.br/assystnet
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais5(), lerMais5a()" id="btLeiaMais5"><span id="imagem5"></span> <b style="font-family: Courier New, monospace;">PROCESSOS DE TESTE</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais5"></span><span id="maiss5">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction14()">Copiar</button><br>
+                        <textarea rows="1" cols="70" id="txtInput14" style="resize: none">
+00333331233335020333</textarea><br><br>
+                        <button id="button-1" type="button" onclick="myFunction15()">Copiar</button><br>
+                        <textarea rows="1" cols="70" id="txtInput15" style="resize: none">
+00444440744445020444</textarea><br><br>
+                        <button id="button-1" type="button" onclick="myFunction16()">Copiar</button><br>
+                        <textarea rows="2" cols="70" id="txtInput16" style="resize: none">
+00555550255555020555
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais3(), lerMais3a()" id="btLeiaMais3"><span id="imagem3"></span> <b style="font-family: Courier New, monospace;">TEMPLATES PARA SUSPENSÃO DE SEDEX E MALOTE</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais3"></span><span id="maiss3">
+                        <br>
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'> Suspensão SEDEX - Com Termo</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction26()">Copiar</button><br>
+                        <textarea rows="15" cols="70" id="txtInput26" style="resize: none">
+Data de envio do SEDEX: dd/mm/2025
+Data/Hora prevista para chegada do SEDEX ao local. Reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do SEDEX daremos seguimento ao chamado.
+Se possível registrar o recebimento do SEDEX em movimentação nesta tarefa.
+
+Por gentileza efetuar o envio do termo assinado referente ao recebimento do SEDEX.
+Informamos que o chamado será suspenso até o recebimento do TERMO assinado, somente após a Central de Serviços de TI receber o termo assinado o chamado será encerrado.
+</textarea><br><br>
+
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'> Suspensão SEDEX - Sem Termo</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction27()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput27" style="resize: none">
+Data de envio do SEDEX: dd/mm/2025
+Data/Hora prevista para chegada do SEDEX ao local. Reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do SEDEX daremos seguimento ao chamado.
+Se possível registrar o recebimento do SEDEX em movimentação nesta tarefa.
+</textarea><br><br><br>
+
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'> Suspensão Malote - Com Termo</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction2()">Copiar</button><br>
+                        <textarea rows="15" cols="70" id="txtInput2" style="resize: none">
+Data de envio do malote: dd/mm/2025
+Data/Hora prevista para chegada do malote ao local reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do malote daremos seguimento ao chamado.
+Se possível registrar o recebimento do malote em movimentação nesta tarefa.
+
+Por gentileza efetuar o envio do termo assinado referente ao recebimento do malote.
+Informamos que o chamado será suspenso até o recebimento do TERMO assinado, somente após a Central de Serviços de TI receber o termo assinado o chamado será encerrado.
+</textarea><br><br><br>
+
+                        <h4 style='font-family: Courier New, monospace; font-size: 19px;'> Suspensão Malote - Sem Termo</h4><br>
+                        <button id="button-1" type="button" onclick="myFunction21()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput21" style="resize: none">
+Data de envio do malote: dd/mm/2025
+Data/Hora prevista para chegada do malote ao local reinício da tarefa: dd/mm/2025 às XXhXX
+Peça enviada / Tombo:
+
+Após a confirmação de recebimento do malote daremos seguimento ao chamado.
+Se possível registrar o recebimento do malote em movimentação nesta tarefa.
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais31(), lerMais31a()" id="btLeiaMais31"><span id="imagem31"></span> <b style="font-family: Courier New, monospace;">ASSINATURA CSTI</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais31"></span><span id="maiss31">
+                        <br>
+                        <button id="button-1" type="button" onclick="myFunction31()">Copiar</button><br>
+                        <textarea rows="12" cols="70" id="txtInput31" style="resize: none">
+Atenciosamente,
+
+Central de Serviços de Tecnologia da Informação
+Fone: (41) 3310.7120
+Nosso Chat: https://www.trt9.jus.br/portal/centralServicosTI.xhtml
+Acesso às principais dúvidas: https://www.trt9.jus.br/cswiki/index.php/Aberto:P%C3%A1gina_principal
+Horário de Atendimento: 08h às 18h
+</textarea><br><br>
+                </div>
+            </div><br>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+#maiss1 {
+display: none;
+}
+
+#btLeiaMais1 {
+background-color: inherit;
+border-radius: 4px;
+color: WHITE;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: bold;
+}
+
+#btLeiaMais1:hover {
+    color: #ef314c;
+}
+
+#maiss_index_1 {
+display: none;
+}
+
+#btLeiaMais_index_1 {
+background-color: inherit;
+border-radius: 4px;
+color: WHITE;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 16px;
+font-weight: bold;
+}
+
+#btLeiaMais_index_1:hover {
+    color: #ef314c;
+}
+
+#maiss3 {
+display: none;
+}
+
+#btLeiaMais3 {
+background-color: inherit;
+border-radius: 4px;
+color: BLACK;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 17px;
+font-weight: bold;
+}
+
+#btLeiaMais3:hover {
+    color: #ef314c;
+}
+
+#maiss4 {
+display: none;
+}
+
+#btLeiaMais4 {
+background-color: inherit;
+border-radius: 4px;
+color: BLACK;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 17px;
+font-weight: bold;
+}
+
+#btLeiaMais4:hover {
+    color: #ef314c;
+}
+
+#maiss_index_2 {
+display: none;
+}
+
+#btLeiaMais_index_2 {
+background-color: inherit;
+border-radius: 4px;
+color: WHITE;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 16px;
+font-weight: bold;
+}
+
+#btLeiaMais_index_2:hover {
+    color: #ef314c;
+}
+
+#maiss_index_3 {
+display: none;
+}
+
+#btLeiaMais_index_3 {
+background-color: inherit;
+border-radius: 4px;
+color: WHITE;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 16px;
+font-weight: bold;
+}
+
+#btLeiaMais_index_3:hover {
+    color: #ef314c;
+}
+
+#maiss5 {
+display: none;
+}
+
+#btLeiaMais5 {
+background-color: inherit;
+border-radius: 4px;
+color: BLACK;
+padding: 3px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border: none;
+font-family: Courier New, monospace;
+font-size: 17px;
+font-weight: bold;
+}
+
+#btLeiaMais5:hover {
+    color: #ef314c;
+}

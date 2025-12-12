@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Apoio N2 - TRT9</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/sistemas.css">
+    <script src="../js/script_index.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:lerMais3a(); javascript:lerMais5a(); javascript:limpar_filtro();">
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_1::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0;
+                    width: 68%;
+                    height: 2px;
+                    background-color: white; /* Cor da linha */
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                    transition: transform 0.3s ease-out;
+                    }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <article id="article-paginan2">
+        <br>
+
+        <div class="voltar">
+            <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+        </div>
+
+        <div id="container">
+            <h2> <font size="4" style="font-family: Courier New, monospace"> INFORMAÇÕES, ATALHOS E ORIENTAÇÕES DE APOIO VOLTADAS AO N2.</font></h2><br>
+
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                }
+
+                .box1 {
+                    width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                    margin-left: 0px;
+                    margin-right: 20px;
+                    display: inline-table;
+                }
+
+                #boxa1:hover {
+                    -webkit-transform: scale(1.025);
+                    -ms-transform: scale(1.025);
+                    transform: scale(1.025);
+                }
+
+                .box2 {
+                    width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                    margin-left: 0px;
+                    margin-right: -20px;
+                    display: inline-table;
+                }
+
+                #boxa2:hover {
+                    -webkit-transform: scale(1.025);
+                    -ms-transform: scale(1.025);
+                    transform: scale(1.025);
+                }
+
+                #divisao_1 {
+                    width: clamp(100px, 50%, 800px); /*Para definir a responsividade do texto.*/
+                    margin: 0px 30px 0px 30px;
+                    display: inline-table;
+                    padding-right: 0px;
+                }
+
+                #divisao_2 {
+                    width: clamp(100px, 50%, 600px); /*Para definir a responsividade do texto.*/
+                    margin: 0px 30px 0px 30px;
+                    display: inline-table;
+                }
+            </style>
+
+            <div id="divisao_1">
+
+                <h2> <font size="4" style="font-family: Courier New, monospace"> ACESSO RÁPIDO - N2</font></h2><br>
+                <p align="left">
+                    <a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/SAINF%20-%20Estoque' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/sainf.png' alt='SAINF' title='Acessar o Controle de Estoque da SAINF' width='708' height='100'></a>
+                    <a href='https://kibana.trt9.jus.br/s/servicedesk/app/home#/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/elastic.png' alt='Elastic Kibana' title='Acesso ao Elastic Kibana' width='220' height='100'></a>
+                    <a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Monitoramento' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/pbi.png' alt='Power BI' title='Acesso ao Power BI TRT9' width='100' height='100'></a>
+                    <a href='https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/cswiki.png' alt='CSWIKI' title='Acesso a Página CSWIKI' width='100' height='100'></a>
+                    <a href='https://csti.trt9.jus.br/assystweb' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/assyst.png' alt='Assyst' title='Acesso ao Assyst' width='250' height='100'></a>
+                </p><br><br><br>
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> ACESSO RÁPIDO - LINKS DE CONSULTA DE DADOS </font></h2><br>
+                <p align="left">
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=154:18:300768478516057:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/adm.png' alt='SMP e CMDB' title='Acesso ao SMP e CMDB' width='200' height='100'></a>
+                    <a href='https://web01/gertoken/' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/gertoken.png' alt='Gertoken' title='Acesso ao Gerenciamento de Token' width='200' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=225:3:207639063515661:::3::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/suspencao.png' alt='Suspensão Intranet' title='Acesso a Página de Suspensão' width='285' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=285:379:201832757970539:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/telefones.png' alt='Contatos' title='Consulta a Contatos de Unidades e Servidores' width='200' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=10285:5:112883424524121:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/ramais_servidores.png' alt='Ramais de Servidores' title='Consulta a Ramais de Servidores' width='270' height='100'></a>
+                    <a href='https://intranet.trt9.jus.br/intranet2/f?p=10285:4:112883424524121:::::' target="_blank"><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='../Imagens/ramais_unidades.png' alt='Ramais de Unidades' title='Consulta a Ramais de Unidades' width='215' height='100'></a>
+                </p>
+                <br><br><br>
+
+                <h2> <font size="4" style="font-family: Courier New, monospace"> ORIENTAÇÕES GERAIS</font></h2><br>
+                <div id="div_orientacoes_paginan2" style='background-color: WHITE; padding: 10px; border-radius: 10px;'>
+
+                    <button onclick="lerMais3(), lerMais3a()" id="btLeiaMais3"><span id="imagem3"></span>  <b style="font-family: Courier New, monospace;">ID DE REUNIÕES - TURMAS E PLENÁRIOS</b></button><br>
+                    <span id="mostrar_mais3"></span><span id="maiss3">
+                        <br>
+                        <font size="3" style="font-family: Courier New, monospace">
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">Pleno</b><br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">891 6746 4803</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">312667</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">SE</b><br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">873 6752 0517</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">787845</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">01ª Turma</b> (Não precisa ficar INTEGRAL - Dispensado por: Elaine Cristina Gerlach no chamado: R170160)<br>
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">Obs.:</b> Abrir chamado extra para o período da tarde, se for o caso, para acompanhar o reinício.<br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">873 2618 0962</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">031566</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">02ª Turma</b><br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">834 6287 7493</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">295024</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">03ª Turma</b> (Não precisa ficar INTEGRAL - Dispensado por: Geraldo Eustáquio Caixeta no chamado: R172247)<br>
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">Obs.:</b> Abrir chamado extra para o período da tarde, se for o caso, para acompanhar o reinício.<br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">826 2474 5077</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">265881</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">4ª Turma</b> (Não precisa ficar INTEGRAL - Dispensado por: Lenira Taquete Zavadinack no chamado: R177538)<br>
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">Obs.:</b> Abrir chamado extra para o período da tarde, se for o caso, para acompanhar o reinício.<br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">892 8547 8605</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">418488</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">5ª Turma</b> (Não precisa ficar INTEGRAL - Dispensado por: Rogério Camara Fernandes De Oliveira no chamado: R175498)<br>
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">Obs.:</b> Abrir chamado extra para o período da tarde, se for o caso, para acompanhar o reinício.<br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">859 2193 0343</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">890280</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">6ª Turma</b><br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">828 9822 9693</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">434474</b><br><br>
+
+                            <b size="3" style="font-family: Arial, Helvetica, sans-serif">7ª Turma</b><br><br>
+                            ID da Reunião: <b size="3" style="font-family: Arial, Helvetica, sans-serif">617 366 9695</b><br>
+                            Senha: <b size="3" style="font-family: Arial, Helvetica, sans-serif">969303</b><br>
+                        </font>
+                    </span>
+                </div><br><br>
+                <div id="div_orientacoes_paginan2" style='background-color: WHITE; padding: 10px; border-radius: 10px;'>
+                    <h4><button onclick="lerMais5(), lerMais5a()" id="btLeiaMais5"><span id="imagem5"></span> <b style="font-family: Courier New, monospace;">TECLAS DE ATALHO - NOTEBOOKS</b></button></h4>
+                    <span id="mostrar_mais5"></span><span id="maiss5">
+                        <br>
+                        <h4><font size="4" style="font-family: Courier New, monospace "> Notebook Lenovo E470 </font></h4><br>
+                        <p>
+                            <font size="3" style="font-family: Courier New, monospace">
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F1</b> - BIOS<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F9</b> - MODO DE RECUPERAÇÃO<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F10</b> - DIAGNOSTICOS<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F12</b> - MODO DE INICIALIZAÇÃO<br>
+                            </font>
+                        </p><br>
+                        <h4><font size="4" style="font-family: Courier New, monospace"> Notebook HP G3 </font></h4><br>
+                        <p>
+                            <font size="3" style="font-family: Courier New, monospace">
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F1</b> - SYSTEM INFORMATION<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F9</b> - BOOT MENU<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F10</b> - BIOS SETUP<br>
+                                <b size="3" style="font-family: Arial, Helvetica, sans-serif">F12</b> - NETWORK BOOT<br>
+                            </font>
+                        </p>
+                    </span>
+                </div><br><br><br>
+                
+                <h2> <font size="4" style="font-family: Courier New, monospace"> RESPONSÁVEIS PELOS PENDRIVES NO INTERIOR</font></h2><br>
+                <div style="padding-left: 10px;">
+                    <div align="left">
+                        <div id="div_orientacoes_paginan2">
+                            <table id="table-pendrives" align="left">
+                                <tr>
+                                    <td style="padding: 10px; background-color: #104E8B; 
+                                    color: white;
+                                    border-radius: 5px;"><b>Localidade</b></td>
+                                    <td style="padding: 10px; background-color: #104E8B; 
+                                    color: white;
+                                    border-radius: 5px;"><b>Responsável</b></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Arapongas</td>
+                                    <td style="padding-left: 10px;">José Dias de Oliva</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Bandeirantes</td>
+                                    <td style="padding-left: 10px;">Paulo Mario Sato</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Cambé</td>
+                                    <td style="padding-left: 10px;">Sérgio Kazuo Onichi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Campo Mourão</td>
+                                    <td style="padding-left: 10px;">Ana Carolina da Cunha Mendes Palma</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Cascavel</td>
+                                    <td style="padding-left: 10px;">Jeferson Elias Barth</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Castro</td>
+                                    <td style="padding-left: 10px;">Douglas Luciano</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Cornélio Procópio</td>
+                                    <td style="padding-left: 10px;">Denis Sawaki (2ª VDT)</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Foz do Iguaçu</td>
+                                    <td style="padding-left: 10px;">Aparecida Nandi</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Francisco Beltrão</td>
+                                    <td style="padding-left: 10px;">Airton José Cecchin</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Guarapuava</td>
+                                    <td style="padding-left: 10px;">Alexandre Calleya</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Irati</td>
+                                    <td style="padding-left: 10px;">Wayne Rodrigues</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Ivaiporã</td>
+                                    <td style="padding-left: 10px;">Eliane Vicente</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Jacarezinho</td>
+                                    <td style="padding-left: 10px;">Marcelo Lopes da Silva</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Jaguariaíva</td>
+                                    <td style="padding-left: 10px;">Fernanda Lorenzet</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Palmas</td>
+                                    <td style="padding-left: 10px;">Caio Carvalho</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Palotina</td>
+                                    <td style="padding-left: 10px;">Camila Ribeiro</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Pato Branco</td>
+                                    <td style="padding-left: 10px;">Maria do Carmo Barbosa Leite</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Ponta Grossa</td>
+                                    <td style="padding-left: 10px;">Ana Maria Bubniak</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Porecatu</td>
+                                    <td style="padding-left: 10px;">José Carlos de Souza Silva</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Rolândia</td>
+                                    <td style="padding-left: 10px;">Luiz Alexandre Morinaga Nagima</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Santo A. da Platina</td>
+                                    <td style="padding-left: 10px;">Cristina Levatti</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Telêmaco Borba</td>
+                                    <td style="padding-left: 10px;">Karen Roca</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Umuarama</td>
+                                    <td style="padding-left: 10px;">Rubeleno Alves dos Santos</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">União da Vitória</td>
+                                    <td style="padding-left: 10px;">Sérgio Sloboda</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px;">Wenceslau Braz</td>
+                                    <td style="padding-left: 10px;">Silvana Rosa do Nascimento</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <br>
+                    </div>
+                </div><br><br><br><br>
+            </div>
+            <div id="divisao_2">
+
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;">PÁGINAS INTERNAS MAIS UTILIZADAS </font></h2><br>
+                <div style="padding-left: 10px;">
+                    <div class='container_index'>
+                        <ul align="left" class="styled-list" style="padding-left: 0px;">
+                            <li>
+                                <h3><a href='redirecionamento.html'>Redirecionamento</a></h3>
+                                <p>&nbsp;"Planilha de redirecionamento".</p>
+                            </li>
+                            <li>
+                                <h3><a href='procedimentos.html'>Procedimentos</a></h3>
+                                <p>&nbsp;"Procedimentos CSWIKI mais utilizados".</p>
+                            </li>
+                            <li>
+                                <h3><a href='tokens.html'>Tokens</a></h3>
+                                <p>&nbsp;"Imagens e informações sobre tokens".</p>
+                            </li>
+                            <li>
+                                <h3><a href='atalhos.html'>Templates N2</a></h3>
+                                <p>&nbsp;"Modelos padrões para movimentar tarefas, CMDB, email, etc".</p>
+                            </li>
+                            <li>
+                                <h3><a href='garantia.html'>Templates de Garantia</a></h3>
+                                <p>&nbsp;"Modelos para abertura de garantia".</p>
+                            </li>
+                            <li>
+                                <h3><a href='suspensao.html'>Templates de Suspensão</a></h3>
+                                <p>&nbsp;"Modelos para suspensão de tarefas".</p>
+                            </li>
+                            <li>
+                                <h3><a href='sessao.html'>Templates de Sessão</a></h3>
+                                <p>&nbsp;"Modelos para movimentar tarefas de sessão".</p>
+                            </li>
+                            <li>
+                                <h3><a href='termos.html'>Termos</a></h3>
+                                <p>&nbsp;"Termos utilizados para movimentação de equipamentos".</p>
+                            </li>
+                            <li>
+                                <h3><a href='status.html'>Status CMDB</a></h3>
+                                <p>&nbsp;"Lista de status CMDB dos equipamentos quando recolhidos".</p>
+                            </li>
+                            <li>
+                                <h3><a href='malote.html'>Malote</a></h3>
+                                <p>&nbsp;"Programação do malote em todo o estado".</p>
+                            </li>
+                            <li>
+                                <h3><a href='calculo.html'>Cálculo F</a></h3>
+                                <p>&nbsp;"Página de cálculo do F".</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><br><br><br>
+
+                <h2><font size="4" style="font-family: Courier New, monospace"> PLANILHAS EXCEL </font></h2><br>
+                <div style="padding-left: 10px;">
+                    <article id="article-planilhasn2">
+                        <div id="div_planilhasn2">
+                            <table id="tabela_planilhas_paginan2">
+                                <tr>
+                                    <td align="left" style="border: none;">
+                                        <a href="https://drive.google.com/drive/u/0/folders/1_gGFAMpohMeqsPLbYXBdDQurgclcVDPF" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/pastas.png" alt="Planilha Excel" />&nbsp;<b style="font-family: Arial, Helvetica, sans-serif">Planilhas de Conhecimentos Wiki</b>
+                                            </button>
+                                        </a>
+                                    </td>
+
+                                    <td align="left" style="border: none;">
+                                        <a href="https://docs.google.com/spreadsheets/d/177A-isBNle3KCjzltfI9U5B8Zwb7KG1dPMJtyzWX640/edit#gid=1680740765" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/excel.png" alt="Planilha Excel" /><b style="font-family: Arial, Helvetica, sans-serif">&nbsp;Planilha de Softwares Homologados</b>
+                                            </button>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td align="left" style="border: none;">
+                                        <a href="https://docs.google.com/spreadsheets/d/1Q19IwQwLNK7j8oHMrKZlq30k1adR75JP/edit?gid=245427065#gid=245427065" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/excel.png" alt="Planilha Excel" />&nbsp;<b style="font-family: Arial, Helvetica, sans-serif">Planilha de Conhecimentos Wiki - 2024 à 2026</b>
+                                            </button>
+                                        </a>
+                                    </td>
+
+                                    <td align="left" style="border: none;">
+                                        <a href="https://docs.google.com/spreadsheets/d/1-yPyU1ZlUwm18OVgaYJmYHStdOHFCPSOiitv5H13OSE/edit#gid=0" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/excel.png" alt="Planilha Excel" /><b style="font-family: Arial, Helvetica, sans-serif">&nbsp;Planilha de Controle de Viagens</b>
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td align="left" style="border: none;">
+                                        <a href="https://docs.google.com/spreadsheets/d/1ZWcbkqhEtpSSxtYfMUdOrK7IhEsHu8UPfh8kVnrQdAY/edit#gid=1075988607" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/excel.png" alt="Planilha Excel" />&nbsp;<b style="font-family: Arial, Helvetica, sans-serif">Planilha de Controle de Depósitos</b>
+                                            </button>
+                                        </a>
+                                    </td>
+
+                                    <td align="left" style="border: none;">
+                                        <a href="https://docs.google.com/spreadsheets/d/1VANPrLYzTbVnxUCdZqPN8dIULxsteCYouvxn6iDTSGA/edit?gid=247342365#gid=247342365" target="_blank">
+                                            <button id="button-2a">
+                                                <img src="../Imagens/excel.png" alt="Planilha Excel" />&nbsp;<b style="font-family: Arial, Helvetica, sans-serif">Planilha de Eventos & Sessões 2025</b>
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </article><br><br><br>
+
+                </div>
+
+                <div>
+                    <h2 id="informacoes_adversas_2" class="destacar2"> <font size="4" style="font-family: Courier New, monospace">LISTA DE INFORMAÇÕES ADVERSAS</font></h2><br>
+                    
+                    <div id="div_lista_informacoes_2">
+                        <div align="left" style='background-color: white; border-radius: 10px; width: 96%; margin: 0px;'>
+                        <br><p style="padding-left: 10px;">Dicas, informações e curiosidades sobre situações atendidas pelo N2 da Central de Serviços de TI.</p>
+                        <div align="left" id="divFiltro_2"><br>        
+                            <font> <input type="search" id="pesquisa_2" placeholder="Digite o termo para pesquisa..." oninput="limpar_filtro()" style="width: 350px;"> </font> 
+                            <button type="button" id="botao1" onclick="filtrar_informacoes(), leiaMais2()">Filtrar</button>
+        
+                        </div>       
+
+                            <div id="div_filtro_informacoes_2">
+        
+                                <ul>
+                                    <div id="lista_filtro_2">
+                                        <h4 align="left">Resultado:</h4><br>
+                                        <span id="mostrar2"></span><span id="mais2">
+        
+                           <!-- Resultado Filtro -->
+                            
+                           <li>
+                                <table id="tabela_filtro_2"><!-- Todos, All --> <!-- Ploter, Plloter, Pllotter, Harry Plotter, Harry Potter, Harry Poter -->
+                                    <tr>
+                                        <td>
+                                            <p><b>IMPRESSORA PLOTTER HP - </b> Orientações sobre problemas conhecidos e manutenção em Impressoras Plotter HP.<br><br>
+                                                
+                                                <b>Limpeza do sensor</b>: <a id="a_sistemas" href="https://www.youtube.com/watch?v=mXOaHY0yDIg" target="_blank">Tutorial - Limpeza do Sensor do Papel na Plotter HP</a><br><br>
+                                                
+                                                <b>Hard Reset</b>: <a id="a_sistemas" href="https://www.youtube.com/watch?v=5HqzGkjk7fM" target="_blank">Tutorial - Reset Geral (Hard Reset) na Plotter HP</a><br><br>
+
+                                                Procedimento: 
+                                                <a id="a_sistemas" href="https://www.trt9.jus.br/cswiki/index.php?curid=33479" target="_blank">
+                                                CSWiki | Hardware - Impressora - Hard Reset da Impressora Plotter HP</a><br><br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                            </table>
+                            </li>                       
+                    </div>
+                    
+                </div>
+
+                <script type="text/javascript">
+                    function limpar_filtro() {
+                        $('#lista_filtro_2 li').hide();
+                    }
+    
+                    function filtrar_informacoes() {
+                        var termo = $('#pesquisa_2').val().toUpperCase();
+    
+                        $('#lista_filtro_2 li').show();
+    
+                        $('#lista_filtro_2 li').each(function () {
+                            if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                                $(this).hide();
+                            }
+                            if (document.getElementById("pesquisa_2").value == "") {
+                                $('#lista_filtro_2 li').hide();
+                            }
+                        });
+    
+                    }
+                </script>
+
+            </div>
+
+        </div>
+
+        <style>
+            .box3 {
+                width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                margin-left: 0px;
+                margin-right: 20px;
+                display: inline-table;
+            }
+
+            #boxa3:hover {
+                -webkit-transform: scale(1.025);
+                -ms-transform: scale(1.025);
+                transform: scale(1.025);
+            }
+
+            .box4 {
+                width: clamp(100px, 50%, 340px); /*Para definir a responsividade do texto.*/
+                margin-left: 0px;
+                margin-right: -20px;
+                display: inline-table;
+            }
+
+            #boxa4:hover {
+                -webkit-transform: scale(1.025);
+                -ms-transform: scale(1.025);
+                transform: scale(1.025);
+            }
+
+            #divisao_3 {
+                width: clamp(100px, 50%, 800px); /*Para definir a responsividade do texto.*/
+                margin: 0px 30px 0px 30px;
+                display: inline-table;
+                padding-right: 0px;
+            }
+
+            #divisao_4 {
+                width: clamp(100px, 50%, 650px); /*Para definir a responsividade do texto.*/
+                margin: 0px 30px 0px 30px;
+                display: inline-table;
+            }
+        </style>
+
+        <div id="container">
+
+            <div id="divisao_3">
+
+
+            </div><div id="divisao_4">
+
+
+
+            </div>
+        </div>
+        <br><br><br><br>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

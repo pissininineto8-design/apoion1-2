@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style_atalhos.css">
+    <script src="../js/script3.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_3::after {
+                        content: '';
+                        position: absolute;
+                        left: 20px;
+                        bottom: 0;
+                        width: 60%;
+                        height: 2px;
+                        background-color: white; /* Cor da linha */
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                        transition: transform 0.3s ease-out;
+                        }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="atalhos.html"> Templates N2</a></li>
+            <li><a href="suspensao.html"> Templates de Suspensão </a></li>
+            <li><a href="sessao.html"> Templates de Sessão </a></li>
+            <li><a href="garantia.html"> Template de Garantia </a></li>
+        </ul>
+    </nav>
+    <div class="voltar">
+        <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+    </div>
+    <article id="article-a">
+        <h1> Atalhos CSTI - Templates para Abertura de Tarefas SMP</h1>
+        <div id="div1">
+            <br>
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><b style="font-family: Arial, Helvetica, sans-serif"> Assunto da Tarefa SMP</b></h3><br>
+                <button id="button-1" type="button" onclick="myFunction3()">Copiar</button><br>
+                <textarea rows="2" cols="80" id="txtInput3" style="resize: none">
+Atualização SMP - dd/mm/2025
+</textarea><br><br>
+            </div><br><br><br>
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><b style="font-family: Arial, Helvetica, sans-serif"> Descrição da Tarefa SMP</b></h3><br>
+                <button id="button-1" type="button" onclick="myFunction2()">Copiar</button><br>
+                <textarea rows="5" cols="80" id="txtInput2" style="resize: none">
+- Somente números;
+- Revise o formulário antes de anexá-lo;
+- Informar o número desse chamado no seu chamado;
+- Qualquer dúvida falar com XXXX (Ramal xxxx).
+</textarea><br><br>
+            </div><br><br><br><br>
+        </div>
+        <div id="div2">
+            <br>
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><b style="font-family: Arial, Helvetica, sans-serif"> Template para Movimentação de Tarefa de Transporte no SMP</b></h3><br>
+                <button id="button-1" type="button" onclick="myFunction5()">Copiar</button><br>
+                <textarea rows="2" cols="80" id="txtInput5" style="resize: none">
+Transporte 000000000 (VM147 x VM400)
+</textarea><br><br>
+            </div><br><br><br>
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><b style="font-family: Arial, Helvetica, sans-serif"> Template para Suspensão de Tarefa SMP</b></h3><br>
+                <button id="button-1" type="button" onclick="myFunction4()">Copiar</button><br>
+<textarea rows="5" cols="80" id="txtInput4" style="resize: none">
+Suspensão:
+Data/Hora para reinício do chamado: xx/xx/2025 às 10h00
+Suspender para a data de xx/xx/2025 às 10h00 para validação.
+Motivo: Aguardando formulários serem entregues para conferência.
+</textarea><br>
+            </div>
+
+        </div>
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

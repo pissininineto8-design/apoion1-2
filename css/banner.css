@@ -1,0 +1,71 @@
+
+.carousel {
+    position: relative;
+    width: 50%; /* Ajuste a largura desejada */
+    height: 150px; /* Ajuste a altura desejada */
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 5px; /* Bordas levemente arredondadas (opcional) */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 2);
+}
+
+.slide {
+    min-width: 50%;
+    box-sizing: border-box;
+    width: calc(80% / 4); /* Ajusta a largura de cada slide */
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+    width: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#slide_hover {
+    display: inline-block; /* Garante que o cont�iner da imagem seja tratado como bloco */
+    transition: transform 0.3s ease; /* Suaviza a transforma��o ao longo de 0.3 segundos */
+    overflow: hidden; /* Garante que a parte extra da imagem n�o seja vis�vel */
+    justify-content: center; /* Centraliza horizontalmente */
+    display: grid;
+    place-items: center; /* Centraliza o conte�do tanto vertical quanto horizontalmente */
+}
+
+#slide_hover img {
+    display: block; /* Remove o espa�o embaixo da imagem se estiver como inline */
+    height: auto; /* Mant�m a propor��o da imagem */
+    transition: transform 0.3s ease; /* Suaviza a transforma��o da imagem */
+}
+
+#slide_hover:hover img {
+    transform: scaleX(1.1); /* Alarga a imagem horizontalmente para 110% */
+    transform-origin: center; /* Define o centro como ponto de origem da transforma��o */
+}
+
+.banner-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

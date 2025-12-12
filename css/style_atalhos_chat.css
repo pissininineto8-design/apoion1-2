@@ -1,0 +1,189 @@
+#div_mostrar {
+  width: 700px;
+  margin: 0px;
+  display: inline-table;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#maisstodos {
+  display: none;
+}
+
+#maiss1 {
+  display: none;
+}
+
+#btLeiaMais1 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais1:hover {
+  color: #ef314c;
+}
+
+#maiss2 {
+  display: none;
+}
+
+#btLeiaMais2 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais2:hover {
+  color: #ef314c;
+}
+
+#maiss3 {
+  display: none;
+}
+
+#btLeiaMais3 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais3:hover {
+  color: #ef314c;
+}
+
+#maiss4 {
+  display: none;
+}
+
+#btLeiaMais4 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais4:hover {
+  color: #ef314c;
+}
+
+#maiss5 {
+  display: none;
+}
+
+#btLeiaMais5 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais5:hover {
+  color: #ef314c;
+}
+
+#maiss6 {
+  display: none;
+}
+
+#btLeiaMais6 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais6:hover {
+  color: #ef314c;
+}
+
+#maiss7 {
+  display: none;
+}
+
+#btLeiaMais7 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais7:hover {
+  color: #ef314c;
+}
+
+#maiss8 {
+  display: none;
+}
+
+#btLeiaMais8 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btLeiaMais8:hover {
+  color: #ef314c;
+}

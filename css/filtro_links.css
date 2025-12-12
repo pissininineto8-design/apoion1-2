@@ -1,0 +1,18 @@
+#lista_filtro_links {
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    position: center;
+}
+
+@media(width:1920px) {
+    #lista_filtro_links {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 1919px) {
+    .lista_filtro_links {
+        margin-right: 161px auto; /* Reduz a margem */
+    }
+}

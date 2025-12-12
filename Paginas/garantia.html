@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/estilo2.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script src="../js/script2.js"></script>
+	<script src="../js/script_garantia.js"></script>
+	<script src="../js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>Template de Garantia</title>
+</head>
+<body>
+
+	<script src="../js/redimensoes_footer_header.js"></script>
+	<script src="../js/header.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			const style = document.createElement('style');
+			style.innerHTML =
+				`ul.menu li.menu_3::after {
+						content: '';
+						position: absolute;
+						left: 20px;
+						bottom: 0;
+						width: 60%;
+						height: 2px;
+						background-color: white; /* Cor da linha */
+						transform: scaleX(1);
+						transform-origin: bottom left;
+						transition: transform 0.3s ease-out;
+						}`;
+			document.head.appendChild(style);
+		});
+	</script>
+
+	<script type="text/javascript">
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var button = document.getElementById('BotaoVoltar');
+			button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+		});
+
+		document.addEventListener('scroll', function () {
+			var button = document.getElementById('BotaoVoltar');
+			var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+			if (window.scrollY >= triggerHeight) {
+				button.classList.remove('hidden');
+			} else {
+				button.classList.add('hidden');
+			}
+		});
+	</script>
+
+	<nav id="menu">
+		<ul>
+			<li><a href="atalhos.html"> Templates N2 </a></li>
+			<li><a href="atalhos_smp.html"> Templates SMP </a></li>
+			<li><a href="suspensao.html"> Templates de Suspensão </a></li>
+			<li><a href="sessao.html"> Templates de Sessão </a></li>
+		</ul>
+	</nav>
+
+	<div class="voltar">
+		<button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+	</div>
+
+	<script>
+		function gerar() {
+
+			//seleção do modelo
+			var a = document.getElementById("modelo");
+			var modeloSelecionado = a.options[a.selectedIndex].value;
+
+			//nº de série, tombo, defeito, solicitante, local
+			var serieDigitado = document.getElementById('serie').value;
+			var tomboDigitado = document.getElementById('tombo').value;
+			var defeitoDigitado = document.getElementById('defeito').value;
+			var solicitanteDigitado = document.getElementById('solicitante').value;
+			var localDigitado = document.getElementById('local').value
+			var contornoDigitado = document.getElementById('contorno').value
+
+			//seleção de endereço
+			var b = document.getElementById("endereco");
+			var enderecoSelecionado = b.options[b.selectedIndex].value;
+
+			var endereco = 0;
+			var bairro = 0;
+			var cep = 0;
+			var fone = 0;
+
+			switch (enderecoSelecionado) {
+				case "cta_capital":
+					endereco = "Av. Vicente Machado, 400";
+					bairro = "Centro";
+					cep = "80420-010";
+					fone = "41 3310-7000";
+					break;
+				case "apucarana":
+					endereco = "Av. Central do Paraná, 1380";
+					bairro = "Jardim Diamantina";
+					cep = "86804-190";
+					fone = "(43) 2102-5310 / (43) 2102-5320";
+					break;
+				case "arapongas":
+					endereco = "R. Harpia, 405";
+					bairro = "Centro";
+					cep = "86701-260";
+					fone = "(43) 3303-5050";
+					break;
+				case "araucaria":
+					endereco = "Av. Alfredo Charvet, 862";
+					bairro = "Vila Nova";
+					cep = "83703-278";
+					fone = "(41) 3358-4000";
+					break;
+				case "assis":
+					endereco = "Av. Cívica, 260";
+					bairro = "Centro Cívico";
+					cep = "85935-000";
+					fone = "(44) 3528-0600";
+					break;
+				case "bandeirantes":
+					endereco = "R. Eunício Silva Novaes, 7111";
+					bairro = "Vila Macedo";
+					cep = "86360-000";
+					fone = "(43) 2112-0050";
+					break;
+				case "cambe":
+					endereco = "R. da Esperança, 360 - Conjunto Habitacional Tancredo de Almeida Neves ";
+					bairro = "Jardim Alvorada ";
+					cep = "86191-010";
+					fone = "(43) 3302-4200";
+					break;
+				case "campo_Largo":
+					endereco = "Av. Padre Natal Pigatto, 1675";
+					bairro = "Vila Elizabeth";
+					cep = "83607-240";
+					fone = "(41) 3375-5060";
+					break;
+				case "campoMourao":
+					endereco = "Av. Goioerê, 779";
+					bairro = "Centro";
+					cep = "87302-070";
+					fone = "(44) 3201-3150";
+					break;
+				case "cascavel":
+					endereco = "R. Galibis, 328";
+					bairro = "Jardim Santo Onofre";
+					cep = "85806-390";
+					fone = "(45) 3411-4300";
+					break;
+				case "castro":
+					endereco = "R. Dom Pedro II, 1027";
+					bairro = "Centro";
+					cep = "84165-020";
+					fone = "(42) 2122-0050";
+					break;
+				case "cianorte":
+					endereco = "Travessa Itororó, 188";
+					bairro = "Zona 1";
+					cep = "87200-153";
+					fone = "(44) 3351-5570";
+					break;
+				case "colombo":
+					endereco = "R. José Cavassin, 125";
+					bairro = "Centro";
+					cep = "83414-120";
+					fone = "(41) 3375-6410 / (41) 3375-6420";
+					break;
+				case "cornelio":
+					endereco = "Av. XV de Novembro, 830";
+					bairro = "Centro";
+					cep = "86300-000";
+					fone = "(43) 3401-2218";
+					break;
+				case "dois":
+					endereco = "R. Rio Grande do Norte, 240";
+					bairro = "N Sra. de Lourdes";
+					cep = "85660-000";
+					fone = "(46) 2122-0100";
+					break;
+				case "foz":
+					endereco = "Av. Paraná, 3710";
+					bairro = "Jardim Itamaraty";
+					cep = "85863-469";
+					fone = "(45) 2102-7800";
+					break;
+				case "beltrao":
+					endereco = "R. Tenente Camargo, 2322";
+					bairro = "Centro";
+					cep = "85601-610";
+					fone = "(46) 3211-7050 / (46) 3211-7060";
+					break;
+				case "guarapuava":
+					endereco = "R. Afonso Botelho, 104";
+					bairro = "Santana";
+					cep = "85070-165";
+					fone = "(42) 3303-2404";
+					break;
+				case "irati":
+					endereco = "R. Lino Esculápio, 1260";
+					bairro = "Rio Bonito";
+					cep = "84503-419";
+					fone = "(42) 2104-0050";
+					break;
+				case "ivaipora":
+					endereco = "Av. Brasil, 345";
+					bairro = "Centro";
+					cep = "86870-000";
+					fone = "(43) 2102-5340";
+					break;
+				case "jacarezinho":
+					endereco = " R. Dom Fernando Tadei, 1636";
+					bairro = "Centro";
+					cep = "86400-000";
+					fone = "(43) 2122-0050";
+					break;
+				case "jaguariaiva":
+					endereco = "R. Tenente-Coronel Joaquim Carneiro, 331";
+					bairro = "Centro";
+					cep = "84200-000";
+					fone = "(43) 3535-1638";
+					break;
+				case "laranjeiras":
+					endereco = "R. Marechal Cândido Rondon, 1975";
+					bairro = "Centro";
+					cep = "85301-060";
+					fone = "(42) 3635-2553";
+					break;
+				case "loanda":
+					endereco = "R. Fioravante Marcos Marini, 255";
+					bairro = "Centro";
+					cep = "87900-000";
+					fone = "(44) 3425-5019";
+					break;
+				case "londrina":
+					endereco = "Av. do Café, 600";
+					bairro = "Conjunto Café";
+					cep = "86038-000";
+					fone = "(43) 3315-3800";
+					break;
+				case "marechal":
+					endereco = "R. Pastor Meier, 799";
+					bairro = "Centro";
+					cep = "85960-000";
+					fone = "(45) 3421-6190";
+					break;
+				case "maringa":
+					endereco = "Av. Dr. Gastão Vidigal, 823";
+					bairro = "Aeroporto (Zona 08)";
+					cep = "87050-671";
+					fone = "(44) 3306-5200";
+					break;
+				case "medianeira":
+					endereco = "Av. Pedro Soccol, 2500";
+					bairro = "Centro";
+					cep = "85884-000";
+					fone = "(45) 2102-7800";
+					break;
+				case "nova_Esperanca":
+					endereco = "Praça Prefeito Pedro Zanusso, 236";
+					bairro = "Centro";
+					cep = "87600-000";
+					fone = "(44) 3306-5280";
+					break;
+				case "palmas":
+					endereco = "Av. Capitão Paulo de Araujo, 563";
+					bairro = "São José";
+					cep = "85555-000 ";
+					fone = "(46) 3263-1119";
+					break;
+				case "palotina":
+					endereco = "R. Ipiranga, 716 - BL Central, Praça da Liberdade";
+					bairro = "Centro";
+					cep = "85950-000";
+					fone = "(44) 3528-0620";
+					break;
+				case "paranagua":
+					endereco = "R. Manoel Pereira, 2230";
+					bairro = "Jardim Alvorada";
+					cep = "83206-322";
+					fone = "(41) 2152-7903";
+					break;
+				case "paranavai":
+					endereco = "R. Antônio Vendramin, 2150";
+					bairro = "Jardim Ouro Branco";
+					cep = "87705-300";
+					fone = "(44) 3482-3110";
+					break;
+				case "pato":
+					endereco = "R. Paraná, 1547";
+					bairro = "Centro";
+					cep = "85501-025";
+					fone = "(46) 3321-3100";
+					break;
+				case "pinhais":
+					endereco = "R. América do Sul, 629 (Esquina com Ayrton Senna da Silva)";
+					bairro = "Centro";
+					cep = "83323-370";
+					fone = "(41) 3401-1700";
+					break;
+				case "pitanga":
+					endereco = "R. Interventor Manoel Ribas, 420";
+					bairro = "Centro";
+					cep = "85200-000";
+					fone = "(43) 2102-5350";
+					break;
+				case "grossa":
+					endereco = "R. Maria Rita Perpétuo da Cruz, 11";
+					bairro = "Oficinas";
+					cep = "84035-780";
+					fone = "(42) 3311-5107";
+					break;
+				case "porecatu":
+					endereco = "Av. Paranapanema, 252";
+					bairro = "Jardim Bela Vista";
+					cep = "86160-000";
+					fone = "(43) 3302-4220";
+					break;
+				case "rolandia":
+					endereco = "Av. Pres. Getúlio Vargas, 2270";
+					bairro = "Centro";
+					cep = "86600-027";
+					fone = "(43) 3311-3200";
+					break;
+				case "sjp":
+					endereco = "R. das Nações Unidas, 1101";
+					bairro = "Cidade Jardim";
+					cep = "83035-310";
+					fone = "(41) 3358-2700";
+					break;
+				case "ssl":
+					endereco = "R. Dom Pedro II, 842";
+					bairro = "Centro";
+					cep = "83900-000";
+					fone = "(42) 3903-3860";
+					break;
+				case "telemaco":
+					endereco = "R. Governador Bento Munhoz da Rocha Neto, 344";
+					bairro = "Macopa";
+					cep = "84261-320";
+					fone = "(42) 3221-3200";
+					break;
+				case "toledo":
+					endereco = "Av. Dra. Zilda Arns Neumann, 850";
+					bairro = "Tocantins";
+					cep = "85904-472";
+					fone = "(45) 3421-6150 / (45) 3421-6177";
+					break;
+				case "umurama":
+					endereco = "Av. Rio Branco, 3700";
+					bairro = "Zona 1";
+					cep = "87501-130";
+					fone = "(44) 3361-3700";
+					break;
+				case "uniao":
+					endereco = "R. Coronel João Gualberto, 330";
+					bairro = "Centro";
+					cep = "84600-210";
+					fone = "(42) 3522-3587";
+					break;
+				case "wenceslau":
+					endereco = "R. Expedicionários, 20";
+					bairro = "Centro";
+					cep = "84950-000";
+					fone = "(43) 3528-1807";
+					break;
+				case "ibaiti":
+					endereco = "R. Dr. Euclides Monteiro, 739";
+					bairro = "Centro";
+					cep = "84900-000";
+					fone = "(43) 3546-6118";
+					break;
+				case "stplatina":
+					endereco = "R. Treze de Maio, 167";
+					bairro = "Centro";
+					cep = "86430-000";
+					fone = "(43) 3534-9460";
+					break;
+				default:
+					endereco = "**nenhum endereço foi selecionado**";
+			}
+
+			//montagem do template
+			document.getElementById("template").innerHTML = "Solicitação de Garantia\n\nModelo do equipamento: " + modeloSelecionado +
+				"\nNºs: " + serieDigitado +
+				"\nTombo: " + tomboDigitado +
+				"\nDescrição do Problema /Defeito: " + defeitoDigitado +
+				"\nNome do Solicitante: " + solicitanteDigitado +
+				"\nLocal: " + localDigitado +
+				"\nEndereço: " + endereco +
+				"\n\Bairro: " + bairro +
+				"\nCEP: " + cep +
+				"\nTelefone: " + fone +
+				"\n\nSolução de contorno: " + contornoDigitado;
+
+
+		}
+	</script>
+
+
+	<article id="article-a">
+		<br><br>
+		<center><div id="cabecalio">&nbsp&nbsp :: Template de Garantia</div></center>
+		<form action="" name="formulario">
+			<table id="tabela_garantia" align='center' border="0">
+				<tr>
+					<td>
+						<p id="titulo">
+							&nbsp Modelo do equipamento:&nbsp
+							<select id="modelo">
+								<option value="Lenovo M920q">Lenovo M920q</option>
+								<option value="Lenovo M80q">Lenovo M80q</option>
+								<option value="linha">------------------------------</option>
+								<option value="Dell Latitude 3420">Dell Latitude 3420</option>
+								<option value="HP Elitebook 640 G9">HP Elitebook 640 G9</option>
+								<option value="linha">------------------------------</option>
+								<option value="AOC 24P1U P2722H">AOC 24P1U</option>
+								<option value="Dell 27'' P2722H">Dell 27" P2722H</option>
+								<option value="HP V22b">HP V22b</option>
+								<option value="linha">------------------------------</option>
+								<option value="Lexmark MX432adwe">Lexmark MX432adwe</option>
+							</select>
+						</p>
+					</td>
+				</tr>
+				<tr><td><p id="titulo">&nbsp Nº de Série: &nbsp <input name="serie" id="serie" type="text"></p></td></tr>
+				<tr><td><p id="titulo">&nbsp Tombo: &nbsp <input name="tombo" id="tombo" type="text"></p></td></tr>
+				<tr><td><p id="titulo">&nbsp Defeito: &nbsp <input name="defeito" id="defeito" type="text"></p></td></tr>
+				<tr><td><p id="titulo">&nbsp Solicitante: &nbsp <input name="solicitante" id="solicitante" type="text"></p></td></tr>
+				<tr><td><p id="titulo">&nbsp Local: &nbsp <input name="local" id="local" type="text" placeholder="ex: 1ª VDT de São José dos Pinhais"></p></td></tr>
+				<tr><td><p id="titulo">&nbsp Solução de contorno: &nbsp <input name="contorno" id="contorno" type="text" placeholder="ex: usuário usará micro tombo 123456"></p></td></tr>
+				<tr>
+					<td>
+						<p id="titulo">
+							&nbsp Endereço:&nbsp
+							<select id="endereco">
+								<option value="selecione">selecione uma cidade...</option>
+								<option value="linha">------------------------------</option>
+								<option value="cta_capital">Curitiba - Capital</option>
+								<option value="linha">----------------------------</option>
+								<option value="apucarana">Apucarana</option>
+								<option value="arapongas">Arapongas</option>
+								<option value="araucaria">Araucária</option>
+								<option value="araucaria">Assis Chateaubriand </option>
+								<option value="bandeirantes">Bandeirantes </option>
+								<option value="cambe">Cambé </option>
+								<option value="campo_Largo">Campo Largo</option>
+								<option value="campoMourao">Campo Mourão </option>
+								<option value="cascavel">Cascavel </option>
+								<option value="castro">Castro </option>
+								<option value="cianorte">Cianorte </option>
+								<option value="colombo">Colombo</option>
+								<option value="cornelio">Cornélio Procópio</option>
+								<option value="dois">Dois Vizinhos</option>
+								<option value="foz">Foz do Iguaçu</option>
+								<option value="beltrao">Francisco Beltrão </option>
+								<option value="guarapuava">Guarapuava </option>
+								<option value="ibaiti">Ibaiti </option>
+								<option value="irati">Irati </option>
+								<option value="ivaipora">Ivaiporã </option>
+								<option value="jacarezinho">Jacarezinho </option>
+								<option value="jaguariaiva">Jaguariaíva </option>
+								<option value="laranjeiras">Laranjeiras do Sul </option>
+								<option value="loanda">Loanda </option>
+								<option value="londrina">Londrina</option>
+								<option value="marechal">Marechal Cândido Rondon </option>
+								<option value="maringa">Maringa </option>
+								<option value="medianeira">Medianeira </option>
+								<option value="nova_Esperanca">Nova Esperança </option>
+								<option value="palmas">Palmas </option>
+								<option value="palotina">Palotina </option>
+								<option value="paranagua">Paranaguá </option>
+								<option value="paranavai">Paranavaí </option>
+								<option value="pato">Pato Branco </option>
+								<option value="pinhais">Pinhais </option>
+								<option value="pitanga">Pitanga </option>
+								<option value="grossa">Ponta Grossa </option>
+								<option value="porecatu">Porecatu </option>
+								<option value="rolandia">Rolândia </option>
+								<option value="stplatina">Santo Antônio da Platina </option>
+								<option value="sjp">São José dos Pinhais </option>
+								<option value="ssl">São Mateus do Sul </option>
+								<option value="telemaco">Telêmaco Borba </option>
+								<option value="toledo">Toledo </option>
+								<option value="umurama">Umuarama </option>
+								<option value="uniao">União da Vitória </option>
+								<option value="wenceslau">Wenceslau Braz </option>
+							</select>
+						</p><br>
+						<p>&nbsp&nbsp<input id="enviar" type="button" name="button" value="Enviar" onclick="gerar(), scrollToTemplate()"></p>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table align='center'>
+				<tr>
+					<td>
+						<div id="titulo2"> Template: </div><br>
+						<textarea rows="15" cols="30" id="template" name="template"></textarea>
+					</td>
+				</tr>
+				<tr><td><button id="btLeiaMais1" type="button" onclick="myFunction()">Copiar</button><br></td></tr>
+			</table>
+		</form>
+
+		</form>
+
+		<br><br>
+	</article>
+
+	<script src="../js/footer.js"></script>
+</body>
+</html>

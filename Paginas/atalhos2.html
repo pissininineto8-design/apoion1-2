@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style_atalhos2.css">
+    <script src="../js/script3.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/script_atalhos2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="javascript:Expandir1a(); javascript:lerMais2a(); javascript:lerMais3a(); javascript:lerMais4a(); javascript:lerMais5a(); javascript:lerMais6a(); javascript:lerMais7a(); javascript:lerMais8a();">
+
+    <script src="../js/redimensoes_footer_header.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const style = document.createElement('style');
+            style.innerHTML =
+                `ul.menu li.menu_3::after {
+                        content: '';
+                        position: absolute;
+                        left: 20px;
+                        bottom: 0;
+                        width: 60%;
+                        height: 2px;
+                        background-color: white; /* Cor da linha */
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                        transition: transform 0.3s ease-out;
+                        }`;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('BotaoVoltar');
+            button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+        });
+
+        document.addEventListener('scroll', function () {
+            var button = document.getElementById('BotaoVoltar');
+            var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+            if (window.scrollY >= triggerHeight) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="atalhos_chat.html"> Templates Chat </a></li>
+        </ul>
+    </nav>
+    <div class="voltar">
+        <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+    </div>
+    <article id="article-a">
+        <h1> Atalhos CSTI - Templates N1</h1>
+        <div id="div1">
+
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais2(), lerMais2a()" id="btLeiaMais2"><span id="imagem2"></span> <b style="font-family: Courier New, monospace;"> ORIENTAÇÕES - ACESSO AO CHAT </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais2"></span><span id="maiss2">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction2()">Copiar</button><br>
+                        <textarea rows="4" cols="70" id="txtInput2" style="resize: none">
+Para acesso ao chat favor seguir os passos do link:
+
+https://www.trt9.jus.br/portal/noticias.xhtml?id=7027824
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais3(), lerMais3a()" id="btLeiaMais3"><span id="imagem3"></span> <b style="font-family: Courier New, monospace;"> DÚVIDAS - CERTIDÕES DE INDISPONIBILIDADE DO TRT9 </bstyle="font-family:></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais3"></span><span id="maiss3">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction3()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput3" style="resize: none">
+Para verificar o texto explicativo sobre certidões de indisponibilidade do TRT9, acesse o link:
+
+http://www.trt9.jus.br/internet_base/arquivo_download.do?evento=Baixar&idArquivoAnexadoPlc=5301517
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais4(), lerMais4a()" id="btLeiaMais4"><b style="font-family: Courier New, monospace;"><span id="imagem4"></span> DÚVIDAS - CERTIDÃO EXPLICATIVA </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais4"></span><span id="maiss4">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction4()">Copiar</button><br>
+                        <textarea rows="8" cols="70" id="txtInput4" style="resize: none">
+Para verificar o texto explicativo sobre Certidão Explicativa, acesse o link:
+
+http://www.trt9.jus.br/internet_base/pagina_geral.do?secao=14&pagina=CERTIDAO_EXPLICATIVA
+</textarea><br><br>
+                </div>
+            </div><br><br><br>
+
+            <h3> Templates em Formato de Documentos</h3><br>
+
+            <div id="div_mostrar" style='background-color: #252527; border-radius: 10px; '>
+                <h3><button onclick="Expandir1(), Expandir1a()" id="btExpandir"><p style="font-family: Courier New, monospace;"><span id="imagem1"></span> DOCUMENTOS MODELOS EM PDF </p></button> </h3>
+                <div>
+                    </span>
+                    <span id="expandir1"></span><span id="exp1">
+                        <br>
+
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="Documentos\E-mail da CSTI para o usuário - videoconferência.pdf" target="_blank">E-mail da CSTI para o Usuário - Videoconferência.pdf</a></font></p><br>
+                        <p><font size="3"><a id="a_templatesn1" style="font-family: Lucida Bright" href="Documentos\E-mail da CSTI - CERTIFICADO VENCIDO - videoconferência.pdf" target="_blank">E-mail da CSTI - Certificado Vencido - Videoconferência.pdf</a></font></p>
+                </div>
+            </div><br><br><br>
+
+        </div>
+        <div id="div2">
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais5(), lerMais5a()" id="btLeiaMais5"><span id="imagem5"></span> <b style="font-family: Courier New, monospace;"> DÚVIDAS - INDISPONIBILIDADE GERAL </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais5"></span><span id="maiss5">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction5()">Copiar</button><br>
+                        <textarea rows="15" cols="70" id="txtInput5" style="resize: none">
+Informamos que os sistemas do TRT estão apresentando instabilidades neste instante. Sem previsão de retorno.
+
+Assim que retornarem os sistemas, será emitido certidão de indisponibilidade no site do TRT9.
+
+Para acessar a certidão:
+- Acesse o site do TRT9: http://www.trt9.jus.br/
+- No menu principal, em Serviços, clique em PJe;
+- No menu à direita, clique em Indisponibilidade do sistema;
+- Ou para acessar diretamente o link da certidão de indisponibilidade, clique aqui: https://www.trt9.jus.br/internet_base/paginadownloadcon.do?evento=F9-Pesquisar&tipo=1261
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais6(), lerMais6a()" id="btLeiaMais6"><span id="imagem6"></span> <b style="font-family: Courier New, monospace;"> DÚVIDAS - MANUAIS DE ORIENTAÇÃO DO PJE </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais6"></span><span id="maiss6">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction6()">Copiar</button><br>
+                        <textarea rows="12" cols="70" id="txtInput6" style="resize: none">
+Para dúvidas referente a utilização do sistema PJ-e, consulte nossos manuais disponíveis clicando em uma das opções abaixo:
+
+Manuais e Tutoriais TRT-PR: http://www.trt9.jus.br/internet_base/pagina_geral.do?secao=39&pagina=PJe_informacoes
+
+Manuais CSJT: http://www.trt9.jus.br/internet_base/pagina_geral.do?secao=39&pagina=PJe_manuais
+
+Obs.: Caso não encontre a informação desejada nestas opções, ligue para a Central de Serviços de TI no número (41) 3310-7120.
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais7(), lerMais7a()" id="btLeiaMais7"><span id="imagem7"></span> <b style="font-family: Courier New, monospace;"> MODELO DE E-MAIL PARA FORNECIMENTO DE TOKEN </b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais7"></span><span id="maiss7">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction7()">Copiar</button><br>
+                        <textarea rows="30" cols="70" id="txtInput7" style="resize: none;">
+Prezado(a) Dr.(a) / Sr.(a),
+
+Encaminhamos via(malote/Correios) o seu e-token, juntamente com duas senhas: <<<(colocar qual opção a Sra. Márcia solicitou o envio)
+                                                                                         Senha PIN: xxxxxxx
+                                                                                         Senha PUK: xxxxxx
+                                                                                         (A senha PIN é o código de identificação pessoal, o qual deve ser alterado posteriormente pelo usuário; já a senha PUK é a senha fornecida pela autoridade certificadora (AC) no momento da emissão do seu certificado (administrador), e não poderá ser modificada).
+                                                                                         Para emissão do certificado é necessário realizar a videoconferência no link (https: //vline.soluti.com.br/arsoluti), utilizando o voucher e autorização contida neste e-mail.
+                                                                                         Caso possua um outro certificado válido emitido pela própria SOLUTI não é necessário a realização da videoconferência.
+                                                                                         É necessário ter biometria cadastrada e possuir CNH atualizada a partir de 2016. Caso não possua, ou esteja desatualizada, a situação deve ser informada para a CSTI contato: 3310-7120(se servidor) ou 3310-7121(se magistrado).
+                                                                                         Se bem sucedida o atendimento por videoconferência, e após receber os seguintes e-mails da certificadora:
+                                                                                         - Confirmação de solicitação de Certificado Digital;
+                                                                                         - Confirmação de Identidade;
+                                                                                         - Termo de Titularidade; e a
+                                                                                         - Solicitação de Certificado Digital aprovada.
+                                                                                         O certificado deve ser gravado no dispositivo e-token com auxílio da CSTI atendimento nos números: (41) -3310-7120 (se servidor) ou (41) -3310-7121(se magistrado).
+                                                                                         OBSERVAÇÕES IMPORTANTES:
+                                                                                         Para que o processo possa ser finalizado pela CSTI, é essencial que tenha em mãos o token que será utilizado no procedimento, e a senha de emissão do certificado digital fornecidas pela SOLUTI durante a videoconferência realizada.
+                                                                                         Magistrados e servidores que estiverem na Capital podem fazer o certificado diretamente na Soluti, caso prefiram;
+                                                                                         Nesse caso, além do token, deve ser apresentado também o documento de identificação, o voucher e a autorização emitida pelo Tribunal.
+                                                                                         Endereço: R. Visc. do Rio Branco, 1358 - 3 - Centro, Curitiba - PR, 80420-210
+                                                                                         Edifício: Hannover Empresarial - Horário de atendimento: 09:00-12:00, 14:00-18:00
+</textarea><br><br>
+                </div>
+            </div> <br>
+
+        </div><br><br>
+
+    </article>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

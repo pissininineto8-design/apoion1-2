@@ -1,0 +1,338 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script src="../js/script2.js"></script>
+	<script src="../js/script_suspensao.js"></script>
+	<script src="../js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>Template de Suspensão</title>
+</head>
+<body>
+
+	<script src="../js/redimensoes_footer_header.js"></script>
+	<script src="../js/header.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', () => {
+			const style = document.createElement('style');
+			style.innerHTML =
+				`ul.menu li.menu_3::after {
+					content: '';
+					position: absolute;
+					left: 20px;
+					bottom: 0;
+					width: 60%;
+					height: 2px;
+					background-color: white; /* Cor da linha */
+					transform: scaleX(1);
+					transform-origin: bottom left;
+					transition: transform 0.3s ease-out;
+					}`;
+			document.head.appendChild(style);
+		});
+	</script>
+
+	<script type="text/javascript">
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var button = document.getElementById('BotaoVoltar');
+			button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
+		});
+
+		document.addEventListener('scroll', function () {
+			var button = document.getElementById('BotaoVoltar');
+			var triggerHeight = 250; // Altura em pixels na qual o botão deve aparecer
+
+			if (window.scrollY >= triggerHeight) {
+				button.classList.remove('hidden');
+			} else {
+				button.classList.add('hidden');
+			}
+		});
+	</script>
+
+	<script>
+		//pular imput automaticamente--------------------------
+		function proximoCampo(atual, proximo) {
+			if (atual.value.length >= atual.maxLength) {
+				document.getElementById(proximo).focus();
+			}
+		}
+		//-----------------------------------------------------
+
+		//cálculo de suspensão e criação de template-----------
+		function calcular() {
+			//calcula tempo em minutos
+
+			var diaDigitado = document.getElementById('dia').value;
+			var mesDigitado = document.getElementById('mes').value;
+			var anoDigitado = document.getElementById('ano').value;
+
+			var dia = 0; var mes = 0; var ano = 0;
+
+			//verifica se foi digita data, caso NÃO: completa sozinho com a data atual
+			if ((diaDigitado.length != 0) && (mesDigitado.length != 0) && (anoDigitado.length != 0)) {
+				dia = parseInt(document.getElementById('dia').value);
+				mes = parseInt(document.getElementById('mes').value);
+				ano = parseInt(document.getElementById('ano').value);
+				hora = parseInt(document.getElementById('hora').value);
+				min = parseInt(document.getElementById('min').value);
+			} else {
+				var dataAtual2 = new Date();
+				dia = dataAtual2.getDate();
+				mes = dataAtual2.getMonth() + 1;
+				ano = dataAtual2.getFullYear();
+				hora = parseInt(document.getElementById('hora').value);
+				min = parseInt(document.getElementById('min').value);
+			}
+
+
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+			//var dataSuspensao = new Date (ano,mes-1,dia,hora,min);
+			//var dataAtual = new Date();
+			//var resultado = 0;
+			//var resultado = Math.round(((dataSuspensao.getTime())-(dataAtual.getTime()))/60000);
+			//document.getElementById("resultado").innerHTML = "  "+resultado;
+			//****essa parte foi descontinuada pois o novo assyst não precisa calcular o tempo***
+
+
+			//limpa os campos
+			document.getElementById('dia').value = '';
+			document.getElementById('mes').value = '';
+			document.getElementById('ano').value = '';
+			document.getElementById('hora').value = '';
+			document.getElementById('min').value = '';
+
+
+			//template - formatação data
+			if (dia < 10) {
+				var diaTemplate = "0" + dia;
+			} else {
+				var diaTemplate = dia;
+			}
+			if (mes < 10) {
+				var mesTemplate = "0" + mes;
+			} else {
+				var mesTemplate = mes;
+			}
+
+			//template - formatação hora
+			if (hora < 10) {
+				var horaTemplate = "0" + hora;
+			} else {
+				var horaTemplate = hora;
+			}
+			if (min < 10) {
+				var minTemplate = "0" + min;
+			} else {
+				var minTemplate = min;
+			}
+
+			//template - data e hora de exibição
+			var data_e_hora = (diaTemplate + "/" + mesTemplate + "/" + ano + " às " + horaTemplate + ":" + minTemplate);
+			var hora_apenas = (horaTemplate + ":" + minTemplate);
+
+			//seleção do template
+			var a = document.getElementById("suspensao");
+			var itemSelecionado = a.options[a.selectedIndex].value;
+
+			//seleção do tratamento
+			var b = document.getElementById("tratamento");
+			var tratamentoSelecionado = b.options[b.selectedIndex].value;
+
+			//seleção do nome do solicitante
+			var nomeDigitado = document.getElementById('nome').value
+
+			//montagem do template para exibição
+			switch (itemSelecionado) {
+				case "agendamento_particular":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: " + tratamentoSelecionado + " " + nomeDigitado + " solicita atendimento para a data de " + data_e_hora +
+						" [MOTIVO DE AGENDAMENTO]\n\n";
+
+					break;
+				case "agendamento_testes":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: Agendado para realizar os testes em laboratório retorno atendimento para a data de " + data_e_hora +
+						" após executar os testes no [EQUIPAMENTO OU SOFTWARE]\n\n";
+					break;
+				case "agendamento_imagem":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: Realizado o agendamento com " + tratamentoSelecionado + " " + nomeDigitado + " para validação e testes  posterior a baixa de imagem para a data de " + data_e_hora +
+						" \n\n";
+					break;
+				case "ausencia_ninguem":
+					//document.getElementById("resultado").innerHTML = "Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: " + tratamentoSelecionado + " " + nomeDigitado + " foi realizado a tentativa de ligação nos ramais [CITAR 3 RAMAIS] não atendem. Nova tentativa de contato às " + hora_apenas +
+						" hs\n\n" + tratamentoSelecionado + " " + nomeDigitado + " Caso esteja disponível e queira o atendimento antes do horário programado para retorno do chamado, favor entrar em contato no ramal 7120 ou pelo chat, como explicado em https://www.trt9.jus.br/cswiki/index.php?curid=7894 \n\n";
+
+					break;
+				case "ausencia_nao_encontra":
+					//document.getElementById("resultado").innerHTML = "Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: [NOME DO USUÁRIO QUE ATENDEU] informou que " + tratamentoSelecionado + " " + nomeDigitado +
+						" não se encontra no momento e solicitou retornar a ligação após " + hora_apenas + " hs para validação do atendimento, solicitado ao [NOME DO USUÁRIO QUE ATENDEU] informar "
+						+ tratamentoSelecionado + " " + nomeDigitado + " sobre a ligação referente a esta TAREFA \n\n"
+						+ tratamentoSelecionado + " " + nomeDigitado + " Caso esteja disponível e queira o atendimento antes do horário programado para retorno do chamado, favor entrar em contato no ramal 7120 ou pelo chat, como explicado em https://www.trt9.jus.br/cswiki/index.php?curid=7894 \n\n";
+					break;
+				case "ausencia_almoco":
+					//document.getElementById("resultado").innerHTML = "Automática";
+					document.getElementById("template").innerHTML = "  ***Suspenso até novo contato com o solicitante.*** \nData/Hora para reinício da tarefa: " + data_e_hora +
+						"\nMotivo: " + tratamentoSelecionado + " " + nomeDigitado + " está em horário de almoço, retornando após às " + hora_apenas +
+						" hs, será interrompido para às " + hora_apenas + " para validação do atendimento, solicitado ao [NOME DO USUÁRIO QUE ATENDEU] informar " + tratamentoSelecionado + " " + nomeDigitado + " sobre a ligação referente a esta TAREFA. \n\n"
+						+ tratamentoSelecionado + " " + nomeDigitado + " Caso esteja disponível e queira o atendimento antes do horário programado para retorno do chamado, favor entrar em contato no ramal 7120 ou pelo chat, como explicado em https://www.trt9.jus.br/cswiki/index.php?curid=7894 \n\n";
+					break;
+				case "template_malote":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = " ***Suspenso até a chegada do malote ao destino.*** \nData/Hora de envio do malote: [CONSIDERAR DATA DE SAIDA CORRETA] \nData/Hora prevista para  chegada do malote ao local reinício da tarefa: " + data_e_hora +
+						"\n Peça enviada / Tombo : [N/S OU TOMBO]\n\n"
+						+ tratamentoSelecionado + " " + nomeDigitado +
+						"\n\nApós a confirmação de recebimento do malote daremos seguimento ao chamado.\nSe possível registrar o recebimento do malote em movimentação nesta tarefa.\n\nPor gentileza efetuar o envio do termo assinado referente ao recebimento do malote.\nInformamos que o chamado será suspenso até o recebimento do TERMO assinado, somente após a Central de Serviços de TI receber o termo assinado o chamado será encerrado.\n\n";
+
+					break;
+				case "template_transporte":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = " ***Suspenso até novo contato com o solicitante.*** \nData/Hora de envio do equipamento: [data de saída]\nData/Hora prevista para reinício da tarefa: " + data_e_hora +
+						"\nEquipamento transportado / Tombo:\nTarefa aberta com o setor de transporte:\n\n";
+
+					break;
+
+				case "template_validacao":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = " ***Suspenso até a validação do ambiente para sessão.*** \nData/Hora do retorno para validação:" + data_e_hora +
+						"\nMotivo: Validação de ambiente";
+					break;
+
+				case "template_sessao":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = " ***Suspenso até o início da Sessão.***  \nData/Hora do retorno do chamado:" + data_e_hora +
+						"\nData/ Hora do evento:\nMotivo: Acompanhamento Telepresencial\nLocal do evento: Secretaria da XXª Turma ";
+
+					break;
+
+				case "template_evento":
+					//document.getElementById("resultado").innerHTML = "Não Automática";
+					document.getElementById("template").innerHTML = " ***Suspenso até o início do Evento.***  \nData/Hora início do evento:" + data_e_hora +
+						"\nMotivo: Acompanhamento\nLocal do evento:\nTarefa Referência: ";
+
+					break;
+
+				default:
+					document.getElementById("template").innerHTML = "**nenhum template foi selecionado**";
+			}
+
+		}
+
+	</script>
+
+	<nav id="menu">
+		<ul>
+			<li><a href="atalhos.html"> Templates N2 </a></li>
+			<li><a href="atalhos_smp.html"> Templates SMP </a></li>
+			<li><a href="sessao.html"> Templates de Sessão </a></li>
+			<li><a href="garantia.html"> Template de Garantia </a></li>
+		</ul>
+	</nav>
+
+	<div class="voltar">
+		<button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()" />
+	</div>
+
+	<article id="article-a">
+		<div id="cabecalio1">
+
+			<table id="tabela_cabecalio2" frameborder='1' align="right">
+				<tr>
+					<td>
+						<br><img src="../suspensão/arquivos/logo.png" height="25" width="30"> Templates de Suspensão de Tarefa
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div id="geral">
+			<table id="tabela_suspensao1" frameborder='0' align="center">
+				<tr>
+					<td>
+
+						<form action="" name="form5">
+							<select id="suspensao">
+								<option value="selecione">Selecione o Template...</option>
+								<option value="selecione"></option>
+								<option value="agendamento_particular">Agendamento solicitado pelo servidor - Motivo particular</option>
+								<option value="agendamento_testes">Agendamento solicitado pelo servidor - Realizar testes</option>
+								<option value="agendamento_imagem">Agendamento solicitado pelo servidor - Baixa de imagem</option>
+								<option value="linha">-------------------------------------------------------------------------------</option>
+								<option value="template_malote">Equipamento enviado por malote</option>
+								<option value="template_transporte">Transporte de equipamentos</option>
+								<option value="linha">-------------------------------------------------------------------------------</option>
+								<option value="ausencia_ninguem">Ausencia do usuário - ninguém atende</option>
+								<option value="ausencia_nao_encontra">Ausencia do usuário - interessado não se encontra</option>
+								<option value="ausencia_almoco">Ausencia do usuário - interessado em horário de almoço</option>
+								<option value="linha">-------------------------------------------------------------------------------</option>
+								<option value="template_validacao">Validação</option>
+								<option value="template_sessao">Sessão</option>
+								<option value="template_evento">Evento</option>
+							</select>
+					</td>
+					<td>
+						<select id="tratamento">
+							<option value="selecione_tratamento">Selecione o Tratamento...</option>
+							<option value="Dr.">Doutor</option>
+							<option value="Dra.">Doutora</option>
+							<option value="Sr.">Senhor</option>
+							<option value="Sra.">Senhora</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<table id="tabela_suspensao2" frameborder='0' align="center">
+				<tr>
+					<td>
+						<div id="t_nome"> Solicitante:&nbsp&nbsp <input name="nome" id="nome" type="text">&nbsp&nbsp&nbsp</div>
+					</td>
+					<td>
+						<div id="datahora" style="margin-right: 0px; margin-left: 0px;">
+							Data: <input name="dia" id="dia" type="text" maxlength="2" onkeyup="proximoCampo(this, 'mes')"> /
+							<input name="mes" id="mes" type="text" maxlength="2" onkeyup="proximoCampo(this, 'ano')"> /
+							<input name="ano" id="ano" type="text" maxlength="4" onkeyup="proximoCampo(this, 'hora')"> &nbsp
+
+							Horário: <input name="hora" id="hora" type="text" maxlength="2" onkeyup="proximoCampo(this, 'min')"> :
+							<input name="min" id="min" type="text" maxlength="2" onkeyup="proximoCampo(this, 'botao')">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="d_botao">
+							<input id="btEnviar" type="button" name="button" value="Enviar" onclick="calcular()">
+						</div>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+			</table>
+
+		</div>
+		<br>
+		<table align="center">
+			<tr>
+				<td>
+					<textarea id="template" name="template"></textarea>
+				</td>
+			</tr>
+			<tr><td><button id="btLeiaMais1" type="button" onclick="myFunction()">Copiar</button><br></td></tr>
+		</table>
+
+		</form><br><br>
+	</article>
+	<script src="../js/footer.js"></script>
+</body>
+</html>

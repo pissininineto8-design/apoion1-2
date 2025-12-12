@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin:  0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menuprincipal{
+	background-color: #333;
+  padding-left: 80px;
+  float: center;
+}
+
+#dropdown {
+  background-image: url("../Imagens/baixo2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 5px;
+}
+
+#dropdown:hover {
+  background-image: url("../Imagens/cima2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#comum:hover {
+  text-align: center;
+  background-color: #104E8B;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+#dropdown:hover .listsubmenu{
+	display: none;
+	position: relative;
+	background-color: #333;
+	width: 180px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+    z-index: 3;
+}
+
+ul.topnav #img_1 {
+float: right;
+}
+
+ul.topnav #img_1:hover {
+float: right;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+}
+
+ul.topnav {
+    max-width: 1200px;
+    list-style: none;
+    padding: 0;
+    float: center;
+}
+
+
+ul.topnav li {
+    line-height: 25px;
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 5px;
+}
+
+ul.topnav li a {
+    color: #FFF;
+    padding: 30px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/*ul.topnav li:hover {
+background-color: #104E8B;
+background-image: url("../Imagens/cima2.png");
+background-repeat: no-repeat;
+background-position: right;
+}*/
+
+ul.topnav li a:hover {
+        color: #FFF;
+				border-radius: 5px;
+        /*-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);*/
+}
+
+ul.listsubmenu li a:hover{
+        text-align: center;
+        background-color: #104E8B;
+              color: #FFF;
+              -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              transform: scale(1.1);
+
+}
+
+
+ul.topnav li.icon {
+	display: none;
+}
+@media screen and (max-width:680px) {
+	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+
+#menu-h{
+   background-color: #333;
+   padding-left: 100px;
+   float: center;
+}
+
+#menu-h ul {
+    max-width: 1100px;
+    list-style: none;
+    padding: 0;
+    float: center;
+}
+
+#menu-h ul li {
+
+    color: #FFF;
+    display: inline;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 30px 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+#menu-h ul li a:hover {
+    background-color: #104E8B;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+		border-radius: 5px;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+
+}
+
+#menu-h ul li:last-child a:hover {
+    float: right;
+    background-color: #104E8B;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+
+#div-painel {
+   background: #3C948B;
+   text-align: center;
+   float: right;
+   width: 100%;
+   display: inline-table;
+}
+
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+
+}
+
+.listsubmenu{
+	display: none;
+	width: 100px;
+	list-style-type: none;
+}
+.listsubmenu li{
+	width: 180px;
+}
