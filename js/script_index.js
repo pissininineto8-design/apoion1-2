@@ -252,3 +252,4 @@ document.getElementById("imagem_ramais_4").innerHTML = "<img src='Imagens/cima2.
 document.getElementById("imagem_ramais_4").innerHTML = "<img src='Imagens/baixo2.png' width='17' style='position: relative; top: 2px;'>";
 }
 }
+

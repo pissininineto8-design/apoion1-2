@@ -3,6 +3,9 @@
 <head>
     <title>Apoio N1 e N2 - TRT9</title>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <link rel="icon" type="image/png" href="Imagens/favicon.png">
     <link rel="shortcut icon" href="Imagens/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/index.css">
@@ -13,6 +16,11 @@
     <script src="js/scroll.js"></script>
     <script src="js/ancoras.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Versionamento JS e CSS-->
+    
+    <link rel="stylesheet" href="index.css?v=0.1.7">
+    <script src="script_index.js?v=0.1.7" defer></script>
 </head>
 <body>
 
@@ -28,7 +36,7 @@
         });
     </script>
 
-    <script>
+        <script>
         $(document).ready(function () {
             function adjustElementSize() {
                 if ($(window).width() < 900) {
@@ -75,127 +83,6 @@
             }
         });
     </script>
-
-    <style>
-        .redtext {
-            color: BLACK;
-        }
-
-        .imagem-container {
-            display: none;
-            margin-top: 10px;
-            border-left: 2px solid #ccc;
-            padding-left: 10px;
-        }
-
-        .imagem-container img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #botao_ver_imagem {
-            background-color: rgb(37, 37, 39);
-            border: 1px solid #e7e7e7;
-            border-radius: 8px;
-            color: white;
-            padding: 4px 12px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        #botao_ver_imagem:hover {
-            background-color: #104E8B;
-            color: white;
-        }
-
-        #expandirPainel {
-            margin-top: 10px;
-            margin-right: 30px;
-            margin-bottom: 5px;
-            padding: 8px 14px;
-            border-radius: 8px;
-            border: none;
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-            opacity: 0.85;
-            float: right;
-        }
-        #expandirPainel:hover {
-            opacity: 1;
-        }
-
-        /* Modo tela cheia */
-        .fullscreen-panel {
-        position: fixed !important;
-        top: -40px;
-        left: 0;
-        width: 100vw !important;
-        height: 100vh !important;
-
-        background: white;
-        overflow-y: auto;
-        z-index: 9998;
-
-        overflow-y: auto;   /* ✅ barra de rolagem */
-        overflow-x: hidden;
-
-        padding-top: 65px;
-        padding-left: 25px;
-        z-index: 9998;
-
-        /* Centralização */
-        align-items: flex-start;  /* Começa no topo, mas centralizado */
-        }    
-        
-        .fullscreen-panel {
-    font-size: 2.1em;   /* Aumenta toda a fonte dentro do painel */
-}
-
-.fullscreen-panel * {
-    font-size: inherit; /* Garante que todos os textos acompanhem o aumento */
-}
-.fullscreen-panel > div {
-    margin-left: 100px;
-    max-width: 1700px;    /* limita o tamanho */
-}
-
-.fullscreen-panel #link-consultar-avisos {
-    display: none !important;
-}
-
-.fullscreen-panel .painel-avisos {
-    max-height: calc(100vh - 120px); /* espaço para título + botão */
-    overflow-y: auto;
-    box-shadow: 0 0 20px rgba(0,0,0,.15);
-    padding: 1px;
-    margin-left: 50px;
-}
-
-.fullscreen-panel .painel-avisos {
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    /* Ocultar scrollbar */
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* Internet Explorer / Edge antigo */
-}
-
-.fullscreen-panel .painel-avisos::-webkit-scrollbar {
-    display: none;                /* Chrome, Edge, Safari */
-}
-
-#expandirPainel {
-    position: sticky;
-    bottom: 20px;
-    float: right;
-    z-index: 9999;
-}
-    </style>
 
 <script>
 
@@ -317,16 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <a id="a_avisos" href="https://www.trt9.jus.br/cswiki/index.php?curid=35149" target="_blank">Sistema - PJe - Erro na Designação da Perícia</a>.
                                     <br>Tarefa de Referência: <b style="font-family: Arial">541276</b>.
                                     Data: <b style="font-family: Arial"> 09/12/2025</b>.
-                                </font>
-                            </p><br>
-                        </li>
-
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">FALHA GERAL: </b> "Problemas para se logar na VPN" - Ocorre somente em equipamentos dentro do domínio do TRT9.                                    
-                                    Tarefa de Referência: <b style="font-family: Arial">542801</b>.
-                                    Data: <b style="font-family: Arial"> 15/12/2025</b>.
                                 </font>
                             </p><br>
                         </li>
@@ -650,12 +527,11 @@ document.addEventListener("DOMContentLoaded", function () {
                               <button id="nextBtn" class="banner-nav next">&#10095;</button>
                           </div>
 
-                              <script src="js/banner.js"></script>
-                              
+                              <script src="js/banner.js"></script>              
 
              </div>
         </div>
-        
+
     </article>
     <script src="js/footer_index.js"></script>
 </body>
