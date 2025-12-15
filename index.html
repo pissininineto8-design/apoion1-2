@@ -132,20 +132,25 @@
 
         /* Modo tela cheia */
         .fullscreen-panel {
-            position: fixed !important;
-            top: -40px;
-            left: 0;
-            width: 95vw !important;
-            height: 100vh !important;
-            background: white;
-            overflow-y: auto;
-        
-            padding-top: 100px;
-            padding-left: 20px;
-            z-index: 9998;
+        position: fixed !important;
+        top: -40px;
+        left: 0;
+        width: 95vw !important;
+        height: 100vh !important;
 
-            /* Centralização */
-            align-items: flex-start;  /* Começa no topo, mas centralizado */
+        background: white;
+        overflow-y: auto;
+        z-index: 9998;
+
+        overflow-y: auto;   /* ✅ barra de rolagem */
+        overflow-x: hidden;
+
+        padding-top: 50px;
+        padding-left: 20px;
+        z-index: 9998;
+
+        /* Centralização */
+        align-items: flex-start;  /* Começa no topo, mas centralizado */
         }    
         
         .fullscreen-panel {
@@ -162,6 +167,22 @@
 
 .fullscreen-panel #link-consultar-avisos {
     display: none !important;
+}
+
+.fullscreen-panel .painel-avisos {
+    max-height: calc(100vh - 120px); /* espaço para título + botão */
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
+    padding: 1px;
+    margin-left: 50px;
+}
+
+#expandirPainel {
+    position: sticky;
+    bottom: 20px;
+    float: right;
+
+    z-index: 9999;
 }
     </style>
 
@@ -256,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <h2> <font size="4" style="font-family: Courier New, monospace"> PÁGINA DE APOIO AO N1 E N2 - INFORMAÇÕES E RECURSOS UTILIZADOS PELA CSTI.</font></h2>
         <article id="article-f">
             
-            <div style='background-color:#FFF5EE;  border-radius: 10px;'>
+            <div class="painel-avisos" style='background-color:#FFF5EE;  border-radius: 10px;'>
                 <div id="div3">
                     <h2> <font size="4" style="font-family: Courier New, monospace; color: #ef314c;"> AVISOS!</font></h2><br>
                     <ul style="padding: 0px 30px 30px 30px;">
