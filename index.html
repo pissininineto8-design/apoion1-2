@@ -135,7 +135,7 @@
         position: fixed !important;
         top: -40px;
         left: 0;
-        width: 95vw !important;
+        width: 100vw !important;
         height: 100vh !important;
 
         background: white;
@@ -146,7 +146,7 @@
         overflow-x: hidden;
 
         padding-top: 65px;
-        padding-left: 20px;
+        padding-left: 25px;
         z-index: 9998;
 
         /* Centralização */
@@ -161,7 +161,7 @@
     font-size: inherit; /* Garante que todos os textos acompanhem o aumento */
 }
 .fullscreen-panel > div {
-    margin-left: 70px;
+    margin-left: 100px;
     max-width: 1700px;    /* limita o tamanho */
 }
 
@@ -177,18 +177,9 @@
     margin-left: 50px;
 }
 
-#expandirPainel {
-    position: sticky;
-    bottom: 20px;
-    float: right;
-
-    z-index: 9999;
-}
-
 .fullscreen-panel .painel-avisos {
     max-height: calc(100vh - 120px);
     overflow-y: auto;
-
     /* Ocultar scrollbar */
     scrollbar-width: none;        /* Firefox */
     -ms-overflow-style: none;     /* Internet Explorer / Edge antigo */
@@ -196,6 +187,13 @@
 
 .fullscreen-panel .painel-avisos::-webkit-scrollbar {
     display: none;                /* Chrome, Edge, Safari */
+}
+
+#expandirPainel {
+    position: sticky;
+    bottom: 20px;
+    float: right;
+    z-index: 9999;
 }
     </style>
 
@@ -300,15 +298,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         -->
 
                         <!-- -->
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> "Erro ao realizar solicitação de esclarecimentos" - Será solucionado somente com a versão 2.18.3 do PJe. 
-                                    Tarefa de Referência: <b style="font-family: Arial">542366</b>.
-                                    Data: <b style="font-family: Arial"> 05/12/2025</b>.
-                                </font>
-                            </p><br>
-                        </li>
                         
                         <li>
                             <p>
@@ -348,8 +337,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     
                 </div>
                 <button id="expandirPainel" onclick="toggleFullscreen()">⤢ Expandir</button>
-            </div>
-        </article><br><br>
+            </div><br><br>
+        </article>
 
         <div id="container">
 
@@ -611,9 +600,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             </ul>
                         </div>
                     </div><br>
-                </div>
+                </div><br><br><br>
             </article>
-            <br><br><br>
 
                       <div id="container">
                           
@@ -663,20 +651,11 @@ document.addEventListener("DOMContentLoaded", function () {
                           </div>
 
                               <script src="js/banner.js"></script>
-                              <br>
+                              
 
-                              <div id="div2">
-
-
-                              </div>
-                              <div id="div1">
-
-
-
-                              </div>
              </div>
         </div>
-        <br>
+        
     </article>
     <script src="js/footer_index.js"></script>
 </body>
