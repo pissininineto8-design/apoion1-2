@@ -578,29 +578,27 @@ html, body{
         left: 0;
         width: 115vw !important;
         height: 100vh !important;
-
         background: white;
         overflow-y: auto;
         z-index: 9998;
-
-        overflow-y: auto;   /* ✅ barra de rolagem */
+        display: flex;
+        justify-content: center;   /* centraliza horizontalmente */
+        align-items: center;       /* centraliza verticalmente */
+        overflow: hidden;          /* evita scroll externo */
         overflow-x: hidden;
-
         padding-top: 75px;
         padding-left: 30px;
         z-index: 9998;
-
         /* Centralização */
         align-items: flex-start;  /* Começa no topo, mas centralizado */
+        font-size: 2.1em;   /* Aumenta toda a fonte dentro do painel */
         }    
-        
-        .fullscreen-panel {
-    font-size: 2.1em;   /* Aumenta toda a fonte dentro do painel */
-}
 
-.fullscreen-panel * {
-    font-size: inherit; /* Garante que todos os textos acompanhem o aumento */
-}
+
+      .fullscreen-panel * {
+        font-size: inherit; /* Garante que todos os textos acompanhem o aumento */
+      }
+
 .fullscreen-panel > div {
     margin-left: 100px;
     max-width: 1700px;    /* limita o tamanho */
@@ -624,6 +622,14 @@ html, body{
     /* Ocultar scrollbar */
     scrollbar-width: none;        /* Firefox */
     -ms-overflow-style: none;     /* Internet Explorer / Edge antigo */
+}
+
+.fullscreen-panel .painel-avisos {
+    width: 100%;
+    max-width: 1730px;
+    max-height: 105vh;          /* evita estourar a tela */
+    overflow-y: auto;
+    border-radius: 10px;
 }
 
 .fullscreen-panel .painel-avisos::-webkit-scrollbar {
