@@ -19,8 +19,8 @@
 
     <!-- Versionamento JS e CSS-->
     
-    <link rel="stylesheet" href="index.css?v=0.1.8">
-    <script src="script_index.js?v=0.1.8" defer></script>
+    <link rel="stylesheet" href="index.css?v=0.1.9">
+    <script src="script_index.js?v=0.1.9" defer></script>
 </head>
 <body>
 
@@ -85,86 +85,53 @@
     </script>
 
 <script>
-
-//Código para abrir uma imagem do avisos.
-    function toggleImagem() {
-        var imagemContainer = document.getElementById("imagemContainer");
-        if (imagemContainer.style.display === "none" || imagemContainer.style.display === "") {
-            imagemContainer.style.display = "block";
-        } else {
-            imagemContainer.style.display = "none";
-        }
-    }
-
-//Código para expandir o painel de avisos
-function toggleFullscreen() {
-    const painel = document.getElementById("article-f");
-    const botao = document.getElementById("expandirPainel");
-
-    if (painel.classList.contains("fullscreen-panel")) {
-        painel.classList.remove("fullscreen-panel");
-        botao.textContent = "⤢ Expandir";
-    } else {
-        painel.classList.add("fullscreen-panel");
-        botao.textContent = "✕ Fechar";
-    }
-}
-
-//Código para manter o painel de avisos expandido aberto ao recarregar a página
-function toggleFullscreen() {
-    const painel = document.getElementById("article-f");
-
-    if (painel.classList.contains("fullscreen-panel")) {
-        painel.classList.remove("fullscreen-panel");
-        localStorage.setItem("painelExpandido", "false");  // salva estado fechado
-    } else {
-        painel.classList.add("fullscreen-panel");
-        localStorage.setItem("painelExpandido", "true");   // salva estado aberto
-    }
-}
-
-window.addEventListener("load", function () {
-    const painel = document.getElementById("article-f");
-    const expandido = localStorage.getItem("painelExpandido");
-
-    if (expandido === "true") {
-        painel.classList.add("fullscreen-panel");
-    }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-  const painel = document.getElementById("article-b");
-  const botao = document.getElementById("expandirPainel");
 
-  if (!painel || !botao) return; // segurança se ids mudarem
+  /* ===============================
+     IMAGEM DO AVISO
+  =============================== */
+  window.toggleImagem = function () {
+    const imagemContainer = document.getElementById("imagemContainer");
+    imagemContainer.style.display =
+      imagemContainer.style.display === "block" ? "none" : "block";
+  };
 
-  // Texto que você prefere mostrar
-  const textoExpandir = "⤢ Expandir";
-  const textoFechar  = "✕ Fechar";
+  /* ===============================
+     PAINEL DE AVISOS
+  =============================== */
+  const painel = document.getElementById("article-f");
+  const botao  = document.getElementById("expandirPainel");
 
-  // Função que aplica/remover o estado (centraliza tudo em um lugar)
+  const TEXTO_EXPANDIR = "⤢ Expandir";
+  const TEXTO_FECHAR   = "✕ Fechar";
+
   function setExpandido(estado) {
     if (estado) {
       painel.classList.add("fullscreen-panel");
-      botao.textContent = textoFechar;
+      document.body.classList.add("painel-aberto");
+      botao.textContent = TEXTO_FECHAR;
     } else {
       painel.classList.remove("fullscreen-panel");
-      botao.textContent = textoExpandir;
+      document.body.classList.remove("painel-aberto");
+      botao.textContent = TEXTO_EXPANDIR;
     }
+
     localStorage.setItem("painelExpandido", estado ? "true" : "false");
   }
 
-  // Restaura estado ao carregar
+  // Função pública chamada pelo botão
+  window.toggleFullscreen = function () {
+    const estaExpandido = painel.classList.contains("fullscreen-panel");
+    setExpandido(!estaExpandido);
+  };
+
+  // 🔄 Restaura estado ao carregar
   const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
   setExpandido(expandidoSalvo);
 
-  // Evento do botão (se você já tiver uma função toggleFullscreen(), remova/ignore-a e use esta)
-  botao.addEventListener("click", function (e) {
-    const estaExpandido = painel.classList.contains("fullscreen-panel");
-    setExpandido(!estaExpandido);
-  });
 });
 </script>
+
 
     <article id="article-b">
 
@@ -545,4 +512,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </article>
     <script src="js/footer_index.js"></script>
 </body>
+
+<div id="faixa-preta"></div>
 </html>
