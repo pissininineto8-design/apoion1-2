@@ -684,3 +684,27 @@ html, body{
 body.painel-aberto #faixa-preta {
   display: block;
 }
+
+.painel-de-avisos {
+  list-style-type: disc; /* bolinha padrão */
+  padding-left: 20px; 
+  margin: 0;
+  padding: 0;
+}
+
+.aviso-texto {
+  font-family: Arial, sans-serif;
+  font-size: 18px; 
+}
+
+.aviso-titulo,
+.aviso-tarefa,
+.aviso-data {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.fullscreen-panel .aviso-texto {
+  font-size: 32px;      /* aumenta o texto */
+  line-height: 1.6;
+}
