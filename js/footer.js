@@ -38,7 +38,7 @@ const rodape=
 "<footer>"+
   "<nav id='menu-h'>"+
       "<ul class='menu-h'>"+
-          "<li class='menu_2'><a id='a_menu_2' href='ramais.html'>Contatos</a></li>"+
+          "<li class='menu_2'><a id='a_menu_2' href='../index.html'>Início</a></li>"+
           "<li class='menu_3'><a id='a_menu_3' href='redirecionamento.html'>Redirecionamento</a></li>"+
       "</ul>"+
   "</nav>"+
@@ -299,7 +299,7 @@ const rodape=
     "<br><br>"+
 "</div>" +
 "</div>" +
-"<p id='versao'>Vers&atilde;o 0.1.12</p>"+
+"<p id='versao'>Vers&atilde;o 0.1.13</p>"+
 "</article>"+
 "</footer>"
 foot.innerHTML+=rodape

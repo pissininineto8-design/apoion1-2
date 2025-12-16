@@ -2,7 +2,10 @@ const head=document.head
 const body=document.body
 
 const estilo="<link rel='stylesheet' href='../css/header.css'/>"
+const estilo4="<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>"
+
 head.innerHTML+=estilo
+head.innerHTML+=estilo4
 
 const header=document.createElement("div")
 header.setAttribute("id","header")
