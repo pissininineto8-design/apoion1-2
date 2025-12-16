@@ -43,27 +43,18 @@
         });
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-        const elemento = document.getElementById('exportarLista');
-        if (!elemento) return;
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const botao = document.getElementById('exportarLista');
 
-        let posicao = 0;
-        let el = elemento;
-
-        while (el) {
-            posicao += el.offsetTop;
-            el = el.offsetParent;
-        }
-
-        const offset = 1200; // ajuste fino aqui
-
-        window.scrollTo({
-            top: posicao - offset,
-            behavior: 'smooth'
-        });
-        });
-    </script>
+  if (botao) {
+    botao.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest'
+    });
+  }
+});
+</script>
 
 
     <article id="article-b">
@@ -327,6 +318,8 @@
                             </p>
                         </li><br>
                     </ul>
+
+                    <p id="ancora_avisos"></p>
                 </div>
 
         <button id="exportarLista"onclick="exportarCSV()"><i class="bi bi-file-earmark-excel"></i> Exportar</button>
