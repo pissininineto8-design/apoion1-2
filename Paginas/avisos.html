@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li class="aviso" data-data="2025-12-05">
                             <p class="aviso-texto">
                                <span class="aviso-titulo">ORIENTAÇÃO:</span>
-                                     "Erro ao realizar solicitação de esclarecimentos" - Será solucionado somente com a versão 2.18.3 do PJe.
+                                     "Erro ao realizar solicitação de esclarecimentos - Será solucionado somente com a versão 2.18.3 do PJe".
                                       Tarefa:
                                <span class="aviso-tarefa">542366</span>.
                                       Data:
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li class="aviso" data-data="2025-12-09">
                             <p class="aviso-texto">
                                <span class="aviso-titulo">FALHA GERAL:</span>
-                                     "Problemas para se logar na VPN" - Ocorre somente em equipamentos dentro do domínio do TRT9.
+                                     "Problemas para se logar na VPN - Ocorre somente em equipamentos dentro do domínio do TRT9".
                                       Tarefa:
                                <span class="aviso-tarefa">542801</span>.
                                       Data:
@@ -339,18 +339,51 @@ document.addEventListener('DOMContentLoaded', () => {
 function exportarCSV() {
   const avisos = document.querySelectorAll('.aviso');
 
-  // UTF-8 (corrige acentuação no Excel)
+  // BOM UTF-8 para Excel PT-BR
   let csv = '\uFEFFMotivo;Descricao;Tarefa;Data\n';
 
   avisos.forEach(aviso => {
-    const motivo = aviso.querySelector('.aviso-titulo')?.innerText.replace(':','') || '';
+
+    // Motivo
+    const motivoEl = aviso.querySelector('.aviso-titulo');
+    const motivo = motivoEl
+      ? motivoEl.innerText.replace(':', '').trim()
+      : '';
+
+    // Tarefa (campo próprio)
     const tarefa = aviso.querySelector('.aviso-tarefa')?.innerText || '';
+
+    // Data técnica (YYYY-MM-DD)
     const data = aviso.dataset.data || '';
 
-    const descricao = aviso.querySelector('.aviso-texto')
-      .innerText
-      .replace(/\n/g, ' ')
-      .replace(/;/g, ',');
+    // Texto completo
+    let descricao = aviso.querySelector('.aviso-texto')?.innerText || '';
+
+    // 🔹 Remove o motivo do início
+    if (motivo) {
+      const regexMotivo = new RegExp(`^${motivo}:?\\s*`, 'i');
+      descricao = descricao.replace(regexMotivo, '');
+    }
+
+    // 🔹 Remove "Tarefa: 542951" (novo padrão)
+    descricao = descricao.replace(
+      /Tarefa:\s*[A-Z0-9-]+\s*\.?\s*/gi,
+      ''
+    );
+
+    // 🔹 Remove "Data: DD/MM/YYYY"
+    descricao = descricao.replace(
+      /Data:\s*\d{2}\/\d{2}\/\d{4}\s*\.?\s*/gi,
+      ''
+    );
+
+    // 🔹 Limpeza final
+    descricao = descricao
+      .replace(/\s{2,}/g, ' ')
+      .replace(/^[“"]+|[”"]+$/g, '')
+      .replace(/\.$/, '')
+      .replace(/["'“”‘’]\s*\./g, '.')
+      .trim();
 
     csv += `"${motivo}";"${descricao}";"${tarefa}";"${data}"\n`;
   });
@@ -363,12 +396,14 @@ function exportarCSV() {
 
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'painel_avisos.csv';
+  link.download = 'lista_avisos.csv';
   link.click();
 
   URL.revokeObjectURL(url);
 }
 </script>
+
+
 
     <!-- Estilo do Botão Exportar -->
     <style>
