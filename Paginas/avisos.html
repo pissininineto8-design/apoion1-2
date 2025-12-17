@@ -71,214 +71,66 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="div3">
                     <h2> <font size="4" style="font-family: Courier New, monospace; color: #ef314c;"> AVISOS!</font></h2><br>
                     <ul class="painel-de-avisos" style="padding-left: 10px;">
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">03/08/2023</b> foi realizada a aplicação de Patches, versao 19.17 BDs Oracle, do
-                                    <b style="font-family: Arial">Assyst, Moodle e Siabi</b>, podendo ter afetado estes sistemas, causando mau funcionamento, problemas de performance, ou problemas de conectividade.
-                                    Tarefa de referência: <b style="font-family: Arial">R207841</b>.
-                                </font>
+                        <li class="aviso" data-data="2024-07-27">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">COMUNICADO:</span>
+                                     "Manutenção Programada do Sistema PJe".
+                                      Tarefa:
+                               <span class="aviso-tarefa">R237441</span>.
+                                      Data:
+                               <span class="aviso-data">27/07/2024</span>.
                             </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">12/08/2023</b> o PJe foi atualizado da versão 2.8.9 para versão 2.8.11.
-                                    A partir desta versão do PJe, os Advogados podem emitir certidão de juntada para os documentos do processo. Tarefa de referência: <b style="font-family: Arial">R208515.</b>
-                                </font>
+                        </li><br>
+                        <li class="aviso" data-data="2024-04-26">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">ORIENTAÇÃO:</span>
+                                     "Em conformidade com a <a id="a_avisos" href="https://atos.cnj.jus.br/files/original12133120240426662b9a6b7400a.pdf" target="_blank">
+                                        Portaria CNJ 140/2024</a>, <b style="font-family: Arial">Art. 1º, parágrafo 2º</b>, informa-se que <b style="font-family: Arial">
+                                            a habilitação do MFA é mandatória</b>, não cabendo aos usuários optarem por sua utilização".
+                                      Data:
+                               <span class="aviso-data">26/04/2024</span>.
                             </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">12/08/2023</b> entre <b style="font-family: Arial">00:00h</b> até <b style="font-family: Arial">23:59h</b> foi realizada a aplicação de upgrade/patches nos 3 BDs Oracle de Produção do GAEP,SADP,TRTP para PSU versão 19.17.
-                                    Aplicações que utilizam este BD e que ficaram indisponíveis durante a manutenção incluem: <b style="font-family: Arial">
-                                        Site do TRT, Intranet, PROAD, SIGEP, FolhaWeb, SIJU, e-REC, Autos Digitais, Agendamento de Perícias, eCarta, e-Gestão,
-                                        Pauta Eletrônica, MicroSuap, Gprec, Acomps, Juízo 100% Digital, PJe Mídias
-                                    </b>, entre outras. Tarefa de referência: <b style="font-family: Arial">R208625.</b>
-                                </font>
+                        </li><br>
+                        <li class="aviso" data-data="2024-08-20">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">ORIENTAÇÃO:</span>
+                                     "Não está sendo localizado na Intranet o menu de <b style="font-family: Arial">Cadastro de Prazo do Certificado do e-Token</b>. 
+                                      Função pode ser acessada diretamente no seguinte <a id="a_avisos" href="https://intranet.trt9.jus.br/intranet2/f?p=10182:3:213499140943259:::::" target="_blank">LINK</a>".
+                                      Data:
+                               <span class="aviso-data">20/08/2024</span>.
                             </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">10/08/2023</b> e <b style="font-family: Arial">14/08/2023</b> foi realizada a atualização de rotina do
-                                    software dos roteadores de Internet. Tarefa de referência: <b style="font-family: Arial">R208520.</b>
-                                </font>
+                        </li><br>
+                        <li class="aviso" data-data="2024-10-01">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">ORIENTAÇÃO:</span>
+                                     "Informe-se sobre a reativação do <b style="font-family: Arial">Ponto Eletrônico</b>:
+                                    <a id="a_avisos" href="https://intranet.trt9.jus.br/intranet2/f?p=192:113:311213937673980:::::" target="_blank">Perguntas Frequentes</a>".
+                                      Data:
+                               <span class="aviso-data">10/01/2024</span>.
                             </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">29/08/2023</b>, ocorreu a migração do sistema de <b style="font-family: Arial">Telefonia IP</b> para a nova solução contratada pelo TRT da 9ª Região.
-                                    Com a seguinte orientação: "A alteração será transparente e a utilização dos telefones continuará de maneira habitual. Não deverá ocorrer interrupção do serviço".
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">04/09/2023</b> ocorreu a desativação do sistema <b style="font-family: Arial">Owncloud</b>, sendo necessário orientar o usuário a usar o
-                                    compartilhamento do <b style="font-family: Arial">Google Drive</b> (conforme procedimento <a id="a1" href="https://www.trt9.jus.br/cswiki/index.php/Special:Redirect/page/28922" target="_blank">LINK</a>).
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> PJe Mídias (Erro 500). Data: <b style="font-family: Arial"> 24/05/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">509998</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> PJe SIF (X5). Data: <b style="font-family: Arial"> 27/05/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510041</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> Vara de Ivaiporã sem Rede. Data: <b style="font-family: Arial"> 03/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510292</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> PJe Mídias (Erro 500). Data: <b style="font-family: Arial"> 05/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510483</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    Na data de <b style="font-family: Arial">08/06/2024</b> e <b style="font-family: Arial">09/06/2024</b> o PJe estará indisponível.
-                                    O motivo é a atualização da versão do sistema. Tarefa de referência: <b style="font-family: Arial">R232920. </b>
-                                </font> <a id="a1" href='https://www.trt9.jus.br/portal/noticias.xhtml?id=8815703'>LINK</a> do Comunicado no Site do TRT9.
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> PJe (Acesso ao Sistema). Data: <b style="font-family: Arial"> 10/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510678</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> Portal do TRT9 (Acesso ao Sistema). Data: <b style="font-family: Arial"> 10/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510695</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> Falha ao acessar o PJe Mídias (CNJ). Data: <b style="font-family: Arial"> 11/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510823</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> Tarefa Geral sobre Problemas de Assinatura no PJe. Data: <b style="font-family: Arial"> 11/06/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">510839</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">Indisponibilidade: </b> Problemas de acesso e sincronização no PJe Mídias. Data: <b style="font-family: Arial"> 05/07/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">512086</b>. (Solucionado)
-                                </font>
-                            </p>
-                        </li>
-                        <br>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">COMUNICADO: </b> Manutenção Programada do Sistema PJe. Data: <b style="font-family: Arial"> 27/07/2024</b>.
-                                    Tarefa de referência: <b style="font-family: Arial">R237441.</b>
-                                </font>
-                            </p><br>
-                        </li>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">COMUNICADO: </b> Em conformidade com a <a id="a_avisos" href="https://atos.cnj.jus.br/files/original12133120240426662b9a6b7400a.pdf" target="_blank">
-                                        Portaria CNJ 140/2024
-                                    </a>, <b style="font-family: Arial">Art. 1º, parágrafo 2º</b>, informa-se que <b style="font-family: Arial">a habilitação do MFA é mandatória</b>, não cabendo aos usuários optarem por sua utilização.
-                                    Data: <b style="font-family: Arial"> 26/04/2024</b>.
-                                </font>
-                            </p><br>
-                        </li>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> Não está sendo localizado na Intranet o menu de <b style="font-family: Arial">Cadastro de Prazo do Certificado do e-Token</b>.
-                                    Função pode ser acessada diretamente no seguinte <a id="a_avisos" href="https://intranet.trt9.jus.br/intranet2/f?p=10182:3:213499140943259:::::" target="_blank">LINK</a>.<br>
-                                    Data: <b style="font-family: Arial"> 20/08/2024</b>.
-                                </font>
-                            </p><br>
-                        </li>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> Informe-se sobre a reativação do <b style="font-family: Arial">Ponto Eletrônico</b>:
-                                    <a id="a_avisos" href="https://intranet.trt9.jus.br/intranet2/f?p=192:113:311213937673980:::::" target="_blank">Perguntas Frequentes</a>.
-                                    Data: <b style="font-family: Arial"> 01/10/2024</b>.
-                                </font>
-                            </p><br>
-                        </li>
-                        <li>
-                            <p>
-                                <font size="4" style="font-family: Arial">
-                                    <b style="font-family: Arial">ORIENTAÇÃO: </b> Informe-se sobre o <b style="font-family: Arial">
+                        </li><br>
+                        <li class="aviso" data-data="2024-12-02">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">ORIENTAÇÃO:</span>
+                                     "Informe-se sobre o <b style="font-family: Arial">
                                     <a id="a_avisos" href="https://www.trt9.jus.br/cswiki/index.php?curid=11186" target="_blank">Novo Padrão de Senhas</a></b>.
-                                    <a id="a_avisos" href="https://www.trt9.jus.br/basesjuridicas/resolucaoadministrativa.xhtml?id=2447300" target="_blank">Resolução Administrativa</a>.
-                                    Data: <b style="font-family: Arial"> 02/12/2024</b>.
-                                </font>
-                            </p><br>
-                        </li>
-                        <li>
-                            <div class="quadro">
-                                <p id="orientacao_pdpj">
-                                    <font size="4" style="font-family: Arial">
-                                        <b style="font-family: Arial">ORIENTAÇÃO: </b> Informe-se sobre o procedimento em fluxo para <b style="font-family: Arial">Atualização de Email no PDPJ</b>.
-                                        Data: <b style="font-family: Arial"> 02/04/2025</b>.
-                                    </font>
-                                
-                                <button id="botao_ver_imagem" onclick="toggleImagem()">Ver Imagem</button>
+                                    <a id="a_avisos" href="https://www.trt9.jus.br/basesjuridicas/resolucaoadministrativa.xhtml?id=2447300" target="_blank">Resolução Administrativa</a>".
+                                      Data:
+                               <span class="aviso-data">02/12/2024</span>.
+                            </p>
+                        </li><br>
+                        <li class="aviso" data-data="2025-04-02">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">ORIENTAÇÃO:</span>
+                                     "Informe-se sobre o procedimento em fluxo para <b style="font-family: Arial">Atualização de Email no PDPJ</b>".
+                                      Data:
+                               <span class="aviso-data">02/04/2025</span>.
+                            </p>                              <button id="botao_ver_imagem" onclick="toggleImagem()">Ver Imagem</button>
                                 <div class="imagem-container" id="imagemContainer">
                                     <img src="../Imagens/diagramapdpj.png" alt="Diagrama PDPJ">
-                                </div></p>
-                            </div><br>
+                                </div>
                         </li>
+                        <br>
                         <li class="aviso" data-data="2025-12-04">
                             <p class="aviso-texto">
                                <span class="aviso-titulo">FALHA GERAL:</span>
@@ -307,6 +159,26 @@ document.addEventListener('DOMContentLoaded', () => {
                                <span class="aviso-tarefa">542801</span>.
                                       Data:
                                <span class="aviso-data">09/12/2025</span>.
+                            </p>
+                        </li><br>
+                        <li class="aviso" data-data="2025-11-17">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">FALHA GERAL:</span>
+                                     "Erro ao Solicitar Habilitação no PJe".
+                                      Tarefa:
+                               <span class="aviso-tarefa">541237</span>.
+                                      Data:
+                               <span class="aviso-data">17/11/2025</span>.
+                            </p>
+                        </li><br>
+                        <li class="aviso" data-data="2025-11-18">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">FALHA GERAL:</span>
+                                     "Erro ao Designar Perícias no PJe".
+                                      Tarefa:
+                               <span class="aviso-tarefa">541276</span>.
+                                      Data:
+                               <span class="aviso-data">18/11/2025</span>.
                             </p>
                         </li><br>
                         <li class="aviso" data-data="2025-12-16">
