@@ -258,7 +258,7 @@ const rodape=
             "</ul>"+ 
             "<ul class='links'>"+
                 "<li><h4 style='color: white;'>Sistemas Voltados a CSTI</h4><br>"+
-                "<!-- Aprendizagem RW3, Assyst WEB, BrowserStack (Testar link), Chat BOT - CSTI, CSWIKI, Elastic Kibana, Elastic Monitor, Localize IP (Descobrir Região), Meu IP (Descobrir IP), PJe Consulta Processual, PJe Homologação, Pje Treinamento, Remover MFA VPN, Portal Captive, https://aprendizagem.rw3tecnologia.com/, https://csti.trt9.jus.br/assystweb, " +
+                "<!-- Aprendizagem RW3, Assyst WEB, BrowserStack (Testar link), Chat BOT - CSTI, CSWIKI, Elastic Kibana, Elastic Monitor, Endpoint Central (Zoho), Localize IP (Descobrir Região), Meu IP (Descobrir IP), PJe Consulta Processual, PJe Homologação, Pje Treinamento, Remover MFA VPN, Portal Captive, https://aprendizagem.rw3tecnologia.com/, https://csti.trt9.jus.br/assystweb, " +
                 "https://trt9-techcom.treetools.com.br/sb3/pages/inicio.zul, https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal, https://kibana.trt9.jus.br/s/servicedesk/login?next=%2Fs%2Fservicedesk%2Fapp%2Fhome#/ " +
                 "https://pje.trt9.jus.br/consultaprocessual/, https://pje-homologacao.trt9.jus.br/trt/, https://pje-treinamento.trt9.jus.br/, https://layer8.trt9.jus.br/removermfavpn, https://captive.trt9.jus.br/connect/PortalMain, https://test-ipv6.com/, https://localizeip.com.br/#google_vignette, https://www.browserstack.com, " +
                 "https://endpointcentral.manageengine.com/webclient#/uems/home/summary, https://nordvpn.com/pt-br/ip-lookup/?srsltid=AfmBOorUn9WOYsrQ_siIgyeHcrE8cZcXB3N7F4ttY03nijAnxWTaBgPa --> </li>"+
@@ -269,7 +269,7 @@ const rodape=
                 "<li><a href='https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal' target='_blank'> <button id='botao_links'>CSWIKI</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://kibana.trt9.jus.br/s/servicedesk/login?next=%2Fs%2Fservicedesk%2Fapp%2Fhome#/' target='_blank'> <button id='botao_links'>Elastic Kibana</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='http://10.101.8.31:5601/s/cliente/app/dashboards' target='_blank'> <button id='botao_links'>Elastic Monitor</button></a><!-- Sistemas Voltados a CSTI --></li>"+
-                "<li><a href='https://endpointcentral.manageengine.com/webclient#/uems/home/summary' target='_blank'> <button id='botao_links'>Endpoint Central</button></a><!-- Sistemas Voltados a CSTI --></li>"+                
+                "<li><a href='https://endpointcentral.manageengine.com/webclient#/uems/home/summary' target='_blank'> <button id='botao_links'>Endpoint Central (Zoho)</button></a><!-- Sistemas Voltados a CSTI --></li>"+                
                 "<li><a href='https://nordvpn.com/pt-br/ip-lookup/?srsltid=AfmBOorUn9WOYsrQ_siIgyeHcrE8cZcXB3N7F4ttY03nijAnxWTaBgPa' target='_blank'> <button id='botao_links'>Localize IP (Descobrir Região)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://localizeip.com.br/#google_vignette' target='_blank'> <button id='botao_links'>Meu IP (Descobrir IP)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://pje.trt9.jus.br/consultaprocessual/' target='_blank'> <button id='botao_links'>PJe Consulta Processual</button></a><!-- Sistemas Voltados a CSTI --></li>" +
