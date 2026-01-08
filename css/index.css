@@ -662,16 +662,13 @@ html, body{
 }
 
 .fullscreen-panel h2.aviso {
-    align-items: center;
-    gap: 14px;
-    padding: 10px 20px;
-    
-    font-size: 36px;
-    color: #1f1f1f;
-    font-weight: 600;
-
-    animation: piscar 1.5s infinite;
-    margin: 0;
+    display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 38px;
+            font-weight: 700;
+            white-space: nowrap;
+            margin: 0;
 }
 
 .fullscreen-panel h2.aviso i {

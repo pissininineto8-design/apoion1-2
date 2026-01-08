@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
             gap: 14px;
             padding: 10px 20px;
             
-            font-size: 28px;
+            font-size: 26px;
             color: #1f1f1f;
             font-weight: 600;
 
@@ -156,16 +156,73 @@ document.addEventListener("DOMContentLoaded", function () {
             animation: pulsar 1.5s infinite;
         }
 
-        @keyframes piscar {
+        /*@keyframes piscar {
             0% { opacity: 1; }
             50% { opacity: 0.6; }
             100% { opacity: 1; }
-        }
+        }*/
 
         @keyframes pulsar {
             0% { transform: scale(1); }
             50% { transform: scale(1.2); }
             100% { transform: scale(1); }
+        }
+    </style>
+
+    <!-- Avisos Rotativo-->
+        <style>
+
+        /* Faixa que limita o movimento */
+        .faixa-aviso {
+
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        /* H2 principal */
+        .fullscreen-panel h2.aviso {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 32px;
+            font-weight: 700;
+            white-space: nowrap;
+            margin: 0;
+        }
+
+        /* Parte fixa */
+        .fullscreen-panel h2.aviso .fixo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        /* Parte móvel */
+        .fullscreen-panel h2.aviso .movel {
+            display: inline-block;
+            white-space: nowrap;
+            animation: mover 7s ease-in-out infinite alternate;
+            padding-left: 20px;
+        }
+
+        /* Animação vai-e-volta suave */
+        @keyframes mover {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(150px);
+            }
+        }
+
+        /* Acessibilidade */
+        @media (prefers-reduced-motion: reduce) {
+            h2.aviso .movel {
+                animation: none;
+            }
         }
     </style>
 
@@ -183,11 +240,18 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="painel-avisos" style='background-color:#f3f1ee;  border-radius: 10px;'>
                 <div id="div3" style="margin-bottom: 0px;">
 
-                <h2 class="aviso">
-                    <i class="bi bi-exclamation-triangle-fill"></i>
-                    AVISOS
-                </h2><br>
+            <div class="faixa-aviso">
+                    <h2 class="aviso">
+                        <span class="fixo">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                             AVISOS:
+                        </span>
 
+                        <span class="movel">
+                            "Sistema PJe indisponível no próximo final de semana."
+                        </span>
+                    </h2>
+                </div>
                     <ul class="painel-de-avisos" style="padding: 0px 30px 30px 20px;">
 
                         <!-- 

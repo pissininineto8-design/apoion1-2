@@ -731,6 +731,14 @@ display: none;
   display: inline-table;
 }
 
+.fullscreen-panel #div3 {
+            padding-top: 20px;
+        }
+
+.fullscreen-panel .faixa-aviso {
+            padding-bottom: 20px;
+        }
+
 #div4 {
   width: 110%;
   display: inline-table;
