@@ -661,6 +661,24 @@ html, body{
     display: none;                /* Chrome, Edge, Safari */
 }
 
+.fullscreen-panel h2.aviso {
+    align-items: center;
+    gap: 14px;
+    padding: 10px 20px;
+    
+    font-size: 36px;
+    color: #1f1f1f;
+    font-weight: 600;
+
+    animation: piscar 1.5s infinite;
+    margin: 0;
+}
+
+.fullscreen-panel h2.aviso i {
+            font-size: 36px;
+            animation: pulsar 1.5s infinite;
+        }
+
 #expandirPainel {
     position: sticky;
     bottom: 20px;

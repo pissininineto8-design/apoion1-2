@@ -3,7 +3,7 @@
 #                                                                     #
 # Autor:  Paulo R. S. Pissinini Neto                                  #
 #                                                                     #
-# Atualização mais recente: 17 de Dezembro de 2025 - Versão 0.1.14    #                                                                     
+# Atualização mais recente: 08 de Janeiro de 2026 - Versão 0.1.15    #                                                                     
 #                                                                     #
 #                                                                     #
 #######################################################################
