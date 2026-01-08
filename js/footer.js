@@ -94,7 +94,7 @@ const rodape=
             "</ul>"+
             "<ul class='links'>"+
                 "<li align='left'><h4 style='color: white;'>Atalhos Intranet</h4><br>"+
-                "<!-- Acesso à Página Inicial, Intranet - Gestão de Conteúdo, Intranet - Cadastrar Certificado, Intranet - Organograma e Força de Trabalho, Intranet - Reset de Senha, Intranet - Solicitação de Serviços, Intranet - Suspensão de Tarefas, https://intranet.trt9.jus.br/intranet2/r/portal/portal/home?session=113483601715184, " +
+                "<!-- Acesso à Página Inicial, Intranet - Gestão de Conteúdo, Intranet - Cadastrar Certificado, Intranet - Organograma e Força de Trabalho, Intranet - Reset de Senha, Intranet - Solicitação de Serviços, Intranet - Suspensão de Tarefas, Intranet - Suspensao de Tarefas, https://intranet.trt9.jus.br/intranet2/r/portal/portal/home?session=113483601715184, " +
                 "https://intranet.trt9.jus.br/intranet2/f?p=10182:3:213499140943259:::::, https://intranet.trt9.jus.br/intranet2/f?p=310:241:208458832739199:::::, https://reset.trt9.jus.br/reset/ChangePwd.aspx, " +
                 "https://intranet.trt9.jus.br/intranet2/f?p=320:46:205023667485201:::::, https://intranet.trt9.jus.br/intranet2/f?p=225:3:114557457373157::NO:RP,3::&success_msg=KHIxMzUyNzYpIFJlbPNnaW8gZG8gY2hhbWFkbyBpbnRlcnJvbXBpZG8u%2F4x1inziEFooOJhUhp_7eCJWwL4dgLpeFfYzkTZxzNSpTiCdlZeiSY0InTcXukF0sJ-okT0x6CzKF0JHX6YfFZg, " +
                 "https://intranet.trt9.jus.br/intranet2/f?p=205:493:328776056735788::::P493_UNIDADE:2559 " +
@@ -105,7 +105,7 @@ const rodape=
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=205:493:328776056735788::::P493_UNIDADE:2559' target='_blank'> <button id='botao_links'>Organograma e For&ccedil;a de Trabalho</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://reset.trt9.jus.br/reset/ChangePwd.aspx' target='_blank'> <button id='botao_links'>Reset de Senha</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=320:46:205023667485201:::::' target='_blank'> <button id='botao_links'>Solicita&ccedil;&atilde;o de Servi&ccedil;os</button></a><!-- Atalhos Intranet --></li>"+
-                "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=225:3:114557457373157::NO:RP,3::&success_msg=KHIxMzUyNzYpIFJlbPNnaW8gZG8gY2hhbWFkbyBpbnRlcnJvbXBpZG8u%2F4x1inziEFooOJhUhp_7eCJWwL4dgLpeFfYzkTZxzNSpTiCdlZeiSY0InTcXukF0sJ-okT0x6CzKF0JHX6YfFZg' target='_blank'> <button id='botao_links'>Suspens&atilde;o de Tarefas</button></a><!-- Atalhos Intranet --></li>"+
+                "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=225:3:114557457373157::NO:RP,3::&success_msg=KHIxMzUyNzYpIFJlbPNnaW8gZG8gY2hhbWFkbyBpbnRlcnJvbXBpZG8u%2F4x1inziEFooOJhUhp_7eCJWwL4dgLpeFfYzkTZxzNSpTiCdlZeiSY0InTcXukF0sJ-okT0x6CzKF0JHX6YfFZg' target='_blank'> <button id='botao_links'>Suspens&atilde;o de Tarefas</button></a><!-- Atalhos Intranet, Suspensao --></li>"+
             "</ul>"+
             "<ul class='links'>"+
                 "<li align='left'><h4 style='color: white;'>Atalhos Site TRT9</h4><br>"+
@@ -260,7 +260,8 @@ const rodape=
                 "<li><h4 style='color: white;'>Sistemas Voltados a CSTI</h4><br>"+
                 "<!-- Aprendizagem RW3, Assyst WEB, BrowserStack (Testar link), Chat BOT - CSTI, CSWIKI, Elastic Kibana, Elastic Monitor, Localize IP (Descobrir Região), Meu IP (Descobrir IP), PJe Consulta Processual, PJe Homologação, Pje Treinamento, Remover MFA VPN, Portal Captive, https://aprendizagem.rw3tecnologia.com/, https://csti.trt9.jus.br/assystweb, " +
                 "https://trt9-techcom.treetools.com.br/sb3/pages/inicio.zul, https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal, https://kibana.trt9.jus.br/s/servicedesk/login?next=%2Fs%2Fservicedesk%2Fapp%2Fhome#/ " +
-                "https://pje.trt9.jus.br/consultaprocessual/, https://pje-homologacao.trt9.jus.br/trt/, https://pje-treinamento.trt9.jus.br/, https://layer8.trt9.jus.br/removermfavpn, https://captive.trt9.jus.br/connect/PortalMain, https://test-ipv6.com/, https://localizeip.com.br/#google_vignette, https://www.browserstack.com --></li>"+
+                "https://pje.trt9.jus.br/consultaprocessual/, https://pje-homologacao.trt9.jus.br/trt/, https://pje-treinamento.trt9.jus.br/, https://layer8.trt9.jus.br/removermfavpn, https://captive.trt9.jus.br/connect/PortalMain, https://test-ipv6.com/, https://localizeip.com.br/#google_vignette, https://www.browserstack.com, " +
+                "https://endpointcentral.manageengine.com/webclient#/uems/home/summary, https://nordvpn.com/pt-br/ip-lookup/?srsltid=AfmBOorUn9WOYsrQ_siIgyeHcrE8cZcXB3N7F4ttY03nijAnxWTaBgPa --> </li>"+
                 "<li><a href='https://aprendizagem.rw3tecnologia.com/' target='_blank'> <button id='botao_links'>Aprendizagem RW3</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://csti.trt9.jus.br/assystweb' target='_blank'> <button id='botao_links'>Assyst WEB</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://www.browserstack.com' target='_blank'> <button id='botao_links'>BrowserStack (Testar link)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
@@ -268,7 +269,8 @@ const rodape=
                 "<li><a href='https://www.trt9.jus.br/cswiki/index.php/P%C3%A1gina_principal' target='_blank'> <button id='botao_links'>CSWIKI</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://kibana.trt9.jus.br/s/servicedesk/login?next=%2Fs%2Fservicedesk%2Fapp%2Fhome#/' target='_blank'> <button id='botao_links'>Elastic Kibana</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='http://10.101.8.31:5601/s/cliente/app/dashboards' target='_blank'> <button id='botao_links'>Elastic Monitor</button></a><!-- Sistemas Voltados a CSTI --></li>"+
-                "<li><a href='http://10.101.8.31:5601/s/cliente/app/dashboards' target='_blank'> <button id='botao_links'>Localize IP (Descobrir Região)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
+                "<li><a href='https://endpointcentral.manageengine.com/webclient#/uems/home/summary' target='_blank'> <button id='botao_links'>Endpoint Central</button></a><!-- Sistemas Voltados a CSTI --></li>"+                
+                "<li><a href='https://nordvpn.com/pt-br/ip-lookup/?srsltid=AfmBOorUn9WOYsrQ_siIgyeHcrE8cZcXB3N7F4ttY03nijAnxWTaBgPa' target='_blank'> <button id='botao_links'>Localize IP (Descobrir Região)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://localizeip.com.br/#google_vignette' target='_blank'> <button id='botao_links'>Meu IP (Descobrir IP)</button></a><!-- Sistemas Voltados a CSTI --></li>"+
                 "<li><a href='https://pje.trt9.jus.br/consultaprocessual/' target='_blank'> <button id='botao_links'>PJe Consulta Processual</button></a><!-- Sistemas Voltados a CSTI --></li>" +
                 "<li><a href='https://pje-homologacao.trt9.jus.br/trt/' target='_blank'> <button id='botao_links'>PJe Homologa&ccedil;&atilde;o</button></a><!-- Sistemas Voltados a CSTI --></li>"+ 
