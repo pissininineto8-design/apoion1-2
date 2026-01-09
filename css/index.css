@@ -701,7 +701,14 @@ body.painel-aberto #faixa-preta {
 }
 
 .painel-de-avisos {
-  list-style-type: disc; /* bolinha padrão */
+  list-style-type: none; 
+  padding-left: 20px; 
+  margin: 0;
+  padding: 0;
+}
+
+.painel-de-avisos-historico {
+  list-style-type: square; 
   padding-left: 20px; 
   margin: 0;
   padding: 0;
