@@ -80,6 +80,24 @@
         }
     </style>
 
+    <style>
+    .texto_realce {
+    background-color: #ffeb3b; /* amarelo */
+    transition: background-color 0.3s ease;
+    }
+    </style>
+
+    <script>
+    function funcao_realcar() {
+        const texto = document.getElementById("texto_realcar");
+    texto.classList.add("texto_realce");
+
+    setTimeout(() => {
+        texto.classList.remove("texto_realce");
+    }, 2000); // 2 segundos
+    }
+    </script>
+
     <script>
  function exportarTabela() {
     const tabela = document.getElementById("tabela_redirecionamento");
@@ -130,7 +148,7 @@
 
 
 
-        <!-- IMPORTANTE !!! Linha Atual: 250 -->
+        <!-- IMPORTANTE !!! Linha Atual: 251 -->
 
 
         
@@ -1398,6 +1416,17 @@
                                         <td>
                                             <button type="button" id="BotaoScroll" onclick="scrollLinha249(), CopiarLinha249()"><b>Magus</b></button>
                                             <button id="BotaoClique" onclick="scrollLinha249(), CopiarLinha249()" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+
+                            <li>
+                                <table id="tabela_filtro">
+                                    <tr>
+                                        <td>
+                                            <button type="button" id="BotaoScroll" onclick="scrollLinha251(), CopiarLinha251(), funcao_realcar()"><b>Malote Digital</b></button>
+                                            <button id="BotaoClique" onclick="scrollLinha251(), CopiarLinha251(), funcao_realcar()" />
                                         </td>
                                     </tr>
                                 </table>
@@ -4199,6 +4228,15 @@
                         
                     </td>
                     <td> smsjud@trt9.jus.br </td>
+                </tr>
+
+                <tr id="l251" align="left">
+                    <td> <a id="a_tabela_redirecionamento" href="https://www.trt9.jus.br/cswiki/index.php?curid=8150" target="blank">Malote Digital</a> </td>
+                    <td id="linha251" colspan="2" style="width:750px">
+                        <p id="texto_realcar" style="font-weight: bold; padding: 10px; font-size: 16px;">
+                            Incidentes envolvendo o Malote Digital devem ser registrados via Intranet - Solicitação de Serviços, para Seção de Convênios.
+                        </p>
+                    </td>
                 </tr>
 
                 <tr id="l227" align="left">
