@@ -1,0 +1,107 @@
+
+#tabelaFiltro {
+    width: 100%;
+}
+
+#div_filtro {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-right: 15px;
+}
+
+#lista_filtro {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 1385px;
+    list-style: none;
+    position: center;
+}
+
+@media(width:1920px) {
+    #lista_filtro {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 1919px) {
+    .lista_filtro {
+        margin-right: 161px auto; /* Reduz a margem */
+    }
+}
+
+@media(max-width:1700px){
+    #divRedirecionamentos {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+#tabela_redirecionamento {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: relative;
+    width: clamp(1410px, 5%, 10px); /*Para definir a responsividade do texto.*/
+}
+
+    #tabela_redirecionamento th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #tabela_redirecionamento th, #tabela_redirecionamento td {
+        border-radius: 5px;
+        border: 1px solid #0a0a0a;
+        padding: 8px;
+        width: clamp(5px, 5%, 100px);
+    }
+
+    #tabela_redirecionamento thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: #104E8B;
+    }
+
+    #tabela_redirecionamento tr {
+        background-color: white;
+    }
+
+        #tabela_redirecionamento tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #tabela_redirecionamento tr:hover {
+            cursor: default;
+        }
+
+    #tabela_redirecionamento {
+
+    }
+
+    #tabela_redirecionamento td {
+        border: 2px solid transparent; /* evita pulo */
+        box-sizing: border-box;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+        border-color: #A4A4A4;
+    }
+
+    #tabela_redirecionamento tr:hover td {
+      border: 2px solid transparent; /* evita pulo */
+        border-color: #000; /* borda “em negrito” */
+    }
+
+    #tabela_redirecionamento td:first-child {
+        width: clamp(30px, 30%, 100px);
+    }
+
+    #tabela_redirecionamento td:nth-child(2) {
+        width: clamp(50px, 50%, 100px);
+    }
+
+    #tabela_redirecionamento td:last-child {
+        width: clamp(20px, 20%, 100px);
+    }
+
+    
