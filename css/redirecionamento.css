@@ -1476,10 +1476,14 @@ input[id^="linha"]:not([id*="grupo"]) {
 /* Realçar Linhas */
 
 @keyframes destaqueRapido {
-    0%   { background-color: gray; }
+    0%   { background-color: #ffeb3b; }
     100% { background-color: transparent; }
 }
 
 .destaque {
-    animation: destaqueRapido 4s ease-in-out;
+    background-color: #ffeb3b;
+    
+    padding: 2px 4px;
+    transition: background-color 0.6s ease;
 }
+
