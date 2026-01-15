@@ -174,12 +174,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
         /* Faixa que limita o movimento */
         .faixa-aviso {
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
 
+        .fullscreen-panel .conteudo-avisos {
+           padding-top: 20px;
+        }
+
+        .fullscreen-panel .faixa-aviso {
+            position: sticky;
+            top: 0;
+            margin-top: 0;
+            padding: 0;
+            z-index: 10;
             display: flex;
             align-items: center;
             overflow: hidden;
             padding-bottom: 20px;
+            background-color: #F5F5F5;
+            padding: 12px 2px;
+            border-bottom: 1px solid #e0e0e0;
         }
+
 
         /* H2 principal */
         .fullscreen-panel h2.aviso {
@@ -251,8 +271,9 @@ document.addEventListener("DOMContentLoaded", function () {
   <!-- Mensagem flutuante -->
                         </span>
                     </h2>
-                </div>
-                    <ul class="painel-de-avisos" style="padding: 0px 30px 30px 20px;">
+            </div>
+            <div class="conteudo-avisos">
+                    <ul class="painel-de-avisos" style="padding: 0px 20px 20px 20px;">
 
                         <!-- 
                         <li><p><font size="4" style="font-family: Arial">Sem novos avisos.</font></p></li><br>
@@ -310,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         -->
                         <p><a id="link-consultar-avisos" href="Paginas/avisos.html">Consultar histórico de avisos...</a></p>
                     </ul>
-
+                </div>
                     
                 </div>
                 <button id="expandirPainel" onclick="toggleFullscreen()">⤢ Expandir</button>

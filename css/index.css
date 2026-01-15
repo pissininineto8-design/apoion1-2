@@ -651,7 +651,7 @@ html, body{
 .fullscreen-panel .painel-avisos {
     width: 100%;
     max-width: 1730px;
-    max-height: 105vh;          /* evita estourar a tela */
+    max-height: 85vh;          /* evita estourar a tela */
     overflow-y: auto;
     border-radius: 10px;
 }
