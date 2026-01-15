@@ -636,8 +636,8 @@ html, body{
     max-height: calc(100vh - 120px); /* espaço para título + botão */
     overflow-y: auto;
     box-shadow: 0 0 20px rgba(0,0,0,.15);
-    padding: 1px;
     margin-left: 50px;
+    overflow-y: auto; 
 }
 
 .fullscreen-panel .painel-avisos {
