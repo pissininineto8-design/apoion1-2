@@ -122,16 +122,68 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Função pública chamada pelo botão
-  window.toggleFullscreen = function () {
-    const estaExpandido = painel.classList.contains("fullscreen-panel");
-    setExpandido(!estaExpandido);
-  };
+window.toggleFullscreen = function () {
+  const estaExpandido = painel.classList.contains("fullscreen-panel");
+  const vaiExpandir = !estaExpandido;
+
+  setExpandido(vaiExpandir);
+
+  if (vaiExpandir) {
+    setTimeout(() => {
+      rolarPainelAutomatico();
+    }, 1200); // tempo REAL da animação
+  }
+};
+
 
   // 🔄 Restaura estado ao carregar
-  const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
-  setExpandido(expandidoSalvo);
+const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
+setExpandido(expandidoSalvo);
+
+if (expandidoSalvo) {
+  setTimeout(() => {
+    rolarPainelAutomatico();
+  }, 900); // tempo suficiente para fullscreen + repaint
+}
 
 });
+
+let direcaoScroll = "descendo";
+
+function rolarPainelAutomatico() {
+  const conteudo = document.getElementById("painel-avisos");
+  if (!conteudo) return;
+
+  const total = conteudo.scrollHeight;
+  const visivel = conteudo.clientHeight;
+
+  if (total <= visivel) return;
+
+  const pausaLeitura = 10000; // tempo para leitura (ms)
+
+  // garante limites corretos
+  if (direcaoScroll === "descendo") {
+    conteudo.scrollTo({
+      top: total,
+      behavior: "smooth"
+    });
+
+    direcaoScroll = "subindo";
+
+    setTimeout(rolarPainelAutomatico, pausaLeitura);
+
+  } else {
+    conteudo.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    direcaoScroll = "descendo";
+
+    setTimeout(rolarPainelAutomatico, pausaLeitura);
+  }
+}
+
 </script>
 
 
@@ -258,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <h2> <font size="4" style="font-family: Courier New, monospace"> PÁGINA DE APOIO AO N1 E N2 - INFORMAÇÕES E RECURSOS UTILIZADOS PELA CSTI.</font></h2>
         <article id="article-f">
             
-            <div class="painel-avisos" style='background-color:#F5F5F5;  border-radius: 10px;'>
+            <div id="painel-avisos" class="painel-avisos" style='background-color:#F5F5F5;  border-radius: 10px;'>
                 <div id="div3" style="margin-bottom: 0px;">
 
             <div class="faixa-aviso">
