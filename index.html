@@ -154,14 +154,20 @@ function rolarPainelAutomatico() {
   const conteudo = document.getElementById("painel-avisos");
   if (!conteudo) return;
 
-  const total = conteudo.scrollHeight;
-  const visivel = conteudo.clientHeight;
+  // 🔢 conta quantas linhas (li) existem
+  const linhas = conteudo.querySelectorAll("li").length;
 
-  if (total <= visivel) return;
+  // ❌ não ativa rolagem se tiver menos que 5 linhas
+  if (linhas < 5) {
+    conteudo.scrollTop = 0;
+    return;
+  }
 
-  const pausaLeitura = 10000; // tempo para leitura (ms)
+  const total = conteudo.scrollHeight - conteudo.clientHeight;
+  if (total <= 0) return;
 
-  // garante limites corretos
+  const pausaLeitura = 9500; // tempo para leitura (ms)
+
   if (direcaoScroll === "descendo") {
     conteudo.scrollTo({
       top: total,
@@ -169,7 +175,6 @@ function rolarPainelAutomatico() {
     });
 
     direcaoScroll = "subindo";
-
     setTimeout(rolarPainelAutomatico, pausaLeitura);
 
   } else {
@@ -179,10 +184,10 @@ function rolarPainelAutomatico() {
     });
 
     direcaoScroll = "descendo";
-
     setTimeout(rolarPainelAutomatico, pausaLeitura);
   }
 }
+
 
 </script>
 
