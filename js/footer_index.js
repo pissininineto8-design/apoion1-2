@@ -45,13 +45,11 @@ const rodape=
   "<article id='article-footer'>"+
   "<div class='rodape'>"+
   "<div id='division_1' style='background-color:rgb(37, 37, 39)'>"+
-       "<table id='tb_footer'>"+
-         "<tr><td colspan='2' style='color:WHITE; border: none;'> <font size='4' style='font-family: Courier New, monospace;'><b>Ramais de Unidades</b></font> </td></tr>"+
-         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'>RH do TRT9:</b> </td><td style='color:WHITE; border: none;'> <a href='tel:+554133107388'>7388</a> </td></tr>" +
-         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'>Setor Malote:</b> </td><td style='color:WHITE; border: none;'> <a href='tel:+554133107099'>7099</a> </td></tr>" +
-         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'>Setor Transporte:</b> </td><td style='color:WHITE; border: none;'> <a href='tel:+554133107081'>7081</a> </td></tr>" +  
+       "<table id='tb_rodape'>"+
+         "<tr><td colspan='2' style='color:WHITE; border: none;'> <font size='4' style='font-family: Courier New, monospace;'><b>Ramais de Unidades</b></font> </td></tr><br>"+
+         "<tr><td> </td></tr>"+
+         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='Paginas/ramais.html'>Acesse aqui...</a> </td></tr>" +
        "</table>"+
-       "<br><p><a id='a_contatos_footer' style='font - family: Lucida Bright' href='Paginas/ramais.html'>Mais contatos...</a></b> </p>" +
     "</div>" +
 "<div id='division_2' class='bannern1'>"+
 "<a href='Paginas/paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='Imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+

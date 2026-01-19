@@ -153,6 +153,19 @@ ul.menu-h ul {
     display: inline-table;
 }
 
+#tb_rodape {
+    font-family: Courier New, monospace;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#tb_rodape td {
+    font-family: Courier New, monospace;
+    padding: 5px;
+}
+
 #tb_footer {
     font-family: Courier New, monospace;
     border-collapse: collapse;
