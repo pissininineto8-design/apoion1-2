@@ -794,6 +794,20 @@ display: none;
     position: center;
 }
 
+#lista_filtro_paginan1 {
+    border: 2px solid black;
+    margin-left: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 1000px;
+    list-style: none;
+    position: center;
+}
+
+#tabela_filtro_paginan1 {
+    margin-left: 0px;
+}
+
 #div_lista_informacoes_2 {
     width: 100%;
     display: block;
