@@ -42,29 +42,34 @@
                 button.classList.add('hidden');
             }
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const botao = document.getElementById('exportarLista');
+
+            if (!botao) return;
+
+            const posicao = botao.offsetTop - 1380;
+
+            window.scrollTo({
+                top: posicao,
+                behavior: 'smooth'
+            });
+        });
     </script>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const botao = document.getElementById('exportarLista');
-
-    if (botao) {
-        botao.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest'
-        });
-    }
-    });
 
     function rolarParaExportar() {
     const botao = document.getElementById('exportarLista');
 
-    if (!botao) return;
+            if (!botao) return;
 
-    botao.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-    });
+            const posicao = botao.offsetTop - 650;
+
+            window.scrollTo({
+                top: posicao,
+                behavior: 'smooth'
+            });
     }
 
     function rolarParaCima() {
@@ -361,7 +366,7 @@
                                <span class="aviso-data">16/01/2026</span>.
                             </p><br>
                         </li>
-
+                      <!--<div id="pontoScroll"></div>-->
                     </ul>
 
                 </div>       
@@ -535,6 +540,7 @@
         </div>
 
         <br>
+
         <div id="filtrosAvisos" style="margin-bottom: 15px; font-family: Arial;margin-right: 850px;">
 
             <input
@@ -553,7 +559,7 @@
                 type="date"
                 id="filtroDataFim"
             >
-
+            
             <button onclick="aplicarFiltro(); rolarParaCima();"><i class="bi bi-filter"></i> Filtrar</button>
             <button onclick="limparFiltro(); rolarParaExportar();"><i class="bi bi-x-lg"></i> Limpar</button>
             <button id="exportarLista"onclick="exportarCSV()" style="margin-top: 5px;"><i class="bi bi-file-earmark-excel"></i> Exportar</button>
