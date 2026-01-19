@@ -27,6 +27,17 @@
 
     <script type="text/javascript">
 
+                document.addEventListener('DOMContentLoaded', () => {
+            const ponto = document.getElementById('exportarLista');
+
+            if (ponto) {
+                ponto.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest'
+                });
+            }
+        });
+
         document.addEventListener('DOMContentLoaded', function () {
             var button = document.getElementById('BotaoVoltar');
             button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
@@ -40,17 +51,6 @@
                 button.classList.remove('hidden');
             } else {
                 button.classList.add('hidden');
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const ponto = document.getElementById('pontoScroll');
-
-            if (ponto) {
-                ponto.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'nearest'
-                });
             }
         });
     </script>
