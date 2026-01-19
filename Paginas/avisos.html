@@ -66,6 +66,17 @@
         block: 'center'
     });
     }
+
+    function rolarParaCima() {
+    const botao = document.getElementById('titulo_historico');
+
+    if (!botao) return;
+
+    botao.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+    }
     </script>
 
 
@@ -78,7 +89,7 @@
             </button>
         </div>
 
-        <h2> <font size="4" style="font-family: Courier New, monospace">HISTÓRICO DE AVISOS ENVIADOS PELA CSTI.</font></h2>
+        <h2 id="titulo_historico"> <font size="4" style="font-family: Courier New, monospace">HISTÓRICO DE AVISOS ENVIADOS PELA CSTI.</font></h2>
 
         <article id="article-f">
             <div style='background-color:#FFF5EE;  border-radius: 10px;'>
@@ -338,6 +349,16 @@
                                <span class="aviso-data">15/01/2026</span>.
                             </p><br>
                         </li>  
+                        <li class="aviso" data-data="2026-01-16">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">FALHA GERAL:</span>
+                                     "Falha de Comunicação no Fórum de Rolândia".
+                                      Tarefa:
+                               <span class="aviso-tarefa">543972</span>.
+                                      Data:
+                               <span class="aviso-data">16/01/2026</span>.
+                            </p><br>
+                        </li>
 
                     </ul>
 
@@ -507,7 +528,7 @@
                 id="filtroDataFim"
             >
 
-            <button onclick="aplicarFiltro(); rolarParaExportar();">Filtrar</button>
+            <button onclick="aplicarFiltro(); rolarParaCima();">Filtrar</button>
             <button onclick="limparFiltro(); rolarParaExportar();">Limpar</button>
             <button id="exportarLista"onclick="exportarCSV()" style="margin-top: 5px;"><i class="bi bi-file-earmark-excel"></i> Exportar</button>
 

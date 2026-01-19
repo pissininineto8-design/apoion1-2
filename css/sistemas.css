@@ -50,43 +50,43 @@
    color: red;
 }
 
-#BotaoScroll #tabela_filtro tr:hover  {
+#BotaoScroll #tabela_filtro_sistemas_sistemas tr:hover  {
     font-weight: bold;
   }
 
-#tabela_filtro {
+#tabela_filtro_sistemas {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     font-size: 16px;
     text-align: left;
   }
 
-  #tabela_filtro tr:hover {
+  #tabela_filtro_sistemas tr:hover {
 
       cursor: default;
   }
 
-  #tabela_filtro th {
+  #tabela_filtro_sistemas th {
     padding-top: 6px;
     padding-bottom: 6px;
     background-color: #ddd;
   }
 
-  #tabela_filtro td {
+  #tabela_filtro_sistemas td {
     border: hidden;
     padding: 2px;
     width: 400px;
   }
 
-  #tabela_filtro td:first-child {
+  #tabela_filtro_sistemas td:first-child {
     width: 30%;
   }
 
-  #tabela_filtro td:nth-child(2) {
+  #tabela_filtro_sistemas td:nth-child(2) {
     width: 35%;
   }
 
-  #tabela_filtro td:last-child {
+  #tabela_filtro_sistemas td:last-child {
     width: 18%;
   }
 
@@ -111,3 +111,20 @@
     background-color: inherit;
 }
 
+#lista_filtro_sistemas {
+ list-style-type: none;
+}
+
+#divFiltro_sistemas {
+  text-align: left;
+  margin-left: 0px;
+  display: block;
+  border-radius: 5px;
+  right: 200px;
+  top: 120px;
+  width: 1395px;
+  height: 100px;
+  z-index: 1;
+  /*border: 1px solid #ccc;
+   box-shadow: 1px 1px 1px #999;*/
+}
