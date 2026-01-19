@@ -514,6 +514,11 @@ display: none;
    background-color: WHITE;
 }
 
+#article-avisos {
+    margin: 10px 30px 30px 30px;
+    margin-bottom: 5px;
+}
+
 #table-pendrives {
     width: 90%;
     text-align: left;

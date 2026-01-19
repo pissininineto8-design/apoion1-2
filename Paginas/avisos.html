@@ -91,7 +91,9 @@
 
         <h2 id="titulo_historico"> <font size="4" style="font-family: Courier New, monospace">HISTÓRICO DE AVISOS ENVIADOS PELA CSTI.</font></h2>
 
-        <article id="article-f">
+        <div class="container-filtros-botao"><button id="scroll_filtros"onclick="rolarParaExportar()" style="margin-top: 5px;">Filtros <i class="bi bi-arrow-down"></i></button></div>
+
+        <article id="article-avisos">
             <div style='background-color:#FFF5EE;  border-radius: 10px;'>
                 <div id="div3">
                     <h2> <font size="4" style="font-family: Courier New, monospace; color: #ef314c;"> HISTÓRICO DE AVISOS</font></h2><br>
@@ -504,6 +506,30 @@
                 opacity: 1;
             }
 
+
+            #scroll_filtros {
+                margin-top: 35px;
+                margin-right: 0px;
+                margin-bottom: 5px;
+                padding: 8px 14px;
+                border-radius: 8px;
+                border: none;
+                background-color: #333;
+                color: white;
+                font-size: 14px;
+                cursor: pointer;
+                opacity: 0.85;
+            }
+            #scroll_filtros:hover {
+                opacity: 1;
+            }
+
+            .container-filtros-botao {
+padding: 0px 0px 0px 36px;
+                justify-content: flex-start; /* esquerda */
+                margin-top: 10px;
+            }
+
         </style>
 
         </div>
@@ -528,8 +554,8 @@
                 id="filtroDataFim"
             >
 
-            <button onclick="aplicarFiltro(); rolarParaCima();">Filtrar</button>
-            <button onclick="limparFiltro(); rolarParaExportar();">Limpar</button>
+            <button onclick="aplicarFiltro(); rolarParaCima();"><i class="bi bi-filter"></i> Filtrar</button>
+            <button onclick="limparFiltro(); rolarParaExportar();"><i class="bi bi-x-lg"></i> Limpar</button>
             <button id="exportarLista"onclick="exportarCSV()" style="margin-top: 5px;"><i class="bi bi-file-earmark-excel"></i> Exportar</button>
 
         </div>
