@@ -44,16 +44,14 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            const botao = document.getElementById('pontoScroll');
+            const ponto = document.getElementById('pontoScroll');
 
-            if (!botao) return;
-
-            const posicao = botao.offsetTop - 1260;
-
-            window.scrollTo({
-                top: posicao,
-                behavior: 'smooth'
-            });
+            if (ponto) {
+                ponto.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'end'
+                });
+            }
         });
     </script>
 
