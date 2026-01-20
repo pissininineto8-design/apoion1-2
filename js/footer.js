@@ -55,9 +55,9 @@ const rodape=
 "<a href='paginan1.html'><img id='boxa1' style='border-radius: 5px; border-style: solid;' src='../Imagens/apoion1.png' alt='N1' title='Acessar a P gina de Orienta  es N1' width='160' height='100'></a>"+
 "<a href='paginan2.html'><img id='boxa2' style='border-radius: 5px; border-style: solid;' src='../Imagens/apoion2.png' alt='N2' title='Acessar a P gina de Orienta  es N2' width='160' height='100'></a>"+
 "</div>" +
-    "</div>"+
-
-"<div style='padding-left: 25px;'><font> <input type='search' id='pesquisa_links' placeholder='Digite para buscar...' oninput='limpar_links()' style='width: 200px;'> </font> "+
+"</div>"+
+"<div style='padding-left: 25px;'><h3 style='color: white;'>Filtro de Links</h3><br>"+
+"<font> <input type='search' id='pesquisa_links' placeholder='Digite para buscar...' oninput='limpar_links()' style='width: 200px;'> </font> "+
 "<button type='button' id='botao1' onclick='filtrar_links(), leiaMais_links()'>Filtrar</button> </div>"+
 
 "</div><br>"+
