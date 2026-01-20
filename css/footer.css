@@ -62,7 +62,6 @@ ul.menu-h ul {
 
 #menu-h ul li a {
     float: right;
-    display: inline-block;
     text-align: center;
     text-decoration: none;
     padding: 0px 10px;
