@@ -20,9 +20,9 @@
 
     <!-- Versionamento JS e CSS-->
     
-    <link rel="stylesheet" href="index.css?v=0.1.18">
-    <link rel="stylesheet" href="styles.css?v=0.1.18">
-    <script src="script_index.js?v=0.1.17" defer></script>
+    <link rel="stylesheet" href="index.css?v=0.1.19">
+    <link rel="stylesheet" href="styles.css?v=0.1.19">
+
 </head>
 <body>
 
@@ -359,7 +359,7 @@ function rolarPainelAutomatico() {
                         <li class="aviso" data-data="2026-01-20">
                             <p class="aviso-texto">
                                <span class="aviso-titulo">ORIENTAÇÃO:</span>
-                                     "Dificuldades ao Designar Perícias - Foi aberto chamado junto ao CSJT [PJEKZ-118949]. Até retorno, orienta-se realizar novas tentativas de criação de expedientes, pois a falha não foi reproduzida em ambiente de testes".
+                                     "Dificuldades ao designar perícias - Foi aberto chamado junto ao CSJT [PJEKZ-118949]. Até retorno, orienta-se realizar novas tentativas de criação de expedientes, pois a falha não foi reproduzida em ambiente de testes".
                                       Tarefa:
                                <span class="aviso-tarefa">543930</span>.
                                       Data:
@@ -385,23 +385,40 @@ function rolarPainelAutomatico() {
                     
                 </div>
                 <button id="expandirPainel" onclick="toggleFullscreen()">⤢ Expandir</button>
-            </div><br><br>
+            </div><br><br><br>
         </article>
 
         <div id="container">
 
             <article id="article-paginas">
-                <div id="divisao1">
-                    <div id="menu_paginas">
-                        <div class="caixa1">
-                        </div>
-                        <div class="caixa2">
-                            <a style="padding-right: 15px;" href='Paginas/paginan1.html'><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='Imagens/apoion1.png' alt='N1' title='Acessar a Página de Orientações N1' width='220' height='120'></a>
+            <div id="divisao1">
 
-                            <a href='Paginas/paginan2.html'><img id="boxa2" style='border-radius: 5px; border-style: solid;' src='Imagens/apoion2.png' alt='N2' title='Acessar a Página de Orientações N2' width='220' height='120'></a>
-                        </div>
-                    </div><br><br><br><br>
-
+            <div class="menu-container">
+                <a href='Paginas/procedimentos.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='Imagens/procedimentos.png' alt='Procedimentos' title='Acesso à Página de Procedimentos' width='100' height='100'>
+                    
+                </div><br><p style="padding-left: 5px;"><b>Procedimentos</b></p>
+                </a>
+                <a href='Paginas/redirecionamento.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='Imagens/redirecionamento.png' alt='Redirecionamento' title='Acesso à Planilha de Redirecionamento' width='100' height='100'>
+                    
+                </div><br><p><b>Redirecionamento</b></p>
+                </a>
+                <a href='Paginas/sistemas.html'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='Imagens/sistemas.png' alt='Sistemas' title='Acesso à Página de Sistemas' width='150' height='100'>
+                    
+                </div><br><p style="padding-left: 40px;"><b>Sistemas</b></p>
+                </a>
+                <a href='Paginas/paginan1.html#informacoes_adversas'> 
+                    <div class="menu-item">
+                    <img id="boxa1" src='Imagens/informacoes.png' alt='Informações' title='Acesso à Seção de Informações Adversas do N1' width='100' height='100'>
+                    
+                </div><br><p style="padding-left: 20px;"><b>Informações</b></p>
+                </a>
+            </div><br><br>
 
                     <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
                         <h4><button onclick="lerMais_index_1(), lerMais_index_1a()" id="btLeiaMais_index_1"><span id="imagem_index_1"></span> <b style="font-family: Courier New, monospace;">ATALHOS DO WINDOWS</b></button></h4>
@@ -511,35 +528,17 @@ function rolarPainelAutomatico() {
                         </span>
                     </div><br><br><br>
 
-                <div class="menu-container">
-                <a href='Paginas/procedimentos.html'> 
-                    <div class="menu-item">
-                    <img id="boxa1" src='Imagens/procedimentos.png' alt='Procedimentos' title='Acesso à Página de Procedimentos' width='100' height='100'>
-                    
-                </div><br><p style="padding-left: 5px;"><b>Procedimentos</b></p>
-                </a>
-                <a href='Paginas/redirecionamento.html'> 
-                    <div class="menu-item">
-                    <img id="boxa1" src='Imagens/redirecionamento.png' alt='Redirecionamento' title='Acesso à Planilha de Redirecionamento' width='100' height='100'>
-                    
-                </div><br><p><b>Redirecionamento</b></p>
-                </a>
-                <a href='Paginas/sistemas.html'> 
-                    <div class="menu-item">
-                    <img id="boxa1" src='Imagens/sistemas.png' alt='Sistemas' title='Acesso à Página de Sistemas' width='150' height='100'>
-                    
-                </div><br><p style="padding-left: 40px;"><b>Sistemas</b></p>
-                </a>
-                <a href='Paginas/paginan1.html#informacoes_adversas'> 
-                    <div class="menu-item">
-                    <img id="boxa1" src='Imagens/informacoes.png' alt='Informações' title='Acesso à Seção de Informações Adversas do N1' width='100' height='100'>
-                    
-                </div><br><p style="padding-left: 20px;"><b>Informações</b></p>
-                </a>
-                </div>
+                    <div id="menu_paginas">
+                        <div class="caixa1">
+                        </div>
+                        <div class="caixa2">
+                            <a style="padding-right: 15px;" href='Paginas/paginan1.html'><img id="boxa1" style='border-radius: 5px; border-style: solid;' src='Imagens/apoion1.png' alt='N1' title='Acessar a Página de Orientações N1' width='220' height='120'></a>
+
+                            <a href='Paginas/paginan2.html'><img id="boxa2" style='border-radius: 5px; border-style: solid;' src='Imagens/apoion2.png' alt='N2' title='Acessar a Página de Orientações N2' width='220' height='120'></a>
+                        </div>
+                    </div><br><br><br><br>
 
                 </div>
-                <div id="divisao2">
 
                     <script>
                         // Formatação de data e hora ----------------------------------
@@ -593,7 +592,9 @@ function rolarPainelAutomatico() {
                             font-size: 18px;
                         }
                     </style>
-                    <br>
+
+                <div id="divisao2">
+
                     <h2 style="color: black;">
                         <font size="4" style="font-family: Courier New, monospace;">DATA/HORA</font>
                     </h2>
@@ -648,6 +649,7 @@ function rolarPainelAutomatico() {
                             </ul>
                         </div>
                     </div><br>
+
                 </div><br><br><br>
             </article>
 
@@ -696,9 +698,9 @@ function rolarPainelAutomatico() {
                               </div>
                               <!--<button class="next" onclick="changeSlide(1)">&#10095;</button>-->
                               <button id="nextBtn" class="banner-nav next">&#10095;</button>
-                          </div>
+                          </div><br><br>
 
-                              <script src="js/banner.js"></script>              
+                <script src="js/banner.js"></script>              
 
              </div>
         </div>
