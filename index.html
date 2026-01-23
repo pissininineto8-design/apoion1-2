@@ -150,14 +150,31 @@ if (expandidoSalvo) {
 
 let direcaoScroll = "descendo";
 
+function animarScroll(elemento, destino, duracao) {
+  const inicio = elemento.scrollTop;
+  const distancia = destino - inicio;
+  const inicioTempo = performance.now();
+
+  function animar(tempoAtual) {
+    const tempoDecorrido = tempoAtual - inicioTempo;
+    const progresso = Math.min(tempoDecorrido / duracao, 1);
+
+    elemento.scrollTop = inicio + distancia * progresso;
+
+    if (progresso < 1) {
+      requestAnimationFrame(animar);
+    }
+  }
+
+  requestAnimationFrame(animar);
+}
+
 function rolarPainelAutomatico() {
   const conteudo = document.getElementById("painel-avisos");
   if (!conteudo) return;
 
-  // 🔢 conta quantas linhas (li) existem
   const linhas = conteudo.querySelectorAll("li").length;
 
-  // ❌ não ativa rolagem se tiver menos que 5 linhas
   if (linhas < 6) {
     conteudo.scrollTop = 0;
     return;
@@ -166,25 +183,22 @@ function rolarPainelAutomatico() {
   const total = conteudo.scrollHeight - conteudo.clientHeight;
   if (total <= 0) return;
 
-  const pausaLeitura = 11500; // tempo para leitura (ms)
+  const pausaLeitura = 10500;
+
+  const tempoDescendo = 5000; // ⬇️ descer mais devagar
+  const tempoSubindo  = 2500; // ⬆️ subir mais rápido
 
   if (direcaoScroll === "descendo") {
-    conteudo.scrollTo({
-      top: total,
-      behavior: "smooth"
-    });
+    animarScroll(conteudo, total, tempoDescendo);
 
     direcaoScroll = "subindo";
-    setTimeout(rolarPainelAutomatico, pausaLeitura);
+    setTimeout(rolarPainelAutomatico, pausaLeitura + tempoDescendo);
 
   } else {
-    conteudo.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    animarScroll(conteudo, 0, tempoSubindo);
 
     direcaoScroll = "descendo";
-    setTimeout(rolarPainelAutomatico, pausaLeitura);
+    setTimeout(rolarPainelAutomatico, pausaLeitura + tempoSubindo);
   }
 }
 
