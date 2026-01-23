@@ -169,6 +169,12 @@ function animarScroll(elemento, destino, duracao) {
   requestAnimationFrame(animar);
 }
 
+const tempoDescendo = 5500; // tempo da animação descendo
+const tempoSubindo  = 2000; // tempo da animação subindo
+
+const pausaEmCima   = 13000;  // pausa quando está no topo
+const pausaEmBaixo  = 6000; // pausa MAIOR quando está embaixo
+
 function rolarPainelAutomatico() {
   const conteudo = document.getElementById("painel-avisos");
   if (!conteudo) return;
@@ -183,25 +189,29 @@ function rolarPainelAutomatico() {
   const total = conteudo.scrollHeight - conteudo.clientHeight;
   if (total <= 0) return;
 
-  const pausaLeitura = 10500;
-
-  const tempoDescendo = 5000; // ⬇️ descer mais devagar
-  const tempoSubindo  = 2500; // ⬆️ subir mais rápido
-
   if (direcaoScroll === "descendo") {
     animarScroll(conteudo, total, tempoDescendo);
 
     direcaoScroll = "subindo";
-    setTimeout(rolarPainelAutomatico, pausaLeitura + tempoDescendo);
+
+    // ⬇️ chegou embaixo → pausa maior
+    setTimeout(
+      rolarPainelAutomatico,
+      tempoDescendo + pausaEmBaixo
+    );
 
   } else {
     animarScroll(conteudo, 0, tempoSubindo);
 
     direcaoScroll = "descendo";
-    setTimeout(rolarPainelAutomatico, pausaLeitura + tempoSubindo);
+
+    // ⬆️ chegou em cima → pausa menor
+    setTimeout(
+      rolarPainelAutomatico,
+      tempoSubindo + pausaEmCima
+    );
   }
 }
-
 
 </script>
 
