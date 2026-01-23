@@ -27,17 +27,6 @@
 
     <script type="text/javascript">
 
-            document.addEventListener('DOMContentLoaded', () => {
-            const ponto = document.getElementById('pontoScroll');
-
-            if (ponto) {
-                ponto.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'nearest'
-                });
-            }
-        });
-
         document.addEventListener('DOMContentLoaded', function () {
             var button = document.getElementById('BotaoVoltar');
             button.classList.add('hidden'); // Garantir que o botão comece oculto ao carregar a página
@@ -82,6 +71,13 @@
     }
     </script>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            rolarParaExportar();
+        }, 200); // 0,2 segundo
+    });
+    </script>
 
     <article id="article-b">
         <br><br>
