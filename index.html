@@ -194,7 +194,7 @@ function rolarPainelAutomatico() {
 
     direcaoScroll = "subindo";
 
-    // ⬇️ chegou embaixo → pausa maior
+    // ⬇️ chegou embaixo → pausa menor
     setTimeout(
       rolarPainelAutomatico,
       tempoDescendo + pausaEmBaixo
@@ -205,7 +205,7 @@ function rolarPainelAutomatico() {
 
     direcaoScroll = "descendo";
 
-    // ⬆️ chegou em cima → pausa menor
+    // ⬆️ chegou em cima → pausa maior
     setTimeout(
       rolarPainelAutomatico,
       tempoSubindo + pausaEmCima
