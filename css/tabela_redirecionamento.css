@@ -81,10 +81,6 @@
             cursor: default;
         }
 
-    #tabela_redirecionamento {
-
-    }
-
     #tabela_redirecionamento td {
         border: 2px solid transparent; /* evita pulo */
         box-sizing: border-box;
