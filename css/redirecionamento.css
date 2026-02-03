@@ -1,6 +1,6 @@
-#a_tabela_redirecionamento { color: BLACK; text-decoration:underline; }
+#a_tabela_redirecionamento { color: #3498db; text-decoration:underline; }
 
-#a_tabela_redirecionamento:hover {color: #ef314c;}
+#a_tabela_redirecionamento:hover {color: #324090;}
 
 #a_redirecionamento {
     color: #3498db; /* Cor do link */
