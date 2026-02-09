@@ -1010,7 +1010,7 @@ width: clamp(5px, 5%, 100px);
 }
 
 #div_mostrar {
-  width: 600px;
+  width: 650px;
   margin: 0px;
   display: inline-table;
   padding-top: 10px;
@@ -1020,7 +1020,7 @@ width: clamp(5px, 5%, 100px);
 }
 
 #div_mostrar2 {
-    width: 600px;
+    width: 650px;
     margin: 0px;
     display: inline-table;
     padding-top: 10px;
