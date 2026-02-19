@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body onload="javascript:lerMais29a(); javascript:lerMais30a(); javascript:lerMais28a(); javascript:lerMais9a(); javascript:lerMais2a(); javascript:lerMais6a(); javascript:lerMais7a();
-  javascript:lerMais27a(); javascript:lerMais4a(); javascript:lerMais24a(); javascript:lerMais25a(); javascript:lerMais5a(); javascript:lerMais3a(); javascript:lerMais31a(); javascript:lerMais32a();">
+  javascript:lerMais27a(); javascript:lerMais4a(); javascript:lerMais24a(); javascript:lerMais25a(); javascript:lerMais5a(); javascript:lerMais3a(); javascript:lerMais31a(); javascript:lerMais32a(); javascript:lerMais33a()">
     
     <script src="../js/redimensoes_footer_header.js"></script>
     <script src="../js/header.js"></script>
@@ -70,8 +70,8 @@
             <ul>
                 <li>
                     <button onclick="lerMais29(); lerMais30(); lerMais28(); lerMais9(); lerMais2(); lerMais6(); lerMais7(); lerMais27(); lerMais4();
-                  lerMais24(); lerMais25(); lerMais5(); lerMais3(); lerMais31(); lerMais32(); lerMais29a(); lerMais30a(); lerMais28a(); lerMais9a(); lerMais2a(); lerMais6a(); lerMais7a(); lerMais27a(); lerMais4a();
-                    lerMais24a(); lerMais25a(); lerMais5a(); lerMais3a(); lerMais31a(); lerMais32a();" id="btLeiaMaisTodos">
+                  lerMais24(); lerMais25(); lerMais5(); lerMais3(); lerMais31(); lerMais32(); lerMais33(); lerMais29a(); lerMais30a(); lerMais28a(); lerMais9a(); lerMais2a(); lerMais6a(); lerMais7a(); lerMais27a(); lerMais4a();
+                    lerMais24a(); lerMais25a(); lerMais5a(); lerMais3a(); lerMais31a(); lerMais32a(); lerMais33a();" id="btLeiaMaisTodos">
                         <b style="font-family: Courier New, monospace;">MOSTRAR / OCULTAR TODOS</b>
                     </button>
                 </li>
@@ -92,13 +92,40 @@
                     <span id="mostrar_mais29"></span><span id="maiss29">
                         <br>
 
-                        <button id="button-1" type="button" onclick="myFunction()">Copiar</button><br>
+                        <button id="button-1" type="button" onclick="myFunction33()">Copiar</button><br>
 
-                        <textarea rows="8" cols="70" id="txtInput" style="resize: none">
+                        <textarea rows="12" cols="70" id="txtInput33" style="resize: none">
+SOLICITAÇÃO DE SUSPENSÃO
+
 ***Suspenso até novo contato com o solicitante.***
+
 Data/Hora para reinício da tarefa: dd/mm/2026 às XXhXX
 Motivo:
+
 Caso esteja disponível e queira o atendimento antes do horário programado para retorno do chamado, favor entrar em contato no ramal 7120 ou pelo chat, como explicado em https://www.trt9.jus.br/cswiki/index.php?curid=7894
+</textarea><br><br>
+                </div>
+            </div><br><br>
+
+
+            <div id="div_mostrar" style='background-color:#f2f2f2;  border-radius: 10px;'>
+                <h3><button onclick="lerMais33(), lerMais33a()" id="btLeiaMais33"><span id="imagem33"></span> <b style="font-family: Courier New, monospace;">TEMPLATE PARA SUSPENSÃO COM PRAZO DE CERTIDÃO NEGATIVA</b></button> </h3>
+                <div>
+                    </span>
+                    <span id="mostrar_mais33"></span><span id="maiss33">
+                        <br>
+
+                        <button id="button-1" type="button" onclick="myFunction()">Copiar</button><br>
+
+                        <textarea rows="12" cols="70" id="txtInput" style="resize: none">
+SOLICITAÇÃO DE SUSPENSÃO
+
+***Suspenso até novo contato com o solicitante.***
+
+Data/Hora para reinício da tarefa: dd/mm/2026 às XXhXX
+Motivo: Aguardando prazo de 7 dias úteis para emissão de certidão negativa.
+
+Caso esteja disponível e queira o atendimento antes do horário programado para retorno da tarefa, favor entrar em contato no ramal 7120.
 </textarea><br><br>
                 </div>
             </div><br><br>
@@ -295,10 +322,14 @@ Contato: (XXXXXXXXXX)
                     <span id="mostrar_mais27"></span><span id="maiss27">
                         <br>
                         <button id="button-1" type="button" onclick="myFunction28()">Copiar</button><br>
-                        <textarea rows="8" cols="70" id="txtInput28" style="resize: none">
+                        <textarea rows="12" cols="70" id="txtInput28" style="resize: none">
+SOLICITAÇÃO DE SUSPENSÃO
+
 ***Suspenso para manutenção na garantia ***
+
 Data/Hora prevista para reinício da tarefa: dd/mm/2026 às XXhXX
 Motivo: Foi aberta a garantia para o(a) "Modelo de Equipamento", sendo necessário aguardar o técnico comparecer no local. Após finalizado o reparo será dado prosseguimento ao atendimento.
+
 Equipamento / Tombo: ******
 Tarefa aberta com o fornecedor: ************
 </textarea><br><br>
@@ -499,7 +530,7 @@ Se possível registrar o recebimento do malote em movimentação nesta tarefa.
 Atenciosamente,
 
 Central de Serviços de Tecnologia da Informação
-Fone: (41) 3310.7120
+Fone: (41) 3310-7120
 Nosso Chat: https://www.trt9.jus.br/portal/centralServicosTI.xhtml
 Acesso às principais dúvidas: https://www.trt9.jus.br/cswiki/index.php/Aberto:P%C3%A1gina_principal
 Horário de Atendimento: 08h às 18h

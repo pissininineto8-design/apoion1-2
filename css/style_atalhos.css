@@ -469,3 +469,25 @@
 #btLeiaMais32:hover {
   color: #ef314c;
 }
+
+#maiss33 {
+  display: none;
+}
+
+#btLeiaMais33 {
+    background-color: inherit;
+    border-radius: 4px;
+    color: BLACK;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: Courier New, monospace;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#btLeiaMais33:hover {
+  color: #ef314c;
+}
