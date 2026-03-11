@@ -278,9 +278,9 @@ const rodape=
             "</ul>"+ 
             "<ul class='links'>"+
                  "<li><h4 style='color: white;'>Status de Equipamentos</h4><br>"+
-                 "<!-- Equipamentos DATEN, Equipamentos DELL, Equipamentos LENOVO, Power BI - Monitoramento, Power BI - Uso Impressoras, Power BI - Estoque SAINF, Servidor de Impressão --><!-- Servidor de Impressao " +
+                 "<!-- Equipamentos DATEN, Equipamentos DELL, Equipamentos LENOVO, Power BI - Monitoramento, Power BI - Uso Impressoras, Power BI - Estoque SAINF, Servidor de Impressão, Solicitações de Toner, Tonner --><!-- Servidor de Impressao " +
                  "http://www.daten.com.br/suporte-escolha, https://www.dell.com/support/home/pt-br?app=products, https://pcsupport.lenovo.com/br/pt/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/?linkTrack=Homepage%3ABody_Search%20Products&searchType=3&keyWordSearch=M920q%20Desktop%20%28ThinkCentre%29 " +
-                 "https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Monitoramento, https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Uso%20das%20impressoras, https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/SAINF%20-%20Estoque, https://web01/impressao/ --></li>" +
+                 "https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Monitoramento, https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Uso%20das%20impressoras, https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/SAINF%20-%20Estoque, https://web01/impressao/, https://intranet.trt9.jus.br/intranet2/f?p=154:283:112006832836329::::: --></li>" +
                  "<li><a href='http://www.daten.com.br/suporte-escolha' target='_blank'> <button id='botao_links'>Equipamentos DATEN</button></a><!-- Status de Equipamentos --></li>" +
                  "<li><a href='https://www.dell.com/support/home/pt-br?app=products' target='_blank'> <button id='botao_links'>Equipamentos DELL</button></a><!-- Status de Equipamentos --></li>" +
                  "<li><a href='https://pcsupport.lenovo.com/br/pt/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m920q/?linkTrack=Homepage%3ABody_Search%20Products&searchType=3&keyWordSearch=M920q%20Desktop%20%28ThinkCentre%29' target='_blank'> <button id='botao_links'>Equipamentos LENOVO</button></a><!-- Status de Equipamentos --></li>" +
@@ -288,6 +288,7 @@ const rodape=
                  "<li><a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/Uso%20das%20impressoras' target='_blank'> <button id='botao_links'>Power BI - Uso Impressoras</button></a><!-- Status de Equipamentos --></li>"+
                  "<li><a href='https://powerbi.trt9.jus.br/paineis/powerbi/TIC/SCAM/SAINF%20-%20Estoque' target='_blank'> <button id='botao_links'>Power BI - Estoque SAINF</button></a><!-- Status de Equipamentos --></li>" +
                  "<li><a href='https://web01/impressao/' target='_blank'> <button id='botao_links'>Servidor de Impress&atilde;o</button></a><!-- Status de Equipamentos --></li>" +
+                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=154:283:112006832836329:::::' target='_blank'> <button id='botao_links'>Solicitações de Toner</button></a><!-- Tonner --><!-- Status de Equipamentos --></li>" +
             "</ul>"+ 
             "<ul class='links'>"+
 
