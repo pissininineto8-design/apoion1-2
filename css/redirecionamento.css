@@ -1081,6 +1081,45 @@ input[id^="linha"]:not([id*="grupo"]) {
   background-color: inherit;
 }
 
+#linha_grupo_38 {
+  font-size: 16px;
+  width: 511px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_38:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_39 {
+  font-size: 16px;
+  width: 564px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_39:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#linha_grupo_40 {
+  font-size: 16px;
+  width: 598px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_40:hover {
+  border: none;
+  background-color: inherit;
+}
+
 
 
 #email1 {
@@ -1469,6 +1508,45 @@ input[id^="linha"]:not([id*="grupo"]) {
 }
 
 #email30:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email31 {
+  font-size: 16px;
+  width: 236px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email31:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email32 {
+  font-size: 16px;
+  width: 38px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email32:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email33 {
+  font-size: 16px;
+  width: 38px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email33:hover {
   border: none;
   background-color: inherit;
 }

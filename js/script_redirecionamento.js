@@ -1469,6 +1469,21 @@ var textoCopiado = document.getElementById("email30");
 textoCopiado.select();
 document.execCommand("Copy");
 }
+function CopiarEmail31() {
+var textoCopiado = document.getElementById("email31");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function CopiarEmail32() {
+var textoCopiado = document.getElementById("email32");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function CopiarEmail33() {
+var textoCopiado = document.getElementById("email33");
+textoCopiado.select();
+document.execCommand("Copy");
+}
 
 
 
@@ -1658,6 +1673,21 @@ document.execCommand("Copy");
 }
 function Copiar_Grupo_37() {
 var textoCopiado = document.getElementById("linha_grupo_37");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function Copiar_Grupo_38() {
+var textoCopiado = document.getElementById("linha_grupo_38");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function Copiar_Grupo_39() {
+var textoCopiado = document.getElementById("linha_grupo_39");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function Copiar_Grupo_40() {
+var textoCopiado = document.getElementById("linha_grupo_40");
 textoCopiado.select();
 document.execCommand("Copy");
 }
