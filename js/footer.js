@@ -195,13 +195,14 @@ const rodape=
             "<ul class='links'>"+
                  "<li><h4 style='color: white;'>Manuais</h4><br>"+
                  "<!-- Manual do Acervo Digital, Manual do AUD4, Manual do PJe - Advogado, Manual do PJe - Oficial de Justiça, Manual do PJe - Perito, Manual do PJe - 1º Grau, Manual do PJe - 2º Grau, " +
-                 "Manual do PJe - Oficial de Justiça, Manual do PJe - 1 Grau, Manual do PJe - 2 Grau, , Manual do PJe - Chips, https://pje.csjt.jus.br/manual/index.php/Acervo_Digital, https://pje.csjt.jus.br/manual/index.php/AUD_4.0, " +
+                 "Manual do PJe - Oficial de Justiça, Manual do PJe - 1 Grau, Manual do PJe - 2 Grau, , Manual do PJe - Chips Tabelas, https://pje.csjt.jus.br/manual/index.php/Acervo_Digital, https://pje.csjt.jus.br/manual/index.php/AUD_4.0, " +
                  "https://pje.csjt.jus.br/manual/index.php/Manual_Advogado, https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_Central_de_Mandados_-_Oficial_de_Justi%C3%A7a, https://pje.csjt.jus.br/manual/index.php/Manual_do_perito_-_Perfil:perito, " +
-                 "https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_1%C2%BA_Grau, https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_2%C2%BA_Grau, https://pje.csjt.jus.br/manual/index.php/Chips --></li>"+
+                 "https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_1%C2%BA_Grau, https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_2%C2%BA_Grau, https://pje.csjt.jus.br/manual/index.php/Chips, https://pje.csjt.jus.br/manual/index.php/Chips_-_2.7.1#Remeter_Recurso --></li>"+
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Acervo_Digital' target='_blank'> <button id='botao_links'>Manual do Acervo Digital</button></a><!-- Manuais --></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/AUD_4.0' target='_blank'> <button id='botao_links'>Manual do AUD4</button></a><!-- Manuais --></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Manual_Advogado' target='_blank'> <button id='botao_links'>Manual do PJe - Advogado</button></a></li></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Chips' target='_blank'> <button id='botao_links'>Manual do PJe - Chips</button></a></li></li>" +
+                 "<li><a href='https://pje.csjt.jus.br/manual/index.php/Chips_-_2.7.1#Remeter_Recurso' target='_blank'> <button id='botao_links'>Manual do PJe - Chips Tabelas</button></a></li></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_Central_de_Mandados_-_Oficial_de_Justi%C3%A7a' target='_blank'> <button id='botao_links'>Manual do PJe - Oficial de Justi&ccedil;a</button></a><!-- Manuais --></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Manual_do_perito_-_Perfil:perito' target='_blank'> <button id='botao_links'>Manual do PJe - Perito</button></a><!-- Manuais --></li>" + 
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_1%C2%BA_Grau' target='_blank'> <button id='botao_links'>Manual do PJe - 1&#186; Grau</button></a><!-- Manuais --></li>" +

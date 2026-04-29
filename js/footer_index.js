@@ -202,6 +202,7 @@ const rodape=
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/AUD_4.0' target='_blank'> <button id='botao_links'>Manual do AUD4</button></a><!-- Manuais --></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Manual_Advogado' target='_blank'> <button id='botao_links'>Manual do PJe - Advogado</button></a></li></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Chips' target='_blank'> <button id='botao_links'>Manual do PJe - Chips</button></a></li></li>" +
+                 "<li><a href='https://pje.csjt.jus.br/manual/index.php/Chips_-_2.7.1#Remeter_Recurso' target='_blank'> <button id='botao_links'>Manual do PJe - Chips Tabelas</button></a></li></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_Central_de_Mandados_-_Oficial_de_Justi%C3%A7a' target='_blank'> <button id='botao_links'>Manual do PJe - Oficial de Justi&ccedil;a</button></a><!-- Manuais --></li>" +
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/Manual_do_perito_-_Perfil:perito' target='_blank'> <button id='botao_links'>Manual do PJe - Perito</button></a><!-- Manuais --></li>" + 
                  "<li><a href='https://pje.csjt.jus.br/manual/index.php/PJe_2.0_-_1%C2%BA_Grau' target='_blank'> <button id='botao_links'>Manual do PJe - 1&#186; Grau</button></a><!-- Manuais --></li>" +
