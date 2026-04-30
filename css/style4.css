@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+* {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
 a {color: BLACK;text-decoration:none;}
 
 #a1 {color: BLACK;text-decoration:underline;}
@@ -211,6 +217,7 @@ a {color: BLACK;text-decoration:none;}
   font-family: Arial, Helvetica, sans-serif;
   width: 50%;
   text-align: left;
+  font-weight: normal;
 }
 
 #tabela_procedimentos th {
@@ -246,6 +253,7 @@ a {color: BLACK;text-decoration:none;}
   font-family: Arial, Helvetica, sans-serif;
   width: 45%;
   text-align: left;
+  font-weight: normal;
 }
 
 #tabela_termos th {
@@ -276,7 +284,9 @@ a {color: BLACK;text-decoration:none;}
 }
 
 #tabela_400 td {
-    font-family: Courier New, Courier, monospace;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
     border-radius: 5px;
     border: 1px solid #0a0a0a;
     padding: 8px;
@@ -312,6 +322,7 @@ a {color: BLACK;text-decoration:none;}
   font-family: Arial, Helvetica, sans-serif;
   width: 650px;
   text-align: left;
+  font-weight: normal;
 }
 
 #tabela_tokens td {
@@ -351,7 +362,9 @@ a {color: BLACK;text-decoration:none;}
 }
 
 #tabela_528 td {
-  font-family: Courier New, Courier, monospace;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
 }
 
 #tabela_528 tr:nth-child(even){background-color: #f2f2f2;}
@@ -366,6 +379,7 @@ a {color: BLACK;text-decoration:none;}
   padding-bottom: 6px;
   background-color: #4CAF50;
   color: white;
+  font-weight: normal;
 }
 
 #tabela_528 th, #tabela_528 td {
@@ -512,7 +526,9 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_147 td {
-   font-family: Courier New, Courier, monospace;
+   font-family: Verdana, Geneva, sans-serif;
+   text-align: left;
+   letter-spacing: 0px;
    border-radius: 5px;
    border: 1px solid #0a0a0a;
    padding: 8px;
@@ -541,7 +557,13 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_digitalizacao td {
-    font-family: Courier New, Courier, monospace;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+#tabela_digitalizacao th {
+    font-weight: normal;
 }
 
 #tabela_digitalizacao th, #tabela_digitalizacao td {
@@ -579,7 +601,14 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_digitalizacao2 td {
-  font-family: Courier New, Courier, monospace;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: normal;
+}
+
+#tabela_digitalizacao2 th {
+    font-weight: normal;
 }
 
 #tabela_digitalizacao2 th, #tabela_digitalizacao2 td {
@@ -616,9 +645,10 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_status {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 65%;
+    font-family: Verdana, Geneva, sans-serif;
     text-align: left;
+    letter-spacing: 0px;
+    width: 65%;
 }
 
 #tabela_status td {
@@ -640,9 +670,10 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_glossario {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 70%;
+  font-family: Verdana, Geneva, sans-serif;
   text-align: left;
+  letter-spacing: 0px;
+  width: 70%;
 }
 
 #tabela_glossario td {
@@ -658,7 +689,13 @@ width: clamp(5px, 5%, 100px);
 }
 
 #tabela_rangeip td {
-    font-family: Courier New, Courier, monospace;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+#tabela_rangeip th {
+    font-weight: normal;
 }
 
 #tabela_rangeip th, #tabela_rangeip td {
