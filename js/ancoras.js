@@ -40,20 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Ancora 4 - informacoes_adversas
-document.addEventListener("DOMContentLoaded", function () {
-    const elemento = document.getElementById("informacoes_adversas");
-
-    if (window.location.hash === "#informacoes_adversas") {
-        elemento.scrollIntoView({ block: "center" });
-        elemento.classList.add("destacado2");
-
-        setTimeout(function () {
-            elemento.classList.remove("destacado2");
-        }, 1500); // Mant�m o realce por 1 segundo e meio
-    }
-});
-
 // Ancora 5 - teste
 document.addEventListener("DOMContentLoaded", function () {
     const elemento = document.getElementById("orientacao_pdpj");
@@ -66,4 +52,80 @@ document.addEventListener("DOMContentLoaded", function () {
             elemento.classList.remove("destacado3");
         }, 1500); // Mant�m o realce por 1 segundo e meio
     }
+});
+
+// Ancora 4 - informacoes_adversas
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const destino = params.get("destino");
+
+    if (destino === "informacoes_adversas") {
+
+        const elemento = document.getElementById("informacoes_adversas");
+
+        if (elemento) {
+
+            // inicia no topo
+            window.scrollTo(0, 0);
+
+            setTimeout(() => {
+
+                elemento.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+                elemento.classList.add("destacado2");
+
+                setTimeout(() => {
+                    elemento.classList.remove("destacado2");
+                }, 1600);
+
+            }, 300);
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const destino = params.get("destino");
+
+    if (!destino) return;
+
+    const elemento = document.getElementById(destino);
+
+    if (!elemento) return;
+
+    // remove destaques anteriores
+    elemento.classList.remove("destacado2");
+    elemento.classList.remove("destacado4");
+
+    // começa do topo
+    window.scrollTo(0, 0);
+
+    setTimeout(() => {
+
+        elemento.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+        // AQUI ficam os IFs
+        if (destino === "informacoes_adversas") {
+            elemento.classList.add("destacado2");
+        }
+
+        if (destino === "pje_marketplace") {
+            elemento.classList.add("destacado4");
+        }
+
+        // remove depois do tempo
+        setTimeout(() => {
+            elemento.classList.remove("destacado2");
+            elemento.classList.remove("destacado4");
+        }, 1650);
+
+    }, 400);
 });
