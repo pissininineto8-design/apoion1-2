@@ -46,9 +46,9 @@ const rodape=
   "<div class='rodape'>"+
   "<div id='division_1' style='background-color:rgb(37, 37, 39)'>"+
        "<table id='tb_rodape'>"+
-         "<tr><td colspan='2' style='color:WHITE; border: none;'> <font size='4' style='font-family: Courier New, monospace;'><b>Ramais de Unidades</b></font> </td></tr><br>"+
+         "<tr><td colspan='2' style='color:WHITE; border: none;'> <font size='4' style='font-family: Courier New, monospace;'><b>Lista de Contatos</b></font> </td></tr><br>"+
          "<tr><td> </td></tr>"+
-         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='Paginas/ramais.html'>Acesse aqui...</a> </td></tr>" +
+         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='Paginas/ramais.html'>Acesse aqui</a> </td></tr>" +
        "</table>"+
     "</div>" +
 "<div id='division_2' class='bannern1'>"+

@@ -9,6 +9,7 @@
 a {color: BLACK;text-decoration:none;}
 
 #a1 {color: BLACK;text-decoration:underline;}
+#a1:hover {color: #ef314c;}
 
 #a_528 {color: BLACK;text-decoration:underline; font-weight: 400;}
 
