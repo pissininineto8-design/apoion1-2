@@ -551,7 +551,7 @@ html, body{
   background-color: yellow; /* A cor de realce desejada */
   border-radius: 6px; /* Opcional: arredonda os cantos do realce */
   font-size: 1.025em;
-  width: 11%; /* Reduz a largura para 80% do elemento pai */
+  width: 100%; /* Reduz a largura para 80% do elemento pai */
   margin: 0 auto; /* Centraliza o realce, se necessário */
   display: inline-block; /* Restringe o realce ao conteúdo */
 
