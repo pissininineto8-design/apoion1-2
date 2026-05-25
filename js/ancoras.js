@@ -117,7 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
             elemento.classList.add("destacado2");
         }
 
-        if (destino === "pje_marketplace") {
+        if (destino === "pje_marketplace" ||
+    destino === "acervo_digital") {
             elemento.classList.add("destacado4");
         }
 
