@@ -130,6 +130,13 @@ window.toggleFullscreen = function () {
 
   setExpandido(vaiExpandir);
 
+    // FECHA O POPUP
+  const popup = document.getElementById("popup-ajuda");
+
+    if (popup) {
+    popup.style.display = "none";
+  }
+
   if (vaiExpandir) {
     setTimeout(() => {
       rolarPainelAutomatico();
@@ -143,6 +150,11 @@ const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
 setExpandido(expandidoSalvo);
 
 if (expandidoSalvo) {
+  const popup = document.getElementById("popup-ajuda");
+
+  if (popup) {
+    popup.style.display = "none";
+  }
   setTimeout(() => {
     rolarPainelAutomatico();
   }, 900); // tempo suficiente para fullscreen + repaint
