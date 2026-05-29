@@ -1,3 +1,5 @@
+// Código do Banner Descontinuado!!!
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slides .slide');
 const totalSlides = slides.length;

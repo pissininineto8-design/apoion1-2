@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/popup_duvidas.css">
     <script src="js/script_index.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/rolagem_painel_avisos.js"></script>
@@ -20,14 +21,15 @@
 
     <!-- Versionamento JS e CSS-->
     
-    <link rel="stylesheet" href="index.css?v=0.1.19">
-    <link rel="stylesheet" href="styles.css?v=0.1.19">
+    <link rel="stylesheet" href="index.css?v=0.1.24">
+    <link rel="stylesheet" href="styles.css?v=0.1.24">
 
 </head>
 <body>
 
     <script src="js/redimensoes_footer_header.js"></script>
     <script src="js/header_index.js"></script><br>
+    <script src="js/popup_duvidas.js"></script> 
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -340,7 +342,7 @@ function rolarPainelAutomatico() {
 
     </style>
 
-    <article id="article-b">
+    <article id="article-b">       
 
         <div class="voltar">
             <button id="BotaoVoltar" alt="Voltar ao Topo" title="Voltar ao Topo" onclick="scrollToTop()">
@@ -692,58 +694,7 @@ function rolarPainelAutomatico() {
                     <br>
 
                 </div><br><br><br><br><br>
-            </article>
 
-                      <div id="container">
-                          
-                          <div class="carousel">
-                              <button id="prevBtn" class="banner-nav prev">&#10094;</button>
-                              <!--<button class="prevBtn" onclick="changeSlide(-1)">&#10094;</button>-->
-                              <div class="carousel-slides">
-
-                                  <!-- Clone do último slide -->
-                                  <div id="slide_hover" class="slide">
-                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
-                                          <img src='Imagens/balcao.png' alt='Balcão Virtual do TRT9' title='Acesso ao Balcão Virtual' height='140'>
-                                      </a>
-                                  </div>
-
-                                  <!-- Slides originais -->
-                                  <div id="slide_hover" class="slide">
-                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
-                                          <img src='Imagens/pje_indisponibilidade.png' alt='PJe Indisponibilidade' title='Consulta Certidões de Indisponibilidade' height='140'>
-                                      </a>
-                                  </div>
-                                  <div id="slide_hover" class="slide">
-                                      <a href='https://www.trt9.jus.br/portal/noticias.xhtml' target="_blank">
-                                          <img src='Imagens/sitetrt9.png' alt='Notícias do TRT9' title='Últimas Notícias Site TRT9' height='140'>
-                                      </a>
-                                  </div>
-                                  <div id="slide_hover" class="slide">
-                                    <a href='https://chatgpt.com/' target="_blank">
-                                        <img style="border-radius: 5px;" src='Imagens/chatgpt_reduzido.png' alt='ChatGPT' title='Acesso ao ChatGPT' height='140'>
-                                    </a>
-                                 </div>
-                                  <div id="slide_hover" class="slide">
-                                      <a href='https://www.trt9.jus.br/portal/balcaoVirtual.xhtml' target="_blank">
-                                          <img src='Imagens/balcao.png' alt='Balcão Virtual do TRT9' title='Acesso ao Balcão Virtual' height='140'>
-                                      </a>
-                                  </div>
-
-                                  <!-- Clone do primeiro slide -->
-                                  <div id="slide_hover" class="slide">
-                                      <a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=1261' target="_blank">
-                                          <img src='Imagens/pje_indisponibilidade.png' alt='PJe Indisponibilidade' title='Consulta Certidões de Indisponibilidade' height='140'>
-                                      </a>
-                                  </div>
-                              </div>
-                              <!--<button class="next" onclick="changeSlide(1)">&#10095;</button>-->
-                              <button id="nextBtn" class="banner-nav next">&#10095;</button>
-                          </div><br><br>
-
-                <script src="js/banner.js"></script>              
-
-             </div>
         </div>
 
     </article>

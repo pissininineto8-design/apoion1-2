@@ -32,13 +32,13 @@ footer {
 .voltar {
   position: fixed;
   /* deixando o elemento na posi��o desejada */
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   top: 850px;
   /* apenas para apar�ncia */
   width: 80px;
   height: 80px;
-  z-index: 1;
-
+  z-index: 9999;
 }
 
 /* Media query para telas menores que 950px de altura */
@@ -77,37 +77,41 @@ footer {
 }
 
 #BotaoVoltar {
-  width: 42px;
-  height: 42px;
-
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-radius: 50%;
-
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    border-left: 4px solid #003b70;
+    background: #005bac;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-  transition: all 0.25s ease;
 }
 
 #BotaoVoltar i {
   font-size: 18px;
-  color: #333;
+  color: white;
 }
 
 #BotaoVoltar:hover {
-  background-color: #f5f5f5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(-1px);
+  background: #004080;
+  transform: translateY(-3px);
 }
 
 #BotaoVoltar.hidden {
     opacity: 0; /* Torna o bot�o invis�vel */
     pointer-events: none; /* Impede a intera��o com o bot�o */
+}
+
+#BotaoVoltar i {
+    pointer-events: none;
 }
 
 footer {
@@ -745,3 +749,4 @@ body.painel-aberto #faixa-preta {
   font-size: 32px;      /* aumenta o texto */
   line-height: 1.6;
 }
+
