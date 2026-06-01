@@ -1,0 +1,115 @@
+        h2.aviso {
+            align-items: center;
+            gap: 14px;
+            padding: 10px 20px;
+            
+            font-size: 26px;
+            color: #1f1f1f;
+            font-weight: 600;
+
+            animation: piscar 1.5s infinite;
+            margin: 0;
+        }
+
+        h2.aviso i {
+            font-size: 28px;
+            animation: pulsar 1.5s infinite;
+        }
+
+        /*@keyframes piscar {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }*/
+
+        @keyframes pulsar {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.075); }
+            100% { transform: scale(1); }
+        }
+
+        /* Avisos Rotativo */
+
+        /* Faixa que limita o movimento */
+        .faixa-aviso {
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+        .fullscreen-panel .conteudo-avisos {
+           padding-top: 20px;
+        }
+
+        .fullscreen-panel .faixa-aviso {
+            position: sticky;
+            top: 0;
+            margin-top: 0;
+            padding: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 20px;
+            background-color: #F5F5F5;
+            padding: 12px 2px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+
+        /* H2 principal */
+        .fullscreen-panel h2.aviso {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 32px;
+            font-weight: 700;
+            white-space: nowrap;
+            margin: 0;
+        }
+
+        /* Parte fixa */
+        .fullscreen-panel h2.aviso .fixo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        /* Parte móvel */
+        .fullscreen-panel h2.aviso .movel {
+            display: inline-block;
+            white-space: nowrap;
+            animation: mover 7s ease-in-out infinite alternate;
+            padding-left: 20px;
+        }
+
+        /* Animação vai-e-volta suave */
+        @keyframes mover {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(150px);
+            }
+        }
+
+        /* Acessibilidade */
+        @media (prefers-reduced-motion: reduce) {
+            h2.aviso .movel {
+                animation: none;
+            }
+        }
+
+        /* Classe do Painel de Avisos */
+
+        .painel-de-avisos {
+            padding: 0px 20px 20px 20px;
+            transition: all 0.1s ease;
+        }
+
+        .fullscreen-panel .painel-de-avisos {
+            padding: 0px 20px 0px 20px;
+        }

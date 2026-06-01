@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/avisos.css">
     <link rel="stylesheet" href="css/popup_duvidas.css">
     <script src="js/script_index.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/rolagem_painel_avisos.js"></script>
     <script src="js/ancoras.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -88,271 +88,148 @@
         });
     </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-  /* ===============================
-     IMAGEM DO AVISO
-  =============================== */
-  window.toggleImagem = function () {
-    const imagemContainer = document.getElementById("imagemContainer");
-    imagemContainer.style.display =
-      imagemContainer.style.display === "block" ? "none" : "block";
-  };
+    /* ===============================
+        IMAGEM DO AVISO
+    =============================== */
+    window.toggleImagem = function () {
+        const imagemContainer = document.getElementById("imagemContainer");
+        imagemContainer.style.display =
+        imagemContainer.style.display === "block" ? "none" : "block";
+    };
 
-  /* ===============================
-     PAINEL DE AVISOS
-  =============================== */
-  const painel = document.getElementById("article-f");
-  const botao  = document.getElementById("expandirPainel");
+    /* ===============================
+        PAINEL DE AVISOS
+    =============================== */
+    const painel = document.getElementById("article-f");
+    const botao  = document.getElementById("expandirPainel");
 
-  const TEXTO_EXPANDIR = "⤢ Expandir";
-  const TEXTO_FECHAR   = "✕ Fechar";
+    const TEXTO_EXPANDIR = "⤢ Expandir";
+    const TEXTO_FECHAR   = "✕ Fechar";
 
-  function setExpandido(estado) {
-    if (estado) {
-      painel.classList.add("fullscreen-panel");
-      document.body.classList.add("painel-aberto");
-      botao.textContent = TEXTO_FECHAR;
-    } else {
-      painel.classList.remove("fullscreen-panel");
-      document.body.classList.remove("painel-aberto");
-      botao.textContent = TEXTO_EXPANDIR;
+    function setExpandido(estado) {
+        if (estado) {
+        painel.classList.add("fullscreen-panel");
+        document.body.classList.add("painel-aberto");
+        botao.textContent = TEXTO_FECHAR;
+        } else {
+        painel.classList.remove("fullscreen-panel");
+        document.body.classList.remove("painel-aberto");
+        botao.textContent = TEXTO_EXPANDIR;
+        }
+
+        localStorage.setItem("painelExpandido", estado ? "true" : "false");
     }
 
-    localStorage.setItem("painelExpandido", estado ? "true" : "false");
-  }
+    // Função pública chamada pelo botão
+    window.toggleFullscreen = function () {
+    const estaExpandido = painel.classList.contains("fullscreen-panel");
+    const vaiExpandir = !estaExpandido;
 
-  // Função pública chamada pelo botão
-window.toggleFullscreen = function () {
-  const estaExpandido = painel.classList.contains("fullscreen-panel");
-  const vaiExpandir = !estaExpandido;
+    setExpandido(vaiExpandir);
 
-  setExpandido(vaiExpandir);
+        // FECHA O POPUP
+    const popup = document.getElementById("popup-ajuda");
 
-    // FECHA O POPUP
-  const popup = document.getElementById("popup-ajuda");
+        if (popup) {
+        popup.style.display = "none";
+    }
+
+    if (vaiExpandir) {
+        setTimeout(() => {
+        rolarPainelAutomatico();
+        }, 1200); // tempo REAL da animação
+    }
+    };
+
+
+    // 🔄 Restaura estado ao carregar
+    const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
+    setExpandido(expandidoSalvo);
+
+    if (expandidoSalvo) {
+    const popup = document.getElementById("popup-ajuda");
 
     if (popup) {
-    popup.style.display = "none";
-  }
-
-  if (vaiExpandir) {
-    setTimeout(() => {
-      rolarPainelAutomatico();
-    }, 1200); // tempo REAL da animação
-  }
-};
-
-
-  // 🔄 Restaura estado ao carregar
-const expandidoSalvo = localStorage.getItem("painelExpandido") === "true";
-setExpandido(expandidoSalvo);
-
-if (expandidoSalvo) {
-  const popup = document.getElementById("popup-ajuda");
-
-  if (popup) {
-    popup.style.display = "none";
-  }
-  setTimeout(() => {
-    rolarPainelAutomatico();
-  }, 900); // tempo suficiente para fullscreen + repaint
-}
-
-});
-
-let direcaoScroll = "descendo";
-
-function animarScroll(elemento, destino, duracao) {
-  const inicio = elemento.scrollTop;
-  const distancia = destino - inicio;
-  const inicioTempo = performance.now();
-
-  function animar(tempoAtual) {
-    const tempoDecorrido = tempoAtual - inicioTempo;
-    const progresso = Math.min(tempoDecorrido / duracao, 1);
-
-    elemento.scrollTop = inicio + distancia * progresso;
-
-    if (progresso < 1) {
-      requestAnimationFrame(animar);
+        popup.style.display = "none";
     }
-  }
+    setTimeout(() => {
+        rolarPainelAutomatico();
+    }, 900); // tempo suficiente para fullscreen + repaint
+    }
 
-  requestAnimationFrame(animar);
-}
+    });
 
-const tempoDescendo = 5500; // tempo da animação descendo
-const tempoSubindo  = 2000; // tempo da animação subindo
+    let direcaoScroll = "descendo";
 
-const pausaEmCima   = 13000;  // pausa quando está no topo
-const pausaEmBaixo  = 6000; // pausa MAIOR quando está embaixo
+    function animarScroll(elemento, destino, duracao) {
+    const inicio = elemento.scrollTop;
+    const distancia = destino - inicio;
+    const inicioTempo = performance.now();
 
-function rolarPainelAutomatico() {
-  const conteudo = document.getElementById("painel-avisos");
-  if (!conteudo) return;
+    function animar(tempoAtual) {
+        const tempoDecorrido = tempoAtual - inicioTempo;
+        const progresso = Math.min(tempoDecorrido / duracao, 1);
 
-  const linhas = conteudo.querySelectorAll("li").length;
+        elemento.scrollTop = inicio + distancia * progresso;
 
-  if (linhas < 6) {
-    conteudo.scrollTop = 0;
-    return;
-  }
+        if (progresso < 1) {
+        requestAnimationFrame(animar);
+        }
+    }
 
-  const total = conteudo.scrollHeight - conteudo.clientHeight;
-  if (total <= 0) return;
+    requestAnimationFrame(animar);
+    }
 
-  if (direcaoScroll === "descendo") {
-    animarScroll(conteudo, total, tempoDescendo);
+    const tempoDescendo = 5500; // tempo da animação descendo
+    const tempoSubindo  = 2000; // tempo da animação subindo
 
-    direcaoScroll = "subindo";
+    const pausaEmCima   = 13000;  // pausa quando está no topo
+    const pausaEmBaixo  = 6000; // pausa MAIOR quando está embaixo
 
-    // ⬇️ chegou embaixo → pausa menor
-    setTimeout(
-      rolarPainelAutomatico,
-      tempoDescendo + pausaEmBaixo
-    );
+    function rolarPainelAutomatico() {
+    const conteudo = document.getElementById("painel-avisos");
+    if (!conteudo) return;
 
-  } else {
-    animarScroll(conteudo, 0, tempoSubindo);
+    const linhas = conteudo.querySelectorAll("li").length;
 
-    direcaoScroll = "descendo";
+    if (linhas < 6) {
+        conteudo.scrollTop = 0;
+        return;
+    }
 
-    // ⬆️ chegou em cima → pausa maior
-    setTimeout(
-      rolarPainelAutomatico,
-      tempoSubindo + pausaEmCima
-    );
-  }
-}
+    const total = conteudo.scrollHeight - conteudo.clientHeight;
+    if (total <= 0) return;
 
-</script>
+    if (direcaoScroll === "descendo") {
+        animarScroll(conteudo, total, tempoDescendo);
 
+        direcaoScroll = "subindo";
+
+        // ⬇️ chegou embaixo → pausa menor
+        setTimeout(
+        rolarPainelAutomatico,
+        tempoDescendo + pausaEmBaixo
+        );
+
+    } else {
+        animarScroll(conteudo, 0, tempoSubindo);
+
+        direcaoScroll = "descendo";
+
+        // ⬆️ chegou em cima → pausa maior
+        setTimeout(
+        rolarPainelAutomatico,
+        tempoSubindo + pausaEmCima
+        );
+    }
+    }
+
+    </script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <style>
-
-        h2.aviso {
-            align-items: center;
-            gap: 14px;
-            padding: 10px 20px;
-            
-            font-size: 26px;
-            color: #1f1f1f;
-            font-weight: 600;
-
-            animation: piscar 1.5s infinite;
-            margin: 0;
-        }
-
-        h2.aviso i {
-            font-size: 28px;
-            animation: pulsar 1.5s infinite;
-        }
-
-        /*@keyframes piscar {
-            0% { opacity: 1; }
-            50% { opacity: 0.6; }
-            100% { opacity: 1; }
-        }*/
-
-        @keyframes pulsar {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.075); }
-            100% { transform: scale(1); }
-        }
-    </style>
-
-    <!-- Avisos Rotativo-->
-        <style>
-
-        /* Faixa que limita o movimento */
-        .faixa-aviso {
-            margin-left: 8px;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            padding-bottom: 10px;
-        }
-
-        .fullscreen-panel .conteudo-avisos {
-           padding-top: 20px;
-        }
-
-        .fullscreen-panel .faixa-aviso {
-            position: sticky;
-            top: 0;
-            margin-top: 0;
-            padding: 0;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            padding-bottom: 20px;
-            background-color: #F5F5F5;
-            padding: 12px 2px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-
-        /* H2 principal */
-        .fullscreen-panel h2.aviso {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 32px;
-            font-weight: 700;
-            white-space: nowrap;
-            margin: 0;
-        }
-
-        /* Parte fixa */
-        .fullscreen-panel h2.aviso .fixo {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            flex-shrink: 0;
-        }
-
-        /* Parte móvel */
-        .fullscreen-panel h2.aviso .movel {
-            display: inline-block;
-            white-space: nowrap;
-            animation: mover 7s ease-in-out infinite alternate;
-            padding-left: 20px;
-        }
-
-        /* Animação vai-e-volta suave */
-        @keyframes mover {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(150px);
-            }
-        }
-
-        /* Acessibilidade */
-        @media (prefers-reduced-motion: reduce) {
-            h2.aviso .movel {
-                animation: none;
-            }
-        }
-
-        /* Classe do Painel de Avisos */
-
-        .painel-de-avisos {
-            padding: 0px 20px 20px 20px;
-            transition: all 0.1s ease;
-        }
-
-        .fullscreen-panel .painel-de-avisos {
-            padding: 0px 20px 0px 20px;
-        }
-
-    </style>
 
     <article id="article-b">       
 
@@ -375,7 +252,7 @@ function rolarPainelAutomatico() {
                              AVISOS:
                         </span>
                         <span class="movel">
-            <!-- Mensagem flutuante -->
+            <!-- Mensagem flutuante -->Próxima Atualização do PJe Será Durante o Feriado, dia 04/06
                         </span>
                     </h2>
             </div>
@@ -411,6 +288,16 @@ function rolarPainelAutomatico() {
                                <span class="aviso-tarefa">R292168</span>.
                                       Data:
                                <span class="aviso-data">04/06/2026</span>.
+                            </p><br>
+                        </li>
+                        <li class="aviso" data-data="2026-06-01">
+                            <p class="aviso-texto">
+                               <span class="aviso-titulo">FALHA GERAL:</span>
+                                     "SIF Indisponível - Mensagem de erro: Não foi possível consultar as contas judiciais nesta instituição financeira."
+                                      Tarefa:
+                               <span class="aviso-tarefa">551454</span>.
+                                      Data:
+                               <span class="aviso-data">01/06/2026</span>.
                             </p><br>
                         </li>
                         <li class="aviso" data-data="2026-05-28">
