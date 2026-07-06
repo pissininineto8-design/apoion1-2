@@ -48,7 +48,8 @@ const rodape=
        "<table id='tb_rodape'>"+
          "<tr><td colspan='2' style='color:WHITE; border: none;'> <font size='4' style='font-family: Courier New, monospace;'><b>Lista de Contatos</b></font> </td></tr><br>"+
          "<tr><td> </td></tr>"+
-         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='ramais.html'>Acesse aqui</a> </td></tr>" +
+         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='ramais.html'>Página de Contatos</a> </td></tr>" +
+         "<tr><td style='color:WHITE; border: none;'> <b style='font-family: Courier New, monospace;'><a id='a_contatos_footer' href='http://10.101.8.40/' target='blank'>Lista Ramais do TRT</a> </td></tr>" +
        "</table>"+
     "</div>" +
 "<div id='division_2' class='bannern1'>"+

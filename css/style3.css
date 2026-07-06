@@ -664,6 +664,19 @@ textarea {
 
 #a_contatos_ramais:hover {color: #ef314c;}
 
+#link_contatos {
+    color: #03a9f4; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s, text-decoration 0.3s; /* Transição suave para cor e decoração */
+}
+
+/* Estilo do link quando o mouse passa sobre ele */
+#link_contatos:hover {
+    color:  #006c9d;/* Muda a cor do texto */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
 .container {
     display: flex;
     justify-content: space-between;
