@@ -131,7 +131,7 @@ const rodape=
             "</ul>"+
             "<ul class='links'>"+
                 "<li><h4 style='color: white;'>Consulta de Lota&ccedil;&otilde;es</h4><br>"+
-                "<!-- Agenda Magistrados, COMPOSIÇÃO, Consulta Assessores, Consulta Diretores, Consulta Peritos, Juízes Substitutos, Juízes Titulares, Lotações Intranet, Magistrado e Servidores " +
+                "<!-- Agenda Magistrados, COMPOSIÇÃO, Consulta Assessores, Consulta Diretores, Consulta Peritos, Consulta Magistrados, Consulta Servidores, Juízes Substitutos, Juízes Titulares, Lotações Intranet, Magistrados e Servidores " +
                 "https://www.trt9.jus.br/portal/pagina.xhtml?secao=90&pagina=AGENDAS, https://www.trt9.jus.br/portal/pagina.xhtml?secao=13&pagina=Inicial#composicao, https://www.trt9.jus.br/portal/contato.xhtml, " +
                 "https://www.trt9.jus.br/portal/contato.xhtml, https://aj.sigeo.jt.jus.br/aj2/internetaberto/profissionais.jsf, https://aj.sigeo.jt.jus.br/aj2/internetaberto/profissionais.jsf, https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=127, " +
                 "https://www.trt9.jus.br/portal/pagina.xhtml?secao=5&pagina=JU ZES VARA, https://intranet.trt9.jus.br/intranet2/f?p=290:56:209305340816950::NO:RP::, https://intranet.trt9.jus.br/intranet2/f?p=290:364:224667778057030::::: " +
@@ -145,7 +145,7 @@ const rodape=
                 "<li><a href='https://www.trt9.jus.br/portal/paginaDownload.xhtml?id=127' target='_blank'> <button id='botao_links'>Ju&iacute;zes Substitutos</button></a><!-- Consulta de Lotações --></li>"+
                 "<li><a href='https://www.trt9.jus.br/portal/pagina.xhtml?secao=5&pagina=JU ZES VARA' target='_blank'> <button id='botao_links'>Ju&iacute;zes Titulares</button></a><!-- Consulta de Lotações --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=290:56:209305340816950::NO:RP::' target='_blank'> <button id='botao_links'>Lota&ccedil;&otilde;es Intranet</button></a><!-- Consulta de Lotações --></li>"+
-                "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=290:364:224667778057030:::::' target='_blank'> <button id='botao_links'>Magistrado e Servidores</button></a><!-- Consulta de Lotações --></li>"+
+                "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=290:364:224667778057030:::::' target='_blank'> <button id='botao_links'>Magistrados e Servidores</button></a><!-- Consulta de Lotações, Consulta Magistrados, Consulta Servidores --></li>"+
             "</ul>"+
             "<ul class='links'>"+
                 "<li align='left'><h4 style='color: white;'>Consulta de Patrim&ocirc;nio</h4><br>"+
