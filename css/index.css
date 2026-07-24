@@ -500,6 +500,15 @@ html, body{
     border-bottom:3px solid #104E8B;
 }
 
+#menu5 a#menu_sem_estilo {
+    padding: 0;
+    display: inline;
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    border: none;
+}
+
 html, body{
   height: 100%;
 }
