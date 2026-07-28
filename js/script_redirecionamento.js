@@ -1484,7 +1484,11 @@ var textoCopiado = document.getElementById("email33");
 textoCopiado.select();
 document.execCommand("Copy");
 }
-
+function CopiarEmail34() {
+var textoCopiado = document.getElementById("email34");
+textoCopiado.select();
+document.execCommand("Copy");
+}
 
 
 //---------------------------------------------------------------------------------------------------------------
