@@ -13,20 +13,23 @@ header.setAttribute("class","header")
 
 body.prepend(header)
 
+// Gera uma versão única para evitar cache
+const versao = Date.now();
+
 const cabecalho=
 "<header>"+
 "<nav id='menuprincipal'>"+
 "<ul class='menu'>"+
-   "<a id='a_menu_x' href='index.html'><img id='img_1' style='border-radius: 5px;' src='Imagens/csti.png' alt='TRT9' title='Acessar a página principal' width='200' height='100'></a>"+
+   "<a id='a_menu_x' href='index.html?v=" + versao + "'><img id='img_1' style='border-radius: 5px;' src='Imagens/csti.png' alt='TRT9' title='Acessar a página principal' width='200' height='100'></a>"+
 
    "<li align='left' class='menu_1' id='dropdown'><a id='a_menu_1' href='#'>Conhecimento &nbsp; </a>"+
-   "<ul class='submenu-1'>"+  
-       "<li class='menu_1_2'><a href='Paginas/redirecionamento.html'>Redirecionamento</a></li>"+
+   "<ul class='submenu-1'>"+ 
+       "<li class='menu_1_2'><a href='Paginas/redirecionamento.html?v=" + versao + "'>Redirecionamento</a></li>"+
        "<li class='menu_1_3'><a href='Paginas/procedimentos.html'>Procedimentos</a></li>"+
        "<li class='menu_1_4'><a href='Paginas/sistemas.html'>Sistemas</a></li>"+
        "<li class='menu_1_5'><a href='Paginas/status.html'>Status CMDB</a></li>"+
        "<li class='menu_1_6'><a href='Paginas/glossario.html'>Glossário</a></li>"+
-       "<li class='menu_1_1' id=''><a href='index.html'>Páginas de Apoio </a>" +
+       "<li class='menu_1_1' id=''><a href='index.html?v=" + versao + "'>Páginas de Apoio </a>" +
        "<ul class='submenu-2'>" +
        "<li class='menu_1_1_1'><a href='Paginas/paginan1.html'>Apoio N1</a></li>" +
        "<li class='menu_1_1_2'><a href='Paginas/paginan2.html'>Apoio N2</a></li>" +
