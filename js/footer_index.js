@@ -34,12 +34,15 @@ function leiaMais_links(){
      }
   }
 
+// Gera uma versão única para evitar cache
+const versao2 = Date.now();
+
 const rodape=
 "<footer>"+
   "<nav id='menu-h'>"+
       "<ul class='menu-h'>"+
-          "<li class='menu_2'><a id='a_menu_2' href='index.html'>Início</a></li>"+
-          "<li class='menu_3'><a id='a_menu_3' href='Paginas/redirecionamento.html'>Redirecionamento</a></li>"+
+          "<li class='menu_2'><a id='a_menu_2' href='index.html?v=" + versao + "'>Início</a></li>"+
+          "<li class='menu_3'><a id='a_menu_3' href='Paginas/redirecionamento.html?v=" + versao + "'>Redirecionamento</a></li>"+
       "</ul>"+
   "</nav>"+
   "<article id='article-footer'>"+
