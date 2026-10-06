@@ -105,7 +105,7 @@ const rodape=
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=10182:3:213499140943259:::::' target='_blank'> <button id='botao_links'>Cadastrar Certificado</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=310:241:208458832739199:::::' target='_blank'> <button id='botao_links'>Gest&#227;o de Conte&#250;do</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=205:493:328776056735788::::P493_UNIDADE:2559' target='_blank'> <button id='botao_links'>Organograma e For&ccedil;a de Trabalho</button></a><!-- Atalhos Intranet --></li>"+
-                "<li><a href='https://reset.trt9.jus.br/reset/ChangePwd.aspx' target='_blank'> <button id='botao_links'>Reset de Senha</button></a><!-- Atalhos Intranet --></li>"+
+                "<li><a href='https://reset.trt9.jus.br/reset/' target='_blank'> <button id='botao_links'>Reset de Senha</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=320:46:205023667485201:::::' target='_blank'> <button id='botao_links'>Solicita&ccedil;&atilde;o de Servi&ccedil;os</button></a><!-- Atalhos Intranet --></li>"+
                 "<li><a href='https://intranet.trt9.jus.br/intranet2/f?p=225:3:114557457373157::NO:RP,3::&success_msg=KHIxMzUyNzYpIFJlbPNnaW8gZG8gY2hhbWFkbyBpbnRlcnJvbXBpZG8u%2F4x1inziEFooOJhUhp_7eCJWwL4dgLpeFfYzkTZxzNSpTiCdlZeiSY0InTcXukF0sJ-okT0x6CzKF0JHX6YfFZg' target='_blank'> <button id='botao_links'>Suspens&atilde;o de Tarefas</button></a><!-- Atalhos Intranet, Suspensao --></li>"+
             "</ul>"+
@@ -229,11 +229,12 @@ const rodape=
     "<ul class='links'>"+
                  "<li align='left'><h4 style='color: white;'>Sistemas</h4><br>"+
                  "<!-- Assyst NET (Usuários Externos), Assyst NET (Usuários Internos), Citrix Portal Remoto, Citrix Workspace, Gertoken, PJe, PJe Mídias CNJ, PJe Mídias TRT9 -->" +
-                 "<!-- Assyst NET (Usuarios Externos), Assyst NET (Usuarios Internos), PJe Mídias TRT9, Pje Midias TRT9, Vetor, MFA VPN TRT9, M&#237;dias JT, Midias JT, CNJ - Corporativo (SCA) https://suporteti.trt9.jus.br/assystnet/#signup, " +
+                 "<!-- Assyst NET (Usuarios Externos), Assyst NET (Usuarios Internos), PJe Mídias TRT9, Pje Midias TRT9, Vetor, MFA VPN TRT9, M&#237;dias JT, Midias JT, CNJ - Corporativo (SCA), Chat-JT, Chat JT, https://suporteti.trt9.jus.br/assystnet/#signup, " +
                  "https://csti.trt9.jus.br/assystnet, https://remoto.trt9.jus.br/vpn/index.html, https://teletrabalhonovo.trt9.jus.br/Citrix/storeWeb/, https://web01/gertoken/, https://mfa.trt9.jus.br/ " +
-                 "https://pje.trt9.jus.br/trt/, https://www.trt9.jus.br/pjemidias/web/site/login, https://www.trt9.jus.br/vetor, https://corporativo.cnj.jus.br/, https://midias.jt.jus.br --></li>" +
+                 "https://pje.trt9.jus.br/trt/, https://www.trt9.jus.br/pjemidias/web/site/login, https://www.trt9.jus.br/vetor, https://corporativo.cnj.jus.br/, https://midias.jt.jus.br, https://ia.jt.jus.br/chat/ --></li>" +
                  "<li><a href='https://suporteti.trt9.jus.br/assystnet/#signup' target='_blank'> <button id='botao_links'>Assyst NET (Usu&aacute;rios Externos)</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://csti.trt9.jus.br/assystnet' target='_blank'> <button id='botao_links'>Assyst NET (Usu&aacute;rios Internos)</button></a><!-- Sistemas --></li>" +
+                 "<li><a href='https://ia.jt.jus.br/chat/' target='_blank'> <button id='botao_links'>Chat-JT</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://remoto.trt9.jus.br/vpn/index.html' target='_blank'> <button id='botao_links'>Citrix Portal Remoto</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://teletrabalhonovo.trt9.jus.br/Citrix/storeWeb/' target='_blank'> <button id='botao_links'>Citrix Workspace</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://corporativo.cnj.jus.br/' target='_blank'> <button id='botao_links'>CNJ - Corporativo (SCA)</button></a><!-- Sistemas --></li>" +

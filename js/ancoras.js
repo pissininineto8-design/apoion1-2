@@ -120,7 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (destino === "pje_marketplace" ||
     destino === "acervo_digital" ||
     destino === "emissao_gru" ||
-    destino === "sniper") {
+    destino === "sniper" ||
+    destino === "araucar_ia") {
             elemento.classList.add("destacado4");
         }
 
