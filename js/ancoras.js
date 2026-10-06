@@ -118,7 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (destino === "pje_marketplace" ||
-    destino === "acervo_digital") {
+    destino === "acervo_digital" ||
+    destino === "emissao_gru" ||
+    destino === "sniper") {
             elemento.classList.add("destacado4");
         }
 
@@ -130,3 +132,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }, 400);
 });
+
