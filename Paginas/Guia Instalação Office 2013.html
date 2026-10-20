@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia interativo — Instalação do Microsoft Office 2013</title>
+<style>
+:root{
+  --navy:#16324f; --blue:#2463a6; --blue-soft:#eaf3ff; --teal:#087f8c;
+  --green:#18794e; --green-soft:#e9f7ef; --amber:#946200; --amber-soft:#fff5d8;
+  --red:#b42318; --red-soft:#fff0ee; --ink:#202b38; --muted:#617083;
+  --line:#dce4ed; --paper:#fff; --bg:#f3f6fa; --shadow:0 10px 28px rgba(24,48,78,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",Arial,sans-serif}
+button,input{font:inherit}
+a{color:#155eaa;overflow-wrap:anywhere}
+.hero{background:linear-gradient(125deg,#142e4a,#205b88 68%,#0d7b84);color:white;padding:34px 20px 28px}
+.hero-inner,.wrap{max-width:1080px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;opacity:.82}
+h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.12;margin:9px 0 12px}
+.hero p{max-width:760px;margin:0;color:#e5f0fb}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #ffffff55;border-radius:999px;padding:5px 10px;font-size:.82rem;background:#ffffff12}
+.wrap{padding:24px 18px 60px}
+.progress-shell{background:#e0e8f1;border-radius:999px;height:8px;overflow:hidden;margin:0 0 8px}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,#18a6a6,#75d3b2);transition:width .45s ease}
+.progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:.86rem;margin-bottom:22px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:22px;align-items:start}
+.sidebar{position:sticky;top:14px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+.sidebar h2{font-size:.95rem;margin:2px 8px 10px}
+.navstep{display:flex;width:100%;text-align:left;align-items:center;gap:10px;border:0;background:transparent;color:var(--ink);padding:10px 9px;border-radius:10px;cursor:pointer;margin:2px 0}
+.navstep:hover{background:#f1f6fb}
+.navstep.active{background:var(--blue-soft);color:#154f87;font-weight:750}
+.navstep.done .num{background:var(--green);color:#fff}
+.num{width:29px;height:29px;flex:0 0 29px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;color:#40536a;font-size:.86rem;font-weight:800}
+.navtext{font-size:.9rem}
+.sidebar-note{border-top:1px solid var(--line);padding:13px 8px 2px;margin-top:10px;color:var(--muted);font-size:.82rem}
+.content{min-width:0}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,3vw,30px);box-shadow:var(--shadow);animation:rise .35s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.panel[hidden]{display:none}
+.step-kicker{color:var(--blue);font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}
+h2{font-size:1.55rem;line-height:1.25;margin:6px 0 10px}
+h3{font-size:1.06rem;margin:22px 0 8px}
+.lead{color:var(--muted);margin-top:0}
+.callout{border-left:4px solid var(--blue);background:var(--blue-soft);padding:13px 15px;border-radius:8px;margin:16px 0}
+.callout.warning{border-color:#e4a11b;background:var(--amber-soft);color:#5d450c}
+.callout.danger{border-color:var(--red);background:var(--red-soft);color:#78231c}
+.callout.success{border-color:var(--green);background:var(--green-soft);color:#145c3c}
+.checklist{display:grid;gap:10px;margin:14px 0}
+.check{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px 13px;cursor:pointer;transition:border-color .2s,background .2s}
+.check:hover{border-color:#9bb9d7}
+.check input{margin-top:5px;accent-color:var(--blue);width:17px;height:17px;flex:0 0 auto}
+.check:has(input:checked){background:#f1faf5;border-color:#8cc7a7}
+.check strong{display:block}
+.check small{display:block;color:var(--muted);margin-top:3px}
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+.choice{border:1px solid var(--line);border-radius:14px;background:white;padding:16px;text-align:left;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.choice:hover{transform:translateY(-2px);border-color:#77a8d6;box-shadow:0 8px 18px #18304e12}
+.choice strong{display:block;margin:6px 0}
+.choice span{font-size:.9rem;color:var(--muted)}
+.choice .symbol{font-size:1.5rem}
+.choice.selected{border:2px solid var(--blue);background:var(--blue-soft)}
+.branch{display:none;border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;animation:rise .3s ease}
+.branch.show{display:block}
+.branch h3{margin-top:0}
+.inline-link{display:inline-flex;gap:7px;align-items:center;font-weight:700}
+.template{white-space:pre-wrap;background:#f6f8fb;border:1px solid #d9e2ec;border-radius:10px;padding:14px;font-family:Consolas,"Courier New",monospace;font-size:.9rem;overflow-wrap:anywhere}
+.copyrow{display:flex;justify-content:flex-end;margin-top:8px}
+.btn{border:0;border-radius:10px;background:var(--blue);color:white;font-weight:750;padding:10px 15px;cursor:pointer;transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.secondary{background:#e9eef4;color:#243b53}
+.btn.outline{background:white;color:var(--blue);border:1px solid #a8c4e0}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
+.actions-right{display:flex;gap:8px}
+.small{font-size:.88rem;color:var(--muted)}
+.status{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:.78rem;font-weight:800}
+.status.ok{background:var(--green-soft);color:var(--green)}
+.status.attn{background:var(--amber-soft);color:var(--amber)}
+.status.no{background:var(--red-soft);color:var(--red)}
+.flowline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:18px 0}
+.flowbox{border:1px solid var(--line);background:#f7f9fc;border-radius:10px;padding:10px 12px;font-weight:700;font-size:.9rem}
+.arrow{color:#8a9aad;font-size:1.2rem}
+.footer{margin-top:20px;color:var(--muted);font-size:.82rem;text-align:center}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+@media(max-width:780px){.layout{grid-template-columns:1fr}.sidebar{position:static}.sidebar nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar-note{display:none}.choice-grid{grid-template-columns:1fr}.hero{padding-top:27px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">Guia interativo de atendimento · TRT-PR</div>
+  <h1>Instalação do Microsoft Office 2013</h1>
+  <p>Siga as etapas na ordem. As perguntas de decisão mostram o caminho adequado para cada solicitação e os textos prontos ajudam a registrar a movimentação no chamado.</p>
+  <div class="hero-badges"><span class="pill">⏱️ Passo a passo</span><span class="pill">✓ Lista de conferência</span><span class="pill">↳ Decisões guiadas</span></div>
+ </div>
+</header>
+<main class="wrap">
+ <div class="progress-shell" aria-label="Progresso"><div class="progress-bar" id="progress"></div></div>
+ <div class="progress-label"><span id="progressText">Etapa 1 de 5</span><span id="progressPct">0% concluído</span></div>
+ <div class="layout">
+  <aside class="sidebar">
+   <h2>Etapas do atendimento</h2>
+   <nav id="nav">
+    <button class="navstep active" data-step="0"><span class="num">1</span><span class="navtext">Identificar solicitação</span></button>
+    <button class="navstep" data-step="1"><span class="num">2</span><span class="navtext">Consultar o tombo</span></button>
+    <button class="navstep" data-step="2"><span class="num">3</span><span class="navtext">Autorização</span></button>
+    <button class="navstep" data-step="3"><span class="num">4</span><span class="navtext">Instalação</span></button>
+    <button class="navstep" data-step="4"><span class="num">5</span><span class="navtext">Atualizações e encerramento</span></button>
+   </nav>
+   <div class="sidebar-note">Use as opções de cada etapa. O guia não consulta o Assyst nem confirma autorizações automaticamente.</div>
+  </aside>
+  <section class="content">
+   <article class="panel" data-panel="0">
+    <div class="step-kicker">Etapa 1 · Identificação da solicitação</div>
+    <h2>Vamos identificar o procedimento adequado</h2>
+    <p class="lead">Informe o tipo de equipamento, o perfil do usuário e a quantidade de equipamentos abrangidos pela solicitação.</p>
+
+    <h3>1. A instalação é para notebook ou computador (desktop)?</h3>
+    <div class="choice-grid">
+     <button class="choice" data-device="notebook"><span class="symbol">💻</span><strong>Notebook</strong><span>Instalação pelo agente Kaspersky, após habilitação pela equipe responsável.</span></button>
+     <button class="choice" data-device="desktop"><span class="symbol">🖥️</span><strong>Computador (desktop)</strong><span>Instalação pelo Endpoint (Self Service Portal).</span></button>
+    </div>
+
+    <div id="profileSection" hidden>
+     <h3>2. Qual é o perfil do usuário?</h3>
+     <div class="choice-grid">
+      <button class="choice" data-role="magistrate"><span class="symbol">⚖️</span><strong>Magistrado(a)</strong><span>Dispensa justificativa para instalação.</span></button>
+      <button class="choice" data-role="other"><span class="symbol">👤</span><strong>Demais servidores</strong><span>O fluxo depende da consulta do tombo na planilha.</span></button>
+      <button class="choice" data-role="officer"><span class="symbol">⛔</span><strong>Oficial de Justiça</strong><span>Consulte o aviso apresentado após esta seleção.</span></button>
+     </div>
+     <div class="branch" id="role-magistrate">
+      <h3><span class="status ok">Exceção aplicável</span></h3>
+      <p>Equipamentos de magistrados estão dispensados da justificativa para instalação do Office 2013.</p>
+     </div>
+     <div class="branch" id="role-officer">
+      <h3><span class="status no">Não autorizado</span></h3>
+      <p>A instalação do Microsoft Office 2013 não é autorizada para Oficiais de Justiça, mesmo que exista solicitação ou questionamento por parte do usuário. Não prossiga com a instalação.</p>
+     </div>
+
+     <div id="quantitySection" hidden>
+      <h3>3. Quantos equipamentos estão incluídos na solicitação?</h3>
+      <div class="choice-grid">
+       <button class="choice" data-quantity="one"><span class="symbol">1️⃣</span><strong>Apenas um equipamento</strong><span>Prosseguir com o atendimento individual.</span></button>
+       <button class="choice" data-quantity="multiple"><span class="symbol">🔢</span><strong>Mais de um equipamento</strong><span>Desmembrar a solicitação antes de prosseguir.</span></button>
+      </div>
+      <div class="branch" id="quantity-multiple">
+       <h3>Orientações para múltiplos equipamentos</h3>
+       <p>Antes de seguir o fluxo, desmembre o chamado para que cada equipamento tenha seu próprio chamado.</p>
+       <div class="checklist">
+        <label class="check"><input type="checkbox" data-check="split1"><span>Criar um chamado para cada equipamento, informando o nome do servidor e o respectivo tombo.</span></label>
+        <label class="check"><input type="checkbox" data-check="split2"><span>Registrar no chamado original que a solicitação foi desmembrada.</span></label>
+        <label class="check"><input type="checkbox" data-check="split3"><span>Realizar o vínculo entre os chamados.</span></label>
+        <label class="check"><input type="checkbox" data-check="split4"><span>Garantir que a autorização do gestor esteja anexada em cada chamado desmembrado.</span></label>
+       </div>
+       <div class="callout warning">A autorização anexada somente ao chamado original não é suficiente para os chamados desmembrados.</div>
+      </div>
+     </div>
+    </div>
+    <div class="actions"><span></span><button class="btn" id="initialNext" disabled>Continuar →</button></div>
+   </article>
+
+   <article class="panel" data-panel="1" hidden>
+    <div class="step-kicker">Etapa 2 · Conferência cadastral</div>
+    <h2>O tombo consta na planilha?</h2>
+    <p class="lead">Pesquise o número de tombo nas duas abas. A aba principal atualmente alimentada é “Tempo de Uso - Dados Formulário”.</p>
+    <a class="inline-link" href="https://docs.google.com/spreadsheets/d/1ZOyHqhCBGnAm0YbqsqlqU5RT7jiGf2qZkv8BqJ2kzRc/edit?usp=sharing" target="_blank" rel="noopener">↗ Abrir planilha de manifestação Vetor</a>
+    <div class="callout">Verifique também a aba <strong>“Formulário Vetor Exportado (antigo)”</strong>.</div>
+    <div class="choice-grid">
+     <button class="choice" data-branch="found"><span class="symbol">🔎</span><strong>Sim, consta na planilha</strong><span>Verifique se é troca de equipamento.</span></button>
+     <button class="choice" data-branch="missing"><span class="symbol">📄</span><strong>Não consta na planilha</strong><span>Será necessária justificativa e autorização do superior, salvo exceção para magistrados.</span></button>
+    </div>
+    <div class="branch" id="branch-found">
+     <h3><span class="status ok">Tombo localizado</span></h3>
+     <p><strong>É uma troca de equipamento?</strong></p>
+     <div class="choice-grid">
+      <button class="choice" data-branch="replacement"><strong>Sim, é substituição</strong><span>Confira o tombo anterior.</span></button>
+      <button class="choice" data-branch="same"><strong>Não, é o equipamento atual</strong><span>Siga para a instalação.</span></button>
+     </div>
+    </div>
+    <div class="branch" id="branch-replacement">
+     <h3>Substituição de equipamento</h3>
+     <div class="checklist">
+      <label class="check"><input type="checkbox" data-check="old"><span>Confirmei se o tombo anterior consta na planilha.</span></label>
+      <label class="check"><input type="checkbox" data-check="update"><span>Se constava, atualizei o registro para o novo tombo.</span></label>
+      <label class="check"><input type="checkbox" data-check="note"><span>Registrei a substituição em observação.</span></label>
+     </div>
+     <div class="template" id="replacementText">O equipamento [TOMBO ANTERIOR] foi substituído pelo equipamento [NOVO TOMBO].</div>
+     <div class="copyrow"><button class="btn secondary" data-copy="replacementText">Copiar observação</button></div>
+     <div class="callout success">Após atualizar a planilha e registrar a troca, avance para a etapa de instalação.</div>
+    </div>
+    <div class="branch" id="branch-same">
+     <h3>Equipamento já cadastrado</h3><p>Não é necessária a etapa de autorização por ausência na planilha. Avance para a instalação.</p>
+    </div>
+    <div class="branch" id="branch-missing">
+     <h3><span class="status attn">Tombo não localizado</span></h3>
+     <p>É necessário solicitar justificativa e concordância expressa do superior hierárquico em meio oficial. <strong>Para equipamentos de magistrados, a justificativa é dispensada.</strong> Consulte a etapa seguinte para seguir o fluxo adequado.</p>
+     <button class="btn" id="goAuthorization">Ver orientações de autorização →</button>
+    </div>
+    <div class="actions"><button class="btn secondary" data-prev>← Voltar</button><button class="btn" id="tomboNext">Continuar →</button></div>
+   </article>
+
+   <article class="panel" data-panel="2" hidden>
+    <div class="step-kicker">Etapa 3 · Somente quando aplicável</div>
+    <h2>Justificativa e autorização</h2>
+    <p class="lead">Use esta etapa quando o tombo não consta na planilha. Se o equipamento for de magistrado, a justificativa é dispensada; confirme o fluxo de autorização vigente antes de encaminhar.</p>
+    <h3>1. Envie a orientação ao solicitante</h3>
+    <div class="template" id="userMessage">A Microsoft não oferece mais suporte para as licenças do Microsoft Office em uso no TRT-PR na versão 2013.
+O Tribunal passou a utilizar a suíte Google Workspace para edição de textos, planilhas e apresentações desde 2023.
+Caso a remoção do Office inviabilize o trabalho, o superior hierárquico deverá formalizar justificativa neste chamado para manter o uso do pacote Office 2013.</div>
+    <div class="copyrow"><button class="btn secondary" data-copy="userMessage">Copiar mensagem</button></div>
+    <h3>2. Confira se o chamado contém</h3>
+    <div class="checklist">
+     <label class="check"><input type="checkbox" data-check="just"><span><strong>Justificativa para uso do Microsoft Office</strong><small>Deve explicar a necessidade de manter o pacote Office.</small></span></label>
+     <label class="check"><input type="checkbox" data-check="approval"><span><strong>Concordância expressa do superior hierárquico</strong><small>Deve estar registrada por e-mail institucional ou Google Chat.</small></span></label>
+     <label class="check"><input type="checkbox" data-check="attached"><span><strong>Autorização registrada/anexada ao chamado</strong><small>Não aceitar autorização por canal pessoal, como WhatsApp.</small></span></label>
+    </div>
+    <div class="callout danger"><strong>Importante:</strong> enquanto aguarda a autorização, a tarefa deve permanecer atribuída à CSTI, suspensa se aplicável.</div>
+    <hr>
+    <h3>3. Após receber a autorização, encaminhe ao N3</h3>
+    <p>Direcione para <strong>CGSTI - SRINC - Gestão de Suporte Técnico</strong> e use o modelo abaixo na movimentação.</p>
+    <div class="template" id="authTemplate">Segue chamado para autorização de instalação do Office.
+
+Usuário: [Nome completo]
+Seção: [Lotação]
+Tombo: [Número]
+Superior hierárquico: [Nome completo]</div>
+    <div class="copyrow"><button class="btn secondary" data-copy="authTemplate">Copiar movimentação</button></div>
+    <div class="callout warning"><strong>Quem é o superior hierárquico?</strong><br>Informe o responsável direto pela unidade ou setor. Se o usuário exerce a chefia da unidade (por exemplo, Diretor(a) de Secretaria), ele próprio pode ser o superior hierárquico. Em caso de dúvida, consulte a <a href="https://intranet.trt9.jus.br/intranet2/f?p=10290:56:329300157289036:::::" target="_blank" rel="noopener">Consulta de Lotações</a>.</div>
+    <div class="callout success">Depois que a autorização for recebida, avance para a etapa de instalação.</div>
+    <div class="actions"><button class="btn secondary" data-prev>← Voltar</button><button class="btn" data-next>Avançar para instalação →</button></div>
+   </article>
+
+   <article class="panel" data-panel="3" hidden>
+    <div class="step-kicker">Etapa 4 · Execução técnica</div>
+    <h2 id="installHeading">Solicite a habilitação da instalação</h2>
+    <div id="notebookInstall">
+     <p class="lead">A instalação varia conforme o tipo de equipamento selecionado no início do guia.</p>
+     <div class="flowline"><div class="flowbox">Técnico da Central</div><span class="arrow">→</span><div class="flowbox">CIV - SSC</div><span class="arrow">→</span><div class="flowbox">Agente Kaspersky</div></div>
+     <h3>1. Encaminhe o chamado</h3>
+     <p>Direcione para <strong>CIV - SSC - Seção de Servidores Corporativos</strong> com a movimentação:</p>
+     <div class="template" id="installTemplate">Solicita-se a habilitação da instalação do Office via agente Kaspersky.
+
+Usuário: [Nome completo]
+Seção: [Lotação]
+Tombo: [Número]
+Superior hierárquico: [Nome completo]</div>
+     <div class="copyrow"><button class="btn secondary" data-copy="installTemplate">Copiar movimentação</button></div>
+     <div class="callout warning"><strong>Superior hierárquico:</strong> indique o responsável direto pela unidade ou setor. Em caso de dúvida, consulte a <a href="https://intranet.trt9.jus.br/intranet2/f?p=10290:56:329300157289036:::::" target="_blank" rel="noopener">Consulta de Lotações</a>.</div>
+     <h3>2. Confirme a conexão do notebook</h3>
+     <div class="checklist">
+      <label class="check"><input type="checkbox" data-check="home"><span><strong>Notebook conectado à rede doméstica</strong><small>O equipamento precisa estar conectado à internet do usuário.</small></span></label>
+      <label class="check"><input type="checkbox" data-check="civ"><span><strong>Habilitação realizada pela CIV</strong><small>Após a habilitação, a instalação deverá ocorrer automaticamente pelo agente.</small></span></label>
+     </div>
+     <div class="callout">A instalação pode ser lenta. Aguarde tempo suficiente para a conclusão antes de avançar para as atualizações.</div>
+    </div>
+    <div id="desktopInstall" hidden>
+     <p class="lead">A instalação em desktops é realizada pelo Endpoint (Self Service Portal). Primeiro, solicite a inclusão do computador no grupo de instalação do Office.</p>
+     <h3>1. Solicite a inclusão no grupo</h3>
+     <p>Direcione o chamado para <strong>CGSTI - SRINC - Gestão de Suporte Técnico</strong>, com a movimentação abaixo:</p>
+     <div class="template" id="desktopGroupTemplate">Favor incluir computador no grupo de instalação do Office.
+
+Usuário: [Nome completo]
+Seção: [Lotação]
+Tombo: [Número]
+Superior hierárquico: [Nome completo]</div>
+     <div class="copyrow"><button class="btn secondary" data-copy="desktopGroupTemplate">Copiar movimentação</button></div>
+     <div class="callout warning"><strong>Superior hierárquico:</strong> informe o responsável direto pela unidade ou setor. Em caso de dúvida, consulte a <a href="https://intranet.trt9.jus.br/intranet2/f?p=10290:56:329300157289036:::::" target="_blank" rel="noopener">Consulta de Lotações</a>. Se o usuário for o responsável pela unidade, informe o próprio usuário.</div>
+     <h3>2. Instale pelo Self Service Portal</h3>
+     <div class="checklist">
+      <label class="check"><input type="checkbox" data-check="endpointSync"><span>Acesse o <strong>Self Service Portal</strong> e clique no ícone de sincronismo para atualizar a lista, se necessário.</span></label>
+      <label class="check"><input type="checkbox" data-check="endpointInstall"><span>Localize o Microsoft Office 2013 e clique em <code>Install</code>.</span></label>
+     </div>
+     <div class="callout">A instalação ocorre em segundo plano e pode ser concluída até o próximo dia. Se não iniciar em até <strong>2 horas</strong>, retorne o chamado ao N3 para verificação.</div>
+    </div>
+    <div class="actions"><button class="btn secondary" data-prev>← Voltar</button><button class="btn" data-next>Ir para atualizações →</button></div>
+   </article>
+
+   <article class="panel" data-panel="4" hidden>
+    <div class="step-kicker">Etapa 5 · Verificação final</div>
+    <h2>Instale as atualizações antes de encerrar</h2>
+    <p class="lead">A instalação do Office, por si só, não conclui o atendimento.</p>
+    <div class="checklist">
+     <label class="check"><input type="checkbox" data-check="office"><span><strong>Confirmei que o Office 2013 foi instalado</strong></span></label>
+     <label class="check"><input type="checkbox" data-check="wu"><span><strong>Acessei o Windows Update</strong><small>Verifique se há atualizações disponíveis.</small></span></label>
+     <label class="check"><input type="checkbox" data-check="updates"><span><strong>Instalei as atualizações relacionadas ao Office 2013</strong></span></label>
+    </div>
+    <div class="callout danger" id="closeWarning">O chamado só pode ser encerrado após a conclusão das atualizações relacionadas ao Office 2013.</div>
+    <div class="callout success" id="closeSuccess" hidden><strong>Checklist concluído.</strong> As verificações finais foram marcadas. Registre no chamado as ações realizadas e siga o fluxo de encerramento aplicável.</div>
+    <button class="btn outline" id="resetChecks">Limpar marcações deste guia</button>
+    <hr>
+    <h3>Resumo do fluxo</h3>
+    <div class="flowline"><div class="flowbox">Verificar cargo e chamados</div><span class="arrow">→</span><div class="flowbox">Consultar tombo</div><span class="arrow">→</span><div class="flowbox">Autorizar, se aplicável</div><span class="arrow">→</span><div class="flowbox">Habilitar instalação</div><span class="arrow">→</span><div class="flowbox">Atualizar Office</div></div>
+    <div class="actions"><button class="btn secondary" data-prev>← Voltar</button><button class="btn" id="backStart">Voltar ao início ↺</button></div>
+   </article>
+  </section>
+ </div>
+ <div class="footer">Guia de apoio à execução do procedimento. Em caso de divergência, prevalecem as orientações institucionais vigentes.</div>
+</main>
+<script>
+(() => {
+ const panels=[...document.querySelectorAll('[data-panel]')];
+ const nav=[...document.querySelectorAll('.navstep')];
+ const progress=document.getElementById('progress');
+ let current=0;
+ function go(n){
+  current=Math.max(0,Math.min(panels.length-1,n));
+  panels.forEach((p,i)=>{p.hidden=i!==current;if(i===current){p.style.animation='none';void p.offsetWidth;p.style.animation='';}});
+  nav.forEach((b,i)=>{b.classList.toggle('active',i===current);b.classList.toggle('done',i<current);});
+  progress.style.width=((current)/(panels.length-1)*100)+'%';
+  document.getElementById('progressText').textContent=`Etapa ${current+1} de ${panels.length}`;
+  document.getElementById('progressPct').textContent=Math.round(current/(panels.length-1)*100)+'% do percurso';
+  window.scrollTo({top:0,behavior:'smooth'});
+ }
+ nav.forEach(b=>b.addEventListener('click',()=>go(Number(b.dataset.step))));
+ document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>go(current+1)));
+ document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>go(current-1)));
+ let selectedDevice=null, selectedRole=null, selectedQuantity=null;
+ const initialNext=document.getElementById('initialNext');
+ function updateInitialButton(){
+  const multiDone=selectedQuantity!=='multiple' || ['split1','split2','split3','split4'].every(k=>document.querySelector(`[data-check="${k}"]`)?.checked);
+  initialNext.disabled=!selectedDevice || !selectedRole || !selectedQuantity || selectedRole==='officer' || !multiDone;
+  initialNext.textContent=selectedRole==='magistrate'?'Ir diretamente para instalação →':selectedRole==='officer'?'Solicitação não autorizada':'Continuar →';
+ }
+ document.querySelectorAll('[data-device]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-device]').forEach(x=>x.classList.remove('selected'));
+  b.classList.add('selected'); selectedDevice=b.dataset.device;
+  document.getElementById('profileSection').hidden=false;
+  document.getElementById('notebookInstall').hidden=selectedDevice!=='notebook';
+  document.getElementById('desktopInstall').hidden=selectedDevice!=='desktop';
+  document.getElementById('installHeading').textContent=selectedDevice==='desktop'?'Instale pelo Endpoint (Self Service Portal)':'Solicite a habilitação da instalação';
+  updateInitialButton();
+ }));
+ document.querySelectorAll('[data-role]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-role]').forEach(x=>x.classList.remove('selected'));
+  b.classList.add('selected'); selectedRole=b.dataset.role;
+  document.getElementById('role-magistrate').classList.toggle('show',selectedRole==='magistrate');
+  document.getElementById('role-officer').classList.toggle('show',selectedRole==='officer');
+  document.getElementById('quantitySection').hidden=false;
+  updateInitialButton();
+ }));
+ document.querySelectorAll('[data-quantity]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-quantity]').forEach(x=>x.classList.remove('selected'));
+  b.classList.add('selected'); selectedQuantity=b.dataset.quantity;
+  document.getElementById('quantity-multiple').classList.toggle('show',selectedQuantity==='multiple');
+  updateInitialButton();
+ }));
+ initialNext.addEventListener('click',()=>{
+  if(initialNext.disabled)return;
+  if(selectedRole==='magistrate') go(3);
+  else if(selectedRole==='other') go(1);
+ });
+ document.getElementById('tomboNext').addEventListener('click',()=>{
+  const found=document.getElementById('branch-found').classList.contains('show');
+  const same=document.getElementById('branch-same').classList.contains('show');
+  const replacement=document.getElementById('branch-replacement').classList.contains('show');
+  const missing=document.getElementById('branch-missing').classList.contains('show');
+  if(found && (same || replacement)) go(3);
+  else if(missing) go(2);
+  else document.querySelector('[data-branch="found"]').scrollIntoView({behavior:'smooth',block:'center'});
+ });
+ document.getElementById('backStart').addEventListener('click',()=>go(0));
+ document.querySelectorAll('[data-branch]').forEach(b=>b.addEventListener('click',()=>{
+  const target=b.dataset.branch;
+  if(target==='found'||target==='missing'){
+   document.getElementById('branch-found').classList.toggle('show',target==='found');
+   document.getElementById('branch-missing').classList.toggle('show',target==='missing');
+   document.getElementById('branch-replacement').classList.remove('show');
+   document.getElementById('branch-same').classList.remove('show');
+  } else if(target==='replacement'||target==='same'){
+   document.getElementById('branch-replacement').classList.toggle('show',target==='replacement');
+   document.getElementById('branch-same').classList.toggle('show',target==='same');
+  }
+  document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');
+ }));
+ document.getElementById('goAuthorization').addEventListener('click',()=>go(2));
+ document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
+  const el=document.getElementById(b.dataset.copy);
+  const original=b.textContent;
+  try{await navigator.clipboard.writeText(el.innerText);b.textContent='Copiado ✓';}
+  catch(e){const range=document.createRange();range.selectNodeContents(el);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);b.textContent='Texto selecionado — copie manualmente';}
+  setTimeout(()=>b.textContent=original,2200);
+ }));
+ const finalChecks=['office','wu','updates'];
+ function updateFinal(){
+  const done=finalChecks.every(key=>document.querySelector(`[data-check="${key}"]`)?.checked);
+  document.getElementById('closeWarning').hidden=done;
+  document.getElementById('closeSuccess').hidden=!done;
+ }
+ document.querySelectorAll('input[type="checkbox"]').forEach(c=>c.addEventListener('change',()=>{updateFinal();updateInitialButton();}));
+ document.getElementById('resetChecks').addEventListener('click',()=>{
+  document.querySelectorAll('input[type="checkbox"]').forEach(c=>c.checked=false);
+  updateFinal();
+ });
+ updateInitialButton();
+ go(0);
+})();
+</script>
+</body>
+</html>
