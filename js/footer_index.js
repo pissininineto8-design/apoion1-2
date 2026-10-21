@@ -228,15 +228,13 @@ const rodape=
     "<div class='container'>" +
     "<ul class='links'>"+
                  "<li align='left'><h4 style='color: white;'>Sistemas</h4><br>"+
-                 "<!-- Assyst NET (Usuários Externos), Assyst NET (Usuários Internos), Citrix Portal Remoto, Citrix Workspace, Gertoken, PJe, PJe Mídias CNJ, PJe Mídias TRT9 -->" +
+                 "<!-- Assyst NET (Usuários Externos), Assyst NET (Usuários Internos), Gertoken, PJe, PJe Mídias CNJ, PJe Mídias TRT9 -->" +
                  "<!-- Assyst NET (Usuarios Externos), Assyst NET (Usuarios Internos), PJe Mídias TRT9, Pje Midias TRT9, Vetor, MFA VPN TRT9, M&#237;dias JT, Midias JT, CNJ - Corporativo (SCA), Chat-JT, Chat JT, https://suporteti.trt9.jus.br/assystnet/#signup, " +
-                 "https://csti.trt9.jus.br/assystnet, https://remoto.trt9.jus.br/vpn/index.html, https://teletrabalhonovo.trt9.jus.br/Citrix/storeWeb/, https://web01/gertoken/, https://mfa.trt9.jus.br/ " +
+                 "https://csti.trt9.jus.br/assystnet, https://web01/gertoken/, https://mfa.trt9.jus.br/ " +
                  "https://pje.trt9.jus.br/trt/, https://www.trt9.jus.br/pjemidias/web/site/login, https://www.trt9.jus.br/vetor, https://corporativo.cnj.jus.br/, https://midias.jt.jus.br, https://ia.jt.jus.br/chat/ --></li>" +
                  "<li><a href='https://suporteti.trt9.jus.br/assystnet/#signup' target='_blank'> <button id='botao_links'>Assyst NET (Usu&aacute;rios Externos)</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://csti.trt9.jus.br/assystnet' target='_blank'> <button id='botao_links'>Assyst NET (Usu&aacute;rios Internos)</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://ia.jt.jus.br/chat/' target='_blank'> <button id='botao_links'>Chat-JT</button></a><!-- Sistemas --></li>" +
-                 "<li><a href='https://remoto.trt9.jus.br/vpn/index.html' target='_blank'> <button id='botao_links'>Citrix Portal Remoto</button></a><!-- Sistemas --></li>" +
-                 "<li><a href='https://teletrabalhonovo.trt9.jus.br/Citrix/storeWeb/' target='_blank'> <button id='botao_links'>Citrix Workspace</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://corporativo.cnj.jus.br/' target='_blank'> <button id='botao_links'>CNJ - Corporativo (SCA)</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://web01/gertoken/' target='_blank'> <button id='botao_links'>Gertoken</button></a><!-- Sistemas --></li>" +
                  "<li><a href='https://mfa.trt9.jus.br/' target='_blank'> <button id='botao_links'>MFA VPN TRT9</button></a><!-- Sistemas --></li>" +
