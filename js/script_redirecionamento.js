@@ -1489,6 +1489,11 @@ var textoCopiado = document.getElementById("email34");
 textoCopiado.select();
 document.execCommand("Copy");
 }
+function CopiarEmail35() {
+var textoCopiado = document.getElementById("email35");
+textoCopiado.select();
+document.execCommand("Copy");
+}
 
 
 //---------------------------------------------------------------------------------------------------------------
@@ -1692,6 +1697,11 @@ document.execCommand("Copy");
 }
 function Copiar_Grupo_40() {
 var textoCopiado = document.getElementById("linha_grupo_40");
+textoCopiado.select();
+document.execCommand("Copy");
+}
+function Copiar_Grupo_41() {
+var textoCopiado = document.getElementById("linha_grupo_41");
 textoCopiado.select();
 document.execCommand("Copy");
 }

@@ -1120,6 +1120,19 @@ input[id^="linha"]:not([id*="grupo"]) {
   background-color: inherit;
 }
 
+#linha_grupo_41 {
+  font-size: 16px;
+  width: 482px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#linha_grupo_41:hover {
+  border: none;
+  background-color: inherit;
+}
+
 
 
 #email1 {
@@ -1560,6 +1573,19 @@ input[id^="linha"]:not([id*="grupo"]) {
 }
 
 #email34:hover {
+  border: none;
+  background-color: inherit;
+}
+
+#email35 {
+  font-size: 16px;
+  width: 212px;
+  border: none;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+#email35:hover {
   border: none;
   background-color: inherit;
 }
