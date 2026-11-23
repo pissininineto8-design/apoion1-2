@@ -290,46 +290,6 @@
                                <span class="aviso-data">16/11/2026</span>.
                             </p><br>
                         </li>
-                        <li class="aviso" data-data="2026-11-14">
-                            <p class="aviso-texto">
-                               <span class="aviso-titulo">COMUNICADO:</span>
-                                     "Indisponibilidade de Serviço - PJe - em 14/11/2026 e 15/11/2026 - Manutenção Programada."
-                                      Tarefa:
-                               <span class="aviso-tarefa">R305034</span>.
-                                      Data:
-                               <span class="aviso-data">14/11/2026</span>.
-                            </p><br>
-                        </li>
-                        <li class="aviso" data-data="2026-11-13">
-                            <p class="aviso-texto">
-                               <span class="aviso-titulo">FALHA GERAL:</span>
-                                     "Indisponibilidade no Link do Portal do TRT9 para Acesso à Certidão."
-                                      Tarefa:
-                               <span class="aviso-tarefa">561875</span>.
-                                      Data:
-                               <span class="aviso-data">13/11/2026</span>.
-                            </p><br>
-                        </li>
-                        <li class="aviso" data-data="2026-11-12">
-                            <p class="aviso-texto">
-                               <span class="aviso-titulo">FALHA GERAL:</span>
-                                     "Problemas com o Sistema de Telefonia da CSTI."
-                                      Tarefa:
-                               <span class="aviso-tarefa">561730</span>.
-                                      Data:
-                               <span class="aviso-data">12/11/2026</span>.
-                            </p><br>
-                        </li>
-                        <li class="aviso" data-data="2026-11-03">
-                            <p class="aviso-texto">
-                               <span class="aviso-titulo">FALHA GERAL:</span>
-                                     "Problemas no JTe."
-                                      Tarefa:
-                               <span class="aviso-tarefa">561137</span>.
-                                      Data:
-                               <span class="aviso-data">03/11/2026</span>.
-                            </p><br>
-                        </li>
                         <li class="aviso" data-data="2026-10-08">
                             <p class="aviso-texto">
                                <span class="aviso-titulo">FALHA GERAL:</span>
@@ -410,191 +370,6 @@
                 </div><br><p style="padding-left: 20px;"><b>Informações</b></p>
                 </a>
             </div><br><br>
-
-
-                                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> PÁGINAS INFORMATIVAS </font></h2><br>
-                    <div style="padding-left: 10px;">
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/orientacoes.html'>Orientações</a></h3>
-                                    <p>&nbsp;"Informações e orientações gerais".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/glossario.html'>Glossário</a></h3>
-                                    <p>&nbsp;"Lista de termos jurídicos".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/cidades.html'>Cidades</a></h3>
-                                    <p>&nbsp;"Lotações de todas as unidades separadas por município".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/400.html'>Edifício VM400</a></h3>
-                                    <p>&nbsp;"Lotações do prédio VM400".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/147.html'>Edifício VM147</a></h3>
-                                    <p>&nbsp;"Lotações do prédio VM147".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/528.html'>Edifício RB528</a></h3>
-                                    <p>&nbsp;"Lotações do prédio RB528".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/digitalizacao.html'>Pastas de Digitalização</a></h3>
-                                    <p>&nbsp;"Pastas de documentos digitalizados dos locais".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/rangeip.html'>Ranges IP</a></h3>
-                                    <p>&nbsp;"Ranges de IP dos locais".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/malote.html'>Malote</a></h3>
-                                    <p>&nbsp;"Programação do malote em todo o estado".</p>
-                                </li>
-                                <li>
-                                    <h3><a href='Paginas/ramais.html'>Contatos</a></h3>
-                                    <p>&nbsp;"Lista de contatos das unidades do TRT9 e Externos".</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><br>
-
-
-                    <div id="menu_paginas">
-
-                    <h2 style="color: black;">
-                        <font size="4" style="font-family: Courier New, monospace;">DATA/HORA</font>
-                    </h2>
-                    <br>
-                    <div id="hora_data"></div>
-                    <br>
-
-                    </div>
-
-                </div>
-
-                    <script>
-                        // Formatação de data e hora ----------------------------------
-                        function relogio() {	
-                            let horario = new Date();
-                            
-                            // Relógio
-                            let hora = horario.getHours();
-                            if (hora < 10) {
-                                hora = "0" + hora;
-                            }
-                            let minuto = horario.getMinutes();
-                            if (minuto < 10) {
-                                minuto = "0" + minuto;
-                            }
-                            let segundo = horario.getSeconds();
-                            if (segundo < 10) {
-                                segundo = "0" + segundo;
-                            }
-                            
-                            // Data
-                            let dia = horario.getDate();
-                            if (dia < 10) {
-                                dia = "0" + dia;
-                            }
-                            let mes = horario.getMonth() + 1;
-                            if (mes < 10) {
-                                mes = "0" + mes;
-                            }
-                            let ano = horario.getFullYear();
-                    
-                            // Dia da semana
-                            let diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
-                            let diaSemana = diasDaSemana[horario.getDay()];
-                            
-                            // Formatação
-                            let horaFormatada = hora + ":" + minuto + ":" + segundo;
-                            let dataFormatada = dia + "/" + mes + "/" + ano;
-                            
-                            // Exibição no elemento
-                            document.getElementById("hora_data").innerHTML = diaSemana + ", " + dataFormatada + "  -  " + horaFormatada;
-                        }
-                    
-                        setInterval(relogio, 100);
-                        //-------------------------------------------------------
-                    </script>
-                    
-                    <style>
-                        #hora_data {
-                            font-family: 'Courier New', Courier, monospace;
-                            font-size: 18px;
-                        }
-                    </style>
-
-                <div id="divisao2">
-
-                <div class="menu-container">
-                
-                <a href='Paginas/paginan1.html'> 
-                    <div class="menu-item-justino">
-                    <img src='Imagens/apoion1.png' alt='N1' title='Acessar a Página de Orientações N1' width='200' height='120'>
-                    
-                </div><br><p align="center" style="padding-left: 5px;"><b>Apoio N1</b></p>
-                </a>
-                <a href='Paginas/paginan2.html'> 
-                    <div class="menu-item-justino">
-                    <img src='Imagens/apoion2.png' alt='N2' title='Acessar a Página de Orientações N2' width='200' height='120'>
-                    
-                </div><br><p align="center" style="padding-left: 5px;"><b>Apoio N2</b></p>
-                </a>
-                <a href='Paginas/Treinamento_Urgencia_Justino.html' target="_blank"> 
-                    <div class="menu-item-justino">
-                    <img src='Imagens/mascote_justino_fundo.png' alt='Procedimentos' title='Acesso à Página de Treinamento do Justino' width='200' height='150'>
-                    
-                </div><br><p align="center" style="padding-left: 5px;"><b>Mascote Justino</b></p>
-                </a>
-
-                </div><br><br>
-
-                    <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> GUIAS INTERATIVOS </font></h2><br>
-                    <div style="padding-left: 10px;">
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/Guia_Interativo_Action_Mixer_1.3.6.html' target="_blank">Action Mixer</a></h3>
-                                    <p>&nbsp;"Orientações para resolução de problemas conhecidos".</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/Guia_Interativo_Action_Mixerzinho_Jogo.html' target="_blank">Actionmixerzinho</a></h3>
-                                    <p>&nbsp;"Guia alternativo do Action Mixer, em formato de Jogo".</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/Guia Instalação Office 2013.html' target="_blank">Microsoft Office 2013</a></h3>
-                                    <p>&nbsp;"Orientações para instalação do Microsoft Office 2013".</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/guia_interativo_pje_cadastro_servidores.html' target="_blank">PJe Cadastro de Usuários</a></h3>
-                                    <p>&nbsp;"Cadastro de servidores e estagiários no PJe".</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class='container_index'>
-                            <ul align="left" class="styled-list" style="padding-left: 0px;">
-                                <li>
-                                    <h3><a href='Paginas/Guia_Interativo_PJe_Desarquivamento_TRT9.html' target="_blank">PJe Fluxo de Desarquivamento</a></h3>
-                                    <p>&nbsp;"Desarquivamento de processos no PJe".</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><br>
 
                     <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> LINKS E ATALHOS </font></h2><br>
                     <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
@@ -681,8 +456,7 @@
                             </ul>
                         </span>
                     </div><br><br>
-
-                    <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
+                                        <div id="div_atalhos_index" style='background-color: #252527; padding: 10px; border-radius: 10px;'>
                         <h4><button onclick="lerMais_index_3(), lerMais_index_3a()" id="btLeiaMais_index_3"><span id="imagem_index_3"></span> <b style="font-family: Courier New, monospace;">SOFTWARES E PLUGINS</b></button></h4>
                         <span id="mostrar_mais_index_3"></span><span id="maiss_index_3">
                             <br>
@@ -705,10 +479,192 @@
                         </span>
                     </div><br><br>
 
+                    <!-- <div id="menu_paginas">
 
+                    <h2 style="color: black;">
+                        <font size="4" style="font-family: Courier New, monospace;">DATA/HORA</font>
+                    </h2>
+                    <br>
+                    <div id="hora_data"></div>
+                    <br>
+
+                    </div> -->
+
+                </div>
+
+                    <script>
+                        // Formatação de data e hora ----------------------------------
+                        function relogio() {	
+                            let horario = new Date();
+                            
+                            // Relógio
+                            let hora = horario.getHours();
+                            if (hora < 10) {
+                                hora = "0" + hora;
+                            }
+                            let minuto = horario.getMinutes();
+                            if (minuto < 10) {
+                                minuto = "0" + minuto;
+                            }
+                            let segundo = horario.getSeconds();
+                            if (segundo < 10) {
+                                segundo = "0" + segundo;
+                            }
+                            
+                            // Data
+                            let dia = horario.getDate();
+                            if (dia < 10) {
+                                dia = "0" + dia;
+                            }
+                            let mes = horario.getMonth() + 1;
+                            if (mes < 10) {
+                                mes = "0" + mes;
+                            }
+                            let ano = horario.getFullYear();
+                    
+                            // Dia da semana
+                            let diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+                            let diaSemana = diasDaSemana[horario.getDay()];
+                            
+                            // Formatação
+                            let horaFormatada = hora + ":" + minuto + ":" + segundo;
+                            let dataFormatada = dia + "/" + mes + "/" + ano;
+                            
+                            // Exibição no elemento
+                            document.getElementById("hora_data").innerHTML = diaSemana + ", " + dataFormatada + "  -  " + horaFormatada;
+                        }
+                    
+                        setInterval(relogio, 100);
+                        //-------------------------------------------------------
+                    </script>
+                    
+                    <style>
+                        #hora_data {
+                            font-family: 'Courier New', Courier, monospace;
+                            font-size: 18px;
+                        }
+                    </style>
+
+                <div id="divisao2">
+
+                <div class="menu-container">
+                
+                <a href='Paginas/paginan1.html'> 
+                    <div class="menu-item-justino">
+                    <img src='Imagens/apoion1.png' alt='N1' title='Acessar a Página de Orientações N1' width='200' height='120'>
+                    
+                </div><br><p align="center" style="padding-left: 5px;"><b>Apoio N1</b></p>
+                </a>
+                <a href='Paginas/paginan2.html'> 
+                    <div class="menu-item-justino">
+                    <img src='Imagens/apoion2.png' alt='N2' title='Acessar a Página de Orientações N2' width='200' height='120'>
+                    
+                </div><br><p align="center" style="padding-left: 5px;"><b>Apoio N2</b></p>
+                </a>
+                <a href='Paginas/Treinamento_Urgencia_Justino.html' target="_blank"> 
+                    <div class="menu-item-justino">
+                    <img src='Imagens/mascote_justino_fundo.png' alt='Procedimentos' title='Acesso à Página de Treinamento do Justino' width='200' height='150'>
+                    
+                </div><br><p align="center" style="padding-left: 5px;"><b>Mascote Justino</b></p>
+                </a>
+
+                </div><br><br>
+
+                <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> GUIAS INTERATIVOS </font></h2><br>
+                    <div style="padding-left: 10px;">
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/Guia_Interativo_Action_Mixer_1.3.6.html' target="_blank">Action Mixer</a></h3>
+                                    <p>&nbsp;"Orientações para resolução de problemas conhecidos".</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/Guia_Interativo_Action_Mixerzinho_Jogo.html' target="_blank">Actionmixerzinho</a></h3>
+                                    <p>&nbsp;"Guia alternativo do Action Mixer, em formato de Jogo".</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/Guia Instalação Office 2013.html' target="_blank">Microsoft Office 2013</a></h3>
+                                    <p>&nbsp;"Orientações para instalação do Microsoft Office 2013".</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/guia_interativo_pje_cadastro_servidores.html' target="_blank">PJe Cadastro de Usuários</a></h3>
+                                    <p>&nbsp;"Cadastro de servidores e estagiários no PJe".</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/Guia_Interativo_PJe_Desarquivamento_TRT9.html' target="_blank">PJe Fluxo de Desarquivamento</a></h3>
+                                    <p>&nbsp;"Desarquivamento de processos no PJe".</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><br>
+
+                                        <h2 style='color: black;'><font size="4" style="font-family: Courier New, monospace;"> PÁGINAS INFORMATIVAS </font></h2><br>
+                    <div style="padding-left: 10px;">
+                        <div class='container_index'>
+                            <ul align="left" class="styled-list" style="padding-left: 0px;">
+                                <li>
+                                    <h3><a href='Paginas/orientacoes.html'>Orientações</a></h3>
+                                    <p>&nbsp;"Informações e orientações gerais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/glossario.html'>Glossário</a></h3>
+                                    <p>&nbsp;"Lista de termos jurídicos".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/cidades.html'>Cidades</a></h3>
+                                    <p>&nbsp;"Lotações de todas as unidades separadas por município".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/400.html'>Edifício VM400</a></h3>
+                                    <p>&nbsp;"Lotações do prédio VM400".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/147.html'>Edifício VM147</a></h3>
+                                    <p>&nbsp;"Lotações do prédio VM147".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/528.html'>Edifício RB528</a></h3>
+                                    <p>&nbsp;"Lotações do prédio RB528".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/digitalizacao.html'>Pastas de Digitalização</a></h3>
+                                    <p>&nbsp;"Pastas de documentos digitalizados dos locais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/rangeip.html'>Ranges IP</a></h3>
+                                    <p>&nbsp;"Ranges de IP dos locais".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/malote.html'>Malote</a></h3>
+                                    <p>&nbsp;"Programação do malote em todo o estado".</p>
+                                </li>
+                                <li>
+                                    <h3><a href='Paginas/ramais.html'>Contatos</a></h3>
+                                    <p>&nbsp;"Lista de contatos das unidades do TRT9 e Externos".</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><br>
 
                 </div><br><br><br><br><br>
 
+                
         </div>
 
     </article>
